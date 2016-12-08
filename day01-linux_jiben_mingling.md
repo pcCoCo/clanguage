@@ -12,8 +12,15 @@
 
 ### Shell 的种类
 
-`一般来说，shell可以分成两类。第一类是由Bourneshell衍生出来的包括sh，ksh，bash，与zsh。第二类是由Cshell衍生出来的，包括csh与    
-  tcsh。除此之外还有一个rc`
+`一般来说，shell可以分成两类。`
+
+`第一类是由Bourneshell衍生出来的包括sh、ksh、bash、zsh等；`
+
+`第二类是由Cshell衍生出来的，包括csh与tcsh等。`
+
+当前比较通用的shell就是bashshell。
+
+
 
 ### 查看当前shell种类
 
