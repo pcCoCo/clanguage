@@ -12,15 +12,9 @@
 
 ### Shell 的种类
 
-
-
 ### 查看当前shell种类
 
-综端上键入echo $ECHO
-
-
-
-
+综端上键入echo $SHELL
 
 ## 为什么要学习Shell命令
 
