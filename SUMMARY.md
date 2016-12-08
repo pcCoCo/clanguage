@@ -7,7 +7,7 @@
 * [day04-数据类型和运算符](day04-data_type_oprator.md)
 * [day05-语句](day05yuju.md)
 * [day06-数组](day06shu_zu.md)
-* [day07-指针](day07zhi_zhen.md)
+* [day08-指针](day07zhi_zhen.md)
 * [day08-内存管理](day08-neicun_guanli.md)
 * day07-函数
 
