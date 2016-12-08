@@ -11,7 +11,7 @@
 * [章节08-指针](day08-zhi_zhen.md)
 * [章节09-内存管理](day09-neicun_guanli.md)
 * [章节10-复合数据类型](day10-fu_he_shu_ju_lei_xing.md)
-* 章节11-文件IO
+* [章节11-文件IO](day11_wen_jian_io.md)
 * 章节12-C++基于C的拓展语法
 * [章节13-快译通电子词典](章节12-快译通电子词典.md)
 
