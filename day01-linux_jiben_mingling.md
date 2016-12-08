@@ -2,8 +2,6 @@
 
 ## Linux是什么
 
-
-
 ## Shell是什么
 
 ![](/assets/shell3.jpg)
@@ -12,19 +10,19 @@
 
 我们前两天学习的命令都是shell命令。
 
-
-
 ### Shell 的种类
+
+
+
+### 查看当前shell种类
+
+综端上键入echo $ECHO
 
 
 
 
 
 ## 为什么要学习Shell命令
-
-
-
-
 
 
 
