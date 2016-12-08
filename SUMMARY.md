@@ -8,5 +8,5 @@
 * [day05-语句](day05-语句.md)
 * day06-数组
 * day07-指针
-* [day08](day.md)
+* [day08-内存管理](day.md)
 
