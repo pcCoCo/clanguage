@@ -8,5 +8,9 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 
 作者将 [Vim Clutch](https://github.com/alevchuk/vim-clutch) 的制作过程放在了 GitHub 上，有兴趣的朋友不妨参考。
 
+
+
+关于VIM的上下左右键
+
 ![](/assets/上下左右.jpg)
 
