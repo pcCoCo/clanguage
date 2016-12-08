@@ -74,9 +74,19 @@ ubuntu 乌邦图
 
 ![](/assets/ubuntul.jpg)
 
+
+
+老司机评论: 就桌面应用而言是Linux发行版中的翘楚
+
+
+
 redhat  小红帽
 
 ![](/assets/redhat.jpg)
+
+Linux家族中的贵族
+
+
 
 centos
 
