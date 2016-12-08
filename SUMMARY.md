@@ -8,5 +8,5 @@
 * [day05-语句](day05yuju.md)
 * [day06-数组](day06shu_zu.md)
 * [day07-指针](day07zhi_zhen.md)
-* [day08-内存管理](day08-neicun.md)
+* [day08-内存管理](day08-neicun_guanli.md)
 
