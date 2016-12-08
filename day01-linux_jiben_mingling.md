@@ -66,5 +66,3 @@ Linux存在着许多不同的Linux版本，但它们都使用了Linux内核。Li
 
 1995年1月，Bob Young创办了RedHat（小红帽），以GNU/Linux为核心，集成了400多个源代码开放的程序模块，搞出了一种冠以品牌的Linux，即RedHat Linux,称为Linux"发行版"，在市场上出售。这在经营模式上是一种创举。
 
-
-
