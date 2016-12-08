@@ -8,6 +8,6 @@
 * [day05-语句](day05yuju.md)
 * [day06-数组](day06shu_zu.md)
 * [day07-函数](day07han_shu.md)
-* [day08-指针](day08zhi_zhen.md)
+* [day08-指针](day08-zhi_zhen.md)
 * [day09-内存管理](day09-neicun_guanli.md)
 
