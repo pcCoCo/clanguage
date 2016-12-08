@@ -10,6 +10,8 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 
 
 
+
+
 关于VIM的上下左右键
 
 ![](/assets/上下左右.jpg)
