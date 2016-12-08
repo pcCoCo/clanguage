@@ -20,6 +20,8 @@
 
 当前比较通用的shell就是bashshell。
 
+
+
 ### 查看当前shell种类
 
 `综端上键入echo $SHELL`
