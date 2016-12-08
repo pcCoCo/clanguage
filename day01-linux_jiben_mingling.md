@@ -12,7 +12,7 @@
 
 ### Shell 的种类
 
-`shell可以分成两类。`
+`shell可以分成两类：`
 
 `第一类是由Bourneshell衍生出来的包括sh、ksh、bash、zsh等；`
 
