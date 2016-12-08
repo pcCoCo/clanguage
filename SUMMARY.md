@@ -13,5 +13,5 @@
 * [章节10-复合数据类型](day10-fu_he_shu_ju_lei_xing.md)
 * [章节11-文件IO](day11_wen_jian_io.md)
 * [章节12-C++基于C的拓展语法](day12_c_ji_yu_c_de_tuo_zhan_yu_fa.md)
-* [章节13-快译通电子词典](day12_kuai_yi_tong_dian_zi_ci_5178_md.md)
+* [章节13-快译通电子词典](dday13_kuai_yi_tong.md)
 
