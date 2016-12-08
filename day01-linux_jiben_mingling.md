@@ -84,7 +84,7 @@ centos
 
 看了那么多都是外国做的产品，来点中国特色的吧
 
-red-flag linux 红旗
+red-flag linux 红旗  http://www.redflag-linux.com/
 
-![](/assets/red_flag.jpg) 
+![](/assets/red_flag.jpg)
 
