@@ -8,6 +8,5 @@
 * [day05-语句](day05-语句.md)
 * day06-数组
 * day07-指针
-* [day08-内存管理](day.md)
-* day09-复合数据类型
+* [day08](day.md)
 
