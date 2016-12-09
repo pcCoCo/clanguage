@@ -116,7 +116,7 @@ a
 
 ls
 
-cd
+cd pwd
 
 more cat less tail head
 
@@ -127,8 +127,6 @@ find
 grep
 
 ps top kill
-
-
 
 a
 
