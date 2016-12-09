@@ -114,6 +114,12 @@ a
 
 ## 入门常用命令集锦
 
+ls
+
+cd
+
+more cat less tail
+
 a
 
 a
