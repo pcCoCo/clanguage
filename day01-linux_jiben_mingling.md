@@ -90,6 +90,8 @@ centos
 
 ![](/assets/centos.jpg)
 
+老司机评论:跟红帽是亲兄弟，是一个通用服务器上Linux比较多的发行版本。 
+
 看了那么多都是外国做的产品，来点中国特色的吧
 
 red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag-linux.com/)
