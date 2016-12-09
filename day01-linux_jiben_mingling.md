@@ -120,6 +120,14 @@ cd
 
 more cat less tail head
 
+chmod chown
+
+find 
+
+grep
+
+
+
 a
 
 a
