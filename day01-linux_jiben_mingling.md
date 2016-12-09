@@ -122,13 +122,13 @@ more cat less tail head
 
 chmod chown
 
-find 
+find
 
 grep
 
+ps top kill
 
 
-a
 
 a
 
