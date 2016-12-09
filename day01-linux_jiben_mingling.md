@@ -108,15 +108,11 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 ### 相对路径
 
-### 绝对路径
-
-### 存储权限
+### 绝对路径 
 
 
 
-## 常用命令
-
-
+a
 
 a
 
