@@ -42,65 +42,11 @@ A rule of correspondence between two sets such that there is a unique element in
 
 ## 自定义函数的基本形式
 
-函数返回类型 函数名\_标识符 \(形参列表\)
+`函数返回类型 函数名_标识符 (形参列表)`
 
-{
+`{`
 
-       函数代码
+`   函数代码`
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+`}`
 
