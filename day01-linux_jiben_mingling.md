@@ -100,6 +100,16 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 ## 重要概念
 
+### 通配符
+
+### 重定向
+
+### 管道
+
+### 相对路径
+
+### 绝对路径 
+
 
 
 a
