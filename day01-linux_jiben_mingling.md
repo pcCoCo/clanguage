@@ -110,7 +110,9 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 ### 绝对路径
 
-a
+## 重要技能
+
+键入shell命令的时候能够擅用Tab键自动补齐
 
 ## 入门常用命令集锦
 
