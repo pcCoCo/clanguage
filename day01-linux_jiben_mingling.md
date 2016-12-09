@@ -44,8 +44,6 @@ Linux存在着许多不同的Linux版本，但它们都使用了Linux内核。Li
 
 ## 为什么要学习Shell命令
 
-
-
 ## Linux 的诞生
 
 发展和成长过程始终依赖着五个重要支柱：UNIX 操作系统、MINIX 操作系统、GNU计划、POSIX 标准和Internet 网络。
@@ -92,7 +90,9 @@ centos
 
 red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag-linux.com/)
 
-
-
 ![](/assets/red_flag.jpg)
+
+
+
+
 
