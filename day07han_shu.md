@@ -40,21 +40,7 @@ A rule of correspondence between two sets such that there is a unique element in
 
 用户可以在代码中直接使用库函数，而不需要关心如何实现从而提高开发效率。值得注意的是，程序的需求细节可能没办法直接使用库函数来完成，这个时候就需要我们使用自定义函数来完成。
 
-
-
-
-
-
-
 ## 
-
-
-
-
-
-
-
-
 
 ## 函数的定义
 
@@ -65,4 +51,14 @@ A rule of correspondence between two sets such that there is a unique element in
 `函数代码`
 
 `}`
+
+
+
+函数的声明
+
+
+
+函数的调用
+
+
 
