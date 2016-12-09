@@ -18,3 +18,7 @@ A variable so related to another that for each value assumed by one there is a v
 
 A rule of correspondence between two sets such that there is a unique element in the second set assigned to each element in the first set.函数两组元素一一对应的规则，第一组中的每个元素在第二组中只有唯一的对应量。
 
+
+
+
+
