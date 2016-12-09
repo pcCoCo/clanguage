@@ -14,9 +14,7 @@ A rule of correspondence between two sets such that there is a unique element in
 
 ## 计算机编程中的函数
 
-
-
-函数就是完成特定功能的代码的一段代码。
+函数是一段完成特定功能的程序代码，或称其为一个子程序，它可以实现固定运算功能。
 
 ## 函数分类
 
