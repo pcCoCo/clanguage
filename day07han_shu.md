@@ -8,21 +8,17 @@
 
 库函数就是
 
-
-
 ## 数学意义上的函数
 
 在数学领域，函数是一种关系，这种关系使一个集合里的每一个元素对应到另一个（可能相同的）集合里的唯一元素。
 
-----A variable so related to another that for each value assumed by one there is a value determined for the other.
+A variable so related to another that for each value assumed by one there is a value determined for the other.
 
 自变量，函数一个与他量有关联的变量，这一量中的任何一值都能在他量中找到对应的固定值。
 
-----A rule of correspondence between two sets such that there is a unique element in the second set assigned to each element in the first set.
+
+
+A rule of correspondence between two sets such that there is a unique element in the second set assigned to each element in the first set.
 
 函数两组元素一一对应的规则，第一组中的每个元素在第二组中只有唯一的对应量。
-
-
-
-
 
