@@ -26,7 +26,7 @@ A rule of correspondence between two sets such that there is a unique element in
 
 可以简单的分为库函数和自定义函数。
 
-函数库封装了一些函数的代码。
+函数库封装了一些函数的代码，库函数就是由函数中中提供的函数接口。
 
-库函数就是由函数中中提供的函数接口。
+
 
