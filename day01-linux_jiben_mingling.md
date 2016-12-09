@@ -112,7 +112,7 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 a
 
-## 常用
+## 入门常用命令集锦
 
 a
 
