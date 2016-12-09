@@ -118,7 +118,7 @@ ls
 
 cd
 
-more cat less tail
+more cat less tail head
 
 a
 
