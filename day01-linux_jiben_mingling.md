@@ -98,7 +98,9 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 ![](/assets/red_flag.jpg)
 
-a
+## 重要概念
+
+
 
 a
 
