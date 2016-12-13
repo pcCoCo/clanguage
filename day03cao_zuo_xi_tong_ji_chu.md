@@ -218,11 +218,16 @@ CPU内存有一个专门的期间MMU(Memmory Management Unit,内存管理单元)
 
 
 
+
+
 ## 系统调用
 
 system\(\)
 
 系统调用的开销
+
+系统调用时用户进程和内核交互的经典方法。POSIX定义了许多系统调用，以及这些系统调用在所有遵循POSXI的系统(Linux）的语义。
+
 
 ## 随处可见的cache机制
 
