@@ -26,7 +26,19 @@ i386：也是维基上的解释，也就是指Intel 80386，是第一个32位的
 The Intel 80386, otherwise known as the Intel386, i386 or just 386, is a microprocessor which has been used as the central processing unit (CPU) of many personal computers and workstations since 1986. It was the first x86 processor to have a 32-bit architecture, with a basic programming model that has remained virtually unchanged for over twenty years and remains completely backward compatible.
 
 IA32：可以认为就是x86或者x86-32，也是一个指令集。
-
+英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集(CISC)架构，至今英特尔最受欢迎的处理器仍然采用此架构。它是x86架构的32位延伸版本，1985年首次应用在Intel 80386芯片中，用来取代之前的x86 16位架构（x86-16），包括8086、
+寄存器结构
+寄存器结构
+80186与80286芯片。[1] 
+一个IA32中央处理器(CPU)包含一组8个存储32位值的寄存器. 这些寄存器用来存储整型数据和指针英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集(CISC)架构，至今英特尔最受欢迎的处理器仍然采用此架构。它是x86架构的32位延伸版本，1985年首次应用在Intel 80386芯片中，用来取代之前的x86 16位架构（x86-16），包括8086、
+寄存器结构
+寄存器结构
+80186与80286芯片。[1] 
+一个IA32中央处理器(CPU)包含一组8个存储32位值的寄存器. 这些寄存器用来存储整型数据和指针英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集(CISC)架构，至今英特尔最受欢迎的处理器仍然采用此架构。它是x86架构的32位延伸版本，1985年首次应用在Intel 80386芯片中，用来取代之前的x86 16位架构（x86-16），包括8086、
+寄存器结构
+寄存器结构
+80186与80286芯片。[1] 
+一个IA32中央处理器(CPU)包含一组8个存储32位值的寄存器. 这些寄存器用来存储整型数据和指针
 IA-32 (Intel Architecture, 32-bit), often generically called x86 or x86-32, is the instruction set architecture of Intel's most commercially successful microprocessors. It is a 32-bit extension, first implemented in the Intel 80386, of the earlier 16-bit Intel 8086, 80186 and 80286 processors and the common denominator for all subsequent x86 designs. This architecture defines the instruction set for the family of microprocessors installed in the vast majority of personal computers in the world.
 
 IA64：就是所谓的安腾，Intel跟HP联合折腾的一种64-bits全新架构，与x86系列不兼容，号称采用了很多非常好的体系结构方面的技术，但是没火起来。再次证明光有好的技术是行不通的，还要有市场眼光啊。
