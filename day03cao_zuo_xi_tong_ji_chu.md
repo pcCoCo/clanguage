@@ -45,6 +45,7 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 另外，还有操作系统的位数区分，可以认为是word size（字长），也就是一个整数和指针数据的长度，原则上就是指上述CPU位数（即通用寄存器的位数），但同时也决定了操作系统能够支持的最大内存容量（每个进程能够使用的虚拟内存大小，严格说来没有这么多）。
 
 ### 精简指令集RISC
+
 特点是所有指令的格式都是一致的，所有指令的指令周期也是相同的，并且采用流水线技术。在中高档服务器中采用RISC指令的CPU主要有Compaq（康柏，即新惠普）公司的Alpha、HP公司的PA-RISC、IBM公司的PowerPC、MIPS公司的MIPS和SUN公司的Sparc
 
 
