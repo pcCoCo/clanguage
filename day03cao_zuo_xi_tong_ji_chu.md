@@ -46,13 +46,7 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 
 ### 精简指令集RISC
 
-特点是所有指令的格式都是一致的，所有指令的指令周期也是相同的，并且采用流水线技术。在中高档服务器中采用RISC指令的CPU主要有Compaq（康柏，即新惠普）公司的Alpha、HP公司的PA-RISC、IBM公司的PowerPC、MIPS公司的MIPS和SUN公司的Sparc、Acorn公司的ARM。
-
-
-#### ARM
-
-ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC微处理器。全称为Acorn RISC Machine。ARM处理器本身是32位设计，但也配备16位指令集，一般来讲比等价32位代码节省达35%，却能保留32位系统的所有优势。
-
+特点是所有指令的格式都是一致的，所有指令的指令周期也是相同的，并且采用流水线技术。在中高档服务器中采用RISC指令的CPU主要有Compaq（康柏，即新惠普）公司的Alpha、HP公司的PA-RISC、IBM公司的PowerPC、MIPS公司的MIPS和SUN公司的Sparc
 
 
 
