@@ -11,9 +11,10 @@
 ### 链接
 
 ## CPU架构
+
 x86：Intel从16位微处理器8086开始的整个CPU芯片系列，系列中的每种型号都保持与以前的各种型号兼容，主要有8086，8088（前面两个是16位CPU），80186，80286（这两个是过渡产品）， 80386，80486以及以后各种型号的Pentium芯片[奔腾，P2, P4，赛扬...]（这些都是32位CPU）
 
-x86-64：如下是维基百科上的解释，大致翻译一下，x86-64是x86指令集的超集，在x86处理器上可以运行的程序可以运行在x86-64上（这也是为啥现在买的一些64bits CPU可以直接运行Win XP的原因）。x86-64是AMD发明的，也叫AMD64，Intel克隆了一把，叫做Intel 64，也叫EM64T。
+x86-64：<维基百科>上x86-64是x86指令集的超集，在x86处理器上可以运行的程序可以运行在x86-64上（这也是为啥现在买的一些64bits CPU可以直接运行Win XP的原因）。x86-64是AMD发明的，也叫AMD64，Intel克隆了一把，叫做Intel 64，也叫EM64T。
 
 x86-64 is a 64-bit superset of the x86 instruction set architecture. Because the x86-64 instruction set is a superset of the x86 instruction set, all instructions in the x86 instruction set can be executed by central processing units (CPUs) that implement the x86-64 instruction set; therefore these CPUs can natively run programs that run on x86 processors from Intel, Advanced Micro Devices (AMD), and other vendors.
 
