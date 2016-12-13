@@ -28,7 +28,7 @@ IA32：可以认为就是x86或者x86-32，也是一个指令集。
 
 IA-32 (Intel Architecture, 32-bit), often generically called x86 or x86-32, is the instruction set architecture of Intel's most commercially successful microprocessors. It is a 32-bit extension, first implemented in the Intel 80386, of the earlier 16-bit Intel 8086, 80186 and 80286 processors and the common denominator for all subsequent x86 designs. This architecture defines the instruction set for the family of microprocessors installed in the vast majority of personal computers in the world.
 
-IA64：就是所谓的安腾，Intel跟HP联合折腾的一种64-bits全新架构，与x86系列不兼容，号称采用了很多非常好的体系结构方面的技术，但是没火起来，差点被AMD抓住机会cei掉Intel（有一阵中关村装机都流行AMD平台）。再次证明光有好的技术是行不通的，还要有市场眼光啊。
+IA64：就是所谓的安腾，Intel跟HP联合折腾的一种64-bits全新架构，与x86系列不兼容，号称采用了很多非常好的体系结构方面的技术，但是没火起来。再次证明光有好的技术是行不通的，还要有市场眼光啊。
 
 Itanium is the brand name for 64-bit Intel microprocessors that implement the Intel Itanium architecture (formerly called IA-64). Intel has released two processor families using the brand: the original Itanium and the Itanium 2. Starting November 1, 2007, new members of the second family are again called Itanium. The processors are marketed for use in enterprise servers and high-performance computing systems. The architecture originated at Hewlett-Packard (HP) and was later developed by HP and Intel together.
 
