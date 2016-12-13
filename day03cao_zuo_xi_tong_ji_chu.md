@@ -46,7 +46,8 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 
 ### 精简指令集RISC
 
-特点是所有指令的格式都是一致的，所有指令的指令周期也是相同的，并且采用流水线技术。在中高档服务器中采用RISC指令的CPU主要有Compaq（康柏，即新惠普）公司的Alpha、HP公司的PA-RISC、IBM公司的PowerPC、MIPS公司的MIPS和SUN公司的Sparc
+特点是所有指令的格式都是一致的，所有指令的指令周期也是相同的，并且采用流水线技术。在中高档服务器中采用RISC指令的CPU主要有Compaq（康柏，即新惠普）公司的Alpha、HP公司的PA-RISC、IBM公司的PowerPC、MIPS公司的MIPS和SUN公司的Sparc。
+
 
 
 
