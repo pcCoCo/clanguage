@@ -1,4 +1,4 @@
-# day03-操作系统基础
+![](/assets/hard_disk.jpg)# day03-操作系统基础
 
 ## 从C源码到可执行程序的历练
 
@@ -112,7 +112,9 @@ ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC�
 
 PC机常见的外存储器有软盘存储器、硬盘存储器、光盘存储器等。磁盘有软磁盘和硬磁盘两种。光盘有只读型光盘CD-ROM、一次写入型光盘WORM和可重写型光盘MO三种。
 
+![](/assets/soft_disk.jpg)
 
+![](/assets/hard_disk.jpg)
 
 
 
