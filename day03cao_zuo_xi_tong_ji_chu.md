@@ -50,6 +50,7 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 
 
 #### ARM
+
 ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC微处理器。全称为Acorn RISC Machine。ARM处理器本身是32位设计，但也配备16位指令集，一般来讲比等价32位代码节省达35%，却能保留32位系统的所有优势。
 
 
