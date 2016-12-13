@@ -52,6 +52,8 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 
 ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC微处理器。全称为Acorn RISC Machine。ARM处理器本身是32位设计，但也配备16位指令集，一般来讲比等价32位代码节省达35%，却能保留32位系统的所有优势。
 
+1978年12月5日，物理学家赫尔曼·豪泽（Hermann Hauser）和工程师Chris Curry，在英国剑桥创办了CPU公司（Cambridge Processing Unit），主要业务是为当地市场供应电子设备。1979年，CPU公司改名为Acorn计算机公司。
+
 
 公司成立后，业务一度很不景气，工程师们人心惶惶，担心将要失业。由于缺乏资金，ARM做出了一个意义深远的决定：自己不制造芯片，只将芯片的设计方案授权（licensing）给其他公司，由它们来生产。正是这个模式，最终使得ARM芯片遍地开花，将封闭设计的Intel公司置于“人民战争”的汪洋大海。
 　　20世纪90年代，ARM公司的业绩平平，处理器的出货量徘徊不前。但是进入21世纪之后，由于手机的快速发展，出货量呈现爆炸式增长，ARM处理器占领了全球手机市场。
