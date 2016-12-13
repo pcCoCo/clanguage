@@ -10,6 +10,32 @@
 
 ### 链接
 
+## CPU架构
+x86：Intel从16位微处理器8086开始的整个CPU芯片系列，系列中的每种型号都保持与以前的各种型号兼容，主要有8086，8088（前面两个是16位CPU），80186，80286（这两个是过渡产品）， 80386，80486以及以后各种型号的Pentium芯片[奔腾，P2, P4，赛扬...]（这些都是32位CPU）
+
+x86-64：如下是维基百科上的解释，大致翻译一下，x86-64是x86指令集的超集，在x86处理器上可以运行的程序可以运行在x86-64上（这也是为啥现在买的一些64bits CPU可以直接运行Win XP的原因）。x86-64是AMD发明的，也叫AMD64，Intel克隆了一把，叫做Intel 64，也叫EM64T。
+
+x86-64 is a 64-bit superset of the x86 instruction set architecture. Because the x86-64 instruction set is a superset of the x86 instruction set, all instructions in the x86 instruction set can be executed by central processing units (CPUs) that implement the x86-64 instruction set; therefore these CPUs can natively run programs that run on x86 processors from Intel, Advanced Micro Devices (AMD), and other vendors.
+
+x86-64 was designed by AMD, who have since renamed it AMD64. It has been cloned by Intel under the name Intel 64 (formerly known as EM64T among other names).[1] This leads to the common use of the names x86-64 or x64 as more vendor-neutral terms to collectively refer to the two nearly identical implementations.
+
+x86和x86-64可以认为就是一种特定的指令集
+i386：也是维基上的解释，也就是指Intel 80386，是第一个32位的x86架构的处理器，用了20多年了，后面出的 486（80486，i486），586（80586，Pentium，P5），686（80686，Pentium Pro，P6）等等都与之兼容。
+
+The Intel 80386, otherwise known as the Intel386, i386 or just 386, is a microprocessor which has been used as the central processing unit (CPU) of many personal computers and workstations since 1986. It was the first x86 processor to have a 32-bit architecture, with a basic programming model that has remained virtually unchanged for over twenty years and remains completely backward compatible.
+
+IA32：可以认为就是x86或者x86-32，也是一个指令集。
+
+IA-32 (Intel Architecture, 32-bit), often generically called x86 or x86-32, is the instruction set architecture of Intel's most commercially successful microprocessors. It is a 32-bit extension, first implemented in the Intel 80386, of the earlier 16-bit Intel 8086, 80186 and 80286 processors and the common denominator for all subsequent x86 designs. This architecture defines the instruction set for the family of microprocessors installed in the vast majority of personal computers in the world.
+
+IA64：就是所谓的安腾，Intel跟HP联合折腾的一种64-bits全新架构，与x86系列不兼容，号称采用了很多非常好的体系结构方面的技术，但是没火起来，差点被AMD抓住机会cei掉Intel（有一阵中关村装机都流行AMD平台）。再次证明光有好的技术是行不通的，还要有市场眼光啊。
+
+Itanium is the brand name for 64-bit Intel microprocessors that implement the Intel Itanium architecture (formerly called IA-64). Intel has released two processor families using the brand: the original Itanium and the Itanium 2. Starting November 1, 2007, new members of the second family are again called Itanium. The processors are marketed for use in enterprise servers and high-performance computing systems. The architecture originated at Hewlett-Packard (HP) and was later developed by HP and Intel together.
+
+注：所谓16位，32位，64位的CPU一般是指处理器中“算数逻辑单元（ALU）”或者CPU GPRs（General-Purpose Registers，通用寄存器）的数据宽度。此外还有数据总线宽度和地址总线宽度两个参数，前者决定了CPU在进行运算时，一次可以并行拿到的二进制数据bit数（可以想想C语言中short/int/long型数据分别的位数），通常与ALU的宽度相同（极个别例外），而后者决定了内存地址空间的大小（16位的地址总线，就是64K，32位就是4G，64位是128T；可以想一下C语言中指针所占的二进制长度），地址总线宽度自然来讲应该是跟数据总线宽度一致，但由于诸多原因（历史，技术，兼容性等等）不是这样。
+另外，还有操作系统的位数区分，可以认为是word size（字长），也就是一个整数和指针数据的长度，原则上就是指上述CPU位数（即通用寄存器的位数），但同时也决定了操作系统能够支持的最大内存容量（每个进程能够使用的虚拟内存大小，严格说来没有这么多）。
+
+
 ## 操作系统
 
 用户空间：应用程序、C语言库
