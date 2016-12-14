@@ -46,9 +46,6 @@ Linux内核版本有两种：稳定版和开发版 ，
 > 那 4.4.0-53-generic 的意义呢？
 
 
-
-## 
-
 ## Shell是什么
 
 ![](/assets/shell3.jpg)
