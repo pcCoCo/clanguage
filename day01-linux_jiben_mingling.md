@@ -165,6 +165,13 @@ node-v6.1.0-linux-x64
 ### cd 
 change directory,改变当前的工作目录
 
+. 代表当前路径
+..代表上一级路径
+/ 代表根目录
+~ 代表当前用户的主目录(home directory，家目录)
+
+cd 后面不跟参数默认的是切换到用户的主目录
+
 pwd
 
 more cat less tail head
