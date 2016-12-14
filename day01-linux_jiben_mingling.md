@@ -139,8 +139,11 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 ## 入门常用命令集锦
 
 ls
+list,列举当前目录下的文件列表(包括目录)
 
-cd pwd
+
+cd 
+pwd
 
 more cat less tail head
 
