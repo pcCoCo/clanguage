@@ -160,6 +160,9 @@ node-v6.1.0-linux-x64
 
 ```
 
+### pwd
+
+Print Working Directory，打印当前工作目录
 
 
 ### cd 
@@ -179,7 +182,7 @@ pc@iZ25g2i2xsmZ:~$ cd code
 pc@iZ25g2i2xsmZ:~/code$ ls
 a.c  test  test.o
 
-### pwd
+
 
 more cat less tail head
 
