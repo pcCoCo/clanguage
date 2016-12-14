@@ -174,6 +174,7 @@ change directory,改变当前的工作目录
 ..代表上一级路径
 / 代表根目录
 ~ 代表当前用户的主目录(home directory，家目录)
+
 pc@iZ25g2i2xsmZ:~/code$ cd ..
 pc@iZ25g2i2xsmZ:~$ pwd
 /home/pc
