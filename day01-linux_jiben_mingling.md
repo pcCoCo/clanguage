@@ -163,7 +163,7 @@ node-v6.1.0-linux-x64
 
 
 ### cd 
-change dir
+change directory,改变当前的工作目录
 
 pwd
 
