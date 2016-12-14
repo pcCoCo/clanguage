@@ -142,6 +142,12 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 list,列举当前目录下的文件列表(包括目录)
 
+```
+python@ubuntu:~$ ls
+class    Documents  examples.desktop  Pictures  Templates  workspace
+Desktop  Downloads  Music             Public    Videos
+```
+
 
 ### cd 
 pwd
