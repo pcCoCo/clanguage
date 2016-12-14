@@ -59,7 +59,9 @@ gcc test.c -c -o test.o
 ```
 
 可以使用file命令显示编译器生成的两个ELF文件信息，一个可执行文件，一个是可重定位的目标文件。
+file test
 
+file test.o
 
 
 
