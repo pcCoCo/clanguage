@@ -47,4 +47,5 @@ Executable and linkable Format,是一种对可执行文件、目标文件和库�
 
 
 ## 段错误
+非法访问内存
 
