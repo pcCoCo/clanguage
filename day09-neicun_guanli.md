@@ -46,4 +46,5 @@ malloc 使用 mmap 分配的内存 \( 大于 128k\) ， free 会调用 munmap �
 Executable and linkable Format,是一种对可执行文件、目标文件和库使用的文件格式。ELF是一种开放格式，Linux操作系统内核本身也是ELF格式。
 
 
+## 段错误
 
