@@ -92,6 +92,7 @@ ELF Header:
   Number of section headers:         30
   Section header string table index: 27
 
+查看程序头表 在目标文件中并不存在
 pc@iZ25g2i2xsmZ:~/code$ readelf -l test
 
 Elf file type is EXEC (Executable file)
