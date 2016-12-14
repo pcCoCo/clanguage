@@ -179,8 +179,7 @@ pc@iZ25g2i2xsmZ:~$ cd code
 pc@iZ25g2i2xsmZ:~/code$ ls
 a.c  test  test.o
 
-
-pwd
+### pwd
 
 more cat less tail head
 
