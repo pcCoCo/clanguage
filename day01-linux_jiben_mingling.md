@@ -146,7 +146,10 @@ list,列举当前目录下的文件列表(包括目录)
 python@ubuntu:~$ ls
 class    Documents  examples.desktop  Pictures  Templates  workspace
 Desktop  Downloads  Music             Public    Videos
+
+
 ```
+
 
 
 ### cd 
