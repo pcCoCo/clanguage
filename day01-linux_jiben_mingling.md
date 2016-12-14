@@ -27,8 +27,6 @@ pc@iZ25g2i2xsmZ:~/code$ uname -r
 3.13.0-86-generic
 ```
 
-
-
 内核版本的规律
 
 ## 
