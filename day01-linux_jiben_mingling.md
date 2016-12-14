@@ -147,6 +147,13 @@ python@ubuntu:~$ ls
 class    Documents  examples.desktop  Pictures  Templates  workspace
 Desktop  Downloads  Music             Public    Videos
 
+python@ubuntu:~$ ls D*
+Desktop:
+
+Documents:
+
+Downloads:
+node-v6.1.0-linux-x64
 
 ```
 
