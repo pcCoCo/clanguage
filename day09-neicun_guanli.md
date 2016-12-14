@@ -63,7 +63,7 @@ gcc test.c -c -o test.o
 
 ```
 pc@iZ25g2i2xsmZ:~/code$ file test
-test: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=9ae069486e0a27c88979726ff12865d09128e77f, not stripped
+test: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, not stripped
 
 pc@iZ25g2i2xsmZ:~/code$ file test.o
 test.o: ELF 64-bit LSB  relocatable, x86-64, version 1 (SYSV), not stripped
