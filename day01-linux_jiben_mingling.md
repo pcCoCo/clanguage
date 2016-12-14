@@ -163,6 +163,8 @@ node-v6.1.0-linux-x64
 
 
 ### cd 
+change dir
+
 pwd
 
 more cat less tail head
