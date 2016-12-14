@@ -162,6 +162,10 @@ Section Headers:
   [27] .shstrtab         STRTAB           0000000000000000  00001096 0000000000000108  0000000000000000           0     0     1
   [28] .symtab           SYMTAB           0000000000000000  00001920 0000000000000618  0000000000000018          29    45     8
   [29] .strtab           STRTAB           0000000000000000  00001f38 0000000000000235  0000000000000000           0     0     1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
 
 能够看出来 有.data .bss .text .rodata等多个section 节
 
