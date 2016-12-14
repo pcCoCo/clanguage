@@ -45,6 +45,8 @@ malloc 使用 mmap 分配的内存 \( 大于 128k\) ， free 会调用 munmap �
 结合邢老师视频 整理
 Executable and linkable Format,是一种对可执行文件、目标文件和库使用的文件格式。ELF是一种开放格式，Linux操作系统内核本身也是ELF格式。
 
+ELF文件由各个部分组成。需要区分链接对象和可执行文件。
+
 
 ## 段错误
 非法访问内存
