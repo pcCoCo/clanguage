@@ -143,10 +143,13 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 list,列举当前目录下的文件列表(包括目录)
 
 ```
+# 后面不加任何参数表示 匹配任何条件
+
 python@ubuntu:~$ ls
 class    Documents  examples.desktop  Pictures  Templates  workspace
 Desktop  Downloads  Music             Public    Videos
 
+# 查找以D字符开始的文件和目录
 python@ubuntu:~$ ls D*
 Desktop:
 
