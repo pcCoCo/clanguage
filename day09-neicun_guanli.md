@@ -124,7 +124,7 @@ ELF Header:
   Section header string table index: 10
 
 
-ELF描述各个段的内容时制定了将哪些节的数据映射到段中，节点表用于管理文件的各个段。
+ELF描述各个段的内容时制定了将哪些节的数据映射到段中，节点表用于管理文件的各个节。
 
 
 
