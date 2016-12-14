@@ -92,6 +92,13 @@ ELF Header:
   Number of section headers:         30
   Section header string table index: 27
 
+pc@iZ25g2i2xsmZ:~/code$ readelf -l test
+
+Elf file type is EXEC (Executable file)
+Entry point 0x400440
+There are 9 program headers, starting at offset 64
+
+
 
 pc@iZ25g2i2xsmZ:~/code$ readelf -h test.o
 ELF Header:
