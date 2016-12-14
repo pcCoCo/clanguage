@@ -167,7 +167,7 @@ Key to Flags:
   I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
   O (extra OS processing required) o (OS specific), p (processor specific)
 
-能够看出来 有.data .bss .text .rodata等多个section 节
+能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节
 
 ## 段错误
 非法访问内存
