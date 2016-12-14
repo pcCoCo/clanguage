@@ -172,6 +172,14 @@ change directory,改变当前的工作目录
 
 cd 后面不跟参数默认的是切换到用户的主目录
 
+cd 想切换到的目录
+pc@iZ25g2i2xsmZ:~$ ls
+code  code1
+pc@iZ25g2i2xsmZ:~$ cd code
+pc@iZ25g2i2xsmZ:~/code$ ls
+a.c  test  test.o
+
+
 pwd
 
 more cat less tail head
