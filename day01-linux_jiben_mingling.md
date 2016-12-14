@@ -164,6 +164,8 @@ node-v6.1.0-linux-x64
 
 Print Working Directory，打印当前工作目录
 
+pc@iZ25g2i2xsmZ:~/code$ pwd
+/home/pc/code
 
 ### cd 
 change directory,改变当前的工作目录
