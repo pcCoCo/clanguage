@@ -168,6 +168,7 @@ Key to Flags:
   O (extra OS processing required) o (OS specific), p (processor specific)
 
 能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节
+节信息无须赋值到虚拟地址空间。
 
 ## 段错误
 非法访问内存
