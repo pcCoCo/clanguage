@@ -119,5 +119,18 @@ putc
 ## 文件啥时候结束
 
 ### EOF
-end of file,EOF，表示"文字流"（stream）的结尾。这里的"文字流"，可以是文件（file），也可以是标准输入（stdin）。
+
+End Of File,EOF
+表示"文字流"（stream）的结尾。这里的"文字流"，可以是文件（file），也可以是标准输入（stdin）。
+表示文件无更多的数据可读取。
+It is a macro definition of type int that expands into a negative integral constant expression (generally, -1).It is used as the value returned by several functions in header <cstdio> to indicate that the End-of-File has been reached or to signal some other failure conditions.
+
+It is also used as the value to represent an invalid character.
+
+
+
+### feof
+C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。如果遇到文件结束，函数feof（fp）的值为1，否则为0.feof函数既可用以判断二进制文件是否结束，也可以用以判断文本文件是否结束。
+
+
 
