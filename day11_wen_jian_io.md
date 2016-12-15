@@ -17,6 +17,7 @@
 FILE * fopen ( const char * filename, const char * mode );
 ```
 **参数1** 路径/文件名
+
 **参数2** 文件的打开模式
 r -read  表示读
 w -write 表示写
