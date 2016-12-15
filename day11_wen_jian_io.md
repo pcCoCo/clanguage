@@ -45,7 +45,7 @@ int fclose ( FILE * stream );
 
 ### 自己打开的文件含着泪也要关闭
 
-为什么？
+要问为什么？
 
 ![](/assets/cantopenfile.png)
 
