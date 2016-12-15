@@ -13,6 +13,11 @@
 ## 打开文件
 
 
+```
+FILE * fopen ( const char * filename, const char * mode );
+```
+
+
 
 ## FILE结构体剖析
 
