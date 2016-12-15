@@ -305,6 +305,11 @@ CPU的一级缓存、二级缓存
 
 操作系统的虚拟内存和交换分区
 
+
+### 为什么寄存器比内存块?
+
+http://www.ruanyifeng.com/blog/2013/10/register.html
+
 a
 
 a
