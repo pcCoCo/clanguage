@@ -135,5 +135,13 @@ It is also used as the value to represent an invalid character.
 
 C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。如果遇到文件结束，函数feof（fp）的值为1，否则为0.feof函数既可用以判断二进制文件是否结束，也可以用以判断文本文件是否结束。
 
+Check end-of-file indicator
+Checks whether the end-of-File indicator associated with stream is set, returning a value different from zero if it is.
+
+This indicator is generally set by a previous operation on the stream that attempted to read at or past the end-of-file.
+
+Notice that stream's internal position indicator may point to the end-of-file for the next operation, but still, the end-of-file indicator may not be set until an operation attempts to read at that point.
+
+This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freopen. Although if the position indicator is not repositioned by such a call, the next i/o operation is likely to set the indicator again.
 
 
