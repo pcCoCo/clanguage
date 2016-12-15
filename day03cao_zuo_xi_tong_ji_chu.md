@@ -43,6 +43,9 @@
 
 3)计算机硬件由运算器、控制器、存储器、输入设备和输出设备五大部分组成。
 
+### 个人计算机
+
+https://en.wikipedia.org/wiki/Personal_computer
    
 
 
