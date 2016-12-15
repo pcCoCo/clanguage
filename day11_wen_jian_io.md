@@ -143,6 +143,8 @@ It is also used as the value to represent an invalid character.
 
 
 
+
+
 ### feof
 
 C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。如果遇到文件结束，函数feof（fp）的值为1，否则为0.feof函数既可用以判断二进制文件是否结束，也可以用以判断文本文件是否结束。
