@@ -228,6 +228,21 @@ total 28
 
 ### 绝对路径
 
+### 根目录/
+
+
+#### Linux目录结构的来源 
+
+Linux目录结构的来源于UNIX目录结构
+
+http://lists.busybox.net/pipermail/busybox/2010-December/074114.html
+
+PDP-7计算机介绍
+
+https://en.wikipedia.org/wiki/PDP-7
+
+
+
 ## 重要技能
 
 键入shell命令的时候能够擅用Tab键自动补齐
