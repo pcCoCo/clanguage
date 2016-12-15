@@ -310,35 +310,7 @@ CPU的一级缓存、二级缓存
 
 http://www.ruanyifeng.com/blog/2013/10/register.html
 
-a
 
-a
+## 操作系统是如何启动的?
 
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-20
-
-
-
-
-
-[^1]: 20
-
+http://www.ruanyifeng.com/blog/2013/02/booting.html
