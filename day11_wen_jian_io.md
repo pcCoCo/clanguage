@@ -24,6 +24,7 @@ FILE * fopen ( const char * filename, const char * mode );
 r -read  表示读
 w -write 表示写
 b -binary表示二进制方式
+a -append表示追加
 
 "r"  表示只读 
 "rb" 表示以二进制方式只读
