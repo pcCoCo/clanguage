@@ -69,7 +69,6 @@ Shell 是指一种应用程序，这个应用程序提供了一个界面，用�
 
 ### 查看当前shell种类
 
-
 ```
 综端上键入echo $SHELL
 /bin/bash
