@@ -128,7 +128,7 @@ It is a macro definition of type int that expands into a negative integral const
 It is used as the value returned by several functions in header <cstdio> to indicate that the End-of-File has been reached or to signal some other failure conditions.
 
 It is also used as the value to represent an invalid character.
-
+可被用于 表示无效字符。
 
 
 ### feof
