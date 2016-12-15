@@ -88,6 +88,7 @@ int fclose ( FILE * stream );
 
 ![](/assets/cantopenfile.png)
 
+
 ![](/assets/kule1.jpg)
 
 一个进程所能打开的文件句柄数量是有限制的，如果只打开不关闭只会导致该进程后面可以打开的文件数量越来越少，这是 **文件句柄资源泄露**。
