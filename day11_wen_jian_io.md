@@ -130,6 +130,14 @@ It is a macro definition of type int that expands into a negative integral const
 It is also used as the value to represent an invalid character.
 可被用于 表示无效字符。
 
+通常EOF在stdio.h头文件定义为:
+
+
+```
+　　#define EOF (-1)
+```
+
+
 比如打印当前目录下的main.c中的所有内容 
 
 
