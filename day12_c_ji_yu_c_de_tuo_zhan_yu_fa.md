@@ -38,6 +38,7 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 　　	char prefix[155];
 　　	char padding[12];
 　　};
+> 在tar文件中 文件信息的数据结构后跟着的就是文件的内容。
 
 问题1  
         为什么这些数据成员都是使用char类型而不是用int
@@ -57,7 +58,7 @@ int main()
 
   
 
-   在tar文件中 文件信息的数据结构后跟着的就是文件的内容。
+   
    
    size为文件大小的八进制字节表示，例如文件大小为90个字节，那么这里就是八进制的90，即为132。
 　　其中，文件大小，修改时间，checksum都是存储的对应的八进制字符串，字符串最后一个字符为空格字符
