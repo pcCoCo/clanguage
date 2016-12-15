@@ -167,6 +167,20 @@ inode编号[inumber]
 最近一次修改的时间
 ```
 
+### 软链接与硬链接
+
+
+有何不同
+
+硬链接是不会占用磁盘的空间的。
+如果说删除硬链接的话，就会改变Inode count的数量。硬链接还有其他的两个特性：不能跨Filesystem也不能link目录。
+
+下面再来看看这个软链接
+
+[root@yufei test]# ls -il testfile.soft testfile
+976 -rw-r--r--. 3 root root 0 Apr  5 21:50 testfile
+978 lrwxrwxrwx. 1 root root 8 Apr  5 21:52 testfile.soft -> testfile
+他的Inode number和原文件不一样。而且大小也发生了变化。可见，这个软链接是重新建立了一个文件，而文件是指向到原文件，而不是指向原Inode。当然他会占用掉 inode 与 block。当我们删除了源文件后，链接文件不能独立存在，虽然仍保留文件名，但我们却不能查看软链接文件的内容了。但软链接是可以跨文件系统，而且是可以链接目录。他就相当于windows系统下的快捷方式一样。通过这个特性，我们可以通过软链接解决某个分区inode conut不足的问题(软链接到另一个inode count足够多的分区)。
 
 
 ### 重定向
