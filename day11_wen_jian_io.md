@@ -108,3 +108,4 @@ int fclose ( FILE * stream );
 
 
 ## 随机读写文件
+
