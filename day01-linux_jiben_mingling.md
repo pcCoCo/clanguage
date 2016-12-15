@@ -157,7 +157,7 @@ Inode是数据结构，这个结构是什么样的呢？都包含了哪些主要
 Inode的结构：
 
 ```
-inode 编号[inumber]
+inode编号[inumber]
 用来识别文件类型，以及用于 stat C 函数的模式信息
 文件的链接数目  [ln -s ]
 属主的 UID
