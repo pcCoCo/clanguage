@@ -180,17 +180,16 @@ pc@iZ25g2i2xsmZ:~/code$ ls -i a.c
 786883 a.c
 pc@iZ25g2i2xsmZ:~/code$ 
 pc@iZ25g2i2xsmZ:~/code$ ln -s a.c a
-pc@iZ25g2i2xsmZ:~/code$ ll
+
+pc@iZ25g2i2xsmZ:~/code$ ls -ail
 total 28
-drwxrwxr-x 2 pc pc 4096 Dec 15 17:01 ./
-drwxr-xr-x 4 pc pc 4096 Dec 15 16:57 ../
-lrwxrwxrwx 1 pc pc    3 Dec 15 17:01 a -> a.c
--rw-rw-r-- 1 pc pc   71 Dec 14 14:31 a.c
--rw-rw-r-- 1 pc pc    0 Dec 15 16:58 .aout
--rwxrwxr-x 1 pc pc 8557 Dec 14 14:31 test*
--rw-rw-r-- 1 pc pc 1504 Dec 14 14:31 test.o
-
-
+786851 drwxrwxr-x 2 pc pc 4096 Dec 15 17:01 .
+786702 drwxr-xr-x 4 pc pc 4096 Dec 15 16:57 ..
+792212 lrwxrwxrwx 1 pc pc    3 Dec 15 17:01 a -> a.c
+786883 -rw-rw-r-- 1 pc pc   71 Dec 14 14:31 a.c
+786894 -rw-rw-r-- 1 pc pc    0 Dec 15 16:58 .aout
+786866 -rwxrwxr-x 1 pc pc 8557 Dec 14 14:31 test
+786890 -rw-rw-r-- 1 pc pc 1504 Dec 14 14:31 test.o
 
 
 
