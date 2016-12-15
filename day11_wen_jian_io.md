@@ -48,6 +48,8 @@ int fclose ( FILE * stream );
 为什么？
 
 
+一个进程所能
+
 
 ## 读写文件
 
