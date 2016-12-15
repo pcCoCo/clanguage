@@ -28,23 +28,22 @@ pc@iZ25g2i2xsmZ:~/code$ uname -r
 ```
 
 ### 内核版本的规律
+
 Linux内核版本号由3组数字组成：内核主版本.次版本.修订次数
 
 Linux内核版本有两种：稳定版和开发版 ，
 
 第二个组数字：偶数表示稳定版本；奇数表示开发版本。
 
-
 比如 3.13.0-86-generic
 
- 第一个组数字: 3 , 主版本号
+第一个组数字: 3 , 主版本号
 
- 第二个组数字: 13 , 次版本号，表开发版本（奇数）
+第二个组数字: 13 , 次版本号，表开发版本（奇数）
 
- 第三个组数字: 0 , 修订版本号。
+第三个组数字: 0 , 修订版本号。
 
 > 那 4.4.0-53-generic 的意义呢？
-
 
 ## Shell是什么
 
@@ -66,7 +65,11 @@ Linux内核版本有两种：稳定版和开发版 ，
 
 ### 查看当前shell种类
 
-`综端上键入echo $SHELL`
+`综端上键入echo $SHELL
+/bin/bash
+`
+
+
 
 ## 为什么要学习Shell命令
 
@@ -140,7 +143,7 @@ red-flag linux 红旗  官网 [http://www.redflag-linux.com/](http://www.redflag
 
 ### ls
 
-list,列举当前目录下的文件列表(包括目录)
+list,列举当前目录下的文件列表\(包括目录\)
 
 ```
 # 后面不加任何参数表示 匹配任何条件
@@ -157,38 +160,36 @@ Documents:
 
 Downloads:
 node-v6.1.0-linux-x64
-
 ```
 
 ### pwd
 
 Print Working Directory，打印当前工作目录
 
-pc@iZ25g2i2xsmZ:~/code$ pwd
+pc@iZ25g2i2xsmZ:~/code$ pwd  
 /home/pc/code
 
-### cd 
+### cd
+
 change directory,改变当前的工作目录
 
-. 代表当前路径
-..代表上一级路径
-/ 代表根目录
-~ 代表当前用户的主目录(home directory，家目录)
+. 代表当前路径  
+..代表上一级路径  
+/ 代表根目录  
+~ 代表当前用户的主目录\(home directory，家目录\)
 
-pc@iZ25g2i2xsmZ:~/code$ cd ..
-pc@iZ25g2i2xsmZ:~$ pwd
+pc@iZ25g2i2xsmZ:~/code$ cd ..  
+pc@iZ25g2i2xsmZ:~$ pwd  
 /home/pc
 
 cd 后面不跟参数默认的是切换到用户的主目录
 
-cd 想切换到的目录
-pc@iZ25g2i2xsmZ:~$ ls
-code  code1
-pc@iZ25g2i2xsmZ:~$ cd code
-pc@iZ25g2i2xsmZ:~/code$ ls
+cd 想切换到的目录  
+pc@iZ25g2i2xsmZ:~$ ls  
+code  code1  
+pc@iZ25g2i2xsmZ:~$ cd code  
+pc@iZ25g2i2xsmZ:~/code$ ls  
 a.c  test  test.o
-
-
 
 more cat less tail head
 
