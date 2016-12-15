@@ -99,6 +99,12 @@ int fclose ( FILE * stream );
 
 ### 按单个字符读写
 
+fgetc
+getc
+
+fputc
+putc
+
 
 ### 按行读写
 
@@ -108,4 +114,10 @@ int fclose ( FILE * stream );
 
 
 ## 随机读写文件
+
+
+## 文件啥时候结束
+
+### EOF
+end of file,EOF，表示"文字流"（stream）的结尾。这里的"文字流"，可以是文件（file），也可以是标准输入（stdin）。
 
