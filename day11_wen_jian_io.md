@@ -16,6 +16,11 @@
 ```
 FILE * fopen ( const char * filename, const char * mode );
 ```
+参数1 路径/文件名
+参数2 文件的打开模式
+r
+w 
+b binary表示二进制方式
 
 
 
