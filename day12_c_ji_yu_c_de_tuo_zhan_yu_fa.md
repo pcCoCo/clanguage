@@ -40,15 +40,15 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 　　};
 
 问题1  
-         为什么这些数据成员都是使用char类型而不是用int
+        为什么这些数据成员都是使用char类型而不是用int
     
 问题2
-
+        下面输出的结果是多少 512
 
 ```
 int main()
 {
-        printf("%d\n",sizeof(struct tar_header));
+        printf("%u\n",sizeof(struct tar_header));
         return 0;
 }  
 ```
