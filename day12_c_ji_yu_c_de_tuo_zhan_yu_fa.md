@@ -44,7 +44,7 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
         为什么这些数据成员都是使用char类型而不是用int
     
 问题2
-        下面输出的结果是多少  512
+        下面输出的结果是多少 ? 512
 
 ```
 int main()
