@@ -3,8 +3,7 @@
 C语言教材可以说是汗牛充栋，故在动笔之前初步定位在解读常用知识点和重要概念的资料。
 
 网络地址
-https://www.gitbook.com/book/pccoco/clanguage/details
-https://pccoco.gitbooks.io/clanguage/content/
+github https://github.com/pcCoCo/clanguage
 
 # 谨以此献给那些 勇于攀登C/C++编程语言高峰的同学们
 
