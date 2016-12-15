@@ -16,3 +16,6 @@ nm命令解析符号表
 
 ## C++简单案例之文件打包
 
+http://www.moon-soft.com/program/FORMAT/comm/tar.htm
+
+拓展延伸-解包tar
