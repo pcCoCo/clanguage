@@ -38,7 +38,8 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 　　	char prefix[155];
 　　	char padding[12];
 　　};
-    问题1  
+
+问题1  
          为什么这些数据成员都是使用char类型而不是用int
     
     
