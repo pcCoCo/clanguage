@@ -46,6 +46,7 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
 一个空文件打包后为512*3字节，包括一个tar结构头，一个全零的block存储文件内容，一个全零的tar结构。
 
+
 问题1  
         为什么这些数据成员都是使用char类型而不是用int
     
