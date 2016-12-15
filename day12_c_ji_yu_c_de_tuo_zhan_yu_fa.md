@@ -20,11 +20,11 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
     struct tar_header
     {
-　　	char name[100];
+　　	char name[100]; //文件名
 　　	char mode[8];
 　　	char uid[8];
 　　	char gid[8];
-　　	char size[12];//文件大小的八进制数的字符串形式
+　　	char size[12];   //文件大小的八进制数的字符串形式
 　　	char mtime[12];
 　　	char chksum[8];
 　　	char typeflag;
