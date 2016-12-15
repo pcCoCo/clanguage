@@ -1,4 +1,4 @@
-# 章节11-文件IO
+![](/assets/cantopenfile.png)# 章节11-文件IO
 
 ## 文件概念
 
@@ -46,6 +46,8 @@ int fclose ( FILE * stream );
 ### 自己打开的文件含着泪也要关闭
 
 为什么？
+
+![](/assets/cantopenfile.png)
 
 
 一个进程所能
