@@ -41,7 +41,6 @@ int fclose ( FILE * stream );
 ```
 函数功能 关闭stream所标识的(打开的)文件。
 
-
 自己打开的文件含着泪也要关闭。
 
 
