@@ -65,9 +65,12 @@ Linux内核版本有两种：稳定版和开发版 ，
 
 ### 查看当前shell种类
 
-`综端上键入echo $SHELL
+
+```
+综端上键入echo $SHELL
 /bin/bash
-`
+```
+
 
 
 
