@@ -132,11 +132,15 @@ It is also used as the value to represent an invalid character.
 
 比如打印当前目录下的main.c中的所有内容 
 
+
+```
 　　char c;
 　　while ((c = fgetc(fp)) != EOF) 
     {
 　　　　putchar (c);
 　　}
+```
+
 
 
 ### feof
