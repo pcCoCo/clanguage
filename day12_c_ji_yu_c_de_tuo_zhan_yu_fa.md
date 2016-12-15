@@ -73,4 +73,6 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 ## 拓展延伸-解包tar
 
 解包更容易一些 直接有已经打包的tar文件即可进行。
+打包需要准备的参数更多 比如uid、gid、mtime、checksum。
+
 
