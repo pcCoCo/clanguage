@@ -1,4 +1,4 @@
-![](/assets/cantopenfile.png)# 章节11-文件IO
+# 章节11-文件IO
 
 ## 文件概念
 
@@ -87,6 +87,7 @@ int fclose ( FILE * stream );
 要问为什么？
 
 ![](/assets/cantopenfile.png)
+
 ![](/assets/kule1.jpg)
 
 一个进程所能打开的文件句柄数量是有限制的，如果只打开不关闭只会导致该进程后面可以打开的文件数量越来越少，这是 **文件句柄资源泄露**。
