@@ -122,7 +122,7 @@ putc
 
 End Of File,EOF
 表示"文字流"（stream）的结尾。这里的"文字流"，可以是文件（file），也可以是标准输入（stdin）。
-如果在读取文件的返回EOF表示文件无更多的数据可读取。
+如果在读取文件的返回EOF表示文件无更多的数据可读取，即文件结束。
 
 It is a macro definition of type int that expands into a negative integral constant expression (generally, -1).
 It is used as the value returned by several functions in header <cstdio> to indicate that the End-of-File has been reached or to signal some other failure conditions.
