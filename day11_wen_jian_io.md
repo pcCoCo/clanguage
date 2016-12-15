@@ -149,7 +149,7 @@ It is also used as the value to represent an invalid character.
 　　}
 ```
 
-
+值得注意的是EOF并不是文件数据的最后一个字符数据。
 
 
 
