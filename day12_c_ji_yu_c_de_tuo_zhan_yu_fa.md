@@ -78,6 +78,24 @@ pc@iZ25g2i2xsmZ:~$ tar cvf my.tar main.c
 main.c
 pc@iZ25g2i2xsmZ:~$ ls
 a.out  code  main.c  my.tar
+
+int main()
+{
+        //printf("%lu\n",sizeof(struct tar_header));
+        char buf[sizeof(struct tar_header)];
+        FILE *fp = fopen("my.tar","rb");
+        if( fp == NULL )
+        {
+                fprintf(stderr,"file not found");
+                return 0;
+        }
+        fread(buf,1,sizeof(struct tar_header),fp);
+        struct tar_header * head = (struct tar_header *)buf;
+        printf("name %s,size %s\n",head->name,head->size);
+        fclose(fp);
+        return 0;
+}
+
 pc@iZ25g2i2xsmZ:~$ ./a.out 
 name main.c,size 00000001314
 pc@iZ25g2i2xsmZ:~$ ll
