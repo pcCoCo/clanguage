@@ -83,6 +83,7 @@ pc@iZ25g2i2xsmZ:~$ tar --version
         There is NO WARRANTY, to the extent permitted by law.
         Written by John Gilmore and Jay Fenlason.
 在该版本的tar工具中 **文件大小是1024Byte的整数倍**。
+没有数据的地方全部填充为'\0'。
 
 
 ## 解包tar
