@@ -30,7 +30,9 @@
 
 
 ## 类型限定
-
+### const
+### volatile
+### register
 
 
 
