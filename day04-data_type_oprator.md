@@ -21,6 +21,7 @@
 ### char常量，变量
 ### printf函数输出char值
 #### 不能打印char转义符
+### char 和 unsigned char
 
 
 
