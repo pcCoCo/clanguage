@@ -14,7 +14,7 @@ nm命令解析符号表
 在C++中使用struct 定义的结构体类型再定义结构体变量时不需要再带struct关键字
 
 
-## C++简单案例之文件打包
+## C++简单案例tar文件格式解析
 
 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
