@@ -292,6 +292,8 @@ Linux系统有数以万计的文件，其数据存储在硬盘等其他设备。
 
 ## 为什么寄存器比内存快
 
+简述一下该观点 http://www.ruanyifeng.com/blog/2013/10/register.html
+
 知乎 https://www.zhihu.com/question/20075426
 
 
