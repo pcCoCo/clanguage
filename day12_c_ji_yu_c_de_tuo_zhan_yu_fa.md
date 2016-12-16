@@ -14,9 +14,9 @@ nm命令解析符号表
 在C++中使用struct 定义的结构体类型再定义结构体变量时不需要再带struct关键字
 
 
-## C++简单案例之文件打包
+## C++简单案例tar文件格式解析
 
-http://www.moon-soft.com/program/FORMAT/comm/tar.htm
+tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
     struct tar_header
     {
@@ -38,6 +38,7 @@ http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 　　	char prefix[155];
 　　	char padding[12];
 　　};
+
 > 在tar文件中 文件信息的数据结构后跟着的就是文件的内容。文件内容以512字节为一个block进行分割，最后一个block不足部分以0补齐。所有文件都存储完了以后，最后存放一个全零的tar结构。
 
 两个文件的合并成的tar包首先存放第一个文件的tar头结构，然后存储文件内容，接着存储第二个文件的tar头结构，然后存储文件内容,文件末尾还有一个全零的tar结构。
@@ -69,6 +70,46 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 ## 解包tar
 
 解包更容易一些 直接有已经打包的tar文件即可进行。
+
+
+int main()
+{
+        //printf("%lu\n",sizeof(struct tar_header));
+        char buf[sizeof(struct tar_header)];
+        FILE *fp = fopen("my.tar","rb");
+        if( fp == NULL )
+        {
+                fprintf(stderr,"file not found");
+                return 0;
+        }
+        fread(buf,1,sizeof(struct tar_header),fp);
+        struct tar_header * head = (struct tar_header *)buf;
+        printf("name %s,size %s\n",head->name,head->size);
+        fclose(fp);
+        return 0;
+}
+
+pc@iZ25g2i2xsmZ:~$ ll
+-rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
+
+pc@iZ25g2i2xsmZ:~$ tar cvf my.tar main.c
+main.c
+pc@iZ25g2i2xsmZ:~$ ls
+a.out  code  main.c  my.tar
+
+
+
+pc@iZ25g2i2xsmZ:~$ ./a.out 
+name main.c,size 00000001314
+pc@iZ25g2i2xsmZ:~$ ll
+-rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
+-rw-rw-r-- 1 pc   pc   10240 Dec 16 14:16 my.tar
+
+八进制的1314对应十进制的716。
+
+
+
+
 
 
 ## 兴趣延伸-打包tar
