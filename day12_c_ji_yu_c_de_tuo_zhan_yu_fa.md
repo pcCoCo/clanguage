@@ -81,10 +81,8 @@ pc@iZ25g2i2xsmZ:~$ tar --version
         License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
         This is free software: you are free to change and redistribute it.
         There is NO WARRANTY, to the extent permitted by law.
-        
         Written by John Gilmore and Jay Fenlason.
-        
-在文件大小是1024Byte的整数倍。
+在该版本的tar工具中 **文件大小是1024Byte的整数倍**。
 
 
 ## 解包tar
