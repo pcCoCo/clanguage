@@ -17,6 +17,9 @@ nm命令解析符号表
 ## C++简单案例tar文件格式解析
 
 https://www.gnu.org/software/tar/manual/html_node/Standard.html
+http://en.academic.ru/dic.nsf/enwiki/11782062
+http://www.mkssoftware.com/docs/man4/tar.4.asp
+http://www.fileformat.info/format/tar/corion.htm
 
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
@@ -68,6 +71,20 @@ size为文件大小的八进制字节表示，例如文件大小为90个字节�
 文件大小，修改时间，checksum都是存储的对应的八进制字符串，字符串最后一个字符为空格字符 。
 
 checksum的计算方法为出去checksum字段其他所有的512-8共504个字节的ascii码相加的值再加上256(checksum当作八个空格，即8*0x20）。
+
+
+然而根据我们测试发现，在新版本tar工具中机制已经发生了一些变化。
+pc@iZ25g2i2xsmZ:~$ tar --version
+tar (GNU tar) 1.27.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by John Gilmore and Jay Fenlason.
+
+在文件大小是1024Byte的整数倍。
+
 
 ## 解包tar
 
