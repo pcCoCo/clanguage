@@ -105,7 +105,7 @@ pc@iZ25g2i2xsmZ:~$ ll
 -rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
 -rw-rw-r-- 1 pc   pc   10240 Dec 16 14:16 my.tar
 
-
+八进制的1314对应十进制的716。
 
 
 
