@@ -25,6 +25,8 @@
 
 
 ## float, double, long double类型
+### char常量，变量
+### printf函数输出char值
 
 
 
