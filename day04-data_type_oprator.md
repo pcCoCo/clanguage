@@ -24,8 +24,8 @@
 ### char 和 unsigned char
 
 
-## float, double, long double类型
-### char常量，变量
+## 浮点float, double, long double类型
+### 浮点常量，变量
 ### printf函数输出char值
 
 
