@@ -16,6 +16,8 @@ nm命令解析符号表
 
 ## C++简单案例tar文件格式解析
 
+https://www.gnu.org/software/tar/manual/html_node/Standard.html
+
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
     struct tar_header
