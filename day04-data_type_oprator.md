@@ -26,7 +26,7 @@
 
 ## 浮点float, double, long double类型
 ### 浮点常量，变量
-### printf函数输出char值
+### printf函数输出浮点数
 
 
 
