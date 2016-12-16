@@ -36,7 +36,8 @@
 
 
 ## 字符串格式化输出和输入
-
+### printf函数，putchar函数
+### scanf函数，getchar函数
 
 
 
