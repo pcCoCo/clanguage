@@ -84,7 +84,7 @@ pc@iZ25g2i2xsmZ:~$ tar --version
         Written by John Gilmore and Jay Fenlason.
 在该版本的tar工具中 **文件大小是1024Byte的整数倍**。
 没有数据的地方全部填充为'\0'。
-
+如果往tar文件中添加一个空文件，那么tar文件将新增1024Byte大小(512Byte的tar_header加上512Byte的全0数据)
 
 ## 解包tar
 
