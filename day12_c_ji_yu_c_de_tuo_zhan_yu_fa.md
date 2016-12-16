@@ -72,6 +72,9 @@ size为文件大小的八进制字节表示，例如文件大小为90个字节�
 
 checksum的计算方法为出去checksum字段其他所有的512-8共504个字节的ascii码相加的值再加上256(checksum当作八个空格，即8*0x20）。
 
+没有数据的地方全部填充为'\0'。
+往tar文件中添加一个空文件，那么tar文件将新增1024Byte大小(512Byte的tar_header加上512Byte的全0数据)
+
 
 然而根据我们测试发现，在新版本tar工具中机制已经发生了一些变化。
 
@@ -84,8 +87,6 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
         Written by John Gilmore and Jay Fenlason.
                 
 在该版本的tar工具中 **文件大小是1024Byte的整数倍**。
-没有数据的地方全部填充为'\0'。
-往tar文件中添加一个空文件，那么tar文件将新增1024Byte大小(512Byte的tar_header加上512Byte的全0数据)
 
 ## 解包tar
 
