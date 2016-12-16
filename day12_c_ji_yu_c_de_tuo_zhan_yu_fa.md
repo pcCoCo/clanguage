@@ -71,6 +71,22 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 
 解包更容易一些 直接有已经打包的tar文件即可进行。
 
+pc@iZ25g2i2xsmZ:~$ tar cvf my.tar main.c
+main.c
+pc@iZ25g2i2xsmZ:~$ ls
+a.out  code  main.c  my.tar
+pc@iZ25g2i2xsmZ:~$ ./a.out 
+name main.c,size 00000001314
+pc@iZ25g2i2xsmZ:~$ ll
+-rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
+-rw-rw-r-- 1 pc   pc   10240 Dec 16 14:16 my.tar
+
+
+
+
+
+
+
 
 ## 兴趣延伸-打包tar
 
