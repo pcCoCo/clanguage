@@ -208,6 +208,7 @@ pc@iZ25g2i2xsmZ:~$ ll
 	}
 
 
+
 ## 兴趣延伸-打包tar
 
 打包需要准备的参数更多 比如uid、gid、mtime、checksum 如果准备错误就会导致使用标准tar工具无法解包。
