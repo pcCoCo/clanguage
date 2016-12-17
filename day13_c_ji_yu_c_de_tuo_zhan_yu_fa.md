@@ -3,7 +3,8 @@
 内容范畴规划 不讲C++面向对象、泛型的知识，只涵盖C++基于C的语法拓展
 
 ## 此const非彼const
-
+	
+        	
 ## 函数重载的奥秘
 
 nm命令解析符号表
@@ -85,7 +86,7 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
         This is free software: you are free to change and redistribute it.
         There is NO WARRANTY, to the extent permitted by law.
         Written by John Gilmore and Jay Fenlason.
-                
+
 在该版本的tar工具中 **文件大小是10240Byte的整数倍**。，文件大小只能是10240*n,n=0,1,2,3,4,...n
 
 
