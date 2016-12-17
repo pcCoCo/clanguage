@@ -23,7 +23,7 @@ http://www.mkssoftware.com/docs/man4/tar.4.asp
 http://www.fileformat.info/format/tar/corion.htm
 
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
-
+    
 	struct tar_header
 	{
 		char name[100];//文件名
