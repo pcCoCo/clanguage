@@ -180,7 +180,7 @@ pc@iZ25g2i2xsmZ:~$ ll
 				printf("tar file END\n");
 				break;
 			} 
-			need_write_len = myatoi(head->size,8,10);
+			need_write_len = myatoi(head->size);
 	
 			printf("name %s,size 0%s is %d\n",head->name,head->size,need_write_len);
 			FILE *data_file_p = fopen(head->name,"wb");
