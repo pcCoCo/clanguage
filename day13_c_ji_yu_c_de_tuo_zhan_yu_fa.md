@@ -80,12 +80,12 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 然而根据我们测试发现，在新版本tar工具中机制已经发生了一些变化。
 
     pc@iZ25g2i2xsmZ:~$ tar --version
-        tar (GNU tar) 1.27.1
-        Copyright (C) 2013 Free Software Foundation, Inc.
-        License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
-        This is free software: you are free to change and redistribute it.
-        There is NO WARRANTY, to the extent permitted by law.
-        Written by John Gilmore and Jay Fenlason.
+    tar (GNU tar) 1.27.1
+    Copyright (C) 2013 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+    This is free software: you are free to change and redistribute it.
+    There is NO WARRANTY, to the extent permitted by law.
+    Written by John Gilmore and Jay Fenlason.
 
 在该版本的tar工具中 **文件大小是10240Byte的整数倍**。，文件大小只能是10240*n,n=0,1,2,3,4,...n
 
