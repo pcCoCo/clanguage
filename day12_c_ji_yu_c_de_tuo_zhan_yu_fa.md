@@ -134,6 +134,7 @@ pc@iZ25g2i2xsmZ:~$ ll
 
 
 那么问题来了 如何将8进制的字符串转化为十进制呢?
+
         int myatoi(const char * str)
         {
                 int ret = 0;
