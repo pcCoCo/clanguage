@@ -26,7 +26,7 @@ tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
     struct tar_header
     {
-　　	char name[100]; //文件名
+	char name[100]; //文件名
 　　	char mode[8];
 　　	char uid[8];
 　　	char gid[8];
