@@ -24,26 +24,26 @@ http://www.fileformat.info/format/tar/corion.htm
 
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
-struct tar_header
-{
-	char name[100];//文件名
-	char mode[8];
-	char uid[8];
-	char gid[8];
-	char size[12]; //文件大小的八进制数的字符串形式
-	char mtime[12];
-	char chksum[8];
-	char typeflag;
-	char linkname[100];
-	char magic[6];
-	char version[2];
-	char uname[32];
-	char gname[32];
-	char devmajor[8];
-	char devminor[8];
-	char prefix[155];
-	char padding[12];
-};
+	struct tar_header
+	{
+		char name[100];//文件名
+		char mode[8];
+		char uid[8];
+		char gid[8];
+		char size[12]; //文件大小的八进制数的字符串形式
+		char mtime[12];
+		char chksum[8];
+		char typeflag;
+		char linkname[100];
+		char magic[6];
+		char version[2];
+		char uname[32];
+		char gname[32];
+		char devmajor[8];
+		char devminor[8];
+		char prefix[155];
+		char padding[12];
+	};
   
 > 在tar文件中 文件信息的数据结构后跟着的就是文件的内容。文件内容以512字节为一个block进行分割，最后一个block不足部分以0补齐。所有文件都存储完了以后，最后存放一个全零的tar结构。
 
