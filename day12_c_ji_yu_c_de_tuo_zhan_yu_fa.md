@@ -94,22 +94,22 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 解包更容易一些 直接有已经打包的tar文件即可进行。
 
 
-int main()
-{
-        //printf("%lu\n",sizeof(struct tar_header));
-        char buf[sizeof(struct tar_header)];
-        FILE *fp = fopen("my.tar","rb");
-        if( fp == NULL )
+        int main()
         {
-                fprintf(stderr,"file not found");
+                //printf("%lu\n",sizeof(struct tar_header));
+                char buf[sizeof(struct tar_header)];
+                FILE *fp = fopen("my.tar","rb");
+                if( fp == NULL )
+                {
+                        fprintf(stderr,"file not found");
+                        return 0;
+                }
+                fread(buf,1,sizeof(struct tar_header),fp);
+                struct tar_header * head = (struct tar_header *)buf;
+                printf("name %s,size %s\n",head->name,head->size);
+                fclose(fp);
                 return 0;
         }
-        fread(buf,1,sizeof(struct tar_header),fp);
-        struct tar_header * head = (struct tar_header *)buf;
-        printf("name %s,size %s\n",head->name,head->size);
-        fclose(fp);
-        return 0;
-}
 
 pc@iZ25g2i2xsmZ:~$ ll
 -rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
