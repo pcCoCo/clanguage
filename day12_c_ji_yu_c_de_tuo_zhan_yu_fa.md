@@ -86,7 +86,8 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
         There is NO WARRANTY, to the extent permitted by law.
         Written by John Gilmore and Jay Fenlason.
                 
-在该版本的tar工具中 **文件大小是1024Byte的整数倍**。
+在该版本的tar工具中 **文件大小是10240Byte的整数倍**。，文件大小只能是10240*n,n=0,1,2,3,4,...n
+
 
 ## 解包tar
 
