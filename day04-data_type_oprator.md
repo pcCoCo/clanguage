@@ -12,8 +12,36 @@
 ### int常量，变量
 ### printf函数输出int值
 ### printf输出八进制，十六进制
+### 有符号和无符号
+### 整数溢出
+### 大端对齐和小端对齐
 
 
+## char类型
+### char常量，变量
+### printf函数输出char值
+#### 不能打印char转义符
+### char 和 unsigned char
+
+
+## 浮点float, double, long double类型
+### 浮点常量，变量
+### printf函数输出浮点数
+
+
+## 类型限定
+### const
+### volatile
+### register
+
+
+## 字符串格式化输出和输入
+### printf函数，putchar函数
+### scanf函数，getchar函数
+
+
+
+## 运算符
 
 
 ### 反汇编演示
@@ -21,8 +49,6 @@ INC ADD
 ++  +
 
 从汇编的角度看a++ 和++b的指令
-
-
 
 
 
