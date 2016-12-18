@@ -60,6 +60,14 @@ A rule of correspondence between two sets such that there is a unique element in
 
 ## 函数调用的实现原理 深入Linux内核架构966P
 
+## 库函数的使用
+
+包含头文件
+#include <math.h>
+在linux中链接的时候会报错 需要手动在编译(链接)的时候加上-lm选项
+
+
+## 多文件编程
 
 a
 
