@@ -26,6 +26,7 @@ pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
 pc@iZ25g2i2xsmZ:~/test$ ./a.out 
 1001
 
+可以看出，C++对const的语法更加严谨。
 
         	
 ## 函数重载的奥秘
