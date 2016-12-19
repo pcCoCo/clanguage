@@ -121,6 +121,10 @@ fprintf()
 fseek()
 ftell()
 
+### 操作文件游标到文件开始
+
+fseek()函数可以完成功能 fseek(fp,0,SEEK_SET);
+
 ## 文件啥时候结束
 
 ### EOF
