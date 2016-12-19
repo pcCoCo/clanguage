@@ -332,3 +332,7 @@ chmod chown
 ### 网络ifconfig 
 
 
+## 参考资料
+
+包括但不限于
+http://www.computerhope.com/unix.htm
