@@ -322,3 +322,7 @@ find
 grep
 
 ps top kill
+
+sudo su
+
+
