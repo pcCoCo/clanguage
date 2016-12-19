@@ -334,6 +334,21 @@ more +/"hope" myfile.txt
 
 **head**
 
+head表示头部，表示查看文件的前n行，n默认为10。
+pc@iZ25g2i2xsmZ:~/test_struct$ head ii  
+```
+aaaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
+eeeeeeee
+ffffffff
+gggggggg
+hhhhhhhh
+iiiiiiii
+jjjjjjjj
+```
+如果想自动查看行数。
 
 **tail**
 
