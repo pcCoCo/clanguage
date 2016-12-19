@@ -53,12 +53,52 @@ int main()
 t2.c:8:5: error: conflicting types for ‘add’
 
 然而将改代码后缀改成.cpp，居然可以合法通过。
-pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
-pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp -o cpp_overload
+pc@iZ25g2i2xsmZ:~/test$ ./cpp_overload
 300
 
 
 ### 奥秘探析-nm命令解析符号表
+
+```
+pc@iZ25g2i2xsmZ:~/test$ nm a.out 
+0000000000601040 B __bss_start
+0000000000601040 b completed.6973
+0000000000601030 D __data_start
+0000000000601030 W data_start
+0000000000400470 t deregister_tm_clones
+00000000004004e0 t __do_global_dtors_aux
+0000000000600e18 t __do_global_dtors_aux_fini_array_entry
+0000000000601038 D __dso_handle
+0000000000600e28 d _DYNAMIC
+0000000000601040 D _edata
+0000000000601048 B _end
+0000000000400604 T _fini
+0000000000400500 t frame_dummy
+0000000000600e10 t __frame_dummy_init_array_entry
+0000000000400790 r __FRAME_END__
+0000000000601000 d _GLOBAL_OFFSET_TABLE_
+                 w __gmon_start__
+00000000004003e0 T _init
+0000000000600e18 t __init_array_end
+0000000000600e10 t __init_array_start
+0000000000400610 R _IO_stdin_used
+                 w _ITM_deregisterTMCloneTable
+                 w _ITM_registerTMCloneTable
+0000000000600e20 d __JCR_END__
+0000000000600e20 d __JCR_LIST__
+                 w _Jv_RegisterClasses
+0000000000400600 T __libc_csu_fini
+0000000000400590 T __libc_csu_init
+                 U __libc_start_main@@GLIBC_2.2.5
+000000000040055d T main
+                 U printf@@GLIBC_2.2.5
+00000000004004a0 t register_tm_clones
+0000000000400440 T _start
+0000000000601040 D __TMC_END__
+000000000040052d T _Z3addii
+0000000000400541 T _Z3addiii
+```
 
 ## 函数默认形参值
 
