@@ -331,6 +331,9 @@ more +/"hope" myfile.txt
 
 **ls**
 
+
+
+
 **tail**
 
 **head**
