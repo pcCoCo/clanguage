@@ -32,6 +32,24 @@ pc@iZ25g2i2xsmZ:~/test$ ./a.out
 ## 函数重载
 
 在C语言中同一作用域中函数名不能同名，否则会有语法错误。
+```
+#include <stdio.h>
+
+int add(int n1,int n2)
+{
+    return n2+n1;
+}
+
+int add(int n1,int n2,int n3)
+{
+    return n1+n2+n3;
+}
+int main()
+{
+    printf("%d",add(100,200));
+    return 0;
+}
+```
 
 
 ### 奥秘探析-nm命令解析符号表
