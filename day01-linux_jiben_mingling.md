@@ -330,6 +330,8 @@ more +3 myfile.txt
 more +/"hope" myfile.txt
 
 **less**
+一次显示一屏幕的文本内容，可以往前、往后。
+
 
 
 
