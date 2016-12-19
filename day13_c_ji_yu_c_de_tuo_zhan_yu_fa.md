@@ -17,6 +17,7 @@ int main()
 }
 ```
 pc@iZ25g2i2xsmZ:~/test$ gcc t2.c 
+
 pc@iZ25g2i2xsmZ:~/test$ ./a.out 
 1002
 
