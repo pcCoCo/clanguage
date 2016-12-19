@@ -361,6 +361,22 @@ eeeeeeee
 ```
 **tail**
 
+tail表示尾部，表示查看文件的后n行，n默认为10。
+
+
+```
+pc@iZ25g2i2xsmZ:~/test_struct$ tail ii
+qqqqqqqq
+rrrrrrrr
+ssssssss
+tttttttt
+uuuuuuuu
+vvvvvvvv
+wwwwwwww
+xxxxxxxx
+yyyyyyyy
+zzzzzzzz
+```
 
 
 
