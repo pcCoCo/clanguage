@@ -329,7 +329,7 @@ more +3 myfile.txt
 显示以
 more +/"hope" myfile.txt
 
-**ls**
+**less**
 
 
 
