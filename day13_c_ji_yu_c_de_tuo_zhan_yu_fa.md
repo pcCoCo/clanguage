@@ -24,7 +24,7 @@ http://www.fileformat.info/format/tar/corion.htm
 
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
 
-'''
+```
 struct tar_header
 {
 	char name[100];//文件名
@@ -45,7 +45,7 @@ struct tar_header
 	char prefix[155];
 	char padding[12];
 };
-'''
+```
   
 > 在tar文件中 文件信息的数据结构后跟着的就是文件的内容。文件内容以512字节为一个block进行分割，最后一个block不足部分以0补齐。所有文件都存储完了以后，最后存放一个全零的tar结构。
 
