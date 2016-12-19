@@ -226,6 +226,7 @@ total 28
 
 cat /dev/null > /var/log/messages
 
+将执行命令产生的错误信息重定向到 黑洞中表示忽略。
 
 ### 管道
 
