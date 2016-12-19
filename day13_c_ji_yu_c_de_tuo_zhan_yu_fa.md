@@ -16,6 +16,15 @@ int main()
     return 0;
 }
 ```
+pc@iZ25g2i2xsmZ:~/test$ gcc t2.c 
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+1002
+
+将后缀改成.cpp
+pc@iZ25g2i2xsmZ:~/test$ cp t2.c t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+1001
 
 
         	
