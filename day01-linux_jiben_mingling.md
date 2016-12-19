@@ -218,7 +218,7 @@ total 28
 
 ### 重定向
 
-输入重定向 < 、输出重定向 > 、追加输出重定向 >>
+**分类:输入重定向 < 、输出重定向 > 、追加输出重定向 >>
 
 
 ### 管道
@@ -313,31 +313,29 @@ pc@iZ25g2i2xsmZ:~$ cd code
 pc@iZ25g2i2xsmZ:~/code$ ls  
 a.c  test  test.o
 
-more cat less tail head
+### 查看文件内容
+cat、cat、less、tail、head
+
+**cat **
+英文单词 catenate的缩写，释义 `vt.	连接，使连续;`。
+
+
+### 更改文件权限与所属
 
 chmod chown
 
-find
+### 查找文件 find
 
-grep
+### 查找文件内容grep
 
-ps top kill
+### 进程管理ps top kill
 
-a
+### 切换sudo su
 
-a
+### 网络ifconfig 
 
-a
 
-a
+## 参考资料
 
-a
-
-a
-
-a
-
-a
-
-结束
-
+包括但不限于
+http://www.computerhope.com/unix.htm

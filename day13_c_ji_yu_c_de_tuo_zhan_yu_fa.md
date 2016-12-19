@@ -280,20 +280,21 @@ pc@iZ25g2i2xsmZ:~$ ll
 
 那么问题来了 如何将8进制的字符串转化为十进制数呢?
 
-        int myatoi(const char * str)
-        {
-                int ret = 0;
-                int i ;
+```
+int myatoi(const char * str)
+{
+    int ret = 0;
+    int i ;
+    
+    // 每个位(数值*该位权值)之和,前11位为有效字符 最后为'\0'
+    for (i = 0; i < 11; ++i)
+        ret += (str[i]-'0') * (int)pow(8,11-i-1);
+    return ret ;    
+}
+```
 
-                // 每个位(数值*该位权值)之和,前11位为有效字符 最后为'\0'
-                for (i = 0; i < 11; ++i)
-                        ret += (str[i]-'0') * (int)pow(8,11-i-1);
-                return ret ;
-        }
-        
- 
  实现代码
-        
+
 ```
 #include <stdio.h>
 #include <math.h>
