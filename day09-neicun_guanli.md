@@ -130,6 +130,7 @@ ELF描述各个段的内容时制定了将哪些节的数据映射到段中，�
 
 readelf可以显示文件的各个节
 pc@iZ25g2i2xsmZ:~/code$ readelf -S test
+```
 There are 30 section headers, starting at offset 0x11a0:
 
 Section Headers:
@@ -168,6 +169,7 @@ Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
   I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
   O (extra OS processing required) o (OS specific), p (processor specific)
+```
 
 能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节
 节信息无须复制到虚拟地址空间。
