@@ -118,7 +118,7 @@ fprintf()
 
 ## 随机读写文件
 
-fseek()
+fseek()函数
 ftell()
 
 ### 操作文件游标到文件开始
