@@ -10,7 +10,7 @@ int main()
     const int cnum = 1001;
     int *ptr = (int*)&cnum;
     *ptr = 1002;
-    
+    printf("%d",cnum);
     return 0;
 }
 ```
