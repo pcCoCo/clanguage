@@ -50,6 +50,7 @@ int main()
     return 0;
 }
 ```
+t2.c:8:5: error: conflicting types for ‘add’
 
 
 ### 奥秘探析-nm命令解析符号表
