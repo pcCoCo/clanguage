@@ -325,4 +325,6 @@ ps top kill
 
 sudo su
 
+ifconfig 
+
 
