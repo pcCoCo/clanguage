@@ -314,11 +314,16 @@ pc@iZ25g2i2xsmZ:~/code$ ls
 a.c  test  test.o
 
 ### 查看文件内容
-cat、cat、less、tail、head
+cat、more、less、tail、head
 
-**cat **
+**cat**
 英文单词 catenate的缩写，释义 `vt.连接，使连续;`。
 从文件(可能多个)中读取数据并且输出 内容。复制文件（多个）内容到一个新的文档中用于合并或者追加。
+
+**more**
+一次显示一屏幕的文本内容。
+
+
 
 ### 更改文件权限与所属
 
