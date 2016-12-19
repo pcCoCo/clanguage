@@ -389,7 +389,9 @@ zzzzzzzz
 
 ### 更改文件权限与所属
 
-chmod chown
+**chmod**
+
+**chown**
 
 ### 查找文件 find
 
