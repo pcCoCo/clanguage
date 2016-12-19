@@ -103,7 +103,11 @@ pc@iZ25g2i2xsmZ:~/test$ nm cpp_overload
 ## 函数默认形参值
 
 ## struct只是权宜之计
+
+C++中的struct可以定义函数
 在C++中使用struct 定义的结构体类型再定义结构体变量时不需要再带struct关键字
+
+总而言之，形式上看着看着还是struct但是其实质已经往C++的class开始过渡了。
 
 
 ## C++简单案例tar文件格式解析
