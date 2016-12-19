@@ -2,6 +2,7 @@
 
 ## VIM三种工作模式的切换
 
+VIM总共有三种工作模式:命令模式、编辑(插入)模式、末行模式
 
 
 ## VIM拓展
@@ -15,30 +16,3 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 关于VIM的上下左右键
 
 ![](/assets/上下左右.jpg)
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-a
-
-结束
-

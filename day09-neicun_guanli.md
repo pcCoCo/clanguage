@@ -104,6 +104,8 @@ There are 9 program headers, starting at offset 64
 
 
 pc@iZ25g2i2xsmZ:~/code$ readelf -h test.o
+
+```
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
   Class:                             ELF64
@@ -124,12 +126,13 @@ ELF Header:
   Size of section headers:           64 (bytes)
   Number of section headers:         13
   Section header string table index: 10
-
+```
 
 ELF描述各个段的内容时制定了将哪些节的数据映射到段中，节点表用于管理文件的各个节。
 
 readelf可以显示文件的各个节
 pc@iZ25g2i2xsmZ:~/code$ readelf -S test
+```
 There are 30 section headers, starting at offset 0x11a0:
 
 Section Headers:
@@ -168,6 +171,7 @@ Key to Flags:
   W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
   I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
   O (extra OS processing required) o (OS specific), p (processor specific)
+```
 
 能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节
 节信息无须复制到虚拟地址空间。
@@ -190,6 +194,8 @@ A标识控制着装载文件时是否将节的数据复制到虚拟地址空间�
 符号表是每个ELF文件的重要部分。保存了程序实现或使用的所有（全局）变量和函数。如果程序引用了一个自身代码未定义的符号(比如C标准库的strtok函数)。此类应用必须在静态链接期间用其他目标模块或库解决（或者 加载时间通过动态链接）。nm工具可以生成程序定义和使用的所有符号列表。
 
 pc@iZ25g2i2xsmZ:~/code$ nm test 
+
+```
 0000000000601040 B __bss_start
 0000000000601040 b completed.6973
 0000000000601030 D __data_start
@@ -224,6 +230,7 @@ pc@iZ25g2i2xsmZ:~/code$ nm test
 00000000004004a0 t register_tm_clones
 0000000000400440 T _start
 0000000000601040 D __TMC_END__
+```
 
 符号的任务就是将一个字符串和一个值关联起来。printf符号对应着printf函数在虚拟地址空间的地址，该函数的机器代码就存在该地址。
 符号的绑定(binding)确定了符号的可见性：
