@@ -153,63 +153,60 @@ pc@iZ25g2i2xsmZ:~$ ll
  
  实现代码
         
+```
+#include <stdio.h>
+#include <math.h>
+#define HEAD_SIZE sizeof(struct tar_header)
+int main(int argc,char **argv)
+{
+if( argc < 2 )
+{
+fprintf(stderr,"USEAGE %s filename",argv[0]);
+return 1;
+}
+//printf("%lu\n",sizeof(struct tar_header));
+char buf[sizeof(struct tar_header)];
+FILE *fp = fopen(argv[1],"rb");
+if( fp == NULL )
+{
+fprintf(stderr,"file not found");
+return 0;
+}
+unsigned int ret ;
+int need_write_len;
+while ( ret = fread(buf,1,sizeof(struct tar_header),fp) )
+{
+struct tar_header * head = (struct tar_header *)buf;
+if( head->name[0] == '\0')
+{
+printf("tar file END\n");
+break;
+}
+need_write_len = myatoi(head->size);
+printf("name %s,size 0%s is %d\n",head->name,head->size,need_write_len);
+FILE *data_file_p = fopen(head->name,"wb");
+if( data_file_p == NULL)
+{
+fprintf(stderr,"FILE %s can't write",head->name);
+continue;
+}
+while( need_write_len > 0)
+{
+ret = fread(buf,HEAD_SIZE,1,fp);
+if( ret == 0 )
+break;
+fwrite(buf,1,need_write_len > HEAD_SIZE ?HEAD_SIZE:need_write_len, data_file_p);
+printf("ret = %d need_write_len = %d",ret,need_write_len);
+need_write_len -= HEAD_SIZE;
+}
+fclose(data_file_p);
+}
+fclose(fp);
+return 0;
+}								
 
-	#include <stdio.h>
-	#include <math.h>
-	
-	#define HEAD_SIZE sizeof(struct tar_header) 
-	int main(int argc,char **argv)
-	{
-		if( argc < 2 )
-		{
-			fprintf(stderr,"USEAGE %s filename",argv[0]);
-			return 1;
-		}
-		//printf("%lu\n",sizeof(struct tar_header));
-		char buf[sizeof(struct tar_header)];
-		FILE *fp = fopen(argv[1],"rb");
-		if( fp == NULL )
-		{
-			fprintf(stderr,"file not found");
-			return 0;
-		}
-		unsigned int ret ;
-		
-		int need_write_len;
-	
-		while ( ret = fread(buf,1,sizeof(struct tar_header),fp) )
-		{
-			struct tar_header * head = (struct tar_header *)buf; 
-	 		if( head->name[0] == '\0')
-			{
-				printf("tar file END\n");
-				break;
-			} 
-			need_write_len = myatoi(head->size);
-	
-			printf("name %s,size 0%s is %d\n",head->name,head->size,need_write_len);
-			FILE *data_file_p = fopen(head->name,"wb");
-			if( data_file_p == NULL)
-			{
-				fprintf(stderr,"FILE %s can't write",head->name);
-				continue;
-			}
-			
-			while( need_write_len > 0)
-			{
-				
-				ret = fread(buf,HEAD_SIZE,1,fp);
-				if( ret == 0 )
-					break;
-				fwrite(buf,1,need_write_len > HEAD_SIZE ?HEAD_SIZE:need_write_len, data_file_p);
-				printf("ret = %d need_write_len = %d",ret,need_write_len);
-				need_write_len -= HEAD_SIZE;
-			}
-			fclose(data_file_p);
-		}
-		fclose(fp);
-		return 0;
-	}
+```
+
 
 效果展示
 
