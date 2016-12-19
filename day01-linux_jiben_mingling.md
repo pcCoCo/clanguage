@@ -348,7 +348,7 @@ hhhhhhhh
 iiiiiiii
 jjjjjjjj
 ```
-如果想自动查看行数。
+如果想自定义查看行数。
 
 **tail**
 
