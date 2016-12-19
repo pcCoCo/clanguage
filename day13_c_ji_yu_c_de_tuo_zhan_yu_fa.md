@@ -105,6 +105,24 @@ pc@iZ25g2i2xsmZ:~/test$ nm cpp_overload
 ## struct只是权宜之计
 
 C++中的struct可以定义函数
+struct file
+{
+    char name[64];
+    char mode[8];
+    FILE *fp;
+    
+    int init(const char *file,const char *mode)
+    {
+        fp = fopen(file,mode);
+        return (int)fp;
+    }
+    
+    int close()
+    {
+        fclose(fp);
+        return 0;
+    }
+}
 在C++中使用struct 定义的结构体类型再定义结构体变量时不需要再带struct关键字
 
 
