@@ -3,7 +3,18 @@
 内容范畴规划 不讲C++面向对象、泛型的知识，只涵盖C++基于C的语法拓展
 
 ## 此const非彼const
-	
+
+```
+int main()
+{
+    const int cnum = 1001;
+    int *ptr = (int*)&cnum;
+    *ptr = 1002;
+    
+    return 0;
+}
+```
+
         	
 ## 函数重载的奥秘
 
