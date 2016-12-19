@@ -317,7 +317,8 @@ a.c  test  test.o
 cat、cat、less、tail、head
 
 **cat **
-catenate
+英文单词 catenate的缩写，`vt.	连接，使连续;`的意思
+
 
 ### 更改文件权限与所属
 
