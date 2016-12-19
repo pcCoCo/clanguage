@@ -61,7 +61,7 @@ pc@iZ25g2i2xsmZ:~/test$ ./cpp_overload
 ### 奥秘探析-nm命令解析符号表
 
 ```
-pc@iZ25g2i2xsmZ:~/test$ nm a.out 
+pc@iZ25g2i2xsmZ:~/test$ nm cpp_overload 
 0000000000601040 B __bss_start
 0000000000601040 b completed.6973
 0000000000601030 D __data_start
