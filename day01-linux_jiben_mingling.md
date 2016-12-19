@@ -314,8 +314,10 @@ pc@iZ25g2i2xsmZ:~/code$ ls
 a.c  test  test.o
 
 ### 查看文件内容
+cat、cat、less、tail、head
 
-more cat less tail head
+**cat **
+catenate
 
 ### 更改文件权限与所属
 
