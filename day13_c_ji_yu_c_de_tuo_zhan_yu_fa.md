@@ -4,6 +4,8 @@
 
 ## 此const非彼const
 
+pc@iZ25g2i2xsmZ:~/test$ vim t2.c 
+
 ```
 int main()
 {
