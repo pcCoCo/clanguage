@@ -323,6 +323,11 @@ cat、more、less、tail、head
 **more**
 一次显示一屏幕的文本内容。
 
+从第三行开始显示myfile文件
+more +3 myfile.txt
+
+
+more +/"hope" myfile.txt
 
 
 ### 更改文件权限与所属
