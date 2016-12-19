@@ -291,8 +291,8 @@ int myatoi(const char * str)
         ret += (str[i]-'0') * (int)pow(8,11-i-1);
     return ret ;    
 }
-```        
- 
+```
+
  实现代码
 
 ```
