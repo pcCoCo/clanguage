@@ -377,7 +377,13 @@ xxxxxxxx
 yyyyyyyy
 zzzzzzzz
 ```
-
+如果想自定义查看行数。
+pc@iZ25g2i2xsmZ:~/test_struct$ tail -5 ii
+vvvvvvvv
+wwwwwwww
+xxxxxxxx
+yyyyyyyy
+zzzzzzzz
 
 
 
