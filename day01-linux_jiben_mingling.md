@@ -317,6 +317,8 @@ a.c  test  test.o
 
 more cat less tail head
 
+### 更改文件权限与所属
+
 chmod chown
 
 find
