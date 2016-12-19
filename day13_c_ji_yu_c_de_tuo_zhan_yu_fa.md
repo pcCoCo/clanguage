@@ -113,13 +113,16 @@ struct file
     
     int init(const char *file,const char *mode)
     {
+        .name = file;
+        .mode = mode;
         fp = fopen(file,mode);
         return (int)fp;
     }
     
     int close()
     {
-        fclose(fp);
+        fclose(.fp);
+        .fp = NULL;
         return 0;
     }
 }
