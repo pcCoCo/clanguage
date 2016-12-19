@@ -52,6 +52,11 @@ int main()
 ```
 t2.c:8:5: error: conflicting types for ‘add’
 
+然而将改代码后缀改成.cpp，居然可以合法通过。
+pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+300
+
 
 ### 奥秘探析-nm命令解析符号表
 
