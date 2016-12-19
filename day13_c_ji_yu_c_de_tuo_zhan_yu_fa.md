@@ -3,11 +3,62 @@
 内容范畴规划 不讲C++面向对象、泛型的知识，只涵盖C++基于C的语法拓展
 
 ## 此const非彼const
-	
-        	
-## 函数重载的奥秘
 
-nm命令解析符号表
+pc@iZ25g2i2xsmZ:~/test$ vim t2.c 
+
+```
+int main()
+{
+    const int cnum = 1001;
+    int *ptr = (int*)&cnum;
+    *ptr = 1002;
+    printf("%d",cnum);
+    return 0;
+}
+```
+pc@iZ25g2i2xsmZ:~/test$ gcc t2.c 
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+1002
+
+将后缀改成.cpp
+pc@iZ25g2i2xsmZ:~/test$ cp t2.c t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+1001
+
+可以看出，C++对const的语法更加严谨。
+
+        	
+## 函数重载
+
+在C语言中同一作用域中函数名不能同名，否则会有语法错误。
+```
+#include <stdio.h>
+
+int add(int n1,int n2)
+{
+    return n2+n1;
+}
+
+int add(int n1,int n2,int n3)
+{
+    return n1+n2+n3;
+}
+int main()
+{
+    printf("%d",add(100,200));
+    return 0;
+}
+```
+t2.c:8:5: error: conflicting types for ‘add’
+
+然而将改代码后缀改成.cpp，居然可以合法通过。
+pc@iZ25g2i2xsmZ:~/test$ g++ t2.cpp
+pc@iZ25g2i2xsmZ:~/test$ ./a.out 
+300
+
+
+### 奥秘探析-nm命令解析符号表
 
 ## 函数默认形参值
 
@@ -23,27 +74,29 @@ http://www.mkssoftware.com/docs/man4/tar.4.asp
 http://www.fileformat.info/format/tar/corion.htm
 
 tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
-    
-	struct tar_header
-	{
-		char name[100];//文件名
-		char mode[8];
-		char uid[8];
-		char gid[8];
-		char size[12]; //文件大小的八进制数的字符串形式
-		char mtime[12];
-		char chksum[8];
-		char typeflag;
-		char linkname[100];
-		char magic[6];
-		char version[2];
-		char uname[32];
-		char gname[32];
-		char devmajor[8];
-		char devminor[8];
-		char prefix[155];
-		char padding[12];
-	};
+
+```
+struct tar_header
+{
+	char name[100];//文件名
+	char mode[8];
+	char uid[8];
+	char gid[8];
+	char size[12]; //文件大小的八进制数的字符串形式
+	char mtime[12];
+	char chksum[8];
+	char typeflag;
+	char linkname[100];
+	char magic[6];
+	char version[2];
+	char uname[32];
+	char gname[32];
+	char devmajor[8];
+	char devminor[8];
+	char prefix[155];
+	char padding[12];
+};
+```
   
 > 在tar文件中 文件信息的数据结构后跟着的就是文件的内容。文件内容以512字节为一个block进行分割，最后一个block不足部分以0补齐。所有文件都存储完了以后，最后存放一个全零的tar结构。
 
@@ -94,23 +147,24 @@ checksum的计算方法为出去checksum字段其他所有的512-8共504个字�
 
 解包更容易一些 直接有已经打包的tar文件即可进行。
 
-
-        int main()
-        {
-                //printf("%lu\n",sizeof(struct tar_header));
-                char buf[sizeof(struct tar_header)];
-                FILE *fp = fopen("my.tar","rb");
-                if( fp == NULL )
-                {
-                        fprintf(stderr,"file not found");
-                        return 0;
-                }
-                fread(buf,1,sizeof(struct tar_header),fp);
-                struct tar_header * head = (struct tar_header *)buf;
-                printf("name %s,size %s\n",head->name,head->size);
-                fclose(fp);
-                return 0;
-        }
+```
+int main()
+{
+	//printf("%lu\n",sizeof(struct tar_header));
+	char buf[sizeof(struct tar_header)];
+	FILE *fp = fopen("my.tar","rb");
+	if( fp == NULL )
+	{
+	fprintf(stderr,"file not found");
+	return 0;
+	}
+	fread(buf,1,sizeof(struct tar_header),fp);
+	struct tar_header * head = (struct tar_header *)buf;
+	printf("name %s,size %s\n",head->name,head->size);
+	fclose(fp);
+	return 0;
+}
+```
 
 pc@iZ25g2i2xsmZ:~$ ll
 -rw-rw-r-- 1 pc   pc     716 Dec 16 14:15 main.c
@@ -150,63 +204,60 @@ pc@iZ25g2i2xsmZ:~$ ll
  
  实现代码
         
+```
+#include <stdio.h>
+#include <math.h>
+#define HEAD_SIZE sizeof(struct tar_header)
+int main(int argc,char **argv)
+{
+    if( argc < 2 )
+    {
+        fprintf(stderr,"USEAGE %s filename",argv[0]);
+        return 1;
+    }
+    //printf("%lu\n",sizeof(struct tar_header));
+    char buf[sizeof(struct tar_header)];
+    FILE *fp = fopen(argv[1],"rb");
+    if( fp == NULL )
+    {
+        fprintf(stderr,"file not found");
+        return 0;
+    }
+    unsigned int ret ;
+    int need_write_len;
+    while ( ret = fread(buf,1,sizeof(struct tar_header),fp) )
+    {
+        struct tar_header * head = (struct tar_header *)buf;
+        if( head->name[0] == '\0')
+        {
+            printf("tar file END\n");
+            break;
+        }
+        need_write_len = myatoi(head->size);
+        printf("name %s,size 0%s is %d\n",head->name,head->size,need_write_len);
+        FILE *data_file_p = fopen(head->name,"wb");
+        if( data_file_p == NULL)
+        {
+            fprintf(stderr,"FILE %s can't write",head->name);
+            continue;
+        }
+        while( need_write_len > 0)
+        {
+            ret = fread(buf,HEAD_SIZE,1,fp);
+            if( ret == 0 )
+                break;
+            fwrite(buf,1,need_write_len > HEAD_SIZE ?HEAD_SIZE:need_write_len, data_file_p);
+            printf("ret = %d need_write_len = %d",ret,need_write_len);
+            need_write_len -= HEAD_SIZE;
+        }
+        fclose(data_file_p);
+    }
+    fclose(fp);
+    return 0;
+}								
 
-	#include <stdio.h>
-	#include <math.h>
-	
-	#define HEAD_SIZE sizeof(struct tar_header) 
-	int main(int argc,char **argv)
-	{
-		if( argc < 2 )
-		{
-			fprintf(stderr,"USEAGE %s filename",argv[0]);
-			return 1;
-		}
-		//printf("%lu\n",sizeof(struct tar_header));
-		char buf[sizeof(struct tar_header)];
-		FILE *fp = fopen(argv[1],"rb");
-		if( fp == NULL )
-		{
-			fprintf(stderr,"file not found");
-			return 0;
-		}
-		unsigned int ret ;
-		
-		int need_write_len;
-	
-		while ( ret = fread(buf,1,sizeof(struct tar_header),fp) )
-		{
-			struct tar_header * head = (struct tar_header *)buf; 
-	 		if( head->name[0] == '\0')
-			{
-				printf("tar file END\n");
-				break;
-			} 
-			need_write_len = myatoi(head->size);
-	
-			printf("name %s,size 0%s is %d\n",head->name,head->size,need_write_len);
-			FILE *data_file_p = fopen(head->name,"wb");
-			if( data_file_p == NULL)
-			{
-				fprintf(stderr,"FILE %s can't write",head->name);
-				continue;
-			}
-			
-			while( need_write_len > 0)
-			{
-				
-				ret = fread(buf,HEAD_SIZE,1,fp);
-				if( ret == 0 )
-					break;
-				fwrite(buf,1,need_write_len > HEAD_SIZE ?HEAD_SIZE:need_write_len, data_file_p);
-				printf("ret = %d need_write_len = %d",ret,need_write_len);
-				need_write_len -= HEAD_SIZE;
-			}
-			fclose(data_file_p);
-		}
-		fclose(fp);
-		return 0;
-	}
+```
+
 
 效果展示
 

@@ -48,8 +48,8 @@ a -append表示追加
 
 属于C标准库预定义的三个标准文件流
 
-标准输入 stdin
-标准输出 stdout
+标准输入 stdin、
+标准输出 stdout、
 标准错误 stderr
 
 定义形式
