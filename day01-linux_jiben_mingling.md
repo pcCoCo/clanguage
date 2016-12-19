@@ -321,14 +321,14 @@ more cat less tail head
 
 chmod chown
 
-find
+### 查找文件 find
 
-grep
+### 查找文件内容grep
 
-ps top kill
+### 进程管理ps top kill
 
-sudo su
+### 切换sudo su
 
-ifconfig 
+### 网络ifconfig 
 
 
