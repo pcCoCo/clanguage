@@ -321,13 +321,19 @@ cat、more、less、tail、head
 从文件(可能多个)中读取数据并且输出 内容。复制文件（多个）内容到一个新的文档中用于合并或者追加。
 
 **more**
-一次显示一屏幕的文本内容。
+一次显示一屏幕的文本内容，只能往后。
 
 从第三行开始显示myfile文件
 more +3 myfile.txt
 
 显示以
 more +/"hope" myfile.txt
+
+**ls**
+
+**tail**
+
+**head**
 
 
 ### 更改文件权限与所属
