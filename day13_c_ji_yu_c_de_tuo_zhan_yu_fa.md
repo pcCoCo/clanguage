@@ -105,27 +105,42 @@ pc@iZ25g2i2xsmZ:~/test$ nm cpp_overload
 ## struct只是权宜之计
 
 C++中的struct可以定义函数
+```
+
+#include <cstdio>
+#include <cstring>
+
 struct file
 {
     char name[64];
     char mode[8];
     FILE *fp;
-    
-    int init(const char *file,const char *mode)
+    int init(const char *name,const char *mode)
     {
-        .name = file;
-        .mode = mode;
-        fp = fopen(file,mode);
-        return (int)fp;
+        strcpy(this->name,name);
+        strcpy(this->mode,mode);
+        fp = fopen(name,mode);
+        return fp != NULL;
     }
-    
     int close()
     {
-        fclose(.fp);
-        .fp = NULL;
+        if(this->fp)
+        {
+            fclose(this->fp);
+            this->fp = NULL;
+        }
         return 0;
     }
+};
+int main()
+{
+
+    file f;
+    f.init("hello","rb");
+    f.close();
 }
+
+```
 在C++中使用struct 定义的结构体类型再定义结构体变量时不需要再带struct关键字
 
 
