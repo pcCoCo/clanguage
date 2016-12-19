@@ -188,6 +188,7 @@ pc@iZ25g2i2xsmZ:~/code$
 pc@iZ25g2i2xsmZ:~/code$ ln -s a.c a
 
 pc@iZ25g2i2xsmZ:~/code$ ls -ail
+
 ```
 total 28
 786851 drwxrwxr-x 2 pc pc 4096 Dec 15 17:01 .
