@@ -104,6 +104,8 @@ There are 9 program headers, starting at offset 64
 
 
 pc@iZ25g2i2xsmZ:~/code$ readelf -h test.o
+
+```
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
   Class:                             ELF64
@@ -124,7 +126,7 @@ ELF Header:
   Size of section headers:           64 (bytes)
   Number of section headers:         13
   Section header string table index: 10
-
+```
 
 ELF描述各个段的内容时制定了将哪些节的数据映射到段中，节点表用于管理文件的各个节。
 
