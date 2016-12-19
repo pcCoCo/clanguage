@@ -8,7 +8,10 @@ read goto https://pccoco.gitbooks.io/clanguage/content/
 
 教学大纲
 新概念C语言 https://github.com/limingth/NCCL
-
+Linux C一站式编程
+深入理解计算机系统
+C专家编程
+C与指针
 
 # 谨以此献给那些 勇于攀登C/C++编程语言高峰的同学们
 
