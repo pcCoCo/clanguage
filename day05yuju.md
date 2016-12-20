@@ -69,7 +69,7 @@ switch(量)
         // 代码块3
         break;
     default:
-        // 代码块1
+        // 代码块4
         break;
 
 }
