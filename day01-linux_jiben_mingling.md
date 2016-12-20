@@ -437,6 +437,8 @@ pc@iZ25g2i2xsmZ:~$ cp code/*.c test/ -r
 
 **mv**
 
+move表示移动。
+
 移动指定文件 t.tar 到指定目录 test下
 pc@iZ25g2i2xsmZ:~$ mv t.tar test/
 
