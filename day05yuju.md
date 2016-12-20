@@ -70,8 +70,6 @@ switch(量)
         break;
     default:
         // 所有case都不满足，就执行该代码块。
-    
-
 }
 ```
 
