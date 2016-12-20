@@ -14,7 +14,7 @@ A rule of correspondence between two sets such that there is a unique element in
 
 例如
 
-`f(x) = x`[^2]`+100`
+`f(x) = x\`[^2]\`+100`
 
 ## 计算机编程中的函数
 
