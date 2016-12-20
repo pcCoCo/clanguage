@@ -412,6 +412,39 @@ xxxxxxxx
 yyyyyyyy
 zzzzzzzz
 
+### 文件(目录)操作
+
+cp、mv、mkdir、rmdir、rm
+
+**cp**
+
+
+将当前目录下的main.c文件复制到上一级目录中
+pc@iZ25g2i2xsmZ:~/code$ cp main.c ../
+
+也可以在复制文件的过程中进行改名
+pc@iZ25g2i2xsmZ:~$ cp test_file i
+
+也可以进行交互式的复制(在目标文件存在的时候会进行提醒是否覆盖)
+pc@iZ25g2i2xsmZ:~$ cp test_file i -i
+cp: overwrite ‘i’? y
+
+目录是一种文件，所以也可以复制目录 但是需要加-R选项
+pc@iZ25g2i2xsmZ:~$ cp -R code code1 
+
+也可以在复制的时候带上过滤条件
+pc@iZ25g2i2xsmZ:~$ cp code/*.c test/ -r
+
+**mv**
+
+
+**mkdir**
+
+
+**rmdir**
+
+**rm**
+
 
 
 ### 更改文件权限与所属
@@ -425,7 +458,10 @@ chmod提供了方法可以用于改变规则。
 permissions defines the permissions for the owner of the file (the "user"), members of the group who owns the file (the "group"), and anyone else ("others"). There are two ways to represent these permissions: with symbols (alphanumeric characters), or with octal numbers (the digits 0 through 7).
 
 每一组权限定义了 文件拥有者(user)，文件拥有者同组用户(group)，其他用户(other)。
-有两种方式方式权限:字母数字字符，八进制数。
+有两种方式方式权限:
+
+字母数字字符
+
 
 ```
 pc@iZ25g2i2xsmZ:~$ ll test_file 
@@ -439,7 +475,62 @@ group对于该文件can **r**ead,can **w**rite
 other对于该文件can **r**ead
 ```
 
+相对的方式设置权限
+优点
+ 直接简单，只需要关注目标和现在之间的差距进行操作即可。
+缺点
+ 如果差距较多 可能进行的操作很复杂
+chmod g+wx,o+w test_file
+
+
+绝对的方式来设置权限  可以忽略当前的权限设置
+chmod u=rwx,g=rx,o=r test_file
+
+
+八进制数
+数字法设置权限比较直接。比如 `chmod 754 myfile`
+10进制就是满10进1位，每一位上的数有0、1、2、3、4、5、6、7、8、9
+ 8进制就是满 8进1位，每一位上的数有0、1、2、3、4、5、6、7
+
+权限为上的每个8进制数 比如7都是由三个比特位上的值x权值的乘积之和
+一个8进制数由3个bit位构成
+421
+```
+000
+001
+010
+011
+100
+101
+110
+111 
+```
+4 stands for "read",
+2 stands for "write",
+1 stands for "execute"
+
+
+
+
+八进制数7就是4*1+2*1+1*1构成的，也即 rwx。
+八进制数6就是4*1+2*1+1*0构成的，也即 rw-。
+
+那八进制数3呢?
+
+
 **chown**
+
+使用基本形式 chown [OPTION]... [OWNER][:[GROUP]] FILE...
+
+改变file.txt文件所属用户为chope
+chown chope file.txt
+
+如果我想改变一个目录下的所有文件呢? -R选项
+chown -R chope /files/work
+
+在工作场景中需要经常碰到这样一个场景，手动将某目录下的所有子目录和文件全部给 属于某个组的一个用户
+chown -R orancle:oinstall /usr/path/data/
+
 
 ### 查找文件 find
 
