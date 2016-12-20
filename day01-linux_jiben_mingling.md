@@ -424,6 +424,15 @@ cp: overwrite ‘i’? y
 
 **mv**
 
+**mkdir**
+
+
+**rmdir**
+
+**rm**
+
+
+
 ### 更改文件权限与所属
 
 **chmod**
