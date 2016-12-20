@@ -416,10 +416,16 @@ zzzzzzzz
 
 cp、mv、mkdir、rmdir、rm
 
+**cp**
+
+
+将当前目录下的main.c文件复制到上一级目录中
 pc@iZ25g2i2xsmZ:~/code$ cp main.c ../
 
-**cp**
+也可以在复制文件的过程中进行改名
 pc@iZ25g2i2xsmZ:~$ cp test_file i
+
+也可以进行交互式的复制(在目标文件存在的时候会进行提醒是否覆盖)
 pc@iZ25g2i2xsmZ:~$ cp test_file i -i
 cp: overwrite ‘i’? y
 
