@@ -455,8 +455,8 @@ chmod u=rwx,g=rx,o=r test_file
 
 
 八进制数
-数字法设置权限比较直接。比如
-chmod 754 myfile
+数字法设置权限比较直接。比如 `chmod 754 myfile`
+
 
 
 
