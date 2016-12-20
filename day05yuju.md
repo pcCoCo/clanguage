@@ -75,8 +75,9 @@ switch(量)
 }
 ```
 解释：如果量的值和case后面的值相等，就执行相应的语句，break跳出switch语句。
-如果所有的case都不匹配，就执行default语句
+如果所有的case都不匹配，就执行default语句。
 
+## 条件运算符
 
 
 ## 循环嵌套
