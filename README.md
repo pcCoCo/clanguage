@@ -16,7 +16,7 @@ Linux C一站式编程
 深入理解计算机系统
 C专家编程
 C与指针
-http://www.computerhope.com/unix.htm
+linux命令 http://www.computerhope.com/unix.htm
 
 ```
 
