@@ -98,7 +98,7 @@ int main()
             
         }
         goto loop;
-        
+    end  
     return 0;
 }
 ```
