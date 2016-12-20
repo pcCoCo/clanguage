@@ -432,6 +432,8 @@ pc@iZ25g2i2xsmZ:~$ ll test_file
 -rw-rw-r-- 1 pc pc 10 Dec 20 15:09 test_file
 ```
 
+
+
 **chown**
 
 ### 查找文件 find
