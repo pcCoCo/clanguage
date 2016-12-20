@@ -416,11 +416,15 @@ zzzzzzzz
 
 cp、mv、mkdir、rmdir、rm
 
+pc@iZ25g2i2xsmZ:~/code$ cp main.c ../
 
 **cp**
 pc@iZ25g2i2xsmZ:~$ cp test_file i
 pc@iZ25g2i2xsmZ:~$ cp test_file i -i
 cp: overwrite ‘i’? y
+
+目录是一种文件，所以也可以复制目录
+
 
 **mv**
 
