@@ -453,6 +453,8 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 **mkdir**
 
+-p选项
+mkdir -p /home/chope/a/b/c
 
 **rmdir**
 
