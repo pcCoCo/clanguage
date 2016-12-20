@@ -427,6 +427,11 @@ permissions defines the permissions for the owner of the file (the "user"), memb
 每一组权限定义了 文件拥有者(user)，文件拥有者同组用户(group)，其他用户(other)。
 有两种方式方式权限:字母数字字符，八进制数。
 
+```
+pc@iZ25g2i2xsmZ:~$ ll test_file 
+-rw-rw-r-- 1 pc pc 10 Dec 20 15:09 test_file
+```
+
 **chown**
 
 ### 查找文件 find
