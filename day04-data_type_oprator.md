@@ -50,7 +50,7 @@
     类型转换
         3/2
         3/2.0
- 
+// 隐式转换例子
 int main()
 {
     unsigned int a = 99;
