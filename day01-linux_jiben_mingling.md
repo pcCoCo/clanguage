@@ -489,6 +489,10 @@ chmod u=rwx,g=rx,o=r test_file
 
 使用基本形式 chown [OPTION]... [OWNER][:[GROUP]] FILE...
 
+改变file.txt文件所属用户为chope
+chown chope file.txt
+
+chown -R chope /files/work
 
 ### 查找文件 find
 
