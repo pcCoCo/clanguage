@@ -56,6 +56,8 @@ if(条件)
 
 ## switch与break，default
 
+* switch语句的使用
+
 ```
 switch(量)
 {
