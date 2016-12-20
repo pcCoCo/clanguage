@@ -487,6 +487,9 @@ chmod u=rwx,g=rx,o=r test_file
 
 **chown**
 
+使用基本形式 chown [OPTION]... [OWNER][:[GROUP]] FILE...
+
+
 ### 查找文件 find
 
 ### 查找文件内容grep
