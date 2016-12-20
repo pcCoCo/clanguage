@@ -89,11 +89,16 @@ switch(量)
 ```
 int main()
 {
-    
-loop:
-    printf("你个猴子!\n");
-    goto loop;
-    
+    int i = 0;
+    loop:
+        i++;
+        printf("你个猴子!\n");
+        if(i == 5)
+        {
+            
+        }
+        goto loop;
+        
     return 0;
 }
 ```
