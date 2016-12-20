@@ -21,14 +21,14 @@ A rule of correspondence between two sets such that there is a unique element in
 函数是一段完成特定功能的程序代码，或称其为一个子程序，它可以实现固定运算功能。
 
 如果将上文中的数学函数翻译为C语言描述的话，它可能是这个样子
+    
+    int f(int x)
+    {
+        return x\*x + 100;
+    }
 
-`int f(int x)`
 
-`{`
 
-`return x\*x+100;`
-
-`}`
 
 一个C语言程序有且只有一个main函数。由main函数调用其他函数，其他函数也可以互相调用。同一个函数可以被一个或多个函数调用任意多次。在程序设计中，常将一些常用的功能模块编写成函数，放在函数库中供公共选用。要善于利用函数，以减少重复编写程序段的工作量。
 
