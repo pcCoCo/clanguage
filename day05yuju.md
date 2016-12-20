@@ -69,7 +69,7 @@ switch(量)
         // 代码块3
         break;
     default:
-        // 代码块4
+        // 所有case都不满足，就执行该代码块。
         break;
 
 }
