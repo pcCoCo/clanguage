@@ -56,7 +56,24 @@ if(条件)
 
 ## switch与break，default
 
+```
+switch(量)
+{
+    case 值1:
+        // 代码块1
+        break;
+    case 值1:
+        // 代码块1
+        break;
+    case 值1:
+        // 代码块1
+        break;
+    case 值1:
+        // 代码块1
+        break;
 
+}
+```
 
 ## 循环嵌套
 
