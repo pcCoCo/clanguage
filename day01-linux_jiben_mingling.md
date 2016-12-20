@@ -230,12 +230,13 @@ cat /dev/null > /var/log/messages
 
 ### 管道
 
+
+
 ### 相对路径
 
 ### 绝对路径
 
 ### 根目录/
-
 
 #### Linux目录结构的来源 
 
