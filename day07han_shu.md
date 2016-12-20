@@ -21,6 +21,11 @@ A rule of correspondence between two sets such that there is a unique element in
 函数是一段完成特定功能的程序代码，或称其为一个子程序，它可以实现固定运算功能。
 
 如果将上文中的数学函数翻译为C语言描述的话，它可能是这个样子
+    
+    int f(int x)
+    {
+        return x\*x + 100;
+    }
 
 `int f(int x)`
 
