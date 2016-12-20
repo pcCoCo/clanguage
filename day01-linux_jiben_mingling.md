@@ -422,6 +422,7 @@ zzzzzzzz
 这种规则就叫文件权限（file permissions or file modes）。
 chmod提供了方法可以用于改变规则。
 
+permissions defines the permissions for the owner of the file (the "user"), members of the group who owns the file (the "group"), and anyone else ("others"). There are two ways to represent these permissions: with symbols (alphanumeric characters), or with octal numbers (the digits 0 through 7).
 
 
 **chown**
