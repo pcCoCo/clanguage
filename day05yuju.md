@@ -113,6 +113,8 @@ loop:
 
 * while
 
+* continue 和 break
+
 
 
 ## 循环嵌套
