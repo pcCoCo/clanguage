@@ -452,11 +452,13 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 
 **mkdir**
-
+创建目录 make dir
 -p选项
 mkdir -p /home/chope/a/b/c
 
 **rmdir**
+
+删除目录目录   
 
 **rm**
 
