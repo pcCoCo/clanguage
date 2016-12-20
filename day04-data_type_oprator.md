@@ -52,6 +52,7 @@
         3/2.0
         
 // 隐式转换例子
+```
 int main()
 {
     unsigned int a = 99;
@@ -65,7 +66,9 @@ int main()
         printf("b\n");
     }
     return 0;
-}       
+}    
+```
+   
 
 自增自减运算符++ --
 逗号表达式
