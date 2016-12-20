@@ -425,7 +425,10 @@ chmod提供了方法可以用于改变规则。
 permissions defines the permissions for the owner of the file (the "user"), members of the group who owns the file (the "group"), and anyone else ("others"). There are two ways to represent these permissions: with symbols (alphanumeric characters), or with octal numbers (the digits 0 through 7).
 
 每一组权限定义了 文件拥有者(user)，文件拥有者同组用户(group)，其他用户(other)。
-有两种方式方式权限:字母数字字符，八进制数。
+有两种方式方式权限:
+
+字母数字字符
+
 
 ```
 pc@iZ25g2i2xsmZ:~$ ll test_file 
@@ -444,11 +447,17 @@ other对于该文件can **r**ead
  直接简单，只需要关注目标和现在之间的差距进行操作即可。
 缺点
  如果差距较多 可能进行的操作很复杂
-
+chmod g+wx,o+w test_file
 
 
 绝对的方式来设置权限  可以忽略当前的权限设置
-chmod u=rwx,g=rx,o=r myfile
+chmod u=rwx,g=rx,o=r test_file
+
+
+八进制数
+数字法设置权限比较直接。比如
+chmod 754 myfile
+
 
 
 **chown**
