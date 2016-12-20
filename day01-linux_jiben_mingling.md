@@ -460,7 +460,7 @@ chmod u=rwx,g=rx,o=r test_file
  8进制就是满 8进1位，每一位上的数有0、1、2、3、4、5、6、7
 
 权限为上的每个8进制数 比如7都是由三个比特位上的值x权值的乘积之和
-一个8进制数由3个bit位
+一个8进制数由3个bit位构成
 421
 ```
 000
@@ -472,6 +472,15 @@ chmod u=rwx,g=rx,o=r test_file
 110
 111 
 ```
+4 stands for "read",
+2 stands for "write",
+1 stands for "execute"
+
+
+
+
+八进制数7就是4+2+1构成的，也即 rwx。
+
 
 
 **chown**
