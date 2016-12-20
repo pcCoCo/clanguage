@@ -417,7 +417,7 @@ zzzzzzzz
 cp、mv、mkdir、rmdir、rm
 
 **cp**
-
+copy 表示复制。
 
 将当前目录下的main.c文件复制到上一级目录中
 pc@iZ25g2i2xsmZ:~/code$ cp main.c ../
