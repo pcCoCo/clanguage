@@ -62,13 +62,13 @@ switch(量)
     case 值1:
         // 代码块1
         break;
-    case 值1:
-        // 代码块1
+    case 值2:
+        // 代码块2
         break;
-    case 值1:
-        // 代码块1
+    case 值3:
+        // 代码块3
         break;
-    case 值1:
+    default:
         // 代码块1
         break;
 
