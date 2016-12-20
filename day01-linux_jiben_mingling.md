@@ -496,6 +496,7 @@ chown chope file.txt
 chown -R chope /files/work
 
 在工作场景中需要经常碰到这样一个场景，手动将某目录下的所有子目录和文件全部给 属于某个组的一个用户
+chown -R orancle:oinstall /usr/path/data/
 
 
 ### 查找文件 find
