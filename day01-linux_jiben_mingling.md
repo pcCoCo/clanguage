@@ -412,6 +412,11 @@ xxxxxxxx
 yyyyyyyy
 zzzzzzzz
 
+### 文件(目录)操作
+
+cp、mv、mkdir、rmdir、rm
+
+
 
 
 ### 更改文件权限与所属
