@@ -454,7 +454,7 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 
 **mkdir**
-
+创建目录  
 
 **rmdir**
 
