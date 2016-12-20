@@ -431,7 +431,11 @@ permissions defines the permissions for the owner of the file (the "user"), memb
 pc@iZ25g2i2xsmZ:~$ ll test_file 
 -rwxrw-r-- 1 pc pc 10 Dec 20 15:09 test_file
 ```
-`rwxrw-r--` 可以看出 user对于该文件can **r**ead,can **w**rite,can e**x**ecute。
+`rwxrw-r--` 可以看出 
+
+user 对于该文件can **r**ead,can **w**rite,can e**x**ecute。
+group对于该文件can **r**ead,can **w**rite
+other对于该文件can **r**ead
 
 
 **chown**
