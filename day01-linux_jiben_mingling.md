@@ -424,6 +424,8 @@ chmod提供了方法可以用于改变规则。
 
 permissions defines the permissions for the owner of the file (the "user"), members of the group who owns the file (the "group"), and anyone else ("others"). There are two ways to represent these permissions: with symbols (alphanumeric characters), or with octal numbers (the digits 0 through 7).
 
+每一组权限定义了 文件拥有者(user)，文件拥有者同组用户(group)，其他用户(other)。
+有两种方式方式权限，字母符号，八进制数。
 
 **chown**
 
