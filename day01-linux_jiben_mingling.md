@@ -492,7 +492,10 @@ chmod u=rwx,g=rx,o=r test_file
 改变file.txt文件所属用户为chope
 chown chope file.txt
 
+如果我想改变一个目录下的所有文件呢? -R选项
 chown -R chope /files/work
+
+
 
 ### 查找文件 find
 
