@@ -54,7 +54,8 @@ if(条件)
 注意：在多分支if语句里，else总是和上面最近的那个if配对。
 
 
-## switch与break 
+## switch与break，default
+
 
 
 ## 循环嵌套
