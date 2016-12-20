@@ -430,7 +430,7 @@ pc@iZ25g2i2xsmZ:~$ cp test_file i -i
 cp: overwrite ‘i’? y
 
 目录是一种文件，所以也可以复制目录 但是需要加-R选项
-pc@iZ25g2i2xsmZ:~$ cp code code1 -R
+pc@iZ25g2i2xsmZ:~$ cp -R code code1 
 
 
 **mv**
