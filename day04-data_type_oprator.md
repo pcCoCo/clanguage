@@ -43,13 +43,28 @@
 
 ## 运算符
 
- 
+
 ()改变优先级
 强制转换(显式转换)  
 隐式转换
     类型转换
         3/2
         3/2.0
+ 
+    int main()
+{
+    unsigned int a = 99;
+    unsigned int b = 100;
+    if(a-b < 0)
+    {
+        printf("%u\n", a);
+    }
+    else
+    {
+        printf("b\n");
+    }
+    return 0;
+}       
 
 自增自减运算符++ --
 逗号表达式
