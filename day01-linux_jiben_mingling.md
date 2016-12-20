@@ -448,7 +448,7 @@ pc@iZ25g2i2xsmZ:~$ mv my.tar your.tar
 pc@iZ25g2i2xsmZ:~$ mv code1 test/
 
 也可以在移动目录的时候进行改名
-
+pc@iZ25g2i2xsmZ:~$ mv test tt
 
 **mkdir**
 
