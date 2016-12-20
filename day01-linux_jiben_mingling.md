@@ -188,6 +188,8 @@ pc@iZ25g2i2xsmZ:~/code$
 pc@iZ25g2i2xsmZ:~/code$ ln -s a.c a
 
 pc@iZ25g2i2xsmZ:~/code$ ls -ail
+
+```
 total 28
 786851 drwxrwxr-x 2 pc pc 4096 Dec 15 17:01 .
 786702 drwxr-xr-x 4 pc pc 4096 Dec 15 16:57 ..
@@ -196,7 +198,7 @@ total 28
 786894 -rw-rw-r-- 1 pc pc    0 Dec 15 16:58 .aout
 786866 -rwxrwxr-x 1 pc pc 8557 Dec 14 14:31 test
 786890 -rw-rw-r-- 1 pc pc 1504 Dec 14 14:31 test.o
-
+```
 
 
 **硬链接**
@@ -220,6 +222,11 @@ total 28
 
 **分类:输入重定向 < 、输出重定向 > 、追加输出重定向 >>
 
+把/dev/null看作"黑洞". 它非常等价于一个只写文件. 所有写入它的内容都会永远丢失. 而尝试从它那儿读取内容则什么也读不到. 
+
+cat /dev/null > /var/log/messages
+
+将执行命令产生的错误信息重定向到 黑洞中表示忽略。
 
 ### 管道
 
@@ -314,15 +321,84 @@ pc@iZ25g2i2xsmZ:~/code$ ls
 a.c  test  test.o
 
 ### 查看文件内容
-cat、cat、less、tail、head
+cat、more、less、tail、head
 
-**cat **
-英文单词 catenate的缩写，释义 `vt.	连接，使连续;`。
+**cat**
+英文单词 catenate的缩写，释义 `vt.连接，使连续;`。
+从文件(可能多个)中读取数据并且输出 内容。复制文件（多个）内容到一个新的文档中用于合并或者追加。
+
+**more**
+一次显示一屏幕的文本内容，只能往后。
+
+从第三行开始显示myfile文件
+more +3 myfile.txt
+
+显示以
+more +/"hope" myfile.txt
+
+**less**
+一次显示一屏幕的文本内容，可以往前、往后。
+
+**head**
+
+head表示头部，表示查看文件的前n行，n默认为10。
+pc@iZ25g2i2xsmZ:~/test_struct$ head ii  
+
+```
+aaaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
+eeeeeeee
+ffffffff
+gggggggg
+hhhhhhhh
+iiiiiiii
+jjjjjjjj
+```
+
+如果想自定义查看行数。
+```
+pc@iZ25g2i2xsmZ:~/test_struct$ head -5 ii
+aaaaaaaa
+bbbbbbbb
+cccccccc
+dddddddd
+eeeeeeee
+```
+**tail**
+
+tail表示尾部，表示查看文件的后n行，n默认为10。
+
+
+```
+pc@iZ25g2i2xsmZ:~/test_struct$ tail ii
+qqqqqqqq
+rrrrrrrr
+ssssssss
+tttttttt
+uuuuuuuu
+vvvvvvvv
+wwwwwwww
+xxxxxxxx
+yyyyyyyy
+zzzzzzzz
+```
+如果想自定义查看行数。
+pc@iZ25g2i2xsmZ:~/test_struct$ tail -5 ii
+vvvvvvvv
+wwwwwwww
+xxxxxxxx
+yyyyyyyy
+zzzzzzzz
+
 
 
 ### 更改文件权限与所属
 
-chmod chown
+**chmod**
+
+**chown**
 
 ### 查找文件 find
 
