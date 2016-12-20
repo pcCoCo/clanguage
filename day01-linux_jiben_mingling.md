@@ -454,9 +454,10 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 
 **mkdir**
-创建目录  
+创建目录 make dir
 
 **rmdir**
+删除目录目录   
 
 **rm**
 
