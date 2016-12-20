@@ -418,6 +418,7 @@ zzzzzzzz
 
 **chmod**
 
+英文 change mode的缩写。在Linux(或者类UNIX系统)上，有一套规则 谁能能够访问那些文件，以及他们能如何访问。
 
 **chown**
 
