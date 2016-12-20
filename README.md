@@ -6,6 +6,7 @@ read goto https://pccoco.gitbooks.io/clanguage/content/
 
 ## 参考材料列表
 
+
 包括但不限于
 
 ```
@@ -15,7 +16,10 @@ Linux C一站式编程
 深入理解计算机系统
 C专家编程
 C与指针
+linux命令 http://www.computerhope.com/unix.htm
+
 ```
+
 
 # 谨以此献给那些 勇于攀登C/C++编程语言高峰的同学们
 

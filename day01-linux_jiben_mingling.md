@@ -135,6 +135,8 @@ shell作为用户和操作系统内核之间的信使。如果我们想要让操
 
 ## 重要概念
 
+
+
 ### 通配符
 
 
@@ -230,12 +232,28 @@ cat /dev/null > /var/log/messages
 
 ### 管道
 
+管道也是一种文件，在同一个管道中数据只能单向流动。
+
+管道操作符 '|'，它只能处理经由前面一个指令传出的正确输出信息，对错误信息信息没有直接处理能力。然后，传递给下一个命令，作为标准的输入.
+
+注意：管道命令只处理前一个命令正确输出，不处理错误输出；
+
+比如 
+
+`ls -al | wc -l` 统计`ls -al` 命令的结果集的行数。
+
+### 文件系统
+
+
 ### 相对路径
 
+路径是对目录的层次结构的一种描述。我们想要进入到某个目录下，那从当前路径到目标路径一定有一条 路径是可以到达的。
+相对路径描述的路径是从当前所在出发目录的方法。
+
 ### 绝对路径
+同理，绝对路径描述的路径是从根目录/开始的路径。
 
 ### 根目录/
-
 
 #### Linux目录结构的来源 
 
@@ -302,10 +320,12 @@ pc@iZ25g2i2xsmZ:~/code$ pwd
 
 change directory,改变当前的工作目录
 
+```
 . 代表当前路径  
 ..代表上一级路径  
 / 代表根目录  
 ~ 代表当前用户的主目录\(home directory，家目录\)
+```
 
 pc@iZ25g2i2xsmZ:~/code$ cd ..  
 pc@iZ25g2i2xsmZ:~$ pwd  
@@ -397,6 +417,27 @@ zzzzzzzz
 ### 更改文件权限与所属
 
 **chmod**
+
+英文 change mode的缩写。在Linux(或者类UNIX系统)上，有一套规则 谁能能够访问那些文件，以及他们能如何访问。
+这种规则就叫文件权限（file permissions or file modes）。
+chmod提供了方法可以用于改变规则。
+
+permissions defines the permissions for the owner of the file (the "user"), members of the group who owns the file (the "group"), and anyone else ("others"). There are two ways to represent these permissions: with symbols (alphanumeric characters), or with octal numbers (the digits 0 through 7).
+
+每一组权限定义了 文件拥有者(user)，文件拥有者同组用户(group)，其他用户(other)。
+有两种方式方式权限:字母数字字符，八进制数。
+
+```
+pc@iZ25g2i2xsmZ:~$ ll test_file 
+-rwxrw-r-- 1 pc pc 10 Dec 20 15:09 test_file
+```
+`rwxrw-r--` 可以看出 
+
+```
+user 对于该文件can **r**ead,can **w**rite,can e**x**ecute。
+group对于该文件can **r**ead,can **w**rite
+other对于该文件can **r**ead
+```
 
 **chown**
 
