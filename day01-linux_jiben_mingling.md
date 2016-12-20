@@ -417,7 +417,12 @@ zzzzzzzz
 cp、mv、mkdir、rmdir、rm
 
 
+**cp**
+pc@iZ25g2i2xsmZ:~$ cp test_file i
+pc@iZ25g2i2xsmZ:~$ cp test_file i -i
+cp: overwrite ‘i’? y
 
+**mv**
 
 ### 更改文件权限与所属
 
