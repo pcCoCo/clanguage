@@ -432,6 +432,8 @@ cp: overwrite ‘i’? y
 目录是一种文件，所以也可以复制目录 但是需要加-R选项
 pc@iZ25g2i2xsmZ:~$ cp -R code code1 
 
+也可以在复制的时候带上过滤条件
+pc@iZ25g2i2xsmZ:~$ cp code/*.c test/ -r
 
 **mv**
 
