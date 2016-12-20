@@ -436,7 +436,9 @@ pc@iZ25g2i2xsmZ:~$ cp -R code code1
 pc@iZ25g2i2xsmZ:~$ cp code/*.c test/ -r
 
 **mv**
+移动指定文件到指定目录下
 
+对文件进行改名
 
 **mkdir**
 
