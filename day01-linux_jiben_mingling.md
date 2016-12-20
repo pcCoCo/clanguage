@@ -245,7 +245,7 @@ cat /dev/null > /var/log/messages
 ### 相对路径
 
 路径是对目录的层次结构的一种描述。我们想要进入到某个目录下，那从当前路径到目标路径一定有一条 路径是可以到达的。
-
+相对路径描述的
 
 ### 绝对路径
 
@@ -316,10 +316,12 @@ pc@iZ25g2i2xsmZ:~/code$ pwd
 
 change directory,改变当前的工作目录
 
+```
 . 代表当前路径  
 ..代表上一级路径  
 / 代表根目录  
 ~ 代表当前用户的主目录\(home directory，家目录\)
+```
 
 pc@iZ25g2i2xsmZ:~/code$ cd ..  
 pc@iZ25g2i2xsmZ:~$ pwd  
