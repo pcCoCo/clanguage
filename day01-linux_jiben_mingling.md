@@ -433,10 +433,11 @@ pc@iZ25g2i2xsmZ:~$ ll test_file
 ```
 `rwxrw-r--` 可以看出 
 
+```
 user 对于该文件can **r**ead,can **w**rite,can e**x**ecute。
 group对于该文件can **r**ead,can **w**rite
 other对于该文件can **r**ead
-
+```
 
 **chown**
 
