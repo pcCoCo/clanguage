@@ -95,7 +95,7 @@ int main()
         printf("你个猴子!\n");
         if(i == 5)
         {
-            go to end
+            goto end;
         }
         goto loop;
     end:   
