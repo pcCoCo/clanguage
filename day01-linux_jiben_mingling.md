@@ -579,7 +579,7 @@ find /usr/bin /usr/lib -name '*zip*'
 
 -iname 忽略文件名大小写 
 
--size 根据文件大小查找文件
+-size [-|+] n [cwbkMG]根据文件大小查找文件
   
   b	for 512-byte blocks (this is the default if no suffix is used)
   c	for bytes
