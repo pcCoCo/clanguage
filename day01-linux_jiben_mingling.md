@@ -577,9 +577,27 @@ find / -name *.C
 
 find /usr/bin /usr/lib -name '*zip*'
 
--size 
+-iname 忽略文件名大小写 
 
--5G 
+-size 根据文件大小查找文件
+  
+  b	for 512-byte blocks (this is the default if no suffix is used)
+  c	for bytes
+  w	for two-byte words
+  k	for Kilobytes (units of 1024 bytes)
+  M	for Megabytes (units of 1048576 bytes)
+  G	for Gigabytes (units of 1073741824 bytes)
+ 
+大于2MB的
+find / -name *.zip -size +2M
+
+小于2G的
+find / -name *.zip -size -2G
+
+等于
+find / -name *.zip -size 2K
+
+
 
 -type
 
