@@ -453,7 +453,7 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 **mkdir**
 创建目录 make dir
--p选项 在创建多层级目录的时候
+-p选项 在创建多层级目录的时候，如果父 目录结点不存在将创建。
 Creates the directory /home/chope/a/b/c. If the parent directory /home/chope/a/b does not already exist, mkdir will create that directory first.
 
 mkdir -p /home/chope/a/b/c
