@@ -577,6 +577,11 @@ find / -name *.C
 
 find /usr/bin /usr/lib -name '*zip*'
 
+-size 
+
+-5G 
+
+-type
 
 ### 查找文件内容grep
 
