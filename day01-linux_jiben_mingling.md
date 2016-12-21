@@ -568,11 +568,17 @@ chown -R orancle:oinstall /usr/path/data/
 
 ### 查找文件 find
 
+-name pattern	Returns true if the base of a file name (the path with the leading directories removed) matches shell pattern pattern. The metacharacters ('*', '?', and '[ ]') match a '.' at the start of the base name. To ignore a directory and the files under it, use -prune; see an example in the description of -path. Braces are not recognised as being special, despite the fact that some shells including Bash imbue braces with a special meaning in shell patterns. The filename matching is performed with the use of the fnmatch library function. Don't forget to enclose the pattern in quotes in order to protect it from expansion by the shell.
+查找 根目录下及其子目录下 所有的C源代码文件。
+
+find / -name *.C
+
+
 ### 查找文件内容grep
 
 ### 进程管理ps top kill
 
-### 切换sudo su
+### 切换sudo su exit
 
 ### 网络ifconfig 
 
