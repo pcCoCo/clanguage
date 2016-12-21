@@ -599,7 +599,13 @@ find / -name *.zip -size 2K
 
 
 
--type
+-type 
+Returns true if a file is of type c:
+ d	directories目录文件
+ f	regular files普通文件
+ l	symbolic links.链接文件
+ 
+
 
 ### 查找文件内容grep
 
