@@ -452,13 +452,34 @@ pc@iZ25g2i2xsmZ:~$ mv test tt
 
 
 **mkdir**
+创建目录 make dir
+-p选项 在创建多层级目录的时候，如果父 目录结点不存在mkdir将首先创建。
+Creates the directory /home/chope/a/b/c. If the parent directory /home/chope/a/b does not already exist, mkdir will create that directory first.
 
+mkdir -p /home/chope/a/b/c
 
 **rmdir**
 
+删除目录目录 ，前提是目录为空，否则将删除失败。 
+
 **rm**
+单词 remove的缩写 ,表示删除、移除的意思。
+可以用于删除文件(目录)， removes (deletes) files or directories.。
+
+-r (--recursive) 递归-
+-i 交互
+-f 强制的 忽略一切
+
+rm myfile.txt
+rm -f myfile.txt
+rm *
 
 
+
+这是一个**容易**带来灾难的命令，使用之前请三思再下手。
+> 若是重要数据的销毁，绝对要提一下这个命令。
+和rm不同的时候，shred命令会对删除的进行覆盖重写。
+一般使用 shred -u -z filename
 
 ### 更改文件权限与所属
 
@@ -547,11 +568,50 @@ chown -R orancle:oinstall /usr/path/data/
 
 ### 查找文件 find
 
+-name pattern	Returns true if the base of a file name (the path with the leading directories removed) matches shell pattern pattern. The metacharacters ('*', '?', and '[ ]') match a '.' at the start of the base name. To ignore a directory and the files under it, use -prune; see an example in the description of -path. Braces are not recognised as being special, despite the fact that some shells including Bash imbue braces with a special meaning in shell patterns. The filename matching is performed with the use of the fnmatch library function. Don't forget to enclose the pattern in quotes in order to protect it from expansion by the shell.
+查找 根目录下及其子目录下 所有的C源代码文件。
+
+find / -name *.C
+
+查找 /usr/bin /usr/lib目录下的zip压缩文件
+
+find /usr/bin /usr/lib -name '*zip*'
+
+-iname 忽略文件名大小写 
+
+-size [-|+] n [cwbkMG]根据文件大小查找文件
+  
+  b	for 512-byte blocks (this is the default if no suffix is used)
+  c	for bytes
+  w	for two-byte words
+  k	for Kilobytes (units of 1024 bytes)
+  M	for Megabytes (units of 1048576 bytes)
+  G	for Gigabytes (units of 1073741824 bytes)
+ 
+大于2MB的
+find / -name *.zip -size +2M
+
+小于2G的
+find / -name *.zip -size -2G
+
+等于
+find / -name *.zip -size 2K
+
+
+
+-type 
+Returns true if a file is of type c:
+ d	directories目录文件
+ f	regular files普通文件
+ l	symbolic links.链接文件
+ 
+
+
 ### 查找文件内容grep
 
 ### 进程管理ps top kill
 
-### 切换sudo su
+### 切换sudo su exit
 
 ### 网络ifconfig 
 
