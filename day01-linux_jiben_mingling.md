@@ -466,6 +466,11 @@ mkdir -p /home/chope/a/b/c
 单词 remove的缩写 ,表示删除、移除的意思。
 可以用于删除文件(目录)， removes (deletes) files or directories.。
 
+-r (--recursive) 递归-
+-i 交互
+-f 强制的 忽略一切
+
+
 这是一个容易带来灾难的命令，使用之前请三思再下手。
 
 
