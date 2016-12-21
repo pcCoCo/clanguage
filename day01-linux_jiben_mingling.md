@@ -573,6 +573,10 @@ chown -R orancle:oinstall /usr/path/data/
 
 find / -name *.C
 
+查找 /usr/bin /usr/lib目录下的zip压缩文件
+
+find /usr/bin /usr/lib -name '*zip*'
+
 
 ### 查找文件内容grep
 
