@@ -464,7 +464,7 @@ mkdir -p /home/chope/a/b/c
 
 **rm**
 单词 remove的缩写 ,表示删除、移除的意思。
-可以用于删除文件(目录)。
+可以用于删除文件(目录)， removes (deletes) files or directories.。
 
 这是一个容易带来灾难的命令，使用之前请三思再下手。
 
