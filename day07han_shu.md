@@ -22,10 +22,16 @@ A rule of correspondence between two sets such that there is a unique element in
 
 如果将上文中的数学函数翻译为C语言描述的话，它可能是这个样子
     
-    int f(int x)
-    {
-        return x\*x + 100;
-    }
+
+
+```
+int f(int x)
+{
+    return x\*x + 100;
+}
+```
+
+
 
 
 
