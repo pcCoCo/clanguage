@@ -609,6 +609,7 @@ Returns true if a file is of type c:
 
 ### 查找文件内容grep
 
+grep是一套工具，在Linux系统中有多种实现。
 
 
 ### 进程管理ps top kill
