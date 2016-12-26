@@ -157,6 +157,11 @@ http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
 
 ## 库函数的使用
 
+
+
+
+
+> C语言的数学库函数
 包含头文件
 #include <math.h>
 在linux中链接的时候会报错 需要手动在编译(链接)的时候加上-lm选项
