@@ -130,6 +130,12 @@ int func(int);
 ```
 存函数返回值的变量 = 函数名(实参列表);
 ```
+
+比如
+
+
+
+```
 int main(void)
 {
     int ret = func(100);
@@ -139,6 +145,9 @@ int main(void)
         printf("不是偶数");
     return 0;
 }
+
+```
+
 
 
 ## 函数调用的实现原理 深入Linux内核架构966P
