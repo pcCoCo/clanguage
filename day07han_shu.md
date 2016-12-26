@@ -184,3 +184,13 @@ http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
 <math.h>
 <stdlib.h>
 
+math之
+    pow
+    sqrt
+    abs
+    atoi(atol atof)
+    rand
+    srand
+    
+
+
