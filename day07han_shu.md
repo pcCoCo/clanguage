@@ -152,6 +152,9 @@ int main(void)
 
 ## 函数调用的实现原理 深入Linux内核架构966P
 
+http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
+
+
 ## 库函数的使用
 
 包含头文件
