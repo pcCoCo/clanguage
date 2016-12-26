@@ -70,9 +70,10 @@ void func2(int a,int b)
 {
     printf("a=%d b=%d\n",a,b);
 }
+
 ## 函数的声明
 
-
+函数声明
 
 ## 函数的调用
 
