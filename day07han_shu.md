@@ -191,6 +191,7 @@ math之
     atoi(atol atof)
     rand
     srand
+    exit
     
 
 
