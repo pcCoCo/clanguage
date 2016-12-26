@@ -193,5 +193,8 @@ math之
     srand
     exit
     
+stdlib
+    system
+    
 
 
