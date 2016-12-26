@@ -63,7 +63,7 @@ int f(int x)
 比如
 int func(int a)
 {
-    return a**2;
+    return a*a;
 }
 
 ## 函数的声明
