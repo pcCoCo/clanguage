@@ -76,8 +76,24 @@ void func2(int a,int b)
 函数声明一般可以直接使用**函数头加上分号**即可。
 比如 
 
-`int func(int a);`
-    
+
+
+```
+int func(int a);
+```
+
+
+
+
+其实还可以更加简单
+
+
+
+```
+int func(int);
+```
+
+
 
 ## 函数的调用
 
