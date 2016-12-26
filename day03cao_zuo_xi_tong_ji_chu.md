@@ -370,7 +370,10 @@ Clang 的开发目标是提供一个可以替代 GCC 的前端编译器。与 GC
 集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列。
 
 
-
+VS
+Qt creator
+Code::Blocks
+Eclipse
 
 
 
