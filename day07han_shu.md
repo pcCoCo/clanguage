@@ -61,15 +61,34 @@ int f(int x)
 ```
 
 比如
-int func(int a)
-{
-    return a*a;
-}
 
+
+```
 void func2(int a,int b)
 {
     printf("a=%d b=%d\n",a,b);
 }
+```
+
+
+
+
+
+
+
+```
+int func(int a)
+{
+    if(a % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+```
+
+
+
+
 
 ## 函数的声明
 
