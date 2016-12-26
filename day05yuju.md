@@ -92,7 +92,7 @@ int main()
         {
             goto end;
         }
-        goto loop;
+    goto loop;
     end:   
     return 0;
 }
