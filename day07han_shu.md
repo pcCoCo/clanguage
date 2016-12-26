@@ -60,8 +60,15 @@ int f(int x)
 }
 ```
 
+比如
+int func(int a)
+{
+    return (int)pow(a,2);
+}
 
 ## 函数的声明
+
+
 
 ## 函数的调用
 
