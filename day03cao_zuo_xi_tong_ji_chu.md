@@ -340,14 +340,11 @@ http://www.ruanyifeng.com/blog/2013/02/booting.html
 边解释，边执行。
 shell、Python等编程语言。
 
-
-
 ### 编译器
 只有整个程序编译完成，才能进行下一步操作。
 C、C++、OC等编程语言。
 
-
-
 ### 常用的C语言编译器
+
 
 
