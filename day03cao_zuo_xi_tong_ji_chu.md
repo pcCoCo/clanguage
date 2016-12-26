@@ -374,6 +374,5 @@ VS
 Qt creator
 Code::Blocks
 Eclipse
-
-
+clion
 
