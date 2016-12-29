@@ -285,7 +285,6 @@ int myatoi(const char * str)
 {
     int ret = 0;
     int i ;
-    
     // 每个位(数值*该位权值)之和,前11位为有效字符 最后为'\0'
     for (i = 0; i < 11; ++i)
         ret += (str[i]-'0') * (int)pow(8,11-i-1);
