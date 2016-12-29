@@ -609,9 +609,23 @@ Returns true if a file is of type c:
 
 ### 查找文件内容grep
 
+grep是一套工具，在Linux系统中有多种实现。
+
+
 ### 进程管理ps top kill
 
+
 ### 切换sudo su exit
+sudo command可以让命令在root权限下运行而不用切换至root用户。
+前提是 该用户属于sudoer,否则失败。
+
+
+su [-] [用户名]
+-代表切换用户的时候默认进入该用户的主目录；如果在切换的时候不带- 则不会切换目录。
+用户名为你想切换到的用户。
+用户名如果不写，默认切换到root用户。
+root用户可以切换到任何用户。
+
 
 ### 网络ifconfig 
 

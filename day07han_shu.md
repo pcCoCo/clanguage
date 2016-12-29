@@ -22,10 +22,16 @@ A rule of correspondence between two sets such that there is a unique element in
 
 如果将上文中的数学函数翻译为C语言描述的话，它可能是这个样子
     
-    int f(int x)
-    {
-        return x\*x + 100;
-    }
+
+
+```
+int f(int x)
+{
+    return x\*x + 100;
+}
+```
+
+
 
 
 
@@ -44,31 +50,154 @@ A rule of correspondence between two sets such that there is a unique element in
 
 ## 函数的定义
 
-`函数返回类型 函数名_标识符 (形参列表)`
+```
+函数返回类型 函数名_标识符 (形参列表)
 
-`{`
+{
 
-`函数代码`
+函数代码
 
-`}`
+}
+```
+
+比如
+
+
+```
+void func2(int a,int b)
+{
+    printf("a=%d b=%d\n",a,b);
+}
+```
+
+
+
+
+
+
+
+```
+int func(int a)
+{
+    if(a % 2 == 0)
+        return 1;
+    else
+        return 0;
+}
+```
+
+
+
+
 
 ## 函数的声明
 
+函数声明一般可以直接使用**函数头加上分号**即可。
+比如 
+
+
+
+```
+int func(int a);
+```
+
+
+
+
+其实还可以更加简单
+
+
+
+```
+int func(int);
+```
+
+
+
 ## 函数的调用
+
+函数调用的基本形式如下  
+
+
+```
+函数名(实参列表);
+```
+
+如果函数返回值类型为**非void类型**，就可以接收你可能感兴趣的返回值。
+
+
+
+```
+存函数返回值的变量 = 函数名(实参列表);
+```
+
+比如
+
+
+
+```
+int main(void)
+{
+    int ret = func(100);
+    if(ret == 1)
+        printf("是偶数");
+    else
+        printf("不是偶数");
+    return 0;
+}
+
+```
 
 
 
 ## 函数调用的实现原理 深入Linux内核架构966P
 
+http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
+
+
 ## 库函数的使用
 
-包含头文件
-#include <math.h>
+库函数的使用时学习C过程的不可避免的过程。
+虽然说C语言功能非常强大，只要有足够的编程能力可以实现一切功能但是对于普通的开发者而言这未免开发效率太低。
+所以将常用的功能代码封装为一个库，这个库提供了非常多的函数，每个函数都是一个接口。
+大多数的场景下，用户在使用的时候更多的注意力应该放在如果使用上，而不是如何来实现这个接口，不要再重复造一些功能完全一样的轮子。
+
+通常情况下使用标准库或者第三方库
+只需要在使用的代码中引入头文件声明
+然后调用，很可能还需要链接指定所需的库。
+
+> C语言的数学库函数
+
+```
+包含头文件 #include <math.h>
 在linux中链接的时候会报错 需要手动在编译(链接)的时候加上-lm选项
+```
+
+
 
 
 ## 多文件编程
 
+### 编写自己的头文件
+预处理宏
 
+
+
+## 常用库函数
+
+<math.h>
+<stdlib.h>
+
+math之
+    pow
+    sqrt
+    abs
+    
+stdlib之
+    atoi(atol atof)
+    rand
+    srand
+    exit
+    
 
 

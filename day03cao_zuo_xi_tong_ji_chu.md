@@ -322,3 +322,57 @@ http://www.ruanyifeng.com/blog/2013/10/register.html
 ## 操作系统是如何启动的?
 
 http://www.ruanyifeng.com/blog/2013/02/booting.html
+
+## 编程语言
+编程语言（programming language），是用来定义计算机程序的形式语言。它是一种被标准化的交流技巧，用来向计算机发出指令。一种计算机语言让程序员能够准确地定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
+编程语言俗称“计算机语言”，种类非常的多，总的来说可以分成机器语言、汇编语言、高级语言三大类。电脑每做的一次动作，一个步骤，都是按照已经用计算机语言编好的程序来执行的，程序是计算机要执行的指令的集合，而程序全部都是用我们所掌握的语言来编写的。所以人们要控制计算机一定要通过计算机语言向计算机发出命令。 目前通用的编程语言有两种形式：汇编语言和高级语言。
+
+程序员通过编写跟人类思维较相近高级语言的程序代码，使用一种将该程序代码**翻译**为最终可执行的二进制代码。
+这种**翻译**一般都是使用较为低级的编程语言。
+这种拥有**翻译**功能的程序的设计思路跟具体的编程语言的语法要求是相关的。
+
+从我们生活中就可以知道，将英文翻译为中文有两种基本模式。
+第一种，将拿到的一篇完整的英文文章翻译为中文;
+第二种，在外宾发表的演讲的同时将其翻译为中文，同声传译。
+
+高级语言按照其执行方式，他所依赖的翻译工具实际上也有上述这两种情况。
+### 解释器
+边解释，边执行。
+shell、Python等编程语言。
+
+### 编译器
+只有整个程序编译完成，才能进行下一步操作。
+C、C++、OC等编程语言。
+
+### 常用的C语言编译器
+
+GNU Compiler Collection(GCC)
+
+Microsoft C(cl.exe)
+
+Borland Turbo C
+
+Intel C++ Compiler(icc)
+
+llvm-clang
+
+LLVM官方网站：http://llvm.org/
+
+Clang官方网站：http://clang.llvm.org/get_started.html
+
+LLVM是构架编译器(compiler)的框架系统，以C++编写而成，用于优化以任意程序语言编写的程序的编译时间(compile-time)、链接时间(link-time)、运行时间(run-time)以及空闲时间(idle-time)，对开发者保持开放，并兼容已有脚本。LLVM计划启动于2000年，最初由University of Illinois at Urbana-Champaign的Chris Lattner主持开展。2006年Chris Lattner加盟Apple Inc.并致力于LLVM在Apple开发体系中的应用。Apple也是LLVM计划的主要资助者.
+
+Low Level Virtual Machine (LLVM) 是一个开源的编译器架构，它已经被成功应用到多个应用领域。Clang ( 发音为 /klæŋ/) 是 LLVM 的一个编译器前端，它目前支持 C, C++, Objective-C 以及 Objective-C++ 等编程语言。Clang 对源程序进行词法分析和语义分析，并将分析结果转换为 Abstract Syntax Tree ( 抽象语法树 ) ，最后使用 LLVM 作为后端代码的生成器。
+Clang 的开发目标是提供一个可以替代 GCC 的前端编译器。与 GCC 相比，Clang 是一个重新设计的编译器前端，具有一系列优点，例如模块化，代码简单易懂，占用内存小以及容易扩展和重用等。由于 Clang 在设计上的优异性，使得 Clang 非常适合用于设计源代码级别的分析和转化工具。Clang 也已经被应用到一些重要的开发领域，如 Static Analysis 是一个基于 Clang 的静态代码分析工具。
+
+### C语言常用IDE
+
+集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列。
+
+
+VS
+Qt creator
+Code::Blocks
+Eclipse
+clion
+
