@@ -375,4 +375,5 @@ Qt creator
 Code::Blocks
 Eclipse
 clion
+值得注意的是 虽然vim一般来说是一个编辑器，但是vim支持拓展控件，所以这样拓展之后的vim完全可以当做一个IDE使用。
 
