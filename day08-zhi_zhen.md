@@ -226,8 +226,76 @@ char* test();
 **
 
 
+## memset,memcpy,memmove函数
+*这三个函数分别实现内存设置，内存拷贝和内存移动。
+**使用memcpy的时候，一定要确保内存没有重叠区域。**
+
+* 使用时需要包含头文件#include <string.h>
 
 
+```
+void *memset(void *s, int c, size_t n);
+```
+
+设置一块内存区域，第一个参数是内存首地址，第二个参数是要设置的值，第三个参数是这块内存的大小，单位：字节
+memset主要的功能就是把一块内存设置为0。
+
+
+
+```
+void *memcpy(void *dest, const void *src, size_t n);//内存拷贝
+
+```
+
+第一个参数是目标内存首地址，第二个参数是源内存首地址，第三个参数是拷贝字节数
+
+
+
+```
+void *memmove(void *dest, const void *src, size_t n);
+//内存移动，参数与memcpy一致
+
+```
+
+
+## 字符指针和字符串
+
+### 指针和字符串
+一般字符串的操作,其实是指针操作.
+
+
+
+```
+char s[] = "hello world";
+char *p = s;
+p[0] = 'a';
+```
+
+
+### 通过指针访问字符串
+
+
+```
+int main()
+{
+	char s[] = "abcde";
+	char *p = s;
+	p[0] = '1';
+	printf("%s\n", p);
+
+	return 0;
+}
+```
+
+
+
+
+### 函数的参数为char *
+
+1.char指针作为函数的参数,可以在函数内部修改字符数组的值.
+2.如果不希望函数内部通过指针修改字符数组,那么可以用const修饰.
+
+### 指针数组作为函数的形参
 
 
 
