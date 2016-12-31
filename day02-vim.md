@@ -79,6 +79,8 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 
 ## 最简单的HTML格式
 
+HTML标准语法
+
 ```
 <html>
  <head></head>
