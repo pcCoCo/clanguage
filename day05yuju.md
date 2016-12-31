@@ -184,7 +184,9 @@ int main()
         {
 //            printf("*");
 //            printf("* ");
-//            printf("*\t"); // \t 制表符 --- 每次打印会空出3个空格
+// \t 制表符 --- 每次打印会空出3个空格
+
+//            printf("*\t"); 
 //            printf("X*X=X\t");
 //            printf("%d*%d=%d\t",j,i,i*j);//打印几行的时候,第二个数恰好是几,而行数是i控制的
             printf("%d*%d=%2d\t",j,i,i*j);
