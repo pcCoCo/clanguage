@@ -76,3 +76,10 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 
 
 # HTML简单介绍
+
+## 最简单的HTML格式
+```
+<html>
+ <>
+</html>
+```
