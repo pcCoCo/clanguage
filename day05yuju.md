@@ -178,13 +178,15 @@ X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X
 int main()
 {
     
-    for (int i = 1; i < 10; i++) {
-        for (int j = 1; j<i+1; j++) {
-    //            printf("*");
-    //            printf("* ");
-    //            printf("*\t"); // \t 制表符 --- 每次打印会空出3个空格
-    //            printf("X*X=X\t");
-    //            printf("%d*%d=%d\t",j,i,i*j);//打印几行的时候,第二个数恰好是几,而行数是i控制的
+    for (int i = 1; i < 10; i++) 
+    {
+        for (int j = 1; j<i+1; j++) 
+        {
+//            printf("*");
+//            printf("* ");
+//            printf("*\t"); // \t 制表符 --- 每次打印会空出3个空格
+//            printf("X*X=X\t");
+//            printf("%d*%d=%d\t",j,i,i*j);//打印几行的时候,第二个数恰好是几,而行数是i控制的
             printf("%d*%d=%2d\t",j,i,i*j);
         }
         printf("\n");
