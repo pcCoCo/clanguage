@@ -80,6 +80,10 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 ## 最简单的HTML格式
 ```
 <html>
- <>
+ <head></head>
+ <title></title>
+ <body>
+ 
+ </body>
 </html>
 ```
