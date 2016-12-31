@@ -173,6 +173,7 @@ X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X	X*X=X
 ********
 *********
 
+```
 #include <stdio.h>
 int main()
 {
@@ -191,7 +192,7 @@ int main()
     
     return 0;
 }
-
+```
 
 
 练习
