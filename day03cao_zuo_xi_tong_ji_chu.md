@@ -1,30 +1,37 @@
 # day03-操作系统基础
 
+## C语言为什么NewB\(牛逼\)
 
-## C语言为什么NewB(牛逼)
-
-C语言是贝尔实验室的Ken Thompson、Dennis Ritchie等人开发的UNIX操作系统的副产品。
-Ken Thompson在1969年独自写出了UNIX的最初版本运行在DEC PDP-7计算机上，内存16KB，使用汇编汇编语言编写。
-后Ken Thompson在BCPL语言的语法基础上设计了B语言，后Ritchie加入到UNIX项目中，开始使用B语言编写程序。
-后来实验室争取到了一台PDP-11计算机，于是把B语言经过改进之后移植新机器上，并用B语言重写了部分的UNIX代码。
-经过改进之后的语言改名为NewB，后来已经越来越不像B语言了，于是改名叫C语言。
+C语言是贝尔实验室的Ken Thompson、Dennis Ritchie等人开发的UNIX操作系统的副产品。  
+Ken Thompson在1969年独自写出了UNIX的最初版本运行在DEC PDP-7计算机上，内存16KB，使用汇编汇编语言编写。  
+后Ken Thompson在BCPL语言的语法基础上设计了B语言，后Ritchie加入到UNIX项目中，开始使用B语言编写程序。  
+后来实验室争取到了一台PDP-11计算机，于是把B语言经过改进之后移植新机器上，并用B语言重写了部分的UNIX代码。  
+经过改进之后的语言改名为NewB，后来已经越来越不像B语言了，于是改名叫C语言。  
 到了1973年C语言已经足够稳定。
-
 
 ### 贝尔实验室
 
-
-
+| 时间 | 主要研究成果 |
+| :--- | :--- |
+| 1940 | 数据型网络 |
+| 1947 | 晶体管、移动电话技术 |
+| 1954 | 太阳能电池 |
+| 1958 | 激光 |
+| 1960 |  |
+| 1962 |  |
+| 1963 |  |
+| 1969 |  |
+| 1979 |  |
 
 ## 从C源码到可执行程序的历练
 
 ### 预处理
 
-处理对象是预处理语句，拓展头文件、宏替换、去掉注释
-扫描器（词法分析器）逐字符分析源文件文本，查找语言内置关键字。
-解析器（语法分析器）获取扫描器提供的输入流，根据语法规则检查结构是否正确 并建立语法分析树。
-中间代码生成 将语法分析树转换为另一种语法（寄存器传输语言，register transfer language,RTL）-汇编语言。
-优化 简化算术表达式、消除无用代码...
+处理对象是预处理语句，拓展头文件、宏替换、去掉注释  
+扫描器（词法分析器）逐字符分析源文件文本，查找语言内置关键字。  
+解析器（语法分析器）获取扫描器提供的输入流，根据语法规则检查结构是否正确 并建立语法分析树。  
+中间代码生成 将语法分析树转换为另一种语法（寄存器传输语言，register transfer language,RTL）-汇编语言。  
+优化 简化算术表达式、消除无用代码...  
 生成 关注目标处理器生成实际的汇编代码，并不是可执行的二进制文件而是汇编指令文件。汇编器将其转化为二进制机器代码+可能的链接器。
 
 ### 编译
@@ -37,33 +44,31 @@ Ken Thompson在1969年独自写出了UNIX的最初版本运行在DEC PDP-7计算
 
 ### 链接
 
-链接器--将一个或多个由编译器或汇编器生成的目标文件外加库链接为一个可执行文件
+链接器--将一个或多个由编译器或汇编器生成的目标文件外加库链接为一个可执行文件  
 目标文件是包括机器码和链接器可用信息的程序模块。简单的讲，链接器的工作就是解析未定义的符号引用，将目标文件中的占位符替换为符号的地址。
 
 ## 计算机系统结构
 
-   计算机（Computer），俗称电脑，是一种能够按照事先存储的程序，自动、高速地进行大量数值计算和各种信息处理的现代化智能电子设备。由硬件和软件所组成，两者是不可分割的。
-1954年5月24日，晶体管电子计算机诞生。 1969年10月29日，通过ARPANET，首次实现了两台计算机的互联。
+计算机（Computer），俗称电脑，是一种能够按照事先存储的程序，自动、高速地进行大量数值计算和各种信息处理的现代化智能电子设备。由硬件和软件所组成，两者是不可分割的。  
+1954年5月24日，晶体管电子计算机诞生。 1969年10月29日，通过ARPANET，首次实现了两台计算机的互联。  
    计算机是20世纪最先进的科学技术发明之一，对人类的生产活动和社会活动产生了极其重要的影响。
 
-   随着科技的发展，现在新出现一些新型计算机有：生物计算机、光子计算机、量子计算机等。 
+随着科技的发展，现在新出现一些新型计算机有：生物计算机、光子计算机、量子计算机等。   
    计算机发明者约翰·冯·诺依曼，我们目前使用的几乎所有的计算机都是冯诺依曼型计算机。
 
 ### 冯诺依曼计算机特点
 
-1)计算机处理的数据和指令一律用二进制数表示
+1\)计算机处理的数据和指令一律用二进制数表示
 
-2)顺序执行程序
+2\)顺序执行程序
 
 计算机运行过程中，把要执行的程序和处理的数据首先存入主存储器（内存），计算机执行程序时，将自动地并按顺序从主存储器中取出指令一条一条地执行，这一概念称作顺序执行程序。
 
-3)计算机硬件由运算器、控制器、存储器、输入设备和输出设备五大部分组成。
+3\)计算机硬件由运算器、控制器、存储器、输入设备和输出设备五大部分组成。
 
 ### 个人计算机
 
-https://en.wikipedia.org/wiki/Personal_computer
-   
-
+[https://en.wikipedia.org/wiki/Personal\_computer](https://en.wikipedia.org/wiki/Personal_computer)
 
 ## CPU架构
 
@@ -71,32 +76,30 @@ x86 x86-64 SPARC ARM
 
 ### 复杂指令集CISC
 
+x86：Intel从16位微处理器8086开始的整个CPU芯片系列，系列中的每种型号都保持与以前的各种型号兼容，主要有8086，8088（前面两个是16位CPU），80186，80286（这两个是过渡产品）， 80386，80486以及以后各种型号的Pentium芯片\[奔腾，P2, P4，赛扬...\]（这些都是32位CPU）
 
-x86：Intel从16位微处理器8086开始的整个CPU芯片系列，系列中的每种型号都保持与以前的各种型号兼容，主要有8086，8088（前面两个是16位CPU），80186，80286（这两个是过渡产品）， 80386，80486以及以后各种型号的Pentium芯片[奔腾，P2, P4，赛扬...]（这些都是32位CPU）
+x86-64：&lt;维基百科&gt;上x86-64是x86指令集的超集，在x86处理器上可以运行的程序可以运行在x86-64上（这也是为啥现在买的一些64bits CPU可以直接运行Win XP的原因）。x86-64是AMD发明的，也叫AMD64，Intel克隆了一把，叫做Intel 64，也叫EM64T。
 
-x86-64：<维基百科>上x86-64是x86指令集的超集，在x86处理器上可以运行的程序可以运行在x86-64上（这也是为啥现在买的一些64bits CPU可以直接运行Win XP的原因）。x86-64是AMD发明的，也叫AMD64，Intel克隆了一把，叫做Intel 64，也叫EM64T。
+x86-64 is a 64-bit superset of the x86 instruction set architecture. Because the x86-64 instruction set is a superset of the x86 instruction set, all instructions in the x86 instruction set can be executed by central processing units \(CPUs\) that implement the x86-64 instruction set; therefore these CPUs can natively run programs that run on x86 processors from Intel, Advanced Micro Devices \(AMD\), and other vendors.
 
-x86-64 is a 64-bit superset of the x86 instruction set architecture. Because the x86-64 instruction set is a superset of the x86 instruction set, all instructions in the x86 instruction set can be executed by central processing units (CPUs) that implement the x86-64 instruction set; therefore these CPUs can natively run programs that run on x86 processors from Intel, Advanced Micro Devices (AMD), and other vendors.
+x86-64 was designed by AMD, who have since renamed it AMD64. It has been cloned by Intel under the name Intel 64 \(formerly known as EM64T among other names\).\[1\] This leads to the common use of the names x86-64 or x64 as more vendor-neutral terms to collectively refer to the two nearly identical implementations.
 
-x86-64 was designed by AMD, who have since renamed it AMD64. It has been cloned by Intel under the name Intel 64 (formerly known as EM64T among other names).[1] This leads to the common use of the names x86-64 or x64 as more vendor-neutral terms to collectively refer to the two nearly identical implementations.
-
-x86和x86-64可以认为就是一种特定的指令集
+x86和x86-64可以认为就是一种特定的指令集  
 i386：也是维基上的解释，也就是指Intel 80386，是第一个32位的x86架构的处理器，用了20多年了，后面出的 486（80486，i486），586（80586，Pentium，P5），686（80686，Pentium Pro，P6）等等都与之兼容。
 
-The Intel 80386, otherwise known as the Intel386, i386 or just 386, is a microprocessor which has been used as the central processing unit (CPU) of many personal computers and workstations since 1986. It was the first x86 processor to have a 32-bit architecture, with a basic programming model that has remained virtually unchanged for over twenty years and remains completely backward compatible.
+The Intel 80386, otherwise known as the Intel386, i386 or just 386, is a microprocessor which has been used as the central processing unit \(CPU\) of many personal computers and workstations since 1986. It was the first x86 processor to have a 32-bit architecture, with a basic programming model that has remained virtually unchanged for over twenty years and remains completely backward compatible.
 
-IA32：可以认为就是x86或者x86-32，也是一个指令集。
-英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集(CISC)架构，至今英特尔最受欢迎的处理器仍然采用此架构。它是x86架构的32位延伸版本，1985年首次应用在Intel 80386芯片中，用来取代之前的x86 16位架构（x86-16），包括8086、80186与80286芯片。
-一个IA32中央处理器(CPU)包含一组8个存储32位值的寄存器. 这些寄存器用来存储整型数据和指针英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集(CISC)架构，至今英特尔最受欢迎的处理器仍然采用此架构。
+IA32：可以认为就是x86或者x86-32，也是一个指令集。  
+英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集\(CISC\)架构，至今英特尔最受欢迎的处理器仍然采用此架构。它是x86架构的32位延伸版本，1985年首次应用在Intel 80386芯片中，用来取代之前的x86 16位架构（x86-16），包括8086、80186与80286芯片。  
+一个IA32中央处理器\(CPU\)包含一组8个存储32位值的寄存器. 这些寄存器用来存储整型数据和指针英特尔32位架构（英语：Intel Architecture, 32-bit，缩写为IA-32），常被称为i386、x86-32或是x86，由英特尔公司推出的复杂指令集\(CISC\)架构，至今英特尔最受欢迎的处理器仍然采用此架构。
 
-
-IA-32 (Intel Architecture, 32-bit), often generically called x86 or x86-32, is the instruction set architecture of Intel's most commercially successful microprocessors. It is a 32-bit extension, first implemented in the Intel 80386, of the earlier 16-bit Intel 8086, 80186 and 80286 processors and the common denominator for all subsequent x86 designs. This architecture defines the instruction set for the family of microprocessors installed in the vast majority of personal computers in the world.
+IA-32 \(Intel Architecture, 32-bit\), often generically called x86 or x86-32, is the instruction set architecture of Intel's most commercially successful microprocessors. It is a 32-bit extension, first implemented in the Intel 80386, of the earlier 16-bit Intel 8086, 80186 and 80286 processors and the common denominator for all subsequent x86 designs. This architecture defines the instruction set for the family of microprocessors installed in the vast majority of personal computers in the world.
 
 IA64：就是所谓的安腾，Intel跟HP联合折腾的一种64-bits全新架构，与x86系列不兼容，号称采用了很多非常好的体系结构方面的技术，但是没火起来。再次证明光有好的技术是行不通的，还要有市场眼光啊。
 
-Itanium is the brand name for 64-bit Intel microprocessors that implement the Intel Itanium architecture (formerly called IA-64). Intel has released two processor families using the brand: the original Itanium and the Itanium 2. Starting November 1, 2007, new members of the second family are again called Itanium. The processors are marketed for use in enterprise servers and high-performance computing systems. The architecture originated at Hewlett-Packard (HP) and was later developed by HP and Intel together.
+Itanium is the brand name for 64-bit Intel microprocessors that implement the Intel Itanium architecture \(formerly called IA-64\). Intel has released two processor families using the brand: the original Itanium and the Itanium 2. Starting November 1, 2007, new members of the second family are again called Itanium. The processors are marketed for use in enterprise servers and high-performance computing systems. The architecture originated at Hewlett-Packard \(HP\) and was later developed by HP and Intel together.
 
-注：所谓16位，32位，64位的CPU一般是指处理器中“算数逻辑单元（ALU）”或者CPU GPRs（General-Purpose Registers，通用寄存器）的数据宽度。此外还有数据总线宽度和地址总线宽度两个参数，前者决定了CPU在进行运算时，一次可以并行拿到的二进制数据bit数（可以想想C语言中short/int/long型数据分别的位数），通常与ALU的宽度相同（极个别例外），而后者决定了内存地址空间的大小（16位的地址总线，就是64K，32位就是4G，64位是128T；可以想一下C语言中指针所占的二进制长度），地址总线宽度自然来讲应该是跟数据总线宽度一致，但由于诸多原因（历史，技术，兼容性等等）不是这样。
+注：所谓16位，32位，64位的CPU一般是指处理器中“算数逻辑单元（ALU）”或者CPU GPRs（General-Purpose Registers，通用寄存器）的数据宽度。此外还有数据总线宽度和地址总线宽度两个参数，前者决定了CPU在进行运算时，一次可以并行拿到的二进制数据bit数（可以想想C语言中short/int/long型数据分别的位数），通常与ALU的宽度相同（极个别例外），而后者决定了内存地址空间的大小（16位的地址总线，就是64K，32位就是4G，64位是128T；可以想一下C语言中指针所占的二进制长度），地址总线宽度自然来讲应该是跟数据总线宽度一致，但由于诸多原因（历史，技术，兼容性等等）不是这样。  
 另外，还有操作系统的位数区分，可以认为是word size（字长），也就是一个整数和指针数据的长度，原则上就是指上述CPU位数（即通用寄存器的位数），但同时也决定了操作系统能够支持的最大内存容量（每个进程能够使用的虚拟内存大小，严格说来没有这么多）。
 
 ### 精简指令集RISC
@@ -107,28 +110,27 @@ Itanium is the brand name for 64-bit Intel microprocessors that implement the In
 
 ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC微处理器。全称为Acorn RISC Machine。ARM处理器本身是32位设计，但也配备16位指令集，一般来讲比等价32位代码节省达35%，却能保留32位系统的所有优势。
 
-　　1978年12月5日，物理学家赫尔曼·豪泽（Hermann Hauser）和工程师Chris Curry，在英国剑桥创办了CPU公司（Cambridge Processing Unit），主要业务是为当地市场供应电子设备。
+1978年12月5日，物理学家赫尔曼·豪泽（Hermann Hauser）和工程师Chris Curry，在英国剑桥创办了CPU公司（Cambridge Processing Unit），主要业务是为当地市场供应电子设备。
 
-　　1979年，CPU公司改名为Acorn计算机公司。Acorn公司打算使用摩托罗拉公司的16位芯片，但是发现这种芯片太慢也太贵。“一台售价500英镑的机器，不可能使用价格100英镑的CPU！”他们转而向Intel公司索要80286芯片的设计资料，但是遭到拒绝，于是被迫自行研发。
+1979年，CPU公司改名为Acorn计算机公司。Acorn公司打算使用摩托罗拉公司的16位芯片，但是发现这种芯片太慢也太贵。“一台售价500英镑的机器，不可能使用价格100英镑的CPU！”他们转而向Intel公司索要80286芯片的设计资料，但是遭到拒绝，于是被迫自行研发。
 
-　　1985年，Roger Wilson和Steve Furber设计了他们自己的第一代32位、6MHz的处理器，用它做出了一台RISC指令集的计算机，简称ARM（Acorn RISC Machine）。
+1985年，Roger Wilson和Steve Furber设计了他们自己的第一代32位、6MHz的处理器，用它做出了一台RISC指令集的计算机，简称ARM（Acorn RISC Machine）。
 
-　　1990年11月27日，Acorn公司正式改组为ARM计算机公司。苹果公司出资150万英镑，芯片厂商VLSI出资25万英镑，Acorn本身则以150万英镑的知识产权和12名工程师入股。公司的办公地点非常简陋，就是一个谷仓。公司成立后，由于缺乏资金，ARM做出了一个意义深远的决定：自己不制造芯片，只将芯片的设计方案授权（licensing）给其他公司，由它们来生产。
+1990年11月27日，Acorn公司正式改组为ARM计算机公司。苹果公司出资150万英镑，芯片厂商VLSI出资25万英镑，Acorn本身则以150万英镑的知识产权和12名工程师入股。公司的办公地点非常简陋，就是一个谷仓。公司成立后，由于缺乏资金，ARM做出了一个意义深远的决定：自己不制造芯片，只将芯片的设计方案授权（licensing）给其他公司，由它们来生产。
 
-　　20世纪90年代，ARM公司的业绩平平，处理器的出货量徘徊不前。但是进入21世纪之后，由于手机的快速发展，出货量呈现爆炸式增长，ARM处理器占领了全球手机市场。
+20世纪90年代，ARM公司的业绩平平，处理器的出货量徘徊不前。但是进入21世纪之后，由于手机的快速发展，出货量呈现爆炸式增长，ARM处理器占领了全球手机市场。
 
-　　经过12年的发展，在2002年，ARM架构芯片的出货量正式突破10亿。随着智能设备的爆炸式成长，如今，要完成10亿片的出货量只需要一个月。
+经过12年的发展，在2002年，ARM架构芯片的出货量正式突破10亿。随着智能设备的爆炸式成长，如今，要完成10亿片的出货量只需要一个月。
 
-　　2004年，Cortex系列的诞生是ARM公司的大事件，从此该公司不再用数字为处理器命名。它分为A、R和M三类，旨在为各种不同的市场提供服务。
+2004年，Cortex系列的诞生是ARM公司的大事件，从此该公司不再用数字为处理器命名。它分为A、R和M三类，旨在为各种不同的市场提供服务。
 
-　　2006年，全球ARM芯片出货量为20亿片，2010年预计将达到45亿片。
+2006年，全球ARM芯片出货量为20亿片，2010年预计将达到45亿片。
 
-　　2015年，ARM基于ARMv8架构推出了一种面向企业级市场的新平台标准。此外，他们还开始在物联网领域发力。同年，福布斯杂志将ARM评为世界上五大最具创新力的公司之一。
+2015年，ARM基于ARMv8架构推出了一种面向企业级市场的新平台标准。此外，他们还开始在物联网领域发力。同年，福布斯杂志将ARM评为世界上五大最具创新力的公司之一。
 
 ### 硅谷
 
 为什么硅谷IT巨头那么多？和国内完全相反，北上广深等城市的IT业和城市规模基本的正关联。
-
 
 ### Intel和AMD的渊源
 
@@ -136,34 +138,27 @@ ARM处理器是英国Acorn有限公司设计的低功耗成本的第一款RISC�
 
 Intel创业初期可谓是顺风顺水，推出的世界上第一块个人微型处理器——4004，成为IT行业的基石。反观桑德斯这个一无声望二无技术三无资金的门外汉，只有一腔热血在创业路上跌跌撞撞，连注册资金都凑不齐。
 
-
 ## 内存
 
 主存储器，内部存储器，简称内存。
 
 内存（Memory）是计算机中重要的部件之一，它是与CPU进行沟通的桥梁。计算机中所有程序的运行都是在内存中进行的，因此内存的性能对计算机的影响非常大。作用是用于暂时存放CPU运算所需的相关数据。只要计算机在运行中，CPU就会把需要运算的数据调到内存中进行运算，当运算完成后CPU再将结果传送出来，内存的运行也决定了计算机的稳定运行。
 
-速度快。
+速度快。  
 内存属于易失存储介质，在断电的时候将会丢失数据。
 
 内存一般采用半导体存储单元，包括随机存储器（RAM），只读存储器（ROM），以及高速缓存（CACHE，片外cache）。只不过因为RAM是其中最重要的存储器。
 
 主要介质种类有 SDRAM、DDR、DDR2、DDR3、DDR4。
 
-
-> 手机内存16G不够使用怎么办???
-这是一个误区，手机内存容量大小并不是指的内部存储器的容量，而是指的外部存储器的容量。截止2016年12月，市场上一般的手机内存容量在512M-2G左右。
-
-
-
+> 手机内存16G不够使用怎么办???  
+> 这是一个误区，手机内存容量大小并不是指的内部存储器的容量，而是指的外部存储器的容量。截止2016年12月，市场上一般的手机内存容量在512M-2G左右。
 
 ## 外存
 
 ![](/assets/hard_disk.jpg)
 
 外部存储器，简称外存。是指除计算机内存及CPU缓存以外的储存器，此类储存器一般断电后仍然能保存数据。常见的外存储器有硬盘、软盘、光盘、U盘等。容量较内存大，价格更加便宜，保存的数据持久性好，属于非易失存储介质。
-
-
 
 PC机常见的外存储器有软盘存储器、硬盘存储器、光盘存储器等。
 
@@ -187,29 +182,29 @@ U盘的存储介质
 
 ### 世界上第一个U盘
 
-   朗科公司推出的以优盘为商标的闪存盘（OnlyDisk）是世界上首创基于USB接口，采用闪存（Flash Memory）介质的新一代存储产品。闪存盘，是中国在计算机存储领域二十年来唯一属于中国人的原创性发明专利成果。
+朗科公司推出的以优盘为商标的闪存盘（OnlyDisk）是世界上首创基于USB接口，采用闪存（Flash Memory）介质的新一代存储产品。闪存盘，是中国在计算机存储领域二十年来唯一属于中国人的原创性发明专利成果。
 
-   美国科技博客网站BusinessInsider评选出本世纪迄今10款最重要电子产品，iPhone、iPad、iPod和MacBook　Air等4款苹果产品榜上有名。微软也因为Xbox和Kinect上榜，中国朗科发明的U盘也上榜。但日本电子产品无一入选，曾经辉煌的日本电子帝国已全面衰落。
-   
-   第一次知道原来U盘是中国人发明的，还被美国列为本世纪10大最重要电子产品。
+美国科技博客网站BusinessInsider评选出本世纪迄今10款最重要电子产品，iPhone、iPad、iPod和MacBook　Air等4款苹果产品榜上有名。微软也因为Xbox和Kinect上榜，中国朗科发明的U盘也上榜。但日本电子产品无一入选，曾经辉煌的日本电子帝国已全面衰落。
 
-   朗科公司是由留学归国人员于1999年成立的高新技术企业。其创始人邓国顺推出了世界上首创的采用闪存介质的新一代存储技术及产品，这项在闪存盘及闪存应用领域的基础性发明专利，被称作是中国在IT行业第一项原创性发明专利。此项专利于2002年被中国知识产权局授予发明专利权，2004年12月7日，朗科获得美国国家专利局正式授权的闪存盘基础发明专利，美国专利号US6829672。这一专利权的获得，从法律上确认了中国朗科公司是U盘的全球第一个发明者。
+第一次知道原来U盘是中国人发明的，还被美国列为本世纪10大最重要电子产品。
 
-　　美国时间2006年2月10日，朗科委托美国摩根路易斯律师向美国德克萨斯州东区联邦法院递交诉状，控告美国PNY公司侵犯了朗科的美国专利(美国专利号US6829672)。2008年2月，朗科与PNY达成庭外和解。朗科向PNY签订专利许可协议，PNY向朗科公司缴纳专利许可费用1000万美元。这是中国企业第一次在美国本土收到巨额专利许可费用。也进一步证明了朗科是U盘的全球发明者。
-   
-   于是神评论:做产品早就是朗科副业了，打官司才是朗科的主业。
-   
->优盘是朗科的一个牌子，因为当时所有的U盘都是优盘牌的，所以优盘成了U盘的代名词，其他厂商，为了不侵权，只好将其称为U盘。
+朗科公司是由留学归国人员于1999年成立的高新技术企业。其创始人邓国顺推出了世界上首创的采用闪存介质的新一代存储技术及产品，这项在闪存盘及闪存应用领域的基础性发明专利，被称作是中国在IT行业第一项原创性发明专利。此项专利于2002年被中国知识产权局授予发明专利权，2004年12月7日，朗科获得美国国家专利局正式授权的闪存盘基础发明专利，美国专利号US6829672。这一专利权的获得，从法律上确认了中国朗科公司是U盘的全球第一个发明者。
+
+美国时间2006年2月10日，朗科委托美国摩根路易斯律师向美国德克萨斯州东区联邦法院递交诉状，控告美国PNY公司侵犯了朗科的美国专利\(美国专利号US6829672\)。2008年2月，朗科与PNY达成庭外和解。朗科向PNY签订专利许可协议，PNY向朗科公司缴纳专利许可费用1000万美元。这是中国企业第一次在美国本土收到巨额专利许可费用。也进一步证明了朗科是U盘的全球发明者。
+
+于是神评论:做产品早就是朗科副业了，打官司才是朗科的主业。
+
+> 优盘是朗科的一个牌子，因为当时所有的U盘都是优盘牌的，所以优盘成了U盘的代名词，其他厂商，为了不侵权，只好将其称为U盘。
 
 ### USB是谁发明的
 
-   2015 年 11 月 15 日 USB 技术问世 20 周年，全球有超过 100 亿台设备正在使用 USB 传输资料，做为这项应用最为广泛的技术发明者，Ajay Bhatt 在过去 20 年终却没有透过 USB 技术专利赚过钱，这位 Intel 的首席系统工程师表示，研发 USB 技术不是为了赚钱，而是为了给科技产业带来改变。
+2015 年 11 月 15 日 USB 技术问世 20 周年，全球有超过 100 亿台设备正在使用 USB 传输资料，做为这项应用最为广泛的技术发明者，Ajay Bhatt 在过去 20 年终却没有透过 USB 技术专利赚过钱，这位 Intel 的首席系统工程师表示，研发 USB 技术不是为了赚钱，而是为了给科技产业带来改变。
 
-   20 年前 Ajay Bhatt 仅仅是希望能够为电脑之间的资料传输创造一个统一的界面，使用者必须要为不同的硬盘安装特殊的程序，这款提升用户体验的想法却没有得到业内人士的支持，大公司固守着原有的传输标准，没有人敢走出打破规则的第一步。
-　　
+20 年前 Ajay Bhatt 仅仅是希望能够为电脑之间的资料传输创造一个统一的界面，使用者必须要为不同的硬盘安装特殊的程序，这款提升用户体验的想法却没有得到业内人士的支持，大公司固守着原有的传输标准，没有人敢走出打破规则的第一步。  
+　　  
    只有 Intel 公司对 Ajay Bhatt 的想法感兴趣，并给予他研发技术和资金上的支持，Intel 的处理器也在第一时间支持 USB 传输技术。由于 USB 是应用在不同设备的传输技术，初期推广时并不顺利，Ajay Bhatt 首次向微软、苹果等公司推广这一技术时，这些公司没有表现出太多兴趣。第一款相容 USB 技术的产品是苹果在 1998 年 8 月推出的 iMac G3，随后微软宣布 Windows 98 支持 USB 技术，这项技术很快得到推广普及。
-   
-　　做为 USB 技术的投资方，Intel 公司持有该技术的全部专利，在这项技术全面推广和普及后，Intel 并没有透过 USB 技术赚钱，而是宣布对所有厂商开放 USB 技术专利。因此 Ajay Bhatt 也错过了获得丰厚回报的机会，Ajay Bhatt 表示，USB 技术让用户更轻松自如地使用电脑，这样厂商就可以卖出更多产品，Intel 可以售出更多晶片，市场规模也因此扩大，做为一名工程师，Intel 已经给他很好的待遇，因为在其他地方他没办法完成这样的研发。
+
+做为 USB 技术的投资方，Intel 公司持有该技术的全部专利，在这项技术全面推广和普及后，Intel 并没有透过 USB 技术赚钱，而是宣布对所有厂商开放 USB 技术专利。因此 Ajay Bhatt 也错过了获得丰厚回报的机会，Ajay Bhatt 表示，USB 技术让用户更轻松自如地使用电脑，这样厂商就可以卖出更多产品，Intel 可以售出更多晶片，市场规模也因此扩大，做为一名工程师，Intel 已经给他很好的待遇，因为在其他地方他没办法完成这样的研发。
 
 ## 操作系统
 
@@ -239,20 +234,20 @@ Linux是多任务操作系统，看上去支持很多并行执行的若干进程
 
 1GB = 2[^20] MB
 
-由于内存区域是同坐指针寻址，因此CPU的字长决定了所能管理的地址空间的最大长度。如322系统(IA-32 etc)可以管理的内存时2[^32]B = 4GB,对现在更新的64位处理器（IA-64、AMD64）则理论上可以管理2[^64]Byte。
+由于内存区域是同坐指针寻址，因此CPU的字长决定了所能管理的地址空间的最大长度。如322系统\(IA-32 etc\)可以管理的内存时2[^32]B = 4GB,对现在更新的64位处理器（IA-64、AMD64）则理论上可以管理2[^64]Byte。
 
 地址空间的最大长度与实际可用的物理内存数量无关，因此被称作虚拟地址空间。从每个进程的角度讲，地址空间中只有自己一个进程，无法感知也无需感知 别的进程的存在。
 
-Linux将细腻地址空间划分为两部分，分为内核空间和用户空间。
-系统中每个用户进程都有自己的虚拟地址范围，从0-TASK_SIZE。用户空间之上的内核空间(从TASK_SIZE-2[^32](2[^64]))保留给内核专用，用户进程不能访问。TASK_SIZE是一个特定于计算机体系结构的常数，把地址空间按给定的比例划分为两部分。
+Linux将细腻地址空间划分为两部分，分为内核空间和用户空间。  
+系统中每个用户进程都有自己的虚拟地址范围，从0-TASK\_SIZE。用户空间之上的内核空间\(从TASK\_SIZE-2[^32]\(2[^64]\)\)保留给内核专用，用户进程不能访问。TASK\_SIZE是一个特定于计算机体系结构的常数，把地址空间按给定的比例划分为两部分。
 
 比如在IA-32系统中 虚拟地址空间的总长度是4GB。0-3G是用户空间，3-4G是内核空间。每个用户进程都认为自身有3GB内存，每个用户进程空间时完全隔离的，而虚拟地址空间顶部的内核空间总是相同的。
 
 Linux中使用两个不同的状态：内核态和用户态。
 
-两种状态的关键差别在于对高于TASK_SIZE的内存区域的访问。用户态禁止访问内核空间，用户进程不能操作或者读取内核空间的中，也无法执行内核空间的代码。这种机制可以防止进程无意间修改彼此的数据而造成相互干扰。
+两种状态的关键差别在于对高于TASK\_SIZE的内存区域的访问。用户态禁止访问内核空间，用户进程不能操作或者读取内核空间的中，也无法执行内核空间的代码。这种机制可以防止进程无意间修改彼此的数据而造成相互干扰。
 
-从用户态到内核态的切换通过系统调用的转换手段完成，且系统调用的执行因具体系统而不同。
+从用户态到内核态的切换通过系统调用的转换手段完成，且系统调用的执行因具体系统而不同。  
 用户进程想要执行任何影响整个系统的操作（输入/输出设备）,只能借助于系统调用向内核发出请求，内核首先检查进程是否允许执行想要的操作，然后代表进程执行所需才做，接下来返回到用户态。
 
 使用ps命令可以看到很多内核的线程 名称置于方括号之内
@@ -269,13 +264,12 @@ ps fax
 
 用户进程的虚拟地址空间被划分为很多等长的部分，每一部分成为页。 物理内存也被划分为同样大小的页,物理内存页经常称为页帧。
 
-将虚拟地址空间映射到物理地址空间的用以维护页帧的数据结构多级页表。
-CPU内存有一个专门的期间MMU(Memmory Management Unit,内存管理单元)，优化内存访问操作。
+将虚拟地址空间映射到物理地址空间的用以维护页帧的数据结构多级页表。  
+CPU内存有一个专门的期间MMU\(Memmory Management Unit,内存管理单元\)，优化内存访问操作。
 
 ### 物理内存的分配
 
 在内核分配内存的时候，必须记录页帧的已分配和未分配状态的，以免两个进程使用同样的内存区域。由于内存分配和释放非常频繁，内核还必须保证相关操作尽快完成。可以只分配完成的页帧，将内存划分为更小部分的工作则委托给用户空间的标准库。标准库将来源于内核的页帧拆分为小的内存块，并未进程分配内存。
-
 
 ### 页面交换
 
@@ -285,43 +279,38 @@ CPU内存有一个专门的期间MMU(Memmory Management Unit,内存管理单元)
 
 在内核需要更多的内存的时候，将不经常使用的页写入磁盘，在内核再次需要访问该页中的数据的时候交换回内存。一旦CPU发现所需的页数据不在内存，将会引发可以被内核截获的CPU的缺页中断，此时内核将该页帧数交换进内存，然后恢复用户进程运行。从而达到对用户程序的透明，无感知。
 
-
 ### 虚拟地址空间
 
-物理内存的页帧与所有的进程虚拟地址空间的页之间的关联:
+物理内存的页帧与所有的进程虚拟地址空间的页之间的关联:  
 逆向映射 reverse mapping技术有助于从虚拟内存页跟踪到对应的物理内存页，而缺页处理 page fault handling则允许从块设备按需读取数据填充虚拟地址空间。
 
-
-地址空间只有极少的部分与物理内存也直接关联，不经常使用的部分，仅当必要时才与页帧进行关联。
+地址空间只有极少的部分与物理内存也直接关联，不经常使用的部分，仅当必要时才与页帧进行关联。  
 内核信任自己，但无法新人用户进程。各个用户地址空间的操作都伴随各种检查，以确保程序的权限不会超出应有的限制，进而危害整个OS的稳定性和安全性。
 
 #### 进程地址空间的布局
 
-虚拟地址空间中够包含了若干区域，其分布方式是特定于体系结构的，但都有一写共同的分类：
-存放二进制代码的虚拟内存区域，该代码成为text，该区域成为text段;
-存储全局变量和动态产生的数据的堆;
-用于保存局部变量和实现函数调用的栈；
-环境变量和命令行参数的段；
-mmap内存映射的区域；
-动态库代码映射预取；
+虚拟地址空间中够包含了若干区域，其分布方式是特定于体系结构的，但都有一写共同的分类：  
+存放二进制代码的虚拟内存区域，该代码成为text，该区域成为text段;  
+存储全局变量和动态产生的数据的堆;  
+用于保存局部变量和实现函数调用的栈；  
+环境变量和命令行参数的段；  
+mmap内存映射的区域；  
+动态库代码映射预取；  
 .....etc
-
 
 #### 建立布局
 
-load_elf_binary装载一个elf二进制文件时，将创建进程的地址空间。
+load\_elf\_binary装载一个elf二进制文件时，将创建进程的地址空间。
 
 ### 堆的管理
 
 堆是进程中用于动态分配变量和数据的内存区域，是一段连续的内存区域。
 
-### 缺页异常的处理 
+### 缺页异常的处理
 
 在实际需要某个进程的虚拟地址空间的数据之前，虚拟和物理之间的关联并没有建立。如果进程访问的虚拟地址空间部分尚未与页帧关联，处理器就会触发缺页终端，需要内核处理。
 
 缺页中断时由于访问用户地址空间中的有效地址而引起，还是应用程序试图访问内核的的受保护区域呢？
-
-
 
 ## 系统调用
 
@@ -329,7 +318,7 @@ system\(\)
 
 系统调用的开销
 
-系统调用时用户进程和内核交互的经典方法。POSIX定义了许多系统调用，以及这些系统调用在所有遵循POSXI的系统(Linux）的语义。总的来说，由以下几大类：
+系统调用时用户进程和内核交互的经典方法。POSIX定义了许多系统调用，以及这些系统调用在所有遵循POSXI的系统\(Linux）的语义。总的来说，由以下几大类：
 
 进程管理、信号、文件IO、文件系统、保护机制、定时器。
 
@@ -337,23 +326,15 @@ system\(\)
 
 用户进程发出系统调用的时候，处理器改变该进程的特权级别，从用户态切换为内核态，每个硬件平台都提供了类似但又不同的机制。
 
-
 ### 文件系统
 
-Linux系统有数以万计的文件，其数据存储在硬盘等其他设备。存储使用了层次式文件系统。文件系统使用目录结构组织存储的数据，并将其他元数据(所有者、访问权限)与实际数据关联起来。Linux支持许多文件系统：Ext2,Ext3文件系统。Ext2基于inode，对每个文件构造一个单独的管理结构，并且存储在磁盘上，inode包含了文件所有的元数据，以及指向项数据的指针。
-
+Linux系统有数以万计的文件，其数据存储在硬盘等其他设备。存储使用了层次式文件系统。文件系统使用目录结构组织存储的数据，并将其他元数据\(所有者、访问权限\)与实际数据关联起来。Linux支持许多文件系统：Ext2,Ext3文件系统。Ext2基于inode，对每个文件构造一个单独的管理结构，并且存储在磁盘上，inode包含了文件所有的元数据，以及指向项数据的指针。
 
 ## 为什么寄存器比内存快
 
-简述一下该观点 http://www.ruanyifeng.com/blog/2013/10/register.html
+简述一下该观点 [http://www.ruanyifeng.com/blog/2013/10/register.html](http://www.ruanyifeng.com/blog/2013/10/register.html)
 
-知乎 https://www.zhihu.com/question/20075426
-
-
-
-
-
-
+知乎 [https://www.zhihu.com/question/20075426](https://www.zhihu.com/question/20075426)
 
 ## 随处可见的cache机制
 
@@ -363,67 +344,68 @@ CPU的一级缓存、二级缓存
 
 操作系统的虚拟内存和交换分区
 
-
 ### 为什么寄存器比内存块?
 
-http://www.ruanyifeng.com/blog/2013/10/register.html
-
+[http://www.ruanyifeng.com/blog/2013/10/register.html](http://www.ruanyifeng.com/blog/2013/10/register.html)
 
 ## 操作系统是如何启动的?
 
-http://www.ruanyifeng.com/blog/2013/02/booting.html
+[http://www.ruanyifeng.com/blog/2013/02/booting.html](http://www.ruanyifeng.com/blog/2013/02/booting.html)
 
 ## 编程语言
-编程语言（programming language），是用来定义计算机程序的形式语言。它是一种被标准化的交流技巧，用来向计算机发出指令。一种计算机语言让程序员能够准确地定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。
+
+编程语言（programming language），是用来定义计算机程序的形式语言。它是一种被标准化的交流技巧，用来向计算机发出指令。一种计算机语言让程序员能够准确地定义计算机所需要使用的数据，并精确地定义在不同情况下所应当采取的行动。  
 编程语言俗称“计算机语言”，种类非常的多，总的来说可以分成机器语言、汇编语言、高级语言三大类。电脑每做的一次动作，一个步骤，都是按照已经用计算机语言编好的程序来执行的，程序是计算机要执行的指令的集合，而程序全部都是用我们所掌握的语言来编写的。所以人们要控制计算机一定要通过计算机语言向计算机发出命令。 目前通用的编程语言有两种形式：汇编语言和高级语言。
 
-程序员通过编写跟人类思维较相近高级语言的程序代码，使用一种将该程序代码**翻译**为最终可执行的二进制代码。
-这种**翻译**一般都是使用较为低级的编程语言。
+程序员通过编写跟人类思维较相近高级语言的程序代码，使用一种将该程序代码**翻译**为最终可执行的二进制代码。  
+这种**翻译**一般都是使用较为低级的编程语言。  
 这种拥有**翻译**功能的程序的设计思路跟具体的编程语言的语法要求是相关的。
 
-从我们生活中就可以知道，将英文翻译为中文有两种基本模式。
-第一种，将拿到的一篇完整的英文文章翻译为中文;
+从我们生活中就可以知道，将英文翻译为中文有两种基本模式。  
+第一种，将拿到的一篇完整的英文文章翻译为中文;  
 第二种，在外宾发表的演讲的同时将其翻译为中文，同声传译。
 
 高级语言按照其执行方式，他所依赖的翻译工具实际上也有上述这两种情况。
+
 ### 解释器
-边解释，边执行。
+
+边解释，边执行。  
 shell、Python等编程语言。
 
 ### 编译器
-只有整个程序编译完成，才能进行下一步操作。
+
+只有整个程序编译完成，才能进行下一步操作。  
 C、C++、OC等编程语言。
 
 ### 常用的C语言编译器
 
-GNU Compiler Collection(GCC)
+GNU Compiler Collection\(GCC\)
 
-Microsoft C(cl.exe)
+Microsoft C\(cl.exe\)
 
 Borland Turbo C
 
-Intel C++ Compiler(icc)
+Intel C++ Compiler\(icc\)
 
 llvm-clang
 
-LLVM官方网站：http://llvm.org/
+LLVM官方网站：[http://llvm.org/](http://llvm.org/)
 
-Clang官方网站：http://clang.llvm.org/get_started.html
+Clang官方网站：[http://clang.llvm.org/get\_started.html](http://clang.llvm.org/get_started.html)
 
-LLVM是构架编译器(compiler)的框架系统，以C++编写而成，用于优化以任意程序语言编写的程序的编译时间(compile-time)、链接时间(link-time)、运行时间(run-time)以及空闲时间(idle-time)，对开发者保持开放，并兼容已有脚本。LLVM计划启动于2000年，最初由University of Illinois at Urbana-Champaign的Chris Lattner主持开展。2006年Chris Lattner加盟Apple Inc.并致力于LLVM在Apple开发体系中的应用。Apple也是LLVM计划的主要资助者.
+LLVM是构架编译器\(compiler\)的框架系统，以C++编写而成，用于优化以任意程序语言编写的程序的编译时间\(compile-time\)、链接时间\(link-time\)、运行时间\(run-time\)以及空闲时间\(idle-time\)，对开发者保持开放，并兼容已有脚本。LLVM计划启动于2000年，最初由University of Illinois at Urbana-Champaign的Chris Lattner主持开展。2006年Chris Lattner加盟Apple Inc.并致力于LLVM在Apple开发体系中的应用。Apple也是LLVM计划的主要资助者.
 
-Low Level Virtual Machine (LLVM) 是一个开源的编译器架构，它已经被成功应用到多个应用领域。Clang ( 发音为 /klæŋ/) 是 LLVM 的一个编译器前端，它目前支持 C, C++, Objective-C 以及 Objective-C++ 等编程语言。Clang 对源程序进行词法分析和语义分析，并将分析结果转换为 Abstract Syntax Tree ( 抽象语法树 ) ，最后使用 LLVM 作为后端代码的生成器。
+Low Level Virtual Machine \(LLVM\) 是一个开源的编译器架构，它已经被成功应用到多个应用领域。Clang \( 发音为 /klæŋ/\) 是 LLVM 的一个编译器前端，它目前支持 C, C++, Objective-C 以及 Objective-C++ 等编程语言。Clang 对源程序进行词法分析和语义分析，并将分析结果转换为 Abstract Syntax Tree \( 抽象语法树 \) ，最后使用 LLVM 作为后端代码的生成器。  
 Clang 的开发目标是提供一个可以替代 GCC 的前端编译器。与 GCC 相比，Clang 是一个重新设计的编译器前端，具有一系列优点，例如模块化，代码简单易懂，占用内存小以及容易扩展和重用等。由于 Clang 在设计上的优异性，使得 Clang 非常适合用于设计源代码级别的分析和转化工具。Clang 也已经被应用到一些重要的开发领域，如 Static Analysis 是一个基于 Clang 的静态代码分析工具。
 
 ### C语言常用IDE
 
 集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列。
 
-
-VS
-Qt creator
-Code::Blocks
-Eclipse
-clion
+VS  
+Qt creator  
+Code::Blocks  
+Eclipse  
+clion  
 值得注意的是 虽然vim一般来说是一个编辑器，但是vim支持拓展控件，所以这样拓展之后的vim完全可以当做一个IDE使用。
 
