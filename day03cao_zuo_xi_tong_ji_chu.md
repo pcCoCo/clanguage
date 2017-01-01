@@ -1,7 +1,7 @@
 # day03-操作系统基础
 
 
-## C语言起源
+## C语言为什么NewB(牛逼)
 
 C语言是贝尔实验室的Ken Thompson、Dennis Ritchie等人开发的UNIX操作系统的副产品。
 Ken Thompson在1969年独自写出了UNIX的最初版本运行在DEC PDP-7计算机上，内存16KB，使用汇编汇编语言编写。
