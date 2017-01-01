@@ -198,7 +198,14 @@ math之
 
     pow、sqrt、abs
     
+double pow (double base, double exponent);
+
+    求base的exponent次方
     
+double sqrt (double x);
+    
+    求x的算术平方根
+
 stdlib之
 
     atoi(atol atof)、rand、srand、exit
