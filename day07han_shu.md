@@ -185,8 +185,14 @@ http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
 
 ## 常用库函数
 
-<math.h>
-<stdlib.h>
+
+
+```
+#include <math.h>
+#include <stdlib.h>
+
+```
+
 
 math之
     pow
