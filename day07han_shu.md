@@ -195,15 +195,12 @@ http://www.cnblogs.com/orlion/archive/2015/12/20/5062165.html
 
 
 math之
-    pow
-    sqrt
-    abs
+
+    pow、sqrt、abs
     
 stdlib之
-    atoi(atol atof)
-    rand
-    srand
-    exit
+
+    atoi(atol atof)、rand、srand、exit
     
 
 
