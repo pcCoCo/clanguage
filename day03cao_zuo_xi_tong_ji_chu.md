@@ -5,6 +5,8 @@
 
 C语言是贝尔实验室的Ken Thompson、Dennis Ritchie等人开发的UNIX操作系统的副产品。
 Ken Thompson在1969年独自写出了UNIX的最初版本运行在DEC PDP-7计算机上，内存16KB，使用汇编汇编语言编写。
+后Ken Thompson在BCPL语言的语法基础上设计了B语言，后Ritchie加入到UNIX项目中，开始使用B语言编写程序。
+后来实验室争取到了一台PDP-11计算机，于是把B语言经过改进之后移植新机器上，并用B语言重写了部分的UNIX代码。
 
 
 ## 从C源码到可执行程序的历练
