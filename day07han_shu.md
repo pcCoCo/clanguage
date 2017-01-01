@@ -212,6 +212,7 @@ long double abs (long double x);
     
     求x的绝对值
 
+
 stdlib之
 
     atoi(atol atof)、rand、srand、exit
