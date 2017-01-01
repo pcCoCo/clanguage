@@ -205,6 +205,12 @@ double pow (double base, double exponent);
 double sqrt (double x);
     
     求x的算术平方根
+    
+double abs (double x);
+float abs (float x);
+long double abs (long double x);
+    
+    求x的绝对值
 
 stdlib之
 
