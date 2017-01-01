@@ -198,6 +198,7 @@ math之
 
     pow、sqrt、abs
     
+    
 stdlib之
 
     atoi(atol atof)、rand、srand、exit
