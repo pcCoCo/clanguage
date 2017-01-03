@@ -99,7 +99,7 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 
 ### 个人计算机
 
-[https://en.wikipedia.org/wiki/Personal\_computer](https://en.wikipedia.org/wiki/Personal_computer)
+[https://en.wikipedia.org/wiki/Personal\_computer](PC)
 
 ## CPU架构
 
