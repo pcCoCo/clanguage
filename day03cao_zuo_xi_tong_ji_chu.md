@@ -103,6 +103,12 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 
 ## CPU架构
 
+![](/assets/cpu.jpg)
+
+![](/assets/CPU2.jpg)
+
+>终于知道一种超越了跪键盘的酷刑---------------跪CPU。
+
 x86 x86-64 SPARC ARM
 
 ### 复杂指令集CISC
