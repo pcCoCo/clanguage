@@ -57,6 +57,7 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 
 执行指令 `gcc hello.s -c -o test.o`
 `od test.o`可以查看二进制文件
+汇编器 as hello.s -o hello.o
 
 
 ### 链接
@@ -65,6 +66,8 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 目标文件是包括机器码和链接器可用信息的程序模块。简单的讲，链接器的工作就是解析未定义的符号引用，将目标文件中的占位符替换为符号的地址。
 
 执行指令 gcc hello.o -o hello
+
+link hello
 
 ## 计算机系统结构
 
