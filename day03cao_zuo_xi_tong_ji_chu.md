@@ -248,8 +248,6 @@ PC机常见的外存储器有软盘存储器、硬盘存储器、光盘存储器
 
 光盘有只读型光盘CD-ROM、一次写入型光盘WORM和可重写型光盘MO三种。
 
-
-
 U盘存储介质为FLASH闪存，英文名称是"Flash Memory"，一般简称为"Flash"。
 ![](/assets/u_disk.jpg)
 
