@@ -106,8 +106,6 @@ int func(int a);
 
 其实还可以更加简单
 
-
-
 ```
 int func(int);
 ```
