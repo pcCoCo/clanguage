@@ -43,13 +43,13 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 优化 简化算术表达式、消除无用代码...  
 生成 关注目标处理器生成实际的汇编代码，并不是可执行的二进制文件而是汇编指令文件。汇编器将其转化为二进制机器代码+可能的链接器。
 
-执行指令 gcc hello.c -E -o hello.i 
+执行指令 `gcc hello.c -E -o hello.i` 
 
 ### 编译
 
 编译器--将预处理之后的C代码进行词法分析、语法分析、语义分析转化为汇编代码，并进行优化（常数优化、循环优化...）。
 
-执行指令 gcc hello.i -S -o hello.s
+执行指令 `gcc hello.i -S -o hello.s`
 
 ### 汇编
 
