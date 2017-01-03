@@ -45,7 +45,8 @@
 十六进制
 
 
-## 类型限定
+## 存储类型限定符
+
 ### const
 ### volatile
 ### register
