@@ -57,7 +57,7 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 
 执行指令 `gcc hello.s -c -o test.o`
 `od test.o`可以查看二进制文件
-汇编器 as hello.s -o hello.o
+也可以直接调用汇编器 `as hello.s -o hello.o`
 
 
 ### 链接
