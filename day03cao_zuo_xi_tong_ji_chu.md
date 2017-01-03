@@ -239,7 +239,8 @@ PC机常见的外存储器有软盘存储器、硬盘存储器、光盘存储器
 
 
 ![](/assets/hard_disk.jpg)
-
+![![
+![](/assets/ssd.jpg)](/assets/ssd.jpg)](/assets/ssd.jpg)
 ![](/assets/ssd.jpg)
 
 
