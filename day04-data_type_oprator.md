@@ -26,7 +26,10 @@
 ### char 和 unsigned char
 
 
-## 浮点float, double, long double类型
+## 浮点类型
+    
+    float, double, long double类型
+    
 ### 浮点常量，变量
 ### printf函数输出浮点数
 
