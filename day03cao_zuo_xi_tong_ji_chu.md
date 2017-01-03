@@ -67,7 +67,8 @@ AT&T公司（英语：AT&T Inc.，原为American Telephone & Telegraph的缩写�
 
 执行指令 gcc hello.o -o hello
 
-在执行这条命令的
+实际上是调用以下形式的是命令
+
 link hello.o 启动代码 库 -o hello
 
 ## 计算机系统结构
