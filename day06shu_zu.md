@@ -27,6 +27,26 @@ int main()
 * 数组的下标的取值范围：0 ~ 数组长度-1
 * C99中才开始支持数组长度是变量的语法；但是C89的编译器并不能支持
 
+```
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&b);
+    int a[n];
+    for( int i = 0; i < n;++i)
+    {
+        scanf("%d",&a[i]);
+    }
+    
+    for( int i = 0; i < n;++i)
+    {
+        scanf("%d",&a[i]);
+    }    
+    return 0;
+}
+
+```
 
 ## 数组在内存中的存储方式
 
