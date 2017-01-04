@@ -51,6 +51,39 @@ int main()
 在C语言中const关键字的作用是对定义的变量进行`只读`的限定。
 
 
+
+```
+const int count = 123;
+```
+
+然后在C语言对const语义并没有理论上的那么严谨，在后期学习了指针之后就会发现:
+
+
+```
+
+#include <stdio.h>
+//局域作用域中的const类型的常量  是可以通过指针修改的。
+
+int main()
+{
+    const int count = 100;
+    int *ptr = (int*)&count;
+    *ptr = 1001;
+    printf("%d",count);
+    return 0;
+}
+
+
+
+
+
+```
+
+
+
+
+
+
 在开始讲解const关键字的时候应该表明 const是一个限定符。
 
 
