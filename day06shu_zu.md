@@ -38,7 +38,6 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    
     for( int i = 0; i < n;++i)
     {
         printf("%d",a[i]);
