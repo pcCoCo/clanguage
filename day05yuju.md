@@ -260,11 +260,9 @@ linux command-gcc
 
 Qt IDE
     
-在Qt项目的pro文件中 `QMAKE_CFLAGS += -std=c99`
-    
-    
+在Qt项目的pro文件中 `QMAKE_CFLAGS += -std=c99`  
 
-因为MSVC是一个C++编译器，因此我们不需要指定。
+因为MSVC是一个C++编译器，因此我们不需要指定即可直接编译C99的代码。
 
 
 
