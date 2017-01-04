@@ -81,17 +81,35 @@ switch(量)
 如果判断条件是**整数类型**的值类型的时候 switch和if都可以使用
 但是switch语句显得更加简洁
 
+
+
+```
 int num = 0;
 scanf("%d",num);
-int num = num % 2;
+int num = num % 3;
 
 if (num == 0)
 {
-    printf("num是偶数\n");
+    printf("余数是0\n");
+}else if(num == 1)
+{
+    printf("余数是1\n");
 }else
 {
-    printf("num是奇数\n");
+    printf("余数是2\n");
 }
+
+```
+
+int num = 0;
+scanf("%d",num);
+int num = num % 2;
+switch( num ）
+{
+    
+}
+
+
 
 
 如果判断条件中是非整数类型(浮点数、表达式)时必须使用if语句。
