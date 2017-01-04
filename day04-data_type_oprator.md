@@ -127,8 +127,7 @@ int res = 1&gt;2? 1: 2
 ### 反汇编演示
 
 汇编语言种类   Intel汇编和AT&T汇编
-
-在Linux内核中源码中部分代码使用 AT&T汇编编写
+在intel的官方文档中使intel语法，Windows也使用intel语法；而UNIX平台的汇编器一直使用AT&T语法，在Linux内核中源码中部分代码使用AT&T汇编编写。
 
 
 从汇编的角度看a++ 和++b的指令
