@@ -141,7 +141,7 @@ float, double, long double类型
 
 ### printf函数
 
-格式化控制符   %d %x %p %c %s %%
+格式化控制符   %d %x %p %c %s %% 
 
 
 ### getchar函数
