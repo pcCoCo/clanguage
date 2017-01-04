@@ -137,9 +137,16 @@ float, double, long double类型
 
 ## 字符串格式化输出和输入
 
-### printf函数，putchar函数
+### putchar函数
 
-### scanf函数，getchar函数
+### printf函数
+
+格式化控制符   %d %x %p %c %s %%
+
+
+### getchar函数
+
+### scanf函数，
 
 ## 运算符
 
