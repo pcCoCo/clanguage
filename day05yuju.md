@@ -250,7 +250,7 @@ for( int i = 0; i < 1000; ++i)
 
 
 
-["gcc编译器对c99的支持情况"](http://gcc.gnu.org/c99status.html)
+[拓展延伸-gcc编译器对c99的支持情况](http://gcc.gnu.org/c99status.html)
 
 
 ## 循环嵌套
