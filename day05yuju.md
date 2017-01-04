@@ -91,7 +91,7 @@ int num = num % 3;
 if ( num == 0 )
 {
     printf("余数是0\n");
-}else if(num == 1)
+}else if( num == 1)
 {
     printf("余数是1\n");
 }else
