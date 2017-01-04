@@ -88,7 +88,7 @@ int num = 0;
 scanf("%d",num);
 int num = num % 3;
 
-if (num == 0)
+if ( num == 0 )
 {
     printf("余数是0\n");
 }else if(num == 1)
