@@ -60,7 +60,6 @@ const int count = 123;
 
 
 ```
-
 #include <stdio.h>
 //局域作用域中的const类型的常量  是可以通过指针修改的。
 
@@ -72,11 +71,6 @@ int main()
     printf("%d",count);
     return 0;
 }
-
-
-
-
-
 ```
 
 
