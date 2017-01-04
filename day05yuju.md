@@ -252,7 +252,7 @@ for( int i = 0; i < 1000; ++i)
 
 [拓展延伸-gcc编译器对c99的支持情况](http://gcc.gnu.org/c99status.html)
 
-> 指定编译器以c99方式编译我们的C代码
+> 指定编译器**以c99方式编译**我们的C代码
 
 * linux command-gcc
 
