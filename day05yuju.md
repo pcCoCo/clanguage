@@ -106,7 +106,15 @@ scanf("%d",num);
 int num = num % 2;
 switch( num ）
 {
-    
+    case 0:
+        printf("余数是0\n");
+        break;
+    case 1:
+        printf("余数是1\n");
+        break;
+    default:
+        printf("余数是2\n");
+        break;
 }
 
 
