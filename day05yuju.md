@@ -49,7 +49,9 @@ if(条件)
 注意：在多分支if语句里，else总是和上面最近的那个if配对。
 
 
-## switch与break，default
+## switch分支语句
+
+与break，default
 
 * switch语句的使用
 
