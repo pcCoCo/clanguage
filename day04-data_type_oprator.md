@@ -13,7 +13,24 @@
 演示在处理的时候 #define 的替换效果
 
 
-演示
+
+
+```
+# 2 "main.c" 2
+
+
+
+int main()
+{
+ printf("%s","hello");
+ return 0;
+}
+```
+
+
+
+
+
 
 ### const
 
