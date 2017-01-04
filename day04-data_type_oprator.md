@@ -127,6 +127,32 @@ INC ADD
 
 
 
+```
+#include <stdio.h>
+int main()
+{
+	int a = 100;
+	int b = 101;
+	int c = 102;
+	int d = 103;
+	int e = 104;
+
+	a = ++b;
+	
+	a = c++;
+
+	d = d + 1;
+
+	e += 1;
+
+	printf("%d %d %d %d %d\n",a,b,c,d,e);
+	getchar();
+	return 0;
+}
+```
+
+
+
 
 ```
 --- g:\code\test_asm\test_asm\main.cpp -----------------------------------------
