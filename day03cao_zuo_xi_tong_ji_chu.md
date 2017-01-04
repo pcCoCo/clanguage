@@ -375,6 +375,11 @@ C、C++、OC等编程语言。
 
 GNU Compiler Collection\(GCC\)
 
+GCC（GNU Compiler Collection，GNU编译器套件），是由 GNU 开发的编程语言编译器。它是以GPL许可证所发行的自由软件，也是 GNU计划的关键部分。GCC原本作为GNU操作系统的官方编译器，现已被大多数类Unix操作系统（如Linux、BSD、Mac OS X等）采纳为标准的编译器，GCC同样适用于微软的Windows。[2] GCC是自由软件过程发展中的著名例子，由自由软件基金会以GPL协议发布。
+
+GCC 原名为 GNU C 语言编译器（GNU C Compiler），因为它原本只能处理 C语言。GCC 很快地扩展，变得可处理 C++。后来又扩展能够支持更多编程语言，如Fortran、Pascal、Objective-C、Java、Ada、Go以及各类处理器架构上的汇编语言等，所以改名GNU编译器套件（GNU Compiler Collection）。
+
+
 Microsoft C\(cl.exe\)
 
 Borland Turbo C
@@ -402,6 +407,8 @@ Code::Blocks
 Eclipse  
 clion  
 值得注意的是 虽然vim一般来说是一个编辑器，但是vim支持拓展控件，所以这样拓展之后的vim完全可以当做一个IDE使用。
+
+
 
 ### IBM公司
 
