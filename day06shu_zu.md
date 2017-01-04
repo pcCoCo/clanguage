@@ -213,11 +213,13 @@ int main()
 只需要这行代码 **srand((unsigned int)time(NULL));**
 
 ```
-//file main.c
+//file main_with_srand.c
 
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
+    srand((unsigned int)time(NULL));
     int i ;
     for( i = 0; i <= 3; ++i)
     {
