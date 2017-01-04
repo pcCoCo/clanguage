@@ -185,13 +185,15 @@ int main()
     int i ;
     for( i = 0; i <= 3; ++i)
     {
-        printf("number is %d\n",rand());
+        printf("%d\n",rand());
     }
     return 0;
 }
 ```
 
 执行指令  `gcc main.c`
+./a.out
+
 
 
 
