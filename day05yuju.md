@@ -101,6 +101,9 @@ if ( num == 0 )
 
 ```
 
+
+
+```
 int num = 0;
 scanf("%d",num);
 int num = num % 2;
@@ -116,6 +119,9 @@ switch( num ）
         printf("余数是2\n");
         break;
 }
+```
+
+
 
 
 
