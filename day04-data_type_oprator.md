@@ -124,9 +124,6 @@ INC ADD
 
 从汇编的角度看a++ 和++b的指令
 
-
-
-
 ```
 #include <stdio.h>
 int main()
