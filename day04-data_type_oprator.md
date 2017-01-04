@@ -14,6 +14,19 @@
 
 
 
+```
+#include <stdio.h>
+#define HAHA "hello"
+
+
+int main()
+{
+    printf("%s",HAHA);
+    return 0;
+}
+```
+
+
 
 ```
 .......
