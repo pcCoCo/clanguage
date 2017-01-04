@@ -169,6 +169,20 @@ int main()
 
 
 
+AT&T汇编语句
+
+
+
+```
+    movl    $100, -20(%rbp)
+    movl    $101, -16(%rbp)
+    movl    $102, -12(%rbp)
+    movl    $103, -8(%rbp)
+    movl    $104, -4(%rbp)
+    addl    $1, -16(%rbp)
+    addl    $1, -12(%rbp)
+```
+
 
 
 非单独使用的场景
