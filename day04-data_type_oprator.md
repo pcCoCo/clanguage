@@ -172,6 +172,7 @@ int main()
 
 
 
+非单独使用的场景
 ```
 #include <stdio.h>
 int main()
