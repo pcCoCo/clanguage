@@ -217,7 +217,7 @@ int main()
 011B1824 51                   push        ecx  
 011B1825 68 30 6B 1B 01       push        offset string "%d %d %d %d %d\n" (011B6B30h)  
 011B182A E8 F1 FA FF FF       call        _printf (011B1320h)  
-011B182F 83 C4 18             add         esp,18h  
+..........
     23: 	return 0;
 011B1841 33 C0                xor         eax,eax  
     24: }
