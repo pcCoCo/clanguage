@@ -191,7 +191,7 @@ int main()
 }
 ```
 
-`gcc main.c`
+执行指令  `gcc main.c`
 
 
 
