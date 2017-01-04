@@ -171,6 +171,15 @@ int main()
 
 AT&T汇编语句 ；AT&T 中寄存器需要加前缀“%” ；立即数需要加前缀“$” 。 
 
+
+
+```
+pc@iZ25g2i2xsmZ:~$ gcc -E test_asm.c -o test_asm.i
+pc@iZ25g2i2xsmZ:~$ gcc -S test_asm.i -o test_asm.s
+```
+
+
+
 ```
 movl    $100, -20(%rbp)
 movl    $101, -16(%rbp)
