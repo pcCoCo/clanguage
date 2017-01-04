@@ -177,19 +177,21 @@ rand() 函数返回值是一个随机数
 
 
 ```
-# main.c
+//file main.c
 
 #include <stdio.h>
 int main()
 {
     int i ;
-    for( i = 0; i <= 10; ++i)
+    for( i = 0; i <= 3; ++i)
     {
         printf("number is %d\n",rand());
     }
     return 0;
 }
 ```
+
+`gcc main.c`
 
 
 
