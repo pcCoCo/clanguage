@@ -131,6 +131,21 @@ INC ADD
 
 从汇编的角度看a++ 和++b的指令
 
+前置++和后置++在表达式中单独使用的时候的，我们就可以认为其实完全一样的。
+```
+10: ++b;
+000417F1 8B 45 EC mov eax,dword ptr [b]  
+000417F4 83 C0 01 add eax,1
+000417F7 89 45 EC mov dword ptr [b],eax  
+11: c++;
+000417FA 8B 45 E0 mov eax,dword ptr [c]  
+000417FD 83 C0 01 add eax,1
+00041800 89 45 E0 mov dword ptr [c],eax  
+```
+
+
+
+
 ```
 #include <stdio.h>
 int main()
@@ -232,18 +247,6 @@ int main()
 
 
 
-```
-
-    10: 	++b;	
-000417F1 8B 45 EC             mov         eax,dword ptr [b]  
-000417F4 83 C0 01             add         eax,1  
-000417F7 89 45 EC             mov         dword ptr [b],eax  
-    11: 	c++;
-000417FA 8B 45 E0             mov         eax,dword ptr [c]  
-000417FD 83 C0 01             add         eax,1  
-00041800 89 45 E0             mov         dword ptr [c],eax  
-    
-```
 
 
 
