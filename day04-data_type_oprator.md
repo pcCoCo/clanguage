@@ -131,7 +131,31 @@ INC ADD
 
 从汇编的角度看a++ 和++b的指令
 
+
 前置++和后置++在表达式中单独使用的时候的，我们就可以认为其实完全一样的。
+
+
+```
+#include <stdio.h>
+int main()
+{
+	int a = 100;
+	int b = 101;
+	int c = 102;
+	int d = 103;
+	int e = 104;
+
+	++b;	
+	c++;
+
+	printf("%d %d %d %d %d\n",a,b,c,d,e);
+	getchar();
+	return 0;
+}
+```
+
+
+
 ```
 10: ++b;
 000417F1 8B 45 EC mov eax,dword ptr [b]  
