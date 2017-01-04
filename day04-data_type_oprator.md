@@ -216,7 +216,7 @@ int main()
 ### &取地址符
     
     int a = 1001;
-    printf("a的地址是 %p\n",&a);
+    printf("a的值是 %d a的地址是 %p\n",a,&a);
     
     
 
