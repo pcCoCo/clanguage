@@ -26,7 +26,7 @@ int main()
 }
 ```
 
-
+预处理指令  gcc -E main.c  -o main1.c
 
 ```
 .......
