@@ -76,7 +76,28 @@ switch(量)
 
 > break如果省略之后会发生非常有趣的现象。
 
-### if语句和switch语句的联系 
+### 关联性的if语句和switch语句的联系 
+
+如果判断条件是**整数类型**的值类型的时候 switch和if都可以使用
+但是switch语句显得更加简洁
+
+int num = 0;
+scanf("%d",num);
+int num = num % 2;
+
+if (num == 0)
+{
+    printf("num是偶数\n");
+}else
+{
+    printf("num是奇数\n");
+}
+
+
+如果判断条件中是非整数类型(浮点数、表达式)时必须使用if语句。
+
+
+
 
 
 ## 条件运算符
