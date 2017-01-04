@@ -149,7 +149,6 @@ printf("max=%d\n", max);
 
 ### 字符串
 
-
 ### scanf函数输入字符串
 
 
