@@ -200,8 +200,8 @@ int fclose ( FILE * stream );
 
 ### 按单个字符读写
 
-fgetc
-getc
+fgetc()
+getc()
 
 fputc
 putc
@@ -225,7 +225,7 @@ ftell()
 ### 操作文件游标到文件开始
 
 fseek()函数可以完成功能 fseek(fp,0,SEEK_SET);
-作为非常懒的C程序员于是发明了一个新的函数 rewind(fp)就可以。
+作为非常懒的C程序员于是发明了一个新的函数 `rewind(fp);` 就可以了。
 
 
 ## 文件啥时候结束
