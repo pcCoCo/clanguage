@@ -39,6 +39,20 @@ a -append表示追加
 **返回值**
 
 
+如果你不小心写成这样 
+
+
+```
+FILE *fp = ("test.txt","r");
+if(fp == NULL)
+{
+    fprintf(stderr,"file not found");
+    return -1;
+}
+```
+> 这样写会出什么错误?
+
+
 
 ## FILE结构体剖析
 
