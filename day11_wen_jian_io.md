@@ -57,6 +57,15 @@ if(fp == NULL)
 
 ### FILE结构体剖析 
 
+
+
+```
+grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
+
+```
+
+
+
 typedef  struct _iobuf 
 {
 　　　　char *_ptr;      //文件输入的下一个位置
