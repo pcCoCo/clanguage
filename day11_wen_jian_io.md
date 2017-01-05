@@ -64,7 +64,13 @@ grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
 
 ```
 
+
+
+```
 现代的FILE结构体在不断变化，不同的环境有所区别。
+
+```
+
 
 
 typedef  struct _iobuf 
@@ -78,6 +84,9 @@ typedef  struct _iobuf
 　　　　int _bufsiz;     //缓冲区长度
 　　　　char *_tmpfname; //临时文件名
 }FILE;
+
+
+但是万变不离其宗，他们都至少有很多通用的结构体成员。
 
 
 
