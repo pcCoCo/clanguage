@@ -57,8 +57,7 @@ if(fp == NULL)
 
 ### FILE结构体剖析 
 
-#ifndef _FILE_DEFINED
-struct _iobuf 
+typedef  struct _iobuf 
 {
 　　　　char *_ptr;      //文件输入的下一个位置
 　　　　int _cnt;        //当前缓冲区的相对位置
@@ -68,10 +67,7 @@ struct _iobuf
 　　　　int _charbuf;    //检查缓冲区状况,如果无缓冲区则不读取
 　　　　int _bufsiz;     //缓冲区长度
 　　　　char *_tmpfname; //临时文件名
-};
-typedef struct _iobuf FILE;
-#define _FILE_DEFINED
-#endif
+}FILE;
 
 
 ### 预定义的标准输入输出
