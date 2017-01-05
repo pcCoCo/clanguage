@@ -69,7 +69,17 @@ if(fp == NULL)
 标准错误 stderr
 
 定义形式
+```
+/* Standard streams.  */
+extern struct _IO_FILE *stdin;      /* Standard input stream.  */
+extern struct _IO_FILE *stdout;     /* Standard output stream.  */
+extern struct _IO_FILE *stderr;     /* Standard error output stream.  */
+/* C89/C99 say they're macros.  Make them happy.  */
+#define stdin stdin
+#define stdout stdout
+#define stderr stderr
 
+```
 
 ```
 #include <stdio.h>
