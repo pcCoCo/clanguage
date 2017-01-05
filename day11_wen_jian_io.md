@@ -264,8 +264,6 @@ It is also used as the value to represent an invalid character.
 
 值得注意的是EOF并不是文件数据的最后一个字符数据。
 
-
-
 ### feof
 
 C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。
@@ -280,5 +278,11 @@ This indicator is generally set by a previous operation on the stream that attem
 Notice that stream's internal position indicator may point to the end-of-file for the next operation, but still, the end-of-file indicator may not be set until an operation attempts to read at that point.
 
 This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freopen. Although if the position indicator is not repositioned by such a call, the next i/o operation is likely to set the indicator again.
+
+
+一般在读取文件的场景中、
+1、先读取文件
+2、判断feof函数返回值；如果为0继续，否则结束流程
+3、将读取到的数据进行处理
 
 
