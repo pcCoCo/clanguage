@@ -45,8 +45,9 @@ if(fp == NULL)
     fprintf(stderr,"file not found");
     return -1;
 }
+
 ```
-> 这样写会出什么错误?
+> 这样写会出什么错误,有什么危害?
 
 
 
