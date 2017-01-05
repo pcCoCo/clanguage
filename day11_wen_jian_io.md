@@ -64,6 +64,7 @@ grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
 
 ```
 
+现代的FILE结构体在不断变化，不同的环境有所区别。
 
 
 typedef  struct _iobuf 
