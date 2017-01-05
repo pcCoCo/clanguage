@@ -280,11 +280,16 @@ Notice that stream's internal position indicator may point to the end-of-file fo
 This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freopen. Although if the position indicator is not repositioned by such a call, the next i/o operation is likely to set the indicator again.
 
 
-一般在读取文件的场景中，一般都是以下的使用流程:
 
+
+`一般在读取文件的场景中，一般都是以下的使用流程:`
+```
 1、先读取文件
 2、判断feof函数返回值；如果为0继续，否则执行第五步
 3、将读取到的数据进行处理
 4、继续第1步
 5、结束
+```
+
+
 
