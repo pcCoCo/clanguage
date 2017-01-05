@@ -75,9 +75,9 @@ grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
 
 typedef  struct _iobuf 
 {
-　　　　char *_ptr;      //文件输入的下一个位置
-　　　　int _cnt;        //当前缓冲区的相对位置
-　　　　char *_base;     //指基础位置(即是文件的其始位置) 
+　　　　char *_ptr;      
+　　　　int _cnt;        
+　　　　char *_base;     //文件缓冲区指针 
 　　　　int _flag;       //文件标志位
 　　　　int _file;       //文件描述符
 　　　　int _charbuf;    //检查缓冲区状况,如果无缓冲区则不读取
