@@ -230,9 +230,6 @@ fseek()函数可以完成功能 fseek(fp,0,SEEK_SET);
 
     标准I/O库不对字符进行缓冲存储。例如，如果用I/O函数fputs写15个字符到不带缓冲的流中，则该函数很可能用write系统调用函数将这些字符立即写至相关联的打开文件中。标准出错流stderr通常是不带缓冲的，这就使得出错信息可以尽快显示出来，而不管它们是否含有一个换行符。
     
-
-
-
 ## 文件啥时候结束
 
 ### EOF
@@ -272,7 +269,9 @@ It is also used as the value to represent an invalid character.
 
 ### feof
 
-C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。如果遇到文件结束，函数feof（fp）的值为1，否则为0.feof函数既可用以判断二进制文件是否结束，也可以用以判断文本文件是否结束。
+C语言中，当把数据以二进制形式存放到文件中时，就会有-1值的出现，此时不能采用EOF作为二进制文件的结束标志。为解决这个问题，ANSI C提供一个feof函数，用来判断文件是否结束。
+
+如果遇到文件结束，函数feof（fp）的值为1，否则为0.feof函数既可用以判断二进制文件是否结束，也可以用以判断文本文件是否结束。
 
 Check end-of-file indicator
 Checks whether the end-of-File indicator associated with stream is set, returning a value different from zero if it is.
