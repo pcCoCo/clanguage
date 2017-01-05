@@ -74,7 +74,7 @@ typedef struct _iobuf FILE;
 #endif
 
 
-## 预定义的标准输入输出
+### 预定义的标准输入输出
 
 属于C标准库预定义的三个标准文件流
 
@@ -91,6 +91,8 @@ extern FILE *stderr;
 
 定义形式
 ```
+Linux中的
+
 /* Standard streams.  */
 extern struct _IO_FILE *stdin;      /* Standard input stream.  */
 extern struct _IO_FILE *stdout;     /* Standard output stream.  */
