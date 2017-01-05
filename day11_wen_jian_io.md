@@ -64,6 +64,13 @@ if(fp == NULL)
 
 属于C标准库预定义的三个标准文件流
 
+```
+#include <stdio.h>
+extern FILE *stdin;
+extern FILE *stdout;
+extern FILE *stderr;
+```
+
 标准输入 stdin、
 标准输出 stdout、
 标准错误 stderr
@@ -81,12 +88,6 @@ extern struct _IO_FILE *stderr;     /* Standard error output stream.  */
 
 ```
 
-```
-#include <stdio.h>
-extern FILE *stdin;
-extern FILE *stdout;
-extern FILE *stderr;
-```
 
 
 VS中
