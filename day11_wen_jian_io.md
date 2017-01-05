@@ -71,7 +71,7 @@ grep -rn "struct _IO_FILE {" --include="*.h" /usr/include
 
 ```
 
-
+其中一种实现方式  VS2010
 
 typedef  struct _iobuf 
 {
