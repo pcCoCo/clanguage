@@ -291,7 +291,8 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 5、结束
 ```
 
-### 
+### fgets
+
 
 
 
