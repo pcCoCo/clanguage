@@ -1,9 +1,15 @@
+<!DOCTYPE html>
 <html lang="zh-CN" dir="ltr" class="client-nojs">
 <head>
-<title>C操作符优先级 </title>
-<style type="text/css">
+<title>
+C操作符优先级 - cppreference.com
+</title>
+<p><meta charset="UTF-8" /></p>
+<style type="text/css">/*<![CDATA[*/
 .source-c {line-height: normal;}
-.source-c li, .source-c pre { line-height: normal; border: 0px none white; }
+.source-c li, .source-c pre {
+    line-height: normal; border: 0px none white;
+}
 .c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
 .c.source-c  {font-family:monospace;}
 .c.source-c .imp {font-weight: bold; color: red;}
@@ -42,243 +48,344 @@
 .c.source-c span.xtra { display:block; }
 
 </style>
-
-</head>
-
+<style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><!--[endif]---->
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_operator_precedence skin-cppreference2 action-view cpp-navbar">
-<div id="cpp-content-base">
+        <!-- header -->
+        <div id="cpp-content-base">
             <div id="content">
-                <a id="top"></a>
-                <div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"></div>
-                                <!-- firstHeading -->
-                <h1 id="firstHeading" class="firstHeading">C操作符优先级</h1>
+                
+<a id="top"></a>
+<div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"></div>
+<br><br><br><br><br> <!-- firstHeading -->
+<h1 id="firstHeading" class="firstHeading">
+C操作符优先级
+</h1>
                 <!-- /firstHeading -->
                 <!-- bodyContent -->
                 <div id="bodyContent">
-                                        <!-- tagline -->
-                    <div id="siteSub">来自cppreference.com</div>
-                    <!-- /tagline -->
-                                        <!-- subtitle -->
-                    <div id="contentSub" lang="zh-CN" dir="ltr"><span class="subpages">&lt; <a href="/w/c" title="c">c</a>&lrm; | <a href="/w/c/language" title="c/language">language</a></span></div>
-
-<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div>
-
-<p>下表列出了C操作符的优先级和结合性。操作符以优先级降序从上到下列出。
+<p>
+下表列出了C操作符的优先级和结合性。操作符以优先级降序从上到下列出。
 </p>
 <table class="wikitable">
 
 <tr>
-<th style="text-align: left"> 优先级
+<th style="text-align: left"> 
+优先级
 </th>
-<th style="text-align: left"> 操作符
+<th style="text-align: left"> 
+操作符
 </th>
-<th style="text-align: left"> 描述
+<th style="text-align: left"> 
+描述
 </th>
-<th style="text-align: left"> 结合性
+<th style="text-align: left"> 
+结合性
 </th></tr>
 <tr>
-<th rowspan="6"> 1
+<th rowspan="6"> 
+1
 </th>
-<td style="border-bottom-style: none"> <code>++</code> <code>--</code>
+<td style="border-bottom-style: none"> 
+<code>++</code> <code>--</code>
 </td>
-<td style="border-bottom-style: none"> 后缀自增与自减
+<td style="border-bottom-style: none"> 
+后缀自增与自减
 </td>
-<td style="vertical-align: top" rowspan="6"> 从左向右
+<td style="vertical-align: top" rowspan="6"> 
+从左向右
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>()</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>()</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 函数调用
+<td style="border-bottom-style: none; border-top-style: none"> 
+函数调用
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>[]</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>[]</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 数组下标
+<td style="border-bottom-style: none; border-top-style: none"> 
+数组下标
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>.</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>.</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 访问结构体和联合体成员
+<td style="border-bottom-style: none; border-top-style: none"> 
+访问结构体和联合体成员
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>−&gt;</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>−&gt;</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 通过指针访问结构体和联合体成员
+<td style="border-bottom-style: none; border-top-style: none"> 
+通过指针访问结构体和联合体成员
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>(<i>类型</i>){<i>列表</i>}</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>(<i>类型</i>){<i>列表</i>}</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 复合字面值<span class="t-mark">(C99)</span>
+<td style="border-bottom-style: none; border-top-style: none"> 
+复合字面值<span class="t-mark">(C99)</span>
 </td></tr>
 <tr>
-<th rowspan="8"> 2
+<th rowspan="8"> 
+2
 </th>
-<td style="border-bottom-style: none"> <code>++</code> <code>--</code>
+<td style="border-bottom-style: none"> 
+<code>++</code> <code>--</code>
 </td>
-<td style="border-bottom-style: none"> 前缀自增和自减
+<td style="border-bottom-style: none"> 
+前缀自增和自减
 </td>
-<td style="vertical-align: top" rowspan="8"> 从右向左
+<td style="vertical-align: top" rowspan="8"> 
+从右向左
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>+</code> <code>−</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>+</code> <code>−</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 一元正和负
+<td style="border-bottom-style: none; border-top-style: none"> 
+一元正和负
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>!</code> <code>~</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>!</code> <code>~</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 逻辑非和按位非
+<td style="border-bottom-style: none; border-top-style: none"> 
+逻辑非和按位非
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>(<i>类型</i>)</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>(<i>类型</i>)</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 类型转换
+<td style="border-bottom-style: none; border-top-style: none"> 
+类型转换
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>*</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>*</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 间接寻址（取消引用）
+<td style="border-bottom-style: none; border-top-style: none"> 
+间接寻址（取消引用）
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>&amp;</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>&amp;</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 取地址
+<td style="border-bottom-style: none; border-top-style: none"> 
+取地址
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>sizeof</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>sizeof</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 取长度
+<td style="border-bottom-style: none; border-top-style: none"> 
+取长度
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>_Alignof</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>_Alignof</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 取对齐要求字节数<span class="t-mark">(C11)</span>
+<td style="border-bottom-style: none; border-top-style: none"> 
+取对齐要求字节数<span class="t-mark">(C11)</span>
 </td></tr>
 <tr>
-<th> 3
+<th> 
+3
 </th>
-<td> <code>*</code> <code>/</code> <code>%</code>
+<td> 
+<code>*</code> <code>/</code> <code>%</code>
 </td>
-<td> 乘法、除法和求余
+<td> 
+乘法、除法和求余
 </td>
-<td style="vertical-align: top" rowspan="11"> 从左向右
+<td style="vertical-align: top" rowspan="11"> 
+从左向右
 </td></tr>
 <tr>
-<th> 4
+<th> 
+4
 </th>
-<td> <code>+</code> <code>−</code>
+<td> 
+<code>+</code> <code>−</code>
 </td>
-<td> 加法和减法
+<td> 
+加法和减法
 </td></tr>
 <tr>
-<th> 5
+<th> 
+5
 </th>
-<td> <code>&lt;&lt;</code> <code>&gt;&gt;</code>
+<td> 
+<code>&lt;&lt;</code> <code>&gt;&gt;</code>
 </td>
-<td> 按位左移和右移
+<td> 
+按位左移和右移
 </td></tr>
 <tr>
-<th rowspan="2"> 6
+<th rowspan="2"> 
+6
 </th>
-<td style="border-bottom-style: none"> <code>&lt;</code> <code>&lt;=</code>
+<td style="border-bottom-style: none"> 
+<code>&lt;</code> <code>&lt;=</code>
 </td>
-<td style="border-bottom-style: none"> 关系运算符&lt;和≤
+<td style="border-bottom-style: none"> 
+关系运算符&lt;和≤
 </td></tr>
 <tr>
-<td style="border-top-style: none"> <code>&gt;</code> <code>&gt;=</code>
+<td style="border-top-style: none"> 
+<code>&gt;</code> <code>&gt;=</code>
 </td>
-<td style="border-top-style: none"> 关系运算符&gt;和≥
+<td style="border-top-style: none"> 
+关系运算符&gt;和≥
 </td></tr>
 <tr>
-<th> 7
+<th> 
+7
 </th>
-<td> <code>==</code> <code>!=</code>
+<td> 
+<code>==</code> <code>!=</code>
 </td>
-<td> 关系运算符=和≠
+<td> 
+关系运算符=和≠
 </td></tr>
 <tr>
-<th> 8
+<th> 
+8
 </th>
-<td> <code>&amp;</code>
+<td> 
+<code>&amp;</code>
 </td>
-<td> 按位与
+<td> 
+按位与
 </td></tr>
 <tr>
-<th> 9
+<th> 
+9
 </th>
-<td> <code>^</code>
+<td> 
+<code>^</code>
 </td>
-<td> 按位异或
+<td> 
+按位异或
 </td></tr>
 <tr>
-<th> 10
+<th> 
+10
 </th>
-<td> <code>|</code>
+<td> 
+<code>|</code>
 </td>
-<td> 按位或
+<td> 
+按位或
 </td></tr>
 <tr>
-<th> 11
+<th> 
+11
 </th>
-<td> <code>&amp;&amp;</code>
+<td> 
+<code>&amp;&amp;</code>
 </td>
-<td> 逻辑与
+<td> 
+逻辑与
 </td></tr>
 <tr>
-<th> 12
+<th> 
+12
 </th>
-<td> <code>||</code>
+<td> 
+<code>||</code>
 </td>
-<td> 逻辑或
+<td> 
+逻辑或
 </td></tr>
 <tr>
-<th> 13
+<th> 
+13
 </th>
-<td> <code>?:</code>
+<td> 
+<code>?:</code>
 </td>
-<td> 三元条件操作符
+<td> 
+三元条件操作符
 </td>
-<td style="vertical-align: top" rowspan="6"> 从右向左
+<td style="vertical-align: top" rowspan="6"> 
+从右向左
 </td></tr>
 <tr>
-<th rowspan="5"> 14
+<th rowspan="5"> 
+14
 </th>
-<td style="border-bottom-style: none"> <code>=</code>
+<td style="border-bottom-style: none"> 
+<code>=</code>
 </td>
-<td style="border-bottom-style: none"> 简单赋值
+<td style="border-bottom-style: none"> 
+简单赋值
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>+=</code> <code>−=</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>+=</code> <code>−=</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 以和差赋值
+<td style="border-bottom-style: none; border-top-style: none"> 
+以和差赋值
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>*=</code> <code>/=</code> <code>%=</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>*=</code> <code>/=</code> <code>%=</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 以积、商和余数赋值
+<td style="border-bottom-style: none; border-top-style: none"> 
+以积、商和余数赋值
 </td></tr>
 <tr>
-<td style="border-bottom-style: none; border-top-style: none"> <code>&lt;&lt;=</code> <code>&gt;&gt;=</code>
+<td style="border-bottom-style: none; border-top-style: none"> 
+<code>&lt;&lt;=</code> <code>&gt;&gt;=</code>
 </td>
-<td style="border-bottom-style: none; border-top-style: none"> 以按位左移和右移赋值
+<td style="border-bottom-style: none; border-top-style: none"> 
+以按位左移和右移赋值
 </td></tr>
 <tr>
-<td style="border-top-style: none"> <code>&amp;=</code> <code>^=</code> <code>|=</code>
+<td style="border-top-style: none"> 
+<code>&amp;=</code> <code>^=</code> <code>|=</code>
 </td>
-<td style="border-top-style: none"> 以按位与、异或和或赋值
+<td style="border-top-style: none"> 
+以按位与、异或和或赋值
 </td></tr>
 <tr>
-<th> 15
+<th> 
+15
 </th>
-<td> <code>,</code>
+<td> 
+<code>,</code>
 </td>
-<td> 逗号
+<td> 
+逗号
 </td>
-<td> 从左向右
+<td> 
+从左向右
 </td></tr></table>
-<p>在对表达式做语法分析时，某一行列出的操作符会比低于它的一行的任何操作符更紧密地与参数结合（就像用括号）。
-</p><p>在同一单元格中的操作符（可能有数行操作符列在同一单元格中）有相同的优先级并以指定方向结合。例如，由于从右向左的结合性，表达式<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span>b<span class="sy1">=</span>c</span></span>被解析为<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span><span class="br0">&#40;</span>b<span class="sy1">=</span>c<span class="br0">&#41;</span></span></span>，而不是<span class="t-c"><span class="mw-geshi c source-c"><span class="br0">&#40;</span>a<span class="sy1">=</span>b<span class="br0">&#41;</span><span class="sy1">=</span>c</span></span>。请注意，这并不影响子表达式a、b和c的<a href="/w/c/language/eval_order" title="c/language/eval order">求值顺序</a>。
+<p>
+在对表达式做语法分析时，某一行列出的操作符会比低于它的一行的任何操作符更紧密地与参数结合（就像用括号）。
+</p><p>
+在同一单元格中的操作符（可能有数行操作符列在同一单元格中）有相同的优先级并以指定方向结合。例如，由于从右向左的结合性，表达式<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span>b<span class="sy1">=</span>c</span></span>被解析为<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span><span class="br0">(</span>b<span class="sy1">=</span>c<span class="br0">)</span></span></span>，而不是<span class="t-c"><span class="mw-geshi c source-c"><span class="br0">(</span>a<span class="sy1">=</span>b<span class="br0">)</span><span class="sy1">=</span>c</span></span>。请注意，这并不影响子表达式a、b和c的<a href="/w/c/language/eval_order" title="c/language/eval order">求值顺序</a>。
+</p><p>
+<br />
 </p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 692/1000000
+Preprocessor generated node count: 2355/1000000
+Post‐expand include size: 42106/2097152 bytes
+Template argument size: 2858/2097152 bytes
+Highest expansion depth: 13/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1073-0!*!0!*!*!*!zh-cn!* and timestamp 20160605063801 -->
 </div> 
+    </body>
+</html>
+<p>          </p>
 </body>
 </html>
