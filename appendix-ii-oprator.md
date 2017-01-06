@@ -4,7 +4,8 @@
 <meta charset="UTF-8" />
 <style type="text/css">/*<![CDATA[*/
 .source-c {line-height: normal;}
-.source-c li, .source-c pre {
+.source-c li, .source-c pre 
+{
 	line-height: normal; border: 0px none white;
 }
 .c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
