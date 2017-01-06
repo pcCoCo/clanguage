@@ -222,10 +222,10 @@ float, double, long double类型
     3/2.0 = 1.5 ; // 操作数类型不同，运算之前会先将精度低的操作数隐式转换为精度高的数据类型，再运算，表达式的结果是高精度的数据类型。
     
 -    整型提升
-    在32位平台上，所有低于32位的整型数据，在运算过程中先要转化为32位
-    的整型数据，然后再参与运算。
+
+    在32位平台上，所有低于32位的整型数据，在运算过程中先要转化为32位的整型数据，然后再参与运算。
     
--    转化规则
+-    隐式类型转换规则
 
     • First, if either operand is long double, the other is converted to long     double.
     • Otherwise, if either operand is double, the other is converted to double.
