@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN" dir="ltr" class="client-nojs">
 <head>
 <title>
@@ -372,17 +371,6 @@ C操作符优先级
 </p><p>
 <br />
 </p>
-<!-- 
-NewPP limit report
-Preprocessor visited node count: 692/1000000
-Preprocessor generated node count: 2355/1000000
-Post‐expand include size: 42106/2097152 bytes
-Template argument size: 2858/2097152 bytes
-Highest expansion depth: 13/40
-Expensive parser function count: 0/100
--->
-
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1073-0!*!0!*!*!*!zh-cn!* and timestamp 20160605063801 -->
 </div> 
     </body>
 </html>
