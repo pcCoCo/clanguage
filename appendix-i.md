@@ -511,17 +511,5 @@
 <td><code>7f</code></td>
 <td><code><b>DEL</b></code> (delete)
 </td></tr></table>
-
-<!-- 
-NewPP limit report
-Preprocessor visited node count: 2715/1000000
-Preprocessor generated node count: 6860/1000000
-Post‐expand include size: 61330/2097152 bytes
-Template argument size: 4503/2097152 bytes
-Highest expansion depth: 13/40
-Expensive parser function count: 0/100
--->
-
-<!-- Saved in parser cache with key mwiki1-mwiki_zh_:pcache:idhash:1063-0!*!0!*!*!*!zh-cn!* and timestamp 20160604171118 -->
 	</body>
 </html>
