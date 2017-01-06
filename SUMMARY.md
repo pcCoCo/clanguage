@@ -14,5 +14,6 @@
 * [章节11-文件IO](day11_wen_jian_io.md)
 * [章节12-快译通电子词典](day12_kuai_yi_tong.md)
 * [章节13-C++基于C的拓展语法](day13_c_ji_yu_c_de_tuo_zhan_yu_fa.md)
-* [appendix I](appendix-i.md)
+* [appendix I ASCII code](appendix-i.md)
+* [appendix II oprator](appendix-ii-oprator.md)
 
