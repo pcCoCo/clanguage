@@ -220,6 +220,21 @@ float, double, long double类型
 
     3/2 = 1;      // 操作数都是整数，结果也是整数。  
     3/2.0 = 1.5 ; // 操作数类型不同，运算之前会先将精度低的操作数隐式转换为精度高的数据类型，再运算，表达式的结果是高精度的数据类型。
+    
+-    整型提升
+    在32位平台上，所有低于32位的整型数据，在运算过程中先要转化为32位
+    的整型数据，然后再参与运算。
+    
+-    转化规则
+    • First, if either operand is long double, the other is converted to long     double.
+    • Otherwise, if either operand is double, the other is converted to double.
+    • Otherwise, if either operand is float, the other is converted to float.
+    • Otherwise, the integral promotions are performed on both operands; then, if either operand is unsigned long int, the other is converted to unsigned long int.
+    • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted tounsigned long int.
+    • Otherwise, if one operand is long int, the other is converted to longint.
+    • Otherwise, if either operand is unsigned int, the other is converted to unsigned int.
+    • Otherwise, both operands have type int
+        
 
 // 隐式转换例子
 
