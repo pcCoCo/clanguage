@@ -227,7 +227,7 @@ pc@iZ25g2i2xsmZ:~/code$ readelf -S test
 There are 30 section headers, starting at offset 0x11a0:
 
 Section Headers:
-  [Nr] Name              Type             Address           Offset  Size              EntSize          Flags  Link  Info  Align
+  [Nr] Name              Type             Address   Offset   Size      EntSize    Flags  Link  Info  Align
   [ 0]                   NULL             00000000  00000000 00000000  00000000           0     0     0
   [ 1] .interp           PROGBITS         00400238  00000238 0000001c  00000000   A       0     0     1
   [ 2] .note.ABI-tag     NOTE             00400254  00000254 00000020  00000000   A       0     0     4
