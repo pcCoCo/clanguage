@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN" dir="ltr" class="client-nojs">
 <head>
 <title>C操作符优先级 </title>
