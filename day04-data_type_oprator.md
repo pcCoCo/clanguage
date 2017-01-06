@@ -234,11 +234,17 @@ float, double, long double类型
     • Otherwise, the integral promotions are performed on both operands<否则 两个操作数都进行整型提升>; 
         then, if either operand is unsigned long int, the other is converted to unsigned long int.
         如果一个操作数为unsigned long int,则另外一个也转化为 unsigned long int
-    • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.
+    • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.否则,如果其中一个操作数为long int,而另一个操作数类型是unsigned int, 并且long int能够表示unsigned int的所有值,则另一个操作数也被视为long int;如果long int不能表示unsigned int的所有值,则两个数都被视为unsigned long int.
+    
     • Otherwise, if one operand is long int, the other is converted to long int.
+    否则, 如果其中一个操作数是long int,则另一个操作数也被视为long int.
+    
     • Otherwise, if either operand is unsigned int, the other is converted to unsigned int.
+    否则, 如果其中一个操作数是unsigned int, 则另一个操作数也被视为unsigned int. 
+    
     • Otherwise, both operands have type int
-        
+    否则, 两个操作数都被视为int
+    
 
 // 隐式转换例子
 
