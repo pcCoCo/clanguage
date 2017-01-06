@@ -3,53 +3,7 @@
 <title>
 C操作符优先级 - cppreference.com
 </title>
-<p><meta charset="UTF-8" /></p>
-<style type="text/css">/*<![CDATA[*/
-.source-c {line-height: normal;}
-.source-c li, .source-c pre {
-    line-height: normal; border: 0px none white;
-}
-.c.source-c .de1, .c.source-c .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
-.c.source-c  {font-family:monospace;}
-.c.source-c .imp {font-weight: bold; color: red;}
-.c.source-c li, .c.source-c .li1 {font-weight: normal; vertical-align:top;}
-.c.source-c .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
-.c.source-c .li2 {font-weight: bold; vertical-align:top;}
-.c.source-c .kw1 {color: #0000dd;}
-.c.source-c .kw2 {color: #0000ff;}
-.c.source-c .kw3 {color: #0000dd;}
-.c.source-c .kw4 {color: #0000ff;}
-.c.source-c .co1 {color: #909090;}
-.c.source-c .co2 {color: #339900;}
-.c.source-c .coMULTI {color: #ff0000; font-style: italic;}
-.c.source-c .es0 {color: #008000; font-weight: bold;}
-.c.source-c .es1 {color: #008000; font-weight: bold;}
-.c.source-c .es2 {color: #008000; font-weight: bold;}
-.c.source-c .es3 {color: #008000; font-weight: bold;}
-.c.source-c .es4 {color: #008000; font-weight: bold;}
-.c.source-c .es5 {color: #008000; font-weight: bold;}
-.c.source-c .br0 {color: #008000;}
-.c.source-c .sy0 {color: #008000;}
-.c.source-c .sy1 {color: #000080;}
-.c.source-c .sy2 {color: #000040;}
-.c.source-c .sy3 {color: #000040;}
-.c.source-c .sy4 {color: #008080;}
-.c.source-c .st0 {color: #008000;}
-.c.source-c .nu0 {color: #000080;}
-.c.source-c .nu6 {color:#000080;}
-.c.source-c .nu8 {color:#000080;}
-.c.source-c .nu12 {color:#000080;}
-.c.source-c .nu16 {color:#000080;}
-.c.source-c .nu17 {color:#000080;}
-.c.source-c .nu18 {color:#000080;}
-.c.source-c .nu19 {color:#000080;}
-.c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
-.c.source-c span.xtra { display:block; }
-
-</style>
-
-<div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"></div>
-<br><br><br><br><br> <!-- firstHeading -->
+<meta charset="UTF-8" />
 <h1 id="firstHeading" class="firstHeading">
 C操作符优先级
 </h1>
