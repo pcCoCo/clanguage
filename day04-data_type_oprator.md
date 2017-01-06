@@ -204,11 +204,12 @@ float, double, long double类型
 
 -    强制类型转换
     
-    int    s = 1000.0;
-    int    t = 23.44 ;
+    int    s = 1000.0;     //距离
+    int    t = 23.44 ;     //时间
     
-    double v = s / t ;     //距离i
-    int d = (int)a + ;
+    double v = s / t ;     //速度
+    int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型 
+    
     
 
 * 隐式转换  
