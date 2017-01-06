@@ -227,10 +227,13 @@ float, double, long double类型
     
 -    隐式类型转换规则
 
-    • First, if either operand is long double, the other is converted to long     double.
+    • First, if either operand is long double, the other is converted to <转换>long double.
     • Otherwise, if either operand is double, the other is converted to double.
     • Otherwise, if either operand is float, the other is converted to float.
-    • Otherwise, the integral promotions are performed on both operands; then, if either operand is unsigned long int, the other is converted to unsigned long int.
+    
+    • Otherwise, the integral promotions are performed on both operands<否则 两个操作数都进行整型提升>; 
+        then, if either operand is unsigned long int, the other is converted to unsigned long int.
+        如果一个操作数为unsigned long int,则另外一个也转化为 unsigned long int
     • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.
     • Otherwise, if one operand is long int, the other is converted to long int.
     • Otherwise, if either operand is unsigned int, the other is converted to unsigned int.
