@@ -226,6 +226,7 @@ float, double, long double类型
     的整型数据，然后再参与运算。
     
 -    转化规则
+
     • First, if either operand is long double, the other is converted to long     double.
     • Otherwise, if either operand is double, the other is converted to double.
     • Otherwise, if either operand is float, the other is converted to float.
