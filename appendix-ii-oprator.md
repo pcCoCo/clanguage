@@ -44,8 +44,7 @@
 /*]]>*/
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_operator_precedence skin-cppreference2 action-view cpp-navbar">
-        <!-- header -->
-        <div id="cpp-content-base">
+<div id="cpp-content-base">
             <div id="content">
                 <a id="top"></a>
                 <div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"></div>
