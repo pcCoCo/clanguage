@@ -42,7 +42,8 @@
 .c.source-c span.xtra { display:block; }
 
 </style>
-<style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+
+</head>
 
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_operator_precedence skin-cppreference2 action-view cpp-navbar">
 <div id="cpp-content-base">
