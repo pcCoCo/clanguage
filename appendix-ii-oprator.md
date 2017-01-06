@@ -1,3 +1,5 @@
+&lt;!DOCTYPE html&gt;
+
 &lt;html lang="zh-CN" dir="ltr" class="client-nojs"&gt;
 
 &lt;head&gt;
