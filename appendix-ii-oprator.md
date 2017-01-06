@@ -41,8 +41,9 @@
 .c.source-c .ln-xtra, .c.source-c li.ln-xtra, .c.source-c div.ln-xtra {background-color: #ffc;}
 .c.source-c span.xtra { display:block; }
 
-/*]]>*/
-</style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+</style>
+<style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
+
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c_language_operator_precedence skin-cppreference2 action-view cpp-navbar">
 <div id="cpp-content-base">
             <div id="content">
