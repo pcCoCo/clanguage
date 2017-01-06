@@ -280,7 +280,6 @@
 </td></tr></table>
 <p>在对表达式做语法分析时，某一行列出的操作符会比低于它的一行的任何操作符更紧密地与参数结合（就像用括号）。
 </p><p>在同一单元格中的操作符（可能有数行操作符列在同一单元格中）有相同的优先级并以指定方向结合。例如，由于从右向左的结合性，表达式<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span>b<span class="sy1">=</span>c</span></span>被解析为<span class="t-c"><span class="mw-geshi c source-c">a<span class="sy1">=</span><span class="br0">&#40;</span>b<span class="sy1">=</span>c<span class="br0">&#41;</span></span></span>，而不是<span class="t-c"><span class="mw-geshi c source-c"><span class="br0">&#40;</span>a<span class="sy1">=</span>b<span class="br0">&#41;</span><span class="sy1">=</span>c</span></span>。请注意，这并不影响子表达式a、b和c的<a href="/w/c/language/eval_order" title="c/language/eval order">求值顺序</a>。
-</p><p><br />
 </p>
 </div> 
 </body>
