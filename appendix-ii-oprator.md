@@ -1,11 +1,4 @@
-<html lang="zh-CN" dir="ltr" class="client-nojs">
-<head><title>C操作符优先级 - cppreference.com
-</title><meta charset="UTF-8" />
-<p>
-下表列出了C操作符的优先级和结合性。操作符以优先级降序从上到下列出。
-</p>
 <table class="wikitable">
-
 <tr>
 <th style="text-align: left"> 
 优先级
