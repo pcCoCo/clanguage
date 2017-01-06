@@ -1,5 +1,3 @@
-&lt;!DOCTYPE html&gt;
-
 &lt;html lang="zh-CN" dir="ltr" class="client-nojs"&gt;
 
 &lt;head&gt;
@@ -14,7 +12,9 @@
 
 .source-c li, .source-c pre {
 
-	line-height: normal; border: 0px none white;
+```
+line-height: normal; border: 0px none white;
+```
 
 }
 
@@ -90,63 +90,55 @@
 
 .c.source-c span.xtra { display:block; }
 
-
-
 /\*\]\]&gt;\*/
 
 &lt;/style&gt;&lt;!--\[if lt IE 7\]&gt;&lt;style type="text/css"&gt;body{behavior:url\("/mwiki/skins/cppreference2/csshover.min.htc"\)}&lt;/style&gt;&lt;!\[endif\]--&gt;&lt;/head&gt;
 
 &lt;body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-c\_language\_operator\_precedence skin-cppreference2 action-view cpp-navbar"&gt;
 
-        &lt;!-- header --&gt;
+```
+    &lt;!-- header --&gt;
 
-        &lt;div id="cpp-content-base"&gt;
+    &lt;div id="cpp-content-base"&gt;
 
-            &lt;div id="content"&gt;
+        &lt;div id="content"&gt;
 
-                &lt;a id="top"&gt;&lt;/a&gt;
+            &lt;a id="top"&gt;&lt;/a&gt;
 
-                &lt;div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"&gt;&lt;/div&gt;
+            &lt;div id="mw-js-message" style="display:none;" lang="zh-CN" dir="ltr"&gt;&lt;/div&gt;
 
-                                &lt;!-- firstHeading --&gt;
+                            &lt;!-- firstHeading --&gt;
 
-                &lt;h1 id="firstHeading" class="firstHeading"&gt;C操作符优先级&lt;/h1&gt;
+            &lt;h1 id="firstHeading" class="firstHeading"&gt;C操作符优先级&lt;/h1&gt;
 
-                &lt;!-- /firstHeading --&gt;
+            &lt;!-- /firstHeading --&gt;
 
-                &lt;!-- bodyContent --&gt;
+            &lt;!-- bodyContent --&gt;
 
-                &lt;div id="bodyContent"&gt;
+            &lt;div id="bodyContent"&gt;
 
-                                        &lt;!-- tagline --&gt;
+                                    &lt;!-- tagline --&gt;
 
-                    &lt;div id="siteSub"&gt;来自cppreference.com&lt;/div&gt;
+                &lt;div id="siteSub"&gt;来自cppreference.com&lt;/div&gt;
 
-                    &lt;!-- /tagline --&gt;
+                &lt;!-- /tagline --&gt;
 
-                                        &lt;!-- subtitle --&gt;
+                                    &lt;!-- subtitle --&gt;
 
-                    &lt;div id="contentSub" lang="zh-CN" dir="ltr"&gt;&lt;span class="subpages"&gt;&lt; &lt;a href="/w/c" title="c"&gt;c&lt;/a&gt;&lrm; \| &lt;a href="/w/c/language" title="c/language"&gt;language&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div id="contentSub" lang="zh-CN" dir="ltr"&gt;&lt;span class="subpages"&gt;&lt; &lt;a href="/w/c" title="c"&gt;c&lt;/a&gt;&lrm; \| &lt;a href="/w/c/language" title="c/language"&gt;language&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
 
-                    &lt;!-- /subtitle --&gt;
+                &lt;!-- /subtitle --&gt;
 
-                                                            &lt;!-- bodycontent --&gt;
+                                                        &lt;!-- bodycontent --&gt;
 
-                    &lt;div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"&gt;&lt;div class="t-navbar" style=""&gt;&lt;div class="t-navbar-sep"&gt;&\#160;&lt;/div&gt;&lt;div class="t-navbar-head"&gt;&lt;a href="/w/c" title="c"&gt; C&lt;/a&gt;&lt;div class="t-navbar-menu"&gt;&lt;div&gt;&lt;div&gt;
-
-
-
-
-
-
+                &lt;div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"&gt;&lt;div class="t-navbar" style=""&gt;&lt;div class="t-navbar-sep"&gt;&\#160;&lt;/div&gt;&lt;div class="t-navbar-head"&gt;&lt;a href="/w/c" title="c"&gt; C&lt;/a&gt;&lt;div class="t-navbar-menu"&gt;&lt;div&gt;&lt;div&gt;
+```
 
 &lt;p&gt;下表列出了C操作符的优先级和结合性。操作符以优先级降序从上到下列出。
 
 &lt;/p&gt;
 
 &lt;table class="wikitable"&gt;
-
-
 
 &lt;tr&gt;
 
@@ -294,7 +286,7 @@
 
 &lt;tr&gt;
 
-&lt;td style="border-bottom-style: none; border-top-style: none"&gt; &lt;code&gt;&amp;&lt;/code&gt;
+&lt;td style="border-bottom-style: none; border-top-style: none"&gt; &lt;code&gt;&&lt;/code&gt;
 
 &lt;/td&gt;
 
@@ -412,7 +404,7 @@
 
 &lt;/th&gt;
 
-&lt;td&gt; &lt;code&gt;&amp;&lt;/code&gt;
+&lt;td&gt; &lt;code&gt;&&lt;/code&gt;
 
 &lt;/td&gt;
 
@@ -454,7 +446,7 @@
 
 &lt;/th&gt;
 
-&lt;td&gt; &lt;code&gt;&amp;&amp;&lt;/code&gt;
+&lt;td&gt; &lt;code&gt;&&&lt;/code&gt;
 
 &lt;/td&gt;
 
@@ -540,7 +532,7 @@
 
 &lt;tr&gt;
 
-&lt;td style="border-top-style: none"&gt; &lt;code&gt;&amp;=&lt;/code&gt; &lt;code&gt;^=&lt;/code&gt; &lt;code&gt;\|=&lt;/code&gt;
+&lt;td style="border-top-style: none"&gt; &lt;code&gt;&=&lt;/code&gt; &lt;code&gt;^=&lt;/code&gt; &lt;code&gt;\|=&lt;/code&gt;
 
 &lt;/td&gt;
 
@@ -574,11 +566,11 @@
 
 &lt;/p&gt;
 
-&lt;/div&gt; 
+&lt;/div&gt;
 
-	&lt;/body&gt;
+```
+&lt;/body&gt;
+```
 
 &lt;/html&gt;
-
-
 
