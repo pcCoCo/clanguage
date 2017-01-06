@@ -60,11 +60,8 @@
                     <!-- /tagline -->
                                         <!-- subtitle -->
                     <div id="contentSub" lang="zh-CN" dir="ltr"><span class="subpages">&lt; <a href="/w/c" title="c">c</a>&lrm; | <a href="/w/c/language" title="c/language">language</a></span></div>
-                    <!-- /subtitle -->
-                                                            <!-- bodycontent -->
-                    <div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div>
 
-
+<div id="mw-content-text" lang="zh-CN" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="/w/c" title="c"> C</a><div class="t-navbar-menu"><div><div>
 
 <p>下表列出了C操作符的优先级和结合性。操作符以优先级降序从上到下列出。
 </p>
