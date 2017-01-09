@@ -16,4 +16,5 @@
 * [章节13-C++基于C的拓展语法](day13_c_ji_yu_c_de_tuo_zhan_yu_fa.md)
 * [appendix I ASCII code](appendix-i.md)
 * [appendix II oprator](appendix-ii-oprator.md)
+* [learning target](learning-target.md)
 
