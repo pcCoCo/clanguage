@@ -1,5 +1,9 @@
 # day07-函数
 
+“Anyone who considers arithmetical methods of producing random numbers is, of course, in a state of sin.”
+--- “任何考虑产生随机数的算术方法的人当然都处于罪的状态。
+
+
 英文单词function，原意为功能，作用，函数; 职务。
 
 ## 数学意义上的函数
