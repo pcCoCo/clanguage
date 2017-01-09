@@ -8,6 +8,7 @@
 
 操作系统就像咱们计算机的大管家，负责帮主人高效地管理所有资源。
 
+操作系统简介---http://www.iu.hio.no/~mark/os/os.html
 
 ## UNIX
 
