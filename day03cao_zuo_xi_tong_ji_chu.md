@@ -1,5 +1,9 @@
 # day03-操作系统基础
 
+
+If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.
+
+
 ## 计算机之父
 
    冯·诺依曼（John von Neumann，1903~1957），20世纪最重要的数学家之一，在现代计算机、博弈论、核武器和生化武器等诸多领域内有杰出建树的最伟大的科学全才之一，被后人称为“计算机之父”和“博弈论之父”。
