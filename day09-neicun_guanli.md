@@ -352,3 +352,19 @@ volatile修饰字段告诉编译器不要对该类型的数据做优化处理，
 给定一段代码分别写出每个变量和函数的作用域、寿命
 
 
+
+## 作业
+1. 给定一段代码分别写出每个变量和函数的作用域、寿命
+
+
+- 库函数calloc有如下声明:
+VOid *caL1loc(size_t n血emb, Size_t Size) ;
+根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字
+节。内存设置为00 如果rmemb或size为0,则calloc返回NULLo"
+编写call°C的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应
+该没有任何由算术溢出引起的漏洞,且无论数据类型size_t用多少位表示,代码都应该正常
+工作。
+作为参考,函数malloc和memset声明如下:
+void rmalloc(size_t Size) ;
+VOid *memset(void *s, int c, Size_t n);
+
