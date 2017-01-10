@@ -124,6 +124,8 @@ printf("max=%d\n", max);
 
 ## 冒泡排序
 
+
+
     
 ## 二维数组
     
@@ -253,6 +255,23 @@ RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness 
 
 As of today, RANDOM.ORG has generated 1.41 trillion random bits for the Internet community.
 
+### 题目
+
+```
+#include <stdio.h>
+int main(void)
+{
+    float aH  = 0 ;
+    unSigned length = 0;
+    int i;
+    float result = 0;
+    
+    for (i = O; i <= length-1; i++)
+    	result += a[i];
+    printf("%f",result);
+    return 0;
+} 
+```
 
 
 
