@@ -1,26 +1,25 @@
 # day04-数据类型和运算符
 
-
-    “When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。---Ken Thompson  (Unix 之父)
-
+```
+“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。---Ken Thompson  (Unix 之父)
+```
 
 基础数据类型---常量---进制转化
 
-## 基本数据类型 
+## 基本数据类型
 
-    和大多数语言一样，在C中，每个对象都有一个类型以及一个值；类型决定了可用于值的操作的含义，以及对象占用的存储空间大小。
-    
+```
+和大多数语言一样，在C中，每个对象都有一个类型以及一个值；类型决定了可用于值的操作的含义，以及对象占用的存储空间大小。
+```
 
 ## 常量
 
 ### \#define
 
-在C语言中以#开始的语句都是预处理语句
+在C语言中以\#开始的语句都是预处理语句  
 **注意：预处理语句后面没有分号**
 
-演示在处理的时候 #define 的替换效果
-
-
+演示在处理的时候 \#define 的替换效果
 
 ```
 #include <stdio.h>
@@ -49,23 +48,15 @@ int main()
 }
 ```
 
-
-
-
-
-
 ### const
 
 在C语言中const关键字的作用是对定义的变量进行`只读`的限定。
-
-
 
 ```
 const int count = 123;
 ```
 
 然后在C语言对const语义并没有理论上的那么严谨，在后期学习了指针之后就会发现:
-
 
 ```
 #include <stdio.h>
@@ -83,9 +74,7 @@ int main()
 
 在开始讲解const关键字的时候应该表明 const是一个限定符。
 
-
 ### 字符串常量
-
 
 ### 整型常量
 
@@ -147,8 +136,7 @@ float, double, long double类型
 
 ### printf函数
 
-格式化控制符   %d %x %p %c %s %% 
-
+格式化控制符   %d %x %p %c %s %%
 
 ### getchar函数
 
@@ -156,97 +144,102 @@ float, double, long double类型
 
 ## 运算符
 
-
 ### 赋值
-    
-    = 赋值号
-    
-赋值运算符的作用是把=**右边的表达式(变量)的值** 赋予 =号**左边的变量**。
-    
-    int a = 100;
-    int b = 110;
-    
-    a = b; // 将b的值110 赋予变量a ，a变量之前的值100将被覆盖，a的值将变为110
-    
-    a = b + 100 ; //将 表达式b + 100的值赋值给变量a，改变a的值为210
-    
+
+```
+= 赋值号
+```
+
+赋值运算符的作用是把=**右边的表达式\(变量\)的值** 赋予 =号**左边的变量**。
+
+```
+int a = 100;
+int b = 110;
+
+a = b; // 将b的值110 赋予变量a ，a变量之前的值100将被覆盖，a的值将变为110
+
+a = b + 100 ; //将 表达式b + 100的值赋值给变量a，改变a的值为210
+```
+
 > 初始化和赋值
 
-变量在定义的时候被赋予一个初始值，这个操作叫初始化
+变量在定义的时候被赋予一个初始值，这个操作叫初始化  
 变量在定义完成之后，之后被赋予一个值，这个操作叫赋值
 
-    int count = 0     ;    //初始化
-    count     = 1000  ;    //赋值
-    
-> 对变量(指针变量)进行初始化是一个好习惯。
+```
+int count = 0     ;    //初始化
+count     = 1000  ;    //赋值
+```
 
-    
+> 对变量\(指针变量\)进行初始化是一个好习惯。
+
 ### 算术
 
-\+ - \* / % += -= *= /= %=
++ - \* / % += -= \*= /= %=
 
 /在C语言中有相应的运算符规则。
-    
-    如果除数和被除数都是整数类型，那么结果为整数类型。如果除数和被除数有一个是浮点数类型，那么结果就是浮点数类型。
-    
+
+```
+如果除数和被除数都是整数类型，那么结果为整数类型。如果除数和被除数有一个是浮点数类型，那么结果就是浮点数类型。
+```
 
 %  求余，或者称之为模。
-    
-    a % b 的意义就是 a整除b之后的余数
-    比如 60 % 33 的余数就是30，即 60 % 33 == 30
-    
 
+```
+a % b 的意义就是 a整除b之后的余数
+比如 60 % 33 的余数就是30，即 60 % 33 == 30
+```
 
-()
+\(\)
 
--    改变优先级
-    
-    (a+b)*c
-    
+* 改变优先级
 
--    强制类型转换
+  \(a+b\)\*c
+
+* 强制类型转换
 
 也称 **显式类型转换**。
 
-    int    s = 1000.0;     //距离
-    int    t = 23.44 ;     //时间
-    
-    double v = s / t ;     //速度
-    int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型 
-    
-    
+```
+int    s = 1000.0;     //距离
+int    t = 23.44 ;     //时间
 
-### 隐式类型转换  
-    
-顾名思义，隐式转换就是在默认情况(没有用户手动干预)下类型会自动进行的转换。·
+double v = s / t ;     //速度
+int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型 
+```
 
-    3/2 = 1;      // 操作数都是整数，结果也是整数。  
-    3/2.0 = 1.5 ; // 操作数类型不同，运算之前会先将精度低的操作数隐式转换为精度高的数据类型，再运算，表达式的结果是高精度的数据类型。
-    
--    整型提升
+### 隐式类型转换
 
-    在32位平台上，所有低于32位的整型数据，在运算过程中先要转化为32位的整型数据，然后再参与运算。
-    
--    隐式类型转换规则
+顾名思义，隐式转换就是在默认情况\(没有用户手动干预\)下类型会自动进行的转换。·
 
-    • First, if either operand is long double, the other is converted to <转换>long double.
-    • Otherwise, if either operand is double, the other is converted to double.
-    • Otherwise, if either operand is float, the other is converted to float.
-    
-    • Otherwise, the integral promotions are performed on both operands<否则 两个操作数都进行整型提升>; 
-        then, if either operand is unsigned long int, the other is converted to unsigned long int.
-        如果一个操作数为unsigned long int,则另外一个也转化为 unsigned long int
-    • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.否则,如果其中一个操作数为long int,而另一个操作数类型是unsigned int, 并且long int能够表示unsigned int的所有值,则另一个操作数也被视为long int;如果long int不能表示unsigned int的所有值,则两个数都被视为unsigned long int.
-    
-    • Otherwise, if one operand is long int, the other is converted to long int.
-    否则, 如果其中一个操作数是long int,则另一个操作数也被视为long int.
-    
-    • Otherwise, if either operand is unsigned int, the other is converted to unsigned int.
-    否则, 如果其中一个操作数是unsigned int, 则另一个操作数也被视为unsigned int. 
-    
-    • Otherwise, both operands have type int
-    否则, 两个操作数都被视为int
-    
+```
+3/2 = 1;      // 操作数都是整数，结果也是整数。  
+3/2.0 = 1.5 ; // 操作数类型不同，运算之前会先将精度低的操作数隐式转换为精度高的数据类型，再运算，表达式的结果是高精度的数据类型。
+```
+
+* 整型提升
+
+  在32位平台上，所有低于32位的整型数据，在运算过程中先要转化为32位的整型数据，然后再参与运算。
+
+* 隐式类型转换规则
+
+  • First, if either operand is long double, the other is converted to &lt;转换&gt;long double.  
+  • Otherwise, if either operand is double, the other is converted to double.  
+  • Otherwise, if either operand is float, the other is converted to float.
+
+  • Otherwise, the integral promotions are performed on both operands&lt;否则 两个操作数都进行整型提升&gt;;   
+     then, if either operand is unsigned long int, the other is converted to unsigned long int.  
+     如果一个操作数为unsigned long int,则另外一个也转化为 unsigned long int  
+  • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.否则,如果其中一个操作数为long int,而另一个操作数类型是unsigned int, 并且long int能够表示unsigned int的所有值,则另一个操作数也被视为long int;如果long int不能表示unsigned int的所有值,则两个数都被视为unsigned long int.
+
+  • Otherwise, if one operand is long int, the other is converted to long int.  
+  否则, 如果其中一个操作数是long int,则另一个操作数也被视为long int.
+
+  • Otherwise, if either operand is unsigned int, the other is converted to unsigned int.  
+  否则, 如果其中一个操作数是unsigned int, 则另一个操作数也被视为unsigned int.
+
+  • Otherwise, both operands have type int  
+  否则, 两个操作数都被视为int
 
 // 隐式转换例子
 
@@ -274,19 +267,15 @@ int main()
 \(先简单介绍，语句时详细讲\)
 
 ### 关系运算符
-** < <= > >= == !=**
 
+** &lt; &lt;= &gt; &gt;= == !=**
 
 ```
-
 如：2 < 3
 ```
 
-> 在实际的编程的中 经常会不小心犯的错就是 将 == 写成 =
-原意是比较两个表达式的值，结果变成了改变左边的值。
-
-
-
+> 在实际的编程的中 经常会不小心犯的错就是 将 == 写成 =  
+> 原意是比较两个表达式的值，结果变成了改变左边的值。
 
 ### 逻辑运算符
 
@@ -296,61 +285,69 @@ int main()
 
 在C语言中整数值**0表示逻辑假，非0表示真**。
 
-假 比如 : NULL,0
+假 比如 : NULL,0  
 真 比如 : 1,100,-100等非0的值
-
 
 逻辑与&&
 
-    与；且;并且;
-    表达式形式: 子表达式1 && 子表达式2
-    
-    特点-一假即假
-    
-    7 < 8 && 0 逻辑为假
-    
-    
-逻辑或|| 
+```
+与；且;并且;
+表达式形式: 子表达式1 && 子表达式2
 
-    或；或者
-    表达式形式: 子表达式1 || 子表达式2
-    
-    特点-一真即真
-    
+特点-一假即假
+
+7 < 8 && 0 逻辑为假
+```
+
+逻辑或\|\|
+
+```
+或；或者
+表达式形式: 子表达式1 || 子表达式2
+
+特点-一真即真
+```
+
 逻辑非!
 
-    非；
-    表达式形式: !子表达式        
-    
-    特点-真假取反
+```
+非；
+表达式形式: !子表达式        
 
-### 三目运算符  
+特点-真假取反
+```
+
+### 三目运算符
 
 这是C语言中**唯一一个三目运算符**。
 
-    表达式形式: 
-    int res = 1 > 2 ? 1 : 2;
-    res的值是几?
-    
+```
+表达式形式: 
+int res = 1 > 2 ? 1 : 2;
+res的值是几?
+```
+
 ### &取地址符
-    
-    int a = 1001;
-    printf("a的值是 %d a的地址是 %p\n",a,&a);
-    
+
+```
+int a = 1001;
+printf("a的值是 %d a的地址是 %p\n",a,&a);
+```
+
 ### sizeof运算符
-    
+
 这是C语言中常用的为数不多的以单词形式内置的运算符。
 
-运算符作用是求取 目标参数在系统内存中占用空间大小(字节数)
+运算符作用是求取 目标参数在系统内存中占用空间大小\(字节数\)
 
-    sizeof(int) ;//求取int类型的数据占用 字节数
-    sizeof(0); //求取整数0(整数默认类型为int类型) 占用的字节数 == sizeof(int）
-    
+```
+sizeof(int) ;//求取int类型的数据占用 字节数
+sizeof(0); //求取整数0(整数默认类型为int类型) 占用的字节数 == sizeof(int）
+```
+
 由此可见，sizeof运算的目标参数可以是值，也可是数据类型。
 
-
 ### 运算符优先级和结合方向
-
 
 ![](/assets/oprator.png)
 
@@ -358,37 +355,33 @@ int main()
 
 ![](/assets/ascii.png)
 
-
 ### 反汇编演示
 
-汇编语言种类   Intel汇编和AT&T汇编
+汇编语言种类   Intel汇编和AT&T汇编  
 在intel的官方文档中使intel语法，Windows也使用intel语法；而UNIX平台的汇编器一直使用AT&T语法，在Linux内核中源码中部分代码使用AT&T汇编编写。
 
 从汇编的角度看a++ 和++b的指令
 
 前置++和后置++在表达式中单独使用的时候的，我们就可以认为其实完全一样的。
 
-
 ```
 #include <stdio.h>
 int main()
 {
-	int a = 100;
-	int b = 101;
-	int c = 102;
-	int d = 103;
-	int e = 104;
+    int a = 100;
+    int b = 101;
+    int c = 102;
+    int d = 103;
+    int e = 104;
 
-	++b;	
-	c++;
+    ++b;    
+    c++;
 
-	printf("%d %d %d %d %d\n",a,b,c,d,e);
-	getchar();
-	return 0;
+    printf("%d %d %d %d %d\n",a,b,c,d,e);
+    getchar();
+    return 0;
 }
 ```
-
-
 
 ```
 10: ++b;
@@ -398,22 +391,17 @@ int main()
 11: c++;
 000417FA 8B 45 E0 mov eax,dword ptr [c]  
 000417FD 83 C0 01 add eax,1
-00041800 89 45 E0 mov dword ptr [c],eax  
+00041800 89 45 E0 mov dword ptr [c],eax
 ```
+
 可以看到 **单独前置和后置对应的汇编指令是完全一致的**。**但也不排除不同的编译器的功能不一样，对这条语句的理解不一样**。
 
-
-
-AT&T汇编语句 ；AT&T 中寄存器需要加前缀“%” ；立即数需要加前缀“$” 。 
-
-
+AT&T汇编语句 ；AT&T 中寄存器需要加前缀“%” ；立即数需要加前缀“$” 。
 
 ```
 pc@iZ25g2i2xsmZ:~$ gcc -E test_asm.c -o test_asm.i
 pc@iZ25g2i2xsmZ:~$ gcc -S test_asm.i -o test_asm.s
 ```
-
-
 
 ```
 movl    $100, -20(%rbp)
@@ -425,9 +413,8 @@ addl    $1, -16(%rbp)
 addl    $1, -12(%rbp)
 ```
 
-
-
 非单独使用的场景
+
 ```
 #include <stdio.h>
 int main()
@@ -525,10 +512,6 @@ int main()
 00E31841 33 C0                xor         eax,eax  
     21: }
 ```
-
-
-
-
 
 
 
