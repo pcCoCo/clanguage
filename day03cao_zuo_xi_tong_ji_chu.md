@@ -756,3 +756,4 @@ OS/360也包含另一个优点：永久贮存装置—硬盘机的面世（IBM�
 
 - ARM, PowerPC (除PowerPC 970外), DEC Alpha, SPARC V9, MIPS, PA-RISC and IA64的字节序是可配置的。
 
+- Android(Google)和iOS(Apple)操作系统只能在小端模式下
