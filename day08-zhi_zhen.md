@@ -324,7 +324,8 @@ int main()
 有趣的是 GCC曾经支持过对bit寻址的体系结构，即TI(texas Instrument,德州仪器)的34010处理器。指针加1在该机器上意味着内存地址向前移动1bit位，而不是直接的移动一个字节。
 更有趣的是 2.6系列内核开发的关键人物 Andrew Morton曾经为该处理器编写过一个实时内核,可以从www.zip.com/au/~akpm/下载源代码。
 
-### char*
+### char*可能跟你想的不太一样
+
 char *，它在C/C++中有专门的语义，既不同于signed char *，也不同于unsigned char *，专门用于指以'\0'为结束的字符串
 在C++中，你可以试一试，用
 char *p="abcd";
