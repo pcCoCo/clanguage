@@ -334,7 +334,8 @@ signed char *p="abcd";
 还是
 unsigned char *p="abcd";
 都是不能通过编译的。
-关于这些在C/C++的语言标准或一些经典书籍如TheC++Programing Language中都有很清楚的说明。
+关于这些在C/C++的语言标准或一些经典书籍如《The C++ Programing Language》中都有很清楚的说明。
+
 判断编译器的默认char符号
 ```
 #include <stdio.h>
