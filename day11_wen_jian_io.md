@@ -302,3 +302,9 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 
 
 
+## 作业练习
+
+1. 简单的预处理器。写一个程序经过 `./a.out main.c main2.c`可以将main.c中的行注释全部去掉并且存储修改之后的内容到main.c中。
+
+
+
