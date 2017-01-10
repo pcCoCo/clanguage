@@ -153,10 +153,18 @@ int main(void)
 
 > 为什么在定义一个函数的形参列表为空的时候都需要手动写成 `返回值类型 函数名(void)`???
 
+```
 void test()
 {
-    printf("call test function\n");
+    printf("call test function");
 }
+int main(void)
+{
+    test(2,3,4,5);
+    return 0;
+}
+```
+
 因为在C语言中 test() 等价于 test(...)
 而...的意思是不定长参数，比如printf函数的函数原型应该是 int printf(const char *,...);
 
