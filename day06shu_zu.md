@@ -257,6 +257,8 @@ As of today, RANDOM.ORG has generated 1.41 trillion random bits for the Internet
 
 ### 题目
 
+1. 说一下这个代码有什么问题，为什么，怎么改正?
+
 ```
 #include <stdio.h>
 int main(void)
