@@ -96,7 +96,8 @@ int main()
 
 ## char类型
 
-注意 char数据类型既不是 unsigned char ,也不是signed char。
+char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等不指定signed/unsigned时都默认是signed，但char在标准中是unsigned，编译器可以实现为带符号的，也可以实现为不带符号的。
+
 
 
 ### printf函数输出char值

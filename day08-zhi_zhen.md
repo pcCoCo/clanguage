@@ -316,14 +316,42 @@ int main()
     
 ## 指针的偏移
 
-### 拓展
+### 更加变态的指针运算规则
+
 通常在C语言中仅当指针具有显式类型的时候才可用于计算。例如，int*或 long *。
 否则不可能确定指针加1操作的语义，GNU编译器拓展了该限制，支持void类型的指针和函数指针的运算，在Linux内核中很多地方都有用到。这两种情况下加1的语义是增加一个字节。
 
-有趣的是 GCC曾经支持过对bit寻址的体系结构，即TI(texas Instrument,德州仪器)的34010处理器。指针加1在该机器上意味着内存地址向前移动1bit位，而不是莆田的移动一个字节。
+有趣的是 GCC曾经支持过对bit寻址的体系结构，即TI(texas Instrument,德州仪器)的34010处理器。指针加1在该机器上意味着内存地址向前移动1bit位，而不是直接的移动一个字节。
 更有趣的是 2.6系列内核开发的关键人物 Andrew Morton曾经为该处理器编写过一个实时内核,可以从www.zip.com/au/~akpm/下载源代码。
 
-
+### char*
+char *，它在C/C++中有专门的语义，既不同于signed char *，也不同于unsigned char *，专门用于指以'\0'为结束的字符串
+在C++中，你可以试一试，用
+char *p="abcd";
+是可以通过编译的
+但如果用
+signed char *p="abcd";
+还是
+unsigned char *p="abcd";
+都是不能通过编译的。
+关于这些在C/C++的语言标准或一些经典书籍如TheC++Programing Language中都有很清楚的说明。
+判断编译器的默认char符号
+```
+#include <stdio.h>
+int main(void)
+{
+    char c=-1;
+    if(c<200)
+    {
+        printf("signed\n");
+    }
+    else
+    {
+        printf("unsigned\n");
+    }
+    return 0;
+}
+```
 
 ## 作业
 
