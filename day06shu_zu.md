@@ -264,7 +264,9 @@ As of today, RANDOM.ORG has generated 1.41 trillion random bits for the Internet
 int main(void)
 {
     float aH  = 0 ;
-    unSigned length = 0;
+    unsigned length;
+    scanf("%d",&length);
+    
     int i;
     float result = 0;
     
@@ -273,6 +275,8 @@ int main(void)
     printf("%f",result);
     return 0;
 } 
+
+提示 当lenth
 ```
 
 
