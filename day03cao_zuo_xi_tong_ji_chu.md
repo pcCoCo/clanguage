@@ -744,6 +744,16 @@ OS/360也包含另一个优点：永久贮存装置—硬盘机的面世（IBM�
 
 ### 字节序
 
+字节顺序，又称端序或尾序（英语：Endianness）。在计算机科学领域中，是跨越多字节的程序对象的存储规则。
+
    大端模式
    
    小端模式
+
+处理器体系的字节序
+
+1. x86，MOS Technology 6502，Z80，VAX，PDP-11等处理器为Little endian。
+- Motorola 6800，Motorola 68000，PowerPC 970，System/370，SPARC（除V9外）等处理器为Big endian。网络传输一般采用大端序，也被称之为网络字节序，或网络序。IP协议中定义大端序为网络字节序。
+
+- ARM, PowerPC (除PowerPC 970外), DEC Alpha, SPARC V9, MIPS, PA-RISC and IA64的字节序是可配置的。
+
