@@ -41,7 +41,6 @@ const const int i 将被当作 const int i 处理。
 新的标准提高了对C++的兼容性，并增加了一些新的特性。这些新特性包括：
 
 
-
 ```
 对齐处理(Alignment)的标准化(包括_Alignas标志符，alignof运算符, aligned_alloc函数以及<stdalign.h>头文件。
 _Noreturn 函数标记，类似于 gcc 的 __attribute__((noreturn))。
