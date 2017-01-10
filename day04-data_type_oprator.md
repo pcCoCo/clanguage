@@ -96,8 +96,6 @@ int main()
 
 ## char类型
 
-### char常量，变量
-
 注意 char数据类型既不是 unsigned char ,也不是signed char。
 
 
