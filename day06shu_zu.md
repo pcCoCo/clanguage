@@ -276,7 +276,7 @@ int main(void)
     return 0;
 } 
 
-提示 当lenth
+提示 当length输入为0的时候结果不是输出0，而是错误
 ```
 
 
