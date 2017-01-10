@@ -324,3 +324,15 @@ int main()
 更有趣的是 2.6系列内核开发的关键人物 Andrew Morton曾经为该处理器编写过一个实时内核,可以从www.zip.com/au/~akpm/下载源代码。
 
 
+
+## 作业
+
+1.编写一个函数比较两个字符串的长度谁长。
+
+int str_len_cmp(const char *s1,const char *s2)
+{
+    return strlen(s1) - strlen(s2);
+}
+
+说说这个函数实现有没有问题？为什么?如果有，怎么解决
+
