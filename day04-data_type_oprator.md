@@ -86,6 +86,12 @@ int main()
     
 变量是一个命名的存储区域。
 
+### 左值
+
+    In computer science, a value that points to a storage location, potentially allowing new values to be assigned。
+    
+
+### 右值
 
 ## int类型
 
