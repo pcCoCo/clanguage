@@ -9,8 +9,6 @@
 * [章节06-数组](day06shu_zu.md)
 * [章节07-函数](day07han_shu.md)
 * [章节08-指针](day08-zhi_zhen.md)
-    * [ section1-概念 ](day08-zhizhen01.md)
-    * [ section2-提升 ](day08-zhizhen02.md)
 * [章节09-内存管理](day09-neicun_guanli.md)
 * [章节10-复合数据类型](day10-fu_he_shu_ju_lei_xing.md)
 * [章节11-文件IO](day11_wen_jian_io.md)
