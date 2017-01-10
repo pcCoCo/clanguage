@@ -310,7 +310,7 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 int main()
 {
     //这是一个测试程序
-    int n;             //变量n作为输入的值
+    int n;             //变量n存储输入的值
     system("CHCP 936");
     while(1)
     {
