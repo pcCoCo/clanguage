@@ -16,6 +16,7 @@
 
 表面上，用户通过文件名，打开文件。实际上，系统内部这个过程分成三步：首先，系统找到这个文件名对应的inode号码；其次，通过inode号码，获取inode信息；最后，根据inode信息，找到文件数据所在的block，读出数据。
 
+```
 struct inode {
         struct hlist_node       i_hash;              /* 哈希表 */
         struct list_head        i_list;              /* 索引节点链表 */
@@ -61,3 +62,4 @@ struct inode {
                 void            *generic_ip;         /* 文件特殊信息 */
         } u;
 };
+```
