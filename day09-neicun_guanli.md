@@ -366,11 +366,12 @@ http://en.cppreference.com/w/cpp/language/value_category
     a + b;
     100 ;
     num ;
-    *ptr
+    *ptr;
+    
     
 C++中需要借用第二种方式理解概念。       
                        
- 左值
+左值
 
     In computer science, a value that points to a storage location, potentially allowing new values to be assigned。
     
