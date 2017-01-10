@@ -166,7 +166,7 @@ int main()
         {
             goto end;
         }
-    goto loop;
+        goto loop;
     end:  
         printf("不再说你是猴子\n"); 
     
