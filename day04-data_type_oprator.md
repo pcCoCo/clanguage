@@ -110,7 +110,25 @@ int main()
 float, double, long double类型
 ```
 
+![](/assets/float_point_number.png)
+
+
+![](/assets/General_double_precision_float.png)
+
+
+
 ### printf函数输出浮点数
+
+
+### 单精度、双精度小数
+
+单精度浮点数格式 是一种计算机数据格式，在计算机存储器中占用4个字节（32 bits），利用“浮点”（浮动小数点）的方法，可以表示一个范围很大的数值。在 IEEE 754-2008 的定义中，32-bit base 2格式被正式称为binary32格式。这种格式在IEEE 754-1985被定义为single，即单精度。
+
+第1位表示正负(正负号0代表正，1代表负)，中间8位表示指数，后23位储存有效数位（有效数位是24位）。
+指数可以是二补码；或0到255，前半代表负，127代表零，后半代表正。
+有效数位最左手边的1并不会储存，因为它一定存在（二进制的第一个有效数字必定是1）。换言之，有效数位是24位，实际储存23位。
+
+![](/assets/General_double_precision_float.png)
 
 ## 进制
 
