@@ -379,11 +379,6 @@ C++中需要借用第二种方式理解概念。
     
     In computer science, a value considered independently of its storage location。
     
-    
-
-              
-
-
 ## 作业
 1. 给定一段代码分别写出每个变量和函数的作用域、寿命
 
