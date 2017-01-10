@@ -278,7 +278,7 @@ C语言的标准文档要求了一个平台移植C语言的时候至少要实现
 | <stddef.h> |	一些标准宏定义 |
 | <stdio.h> |	标准I/O库 |
 | <stdlib.h> |	标准工具库函数 |
-| <string.h> |	ASCIIZ字符串及任意内存处理函数 |
+| <string.h> |	ASCII字符串及任意内存处理函数 |
 | <time.h>   |	时间相关 |
 
 
@@ -287,6 +287,13 @@ C语言的标准文档要求了一个平台移植C语言的时候至少要实现
 
 ### 编写自己的头文件
 
+> 防止重复包含的预处理宏
+
+```
+#ifndef __XXX_HEADER_H__
+#define __XXX_HEADER_H__
+#endif //__XXX_HEADER_H__
+```
 
 
 
