@@ -327,8 +327,7 @@ int main()
 ### char*可能跟你想的不太一样
 
 char *，它在C/C++中有专门的语义，既不同于signed char *，也不同于unsigned char *，专门用于指以'\0'为结束的字符串
-在C++中，你可以试一试，用
-char *p="abcd";
+在C++中，你可以试一试，用char *p="abcd";
 是可以通过编译的
 但不论用 `signed char *p="abcd";` 还是 `unsigned char *p="abcd";`
 都是不能通过编译的。
