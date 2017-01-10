@@ -351,6 +351,36 @@ volatile修饰字段告诉编译器不要对该类型的数据做优化处理，
 
 给定一段代码分别写出每个变量和函数的作用域、寿命
 
+### 左值与右值
+
+http://en.cppreference.com/w/cpp/language/value_category
+
+1、古老方法看形式---是等号左还是右
+    右值只能出现在等号左边，左值既能左边又能右边。
+    
+2、是否有存储空间+能够改变
+    
+左值因为有存储空间 加上可以改变值 所以能够通过名字名字直接改变值
+右值不一定有存储空间，也不一定能改变值，可能是一个临时表达式。
+    
+    a + b;
+    100 ;
+    num ;
+    *ptr
+    
+C++中需要借用第二种方式理解概念。       
+                       
+ 左值
+
+    In computer science, a value that points to a storage location, potentially allowing new values to be assigned。
+    
+右值
+    
+    In computer science, a value considered independently of its storage location。
+    
+    
+
+              
 
 
 ## 作业
