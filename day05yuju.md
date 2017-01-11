@@ -199,7 +199,11 @@ int main()
 
     如果循环体语句只有一条语句，那么循环体语句外面的{ }可以省略。
     
-* continue 和 break
+* continue
+    
+    
+    
+* break
 
 ### for
 
