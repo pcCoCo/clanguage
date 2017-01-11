@@ -99,8 +99,6 @@ int main()
 
 ### 整数溢出
 
-### 大端对齐和小端对齐
-
 ## char类型
 
 char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等不指定signed/unsigned时都默认是signed，但char在标准中是unsigned，编译器可以实现为带符号的，也可以实现为不带符号的。
@@ -109,7 +107,7 @@ char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等
 
 ### printf函数输出char值
 
-#### 不能打印char转义符
+### 不能打印char转义符
 
 ### char 和 unsigned char
 
@@ -177,7 +175,9 @@ mantissa(尾数): 用来表示精确度
 
 ### getchar函数
 
-### scanf函数，
+### scanf函数
+
+    &变量
 
 ## 运算符
 
