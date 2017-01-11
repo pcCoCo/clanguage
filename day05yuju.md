@@ -15,6 +15,7 @@
 声明一个变量
 
     extern int a ;
+    
 调用printf函数
 
     printf("hello world");
