@@ -93,9 +93,7 @@ int main()
 ## int类型
 
 
-### printf函数输出int值
-
-### printf输出八进制，十六进制
+### printf函数输出int值 八进制、十进制、十六进制
 
 ### 有符号和无符号
 
