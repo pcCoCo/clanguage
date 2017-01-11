@@ -26,7 +26,7 @@ Unix最初受到Multics计划的启发。Multics是由麻省理工学院、通�
 
 ![](/assets/linux.jpg)
 
-Linux操作系统内核诞生于1991 年10 月5 日（这是Linus完成代码后第一次正式向外公布时间）。
+Linux操作系统内核诞生于1991 年10 月5 日（这是Linux完成代码后第一次正式向外公布时间）。
 
 严格来讲，Linux这个词本身只表示Linux内核，但实际上人们已经习惯了用Linux来形容整个基于Linux内核并使用GNU 工程各种工具和数据库的操作系统。
 
@@ -191,7 +191,7 @@ pc@iZ25g2i2xsmZ:~/code$ ls -i
 786883 a.c  786866 test  786890 test.o  
 pc@iZ25g2i2xsmZ:~/code$ ls -i a.c  
 786883 a.c  
-pc@iZ25g2i2xsmZ:~/code$   
+pc@iZ25g2i2xsmZ:~/code$  
 pc@iZ25g2i2xsmZ:~/code$ ln -s a.c a
 
 pc@iZ25g2i2xsmZ:~/code$ ls -ail
@@ -289,7 +289,7 @@ PDP-7计算机介绍
 ### ls
 
 list,列举当前目录下的文件列表\(包括目录\)  
-常用选项   
+常用选项  
 a 显示所有文件\(目录、默认隐藏不显示的.打头的文件\)  
 l 详细信息  
 i 显示iNode编号\(iNumber\)
@@ -544,8 +544,8 @@ chmod u=rwx,g=rx,o=r test\_file
 2 stands for "write",  
 1 stands for "execute"
 
-八进制数7就是4_1+2_1+1_1构成的，也即 rwx。  
-八进制数6就是4_1+2_1+1_0构成的，也即 rw-。
+八进制数7就是4\_1+2\_1+1\_1构成的，也即 rwx。  
+八进制数6就是4\_1+2\_1+1\_0构成的，也即 rw-。
 
 那八进制数3呢?
 
@@ -593,7 +593,7 @@ find / -name \*.zip -size -2G
 等于  
 find / -name \*.zip -size 2K
 
--type   
+-type  
 Returns true if a file is of type c:  
  d    directories目录文件  
  f    regular files普通文件  
