@@ -84,9 +84,9 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 ![](/assets/上下左右.jpg)
 
 
-# HTML简单介绍
+## HTML简单介绍
 
-## 最简单的HTML格式
+### 最简单的HTML格式
 
 HTML5标准语法
 
@@ -104,3 +104,6 @@ HTML5标准语法
 <img>图片标签
 
 
+### 将女朋友的照片加载到html网页上
+
+### 调整部署方案使用手机也能访问
