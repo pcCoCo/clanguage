@@ -138,14 +138,14 @@ unsigned int num = 2138912398;
  int main()
  {
     unsigned int num1 = 0;
-    printf("%u\n", UINT_MAX);
-       
     printf("int max = %u\n", num1 - 1);
+    
+    printf("%u\n", INT32_MAX);
     return 0;
-}
+ }
 ```
 
-
+long, long long 同样是整数，表示的范围更大。
 
 
 
