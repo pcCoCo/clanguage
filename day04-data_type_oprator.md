@@ -1,5 +1,4 @@
-“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。(Ken Thompson,Unix 之父)
-
+“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。\(Ken Thompson,Unix 之父\)
 
 基础数据类型---常量---进制转化
 
@@ -13,8 +12,8 @@
 
 ### \#define
 
-在C语言中以\#开始的语句都是预处理语句 
- 
+在C语言中以\#开始的语句都是预处理语句
+
 **注意：预处理语句后面没有分号**
 
 演示在处理的时候 \#define 的替换效果
@@ -78,18 +77,14 @@ int main()
 
 整型常量可以用二进制、八进制、十进制或十六进制来表示。
 
-
-
 ## 变量
-    
-变量是一个命名的存储区域。
--名称
--有location
+
+变量是一个命名的存储区域。  
+-名称  
+-有location  
 -有生命周期和作用域
 
-
 ## int类型
-
 
 ### printf函数输出int值 八进制、十进制、十六进制
 
@@ -98,12 +93,10 @@ int main()
 ### 整数溢出
 
 小明卡里只有8毛钱，本来想打个6毛的饭结果不小心按了9毛的，哪知机器忽然疯狂地喷出255两饭，被喷得满脸热饭的小明大叫“烫烫烫烫烫烫。。。
-    
+
 ## char类型
 
 char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等不指定signed/unsigned时都默认是signed，但char在标准中是unsigned，编译器可以实现为带符号的，也可以实现为不带符号的。
-
-
 
 ### printf函数输出char值
 
@@ -117,45 +110,38 @@ char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等
 float, double, long double类型
 ```
 
-
-
-
-
-
-
 ### printf函数输出浮点数
-
 
 ### 单精度、双精度小数
 
-    在计算机科学中，浮点（英语：floating point，缩写为FP）是一种对于实数的近似值数值表现法，由一个有效数字（即尾数）加上幂数来表示，通常是乘以某个基数的整数次指数得到。以这种表示法表示的数值，称为浮点数（floating-point number）。利用浮点进行运算，称为浮点计算，这种运算通常伴随着因为无法精确表示而进行的近似或舍入。
+```
+在计算机科学中，浮点（英语：floating point，缩写为FP）是一种对于实数的近似值数值表现法，由一个有效数字（即尾数）加上幂数来表示，通常是乘以某个基数的整数次指数得到。以这种表示法表示的数值，称为浮点数（floating-point number）。利用浮点进行运算，称为浮点计算，这种运算通常伴随着因为无法精确表示而进行的近似或舍入。
 
-    这种表示方法类似于基数为10的科学记数法，在计算机上，通常使用2为基数的幂数来表式。一个浮点数a由两个数m和e来表示：a = m × be。在任意一个这样的系统中，我们选择一个基数b（记数系统的基）和精度p（即使用多少位来存储）。m（即尾数）是形如±d.ddd...ddd的p位数（每一位是一个介于0到b-1之间的整数，包括0和b-1）。
-    
-    
+这种表示方法类似于基数为10的科学记数法，在计算机上，通常使用2为基数的幂数来表式。一个浮点数a由两个数m和e来表示：a = m × be。在任意一个这样的系统中，我们选择一个基数b（记数系统的基）和精度p（即使用多少位来存储）。m（即尾数）是形如±d.ddd...ddd的p位数（每一位是一个介于0到b-1之间的整数，包括0和b-1）。
+```
 
+> 单精度浮点数格式
 
-
->单精度浮点数格式 
-
-    是一种计算机数据格式，在计算机存储器中占用4个字节（32 bits），利用“浮点”（浮动小数点）的方法，可以表示一个范围很大的数值。在 IEEE 754-2008 的定义中，32-bit base 2格式被正式称为binary32格式。这种格式在IEEE 754-1985被定义为single，即单精度。
+```
+是一种计算机数据格式，在计算机存储器中占用4个字节（32 bits），利用“浮点”（浮动小数点）的方法，可以表示一个范围很大的数值。在 IEEE 754-2008 的定义中，32-bit base 2格式被正式称为binary32格式。这种格式在IEEE 754-1985被定义为single，即单精度。
+```
 
 ![](/assets/float_point_number.png)
 
-第1位表示正负(正负号0代表正，1代表负)，中间8位表示指数，后23位储存有效数位（有效数位是24位）。
-指数可以是二补码；或0到255，前半代表负，127代表零，后半代表正。
+第1位表示正负\(正负号0代表正，1代表负\)，中间8位表示指数，后23位储存有效数位（有效数位是24位）。  
+指数可以是二补码；或0到255，前半代表负，127代表零，后半代表正。  
 有效数位最左手边的1并不会储存，因为它一定存在（二进制的第一个有效数字必定是1）。换言之，有效数位是24位，实际储存23位。
 
+> 双精度浮点数格式
 
->双精度浮点数格式
+```
+双精度浮点数（double）是计算机使用的一种数据类型。比起单精度浮点数，双精度浮点数(double)使用 64 位（8字节） 来存储一个浮点数。 它可以表示十进制的15或16位有效数字。
+```
 
-    双精度浮点数（double）是计算机使用的一种数据类型。比起单精度浮点数，双精度浮点数(double)使用 64 位（8字节） 来存储一个浮点数。 它可以表示十进制的15或16位有效数字。
-    
-![](/assets/General_double_precision_float.png)
-sign bit(符号): 用来表示正负号
-exponent(指数): 用来表示次方数
-mantissa(尾数): 用来表示精确度
-
+![](/assets/General_double_precision_float.png)  
+sign bit\(符号\): 用来表示正负号  
+exponent\(指数\): 用来表示次方数  
+mantissa\(尾数\): 用来表示精确度
 
 ## 存储类型限定符
 
@@ -177,7 +163,9 @@ mantissa(尾数): 用来表示精确度
 
 ### scanf函数
 
-    &变量
+```
+&变量
+```
 
 ## 运算符
 
@@ -212,7 +200,7 @@ count     = 1000  ;    //赋值
 
 ### 算术
 
-+ - \* / % += -= \*= /= %=
+* * \* / % += -= \*= /= %=
 
 /在C语言中有相应的运算符规则。
 
@@ -242,7 +230,7 @@ int    s = 1000.0;     //距离
 int    t = 23.44 ;     //时间
 
 double v = s / t ;     //速度
-int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型 
+int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型
 ```
 
 ### 隐式类型转换
@@ -264,7 +252,7 @@ int d = (int)a + ;     //将浮点数类型的速度值 强制转化为 整型
   • Otherwise, if either operand is double, the other is converted to double.  
   • Otherwise, if either operand is float, the other is converted to float.
 
-  • Otherwise, the integral promotions are performed on both operands&lt;否则 两个操作数都进行整型提升&gt;;   
+  • Otherwise, the integral promotions are performed on both operands&lt;否则 两个操作数都进行整型提升&gt;;  
      then, if either operand is unsigned long int, the other is converted to unsigned long int.  
      如果一个操作数为unsigned long int,则另外一个也转化为 unsigned long int  
   • Otherwise, if one operand is long int and the other is unsigned int, the effect depends on whether a long int can represent all values of an unsigned int; if so, the unsigned int operand is converted to long int; if not, both are converted to unsigned long int.否则,如果其中一个操作数为long int,而另一个操作数类型是unsigned int, 并且long int能够表示unsigned int的所有值,则另一个操作数也被视为long int;如果long int不能表示unsigned int的所有值,则两个数都被视为unsigned long int.
@@ -371,13 +359,11 @@ int a = 1001;
 printf("a的值是 %d a的地址是 %p\n",a,&a);
 ```
 
-说道&运算符，不得不说道 register 寄存器存储类型的变量,这种变量一般建议优化为 只在寄存器中使用从而提高效率。
+说道&运算符，不得不说道 register 寄存器存储类型的变量,这种变量一般建议优化为 只在寄存器中使用从而提高效率。  
 仅仅是建议。
 
-还有一种情况就是 定义变量的时候没有加上存储类型 resister关键字，操作系统仍然有可能将其作为寄存器变量存在。
+还有一种情况就是 定义变量的时候没有加上存储类型 resister关键字，操作系统仍然有可能将其作为寄存器变量存在。  
 显然除了一种情况是一定不能只存在于寄存器中 那就是对变量进行&引用操作---这就要求了该变量必须在内存中存在。
-
-
 
 ### sizeof运算符
 
@@ -559,13 +545,10 @@ int main()
 ```
 
 ## 作业练习
-1. 编写一个程序，从标准输入读取几行输入，将每行输入都要打印到标准输出上并且每行前加上行号。
+
+1. 编写一个程序，从标准输入读取几行输入，将每行输入都要打印到标准输出上并且每行前加上行号。  
     如果输入为任意多行该如何实现呢？
 
-- 
+2. 
 
-
-
-
-   
 
