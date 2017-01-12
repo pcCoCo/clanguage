@@ -134,7 +134,7 @@ unsigned int num = 2138912398;
 
 
 ```
-// 快速求出无符号int的最大值
+// 快速求unsigned int的最大值
  int main()
  {
     unsigned int num1 = 0;
