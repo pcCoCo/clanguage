@@ -100,7 +100,15 @@ const int number = 100;
 ## int类型
 
 ### printf函数输出int值 八进制、十进制、十六进制
+```
+int num = 10;
+printf("%d\n", num); // 十进制输出 
+printf("%o\n", num); // 十进制输出 
+printf("%x\n", num); // 十进制输出 
 
+
+
+```
 ### 有符号和无符号
 
 ### 整数溢出
