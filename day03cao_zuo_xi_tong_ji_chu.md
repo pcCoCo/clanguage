@@ -349,7 +349,7 @@ Linux系统有数以万计的文件，其数据存储在硬盘等其他设备。
 
 知乎 [https://www.zhihu.com/question/20075426](https://www.zhihu.com/question/20075426)
 
-## 随处可见的cache机制
+## 随处可见的cache机制 <待完善>
 
 CPU的一级缓存、二级缓存
 
