@@ -1,8 +1,6 @@
-# day05-语句
+“There’s always more to learn, and there are always better ways to do what you’ve done before.”
 
-    “There’s always more to learn, and there are always better ways to do what you’ve done before.”
-
--Donald Ervin Knuth (现代计算机科学的鼻祖, 经典巨著《计算机程序设计的艺术》的作者)
+(Donald Ervin Knuth ,现代计算机科学的鼻祖, 经典巨著《计算机程序设计的艺术》的作者)
 
 ## 语句
 
