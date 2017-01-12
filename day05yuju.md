@@ -340,10 +340,6 @@ X\_X=X    X\_X=X    X\_X=X    X\_X=X    X\_X=X    X\_X=X    X\_X=X    X\_X=X    
 3&gt;_  
 把符号替换成等式。_
 
-
-
-
-
 ```
 #include <stdio.h>
 int main()
