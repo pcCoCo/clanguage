@@ -113,7 +113,8 @@ printf("%X\n", num); // 十六进制输出
 ```
 
 ### 有符号和无符号
-`signed int` --- 有符号
+`signed int` --- 有符号, signed关键字可以省略。
+
 `unsigned int` --- 无符号
 
 
