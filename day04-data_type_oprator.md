@@ -1,8 +1,5 @@
-# day04-数据类型和运算符
+“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。(Ken Thompson,Unix 之父)
 
-```
-“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。---Ken Thompson  (Unix 之父)
-```
 
 基础数据类型---常量---进制转化
 
@@ -83,25 +80,25 @@ int main()
 
 
 
-### 变量
+## 变量
     
 变量是一个命名的存储区域。
-
+-名称
+-有location
+-有生命周期和作用域
 
 
 ## int类型
 
 
-### printf函数输出int值
-
-### printf输出八进制，十六进制
+### printf函数输出int值 八进制、十进制、十六进制
 
 ### 有符号和无符号
 
 ### 整数溢出
 
-### 大端对齐和小端对齐
-
+小明卡里只有8毛钱，本来想打个6毛的饭结果不小心按了9毛的，哪知机器忽然疯狂地喷出255两饭，被喷得满脸热饭的小明大叫“烫烫烫烫烫烫。。。
+    
 ## char类型
 
 char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等不指定signed/unsigned时都默认是signed，但char在标准中是unsigned，编译器可以实现为带符号的，也可以实现为不带符号的。
@@ -110,7 +107,7 @@ char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等
 
 ### printf函数输出char值
 
-#### 不能打印char转义符
+### 不能打印char转义符
 
 ### char 和 unsigned char
 
@@ -178,7 +175,9 @@ mantissa(尾数): 用来表示精确度
 
 ### getchar函数
 
-### scanf函数，
+### scanf函数
+
+    &变量
 
 ## 运算符
 

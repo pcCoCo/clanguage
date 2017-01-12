@@ -1,10 +1,26 @@
-# day05-语句
+“There’s always more to learn, and there are always better ways to do what you’ve done before.”
 
-    “There’s always more to learn, and there are always better ways to do what you’ve done before.”
+(Donald Ervin Knuth ,现代计算机科学的鼻祖, 经典巨著《计算机程序设计的艺术》的作者)
 
--Donald Ervin Knuth (现代计算机科学的鼻祖, 经典巨著《计算机程序设计的艺术》的作者)
+## 语句
 
+语句是构成程序的基本元素。对应着一条或者多条机器指令。
 
+定义一个变量
+    
+    int a = 100 ; 
+
+声明一个变量
+
+    extern int a ;
+    
+调用printf函数
+
+    printf("hello world");
+
+这些形式的语句都是**简单语句**。简单语句形式比较简洁，都以;结尾。
+除了简单语句在C语言中还提供了一些形式固定的语句，复合语句。
+   
 ## 条件分支语句 
 
 * if
