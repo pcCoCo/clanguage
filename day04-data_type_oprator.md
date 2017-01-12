@@ -133,6 +133,29 @@ unsigned int num = 2138912398;
 
 
 
+```
+ int main()
+  6 {
+  7         const int count = 100;
+  8         int *ptr = (int *)&count;
+  9         *ptr = 1001;
+ 10         int num;
+ 11 
+ 12         printf("num=%d\n", num);
+ 13         printf("count=%d\n", count);
+ 14         unsigned int num1 = 0;
+ 15         printf("%u\n", UINT_MAX);
+ 16         
+ 17         printf("int max = %u\n", num1 - 1);
+ 18         printf("%x %X\n", num1, num1);
+ 19         return 0;
+ 20 }
+```
+
+
+
+
+
 ## char类型
 
 char是C/C++数据类型中比较古怪的一个，其它的如int/long/short等不指定signed/unsigned时都默认是signed，但char在标准中是unsigned，编译器可以实现为带符号的，也可以实现为不带符号的。
