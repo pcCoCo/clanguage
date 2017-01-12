@@ -117,7 +117,7 @@ int num = 10; 最高位是用来表示符号的，-2^31 ~ 2^31
 无符号的int 0 ~ 2^32
 
 signed int num = 10;
-
+unsigned int num = 2138912398;
 
 ### 整数溢出
 
