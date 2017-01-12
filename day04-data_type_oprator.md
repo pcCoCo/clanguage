@@ -103,8 +103,9 @@ const int number = 100;
 ```
 int num = 10;
 printf("%d\n", num); // 十进制输出 
-printf("%o\n", num); // 十进制输出 
-printf("%x\n", num); // 十进制输出 
+printf("%o\n", num); // 八进制输出 
+printf("%x\n", num); // 十六进制输出 
+printf("%X\n", num); // 十六进制输出 
 
 
 
