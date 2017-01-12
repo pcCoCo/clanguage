@@ -134,20 +134,13 @@ unsigned int num = 2138912398;
 
 
 ```
+// 快速求出无符号int的最大值
  int main()
  {
-    const int count = 100;
-    int *ptr = (int *)&count;
-    *ptr = 1001;
-    int num;
-
-    printf("num=%d\n", num);
-    printf("count=%d\n", count);
     unsigned int num1 = 0;
     printf("%u\n", UINT_MAX);
        
     printf("int max = %u\n", num1 - 1);
-    printf("%x %X\n", num1, num1);
     return 0;
 }
 ```
