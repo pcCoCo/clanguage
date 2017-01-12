@@ -216,7 +216,9 @@ mantissa\(尾数\): 用来表示精确度
 ### getchar函数
 
 ### scanf函数
+
 scanf("%d", &num);
+
 ```
 &变量
 ```
