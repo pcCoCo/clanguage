@@ -1,7 +1,4 @@
-# day04-数据类型和运算符
-
-
-“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。---Ken Thompson  (Unix 之父)
+“When in doubt, use brute force. ” “如果局部变量太多，我倾向于拆分子程序。(Ken Thompson,Unix 之父)
 
 
 基础数据类型---常量---进制转化
