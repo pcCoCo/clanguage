@@ -401,6 +401,307 @@ int main()
 
 
 
+
+## 案例
+
+
+### 求字符串中汉字的数量
+char a[100] = "abc我ef哈哈12呵呵"
+写一个程序，求这个字符串中有几个汉字.
+
+
+思路：
+汉字的ascii码值都是负数，所以统计ascii码值中负数个数，再除以3(每个汉字3个ascii)
+
+参考答案：
+
+```
+
+int main()
+{
+    char a[100] = "啪啪abc我ef哈哈12呵呵";
+    /*
+    int i;
+    for(i = 0; i < 30; i++)
+    {
+        printf("%d\n", a[i]);
+    }
+    */
+    int sum = 0;
+    int index = 0;
+    while(a[index])
+    {
+        if (a[index] < 0)
+        {
+            sum++;
+        }
+        index++;
+    }
+    printf("sum = %d\n", sum / 3);
+    return 0;
+}
+
+
+
+```
+
+
+
+### 解析字符串
+
+有一个字符数组
+整数是任意的，中间可能是* + - / 
+char a[100] = "43+56="
+写一个程序，将结算的结果追加到字符串a的后面
+程序执行完成后a的值是"43+56=99"
+
+
+
+参考答案：
+
+```
+
+int main()
+{
+    char a[100] = "43*56=";
+    int i, j;
+    char c;
+    sscanf(a, "%d%c%d=", &i, &c, &j);//从字符串里面把想得到的字符或者整数提取出来
+    //printf("%d, %c, %d\n", i, c, j);
+    int res = 0;
+    switch(c)
+    {
+    case '+':
+        res = i + j;
+        break;
+    case '-':
+        res = i - j;
+        break;
+    case '*':
+        res = i * j;
+        break;
+    case '/':
+        res = i / j;
+        break;
+    default:
+        res = 0;
+    }
+
+    sprintf(a, "%d%c%d=%d", i, c, j, res);
+    printf("%s\n", a);
+
+    return 0;
+}
+
+
+```
+
+
+### 解析字符串的高级应用
+
+char a[100] = "12+5=;45-2=;34*2=;56/3=;
+写个程序，执行后=号后面自动添加计算结果
+“12+5=17;45-2=43;34*2=68;56/3=18”
+
+
+参考答案：
+
+```
+
+int main()
+{
+    char a[100] = "12+5=;45-2=;34*2=;56/3=";
+    char b[100] = { 0 };
+    char *s = strtok(a, ";");
+    while(s)
+    {
+        //printf("%s\n", s);
+        int i, j;
+        char c;
+        sscanf(s, "%d%c%d=", &i, &c, &j);
+        int res = 0;
+        switch(c)
+        {
+        case '+':
+            res = i + j;
+            break;
+        case '-':
+            res = i - j;
+            break;
+        case '*':
+            res = i * j;
+            break;
+        case '/':
+            res = i / j;
+            break;
+        default:
+            res = 0;
+        }
+        char tmp[10] = { 0 };
+        sprintf(tmp, "%s%d;", s, res);
+
+        strcat(b, tmp);
+        s = strtok(NULL, ";");
+    }
+    strcpy(a, b);
+    printf("%s\n", a);
+    return 0;
+}
+
+
+```
+
+
+### 自定义函数实现atoi功能
+
+c语言有个库函数，名字叫atoi，将一个字符串转化为整数
+自定一个函数，实现atoi的功能，要求是不能使用任何c语言已有的库函数
+
+
+
+参考答案：
+
+```
+
+int mystrlen(const char *s)//得到字符串的长度
+{
+    int len = 0;
+    while(s[len])
+    {
+        len++;
+    }
+    return len;
+}
+
+int mypow10(int n)//得到10的n次方
+{
+    if (n == 0)
+        return 1;
+    if (n == 1)
+        return 10;
+
+    int base = 10;
+    int i;
+    for(i = 1; i < n; i++)
+    {
+        base *= 10;
+    }
+    return base;
+}
+
+int mychartoint(char c)//把一个字符转化为一个从0到9的整数
+{
+    return c - '0';    
+}
+
+int my_atoi(const char *nptr)//参数是一个char 的数组
+{
+    int len = mystrlen(nptr);//得到字符串长度
+
+    int i;
+    int value = 0;
+    for(i = 0; i < len; i++)
+    {
+       value +=  mychartoint(nptr[i]) * mypow10(len - i - 1);
+    }
+    
+    return value;
+}
+
+
+int main()
+{
+    //char c = '1';
+    //printf("%d, %d\n", c, '0');
+    //return 0;
+    char a[] = "23542";
+    int i = my_atoi(a);
+    printf("%d\n", i);
+    return 0;
+}
+
+
+
+```
+
+
+
+### 十进制数转化为十六进制数
+
+编写函数，实现将十进制数转化为十六进制数
+
+参考答案：
+
+```
+
+
+char hex_char(unsigned int n )
+{
+    switch (n)
+    {
+    case 0:
+        return '0';
+    case 1:
+        return '1';
+    case 2:
+        return '2';
+    case 3:
+        return '3';
+    case 4:
+        return '4';
+    case 5:
+        return '5';
+    case 6:
+        return '6';
+    case 7:
+        return '7';
+    case 8:
+        return '8';
+    case 9:
+        return '9';
+    case 10:
+        return 'a';
+    case 11:
+        return 'b';
+    case 12:
+        return 'c';
+    case 13:
+        return 'd';
+    case 14:
+        return 'e';
+    case 15:
+        return 'f';
+    }
+    return '0';
+}
+
+void to_hex(unsigned int n)
+{
+    int i = n % 16;
+    if (n>= 16)
+        to_hex(n / 16);
+    printf("%c", hex_char(i));
+
+}
+
+int main()
+{
+
+    int a;
+    scanf("%d", &a);
+    
+    to_hex(a);
+    printf("\n");
+    return 0;
+}
+
+
+
+```
+
+
+
+
 ## 作业
 
 1. 统计个数。从键盘接收以$结尾的字符串，并统计字符串的长度(包含$)。
