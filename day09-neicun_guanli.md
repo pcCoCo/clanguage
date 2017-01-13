@@ -381,7 +381,50 @@ C++中需要借用第二种方式理解概念。
     In computer science, a value considered independently of its storage location。
     
 ## 作业
-1. 给定一段代码分别写出每个变量和函数的作用域、寿命
+1. 给定一段代码分别写出每个变量和函数的作用域、寿命、所处段
+
+```
+#include <stdio.h>
+int a;
+int b = 10;
+static int c;
+static int d = 20;
+const double PI = 3.141592657 ;
+
+static void func(void)
+{
+    printf("fun\n");
+}
+
+extern void too(void)
+{
+    static int j = 60;
+    j++;
+    printf("%d\n",j);
+}
+
+int main()
+{
+    int e = 30 ;
+    int f;
+    static int g;
+    static int h = 40;
+    char *p = "hello";
+    func();
+    
+    for(f = 0; f < 10;f++)
+    {
+        int k = 50;
+        printf("%d\n",k+1);
+        k++;
+    }
+    
+    too();
+    too();
+    too();
+    return 0;
+}
+```
 
 
 - 库函数calloc有如下声明:
