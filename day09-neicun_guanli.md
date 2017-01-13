@@ -385,6 +385,7 @@ C++中需要借用第二种方式理解概念。
 
 ```
 #include <stdio.h>
+
 int           a;
 int           b  = 10;
 static int    c;
