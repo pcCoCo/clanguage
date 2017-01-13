@@ -316,7 +316,7 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 
 - 实现对二进制文件的高效拷贝。
 
-- 文件结合结构体。
+- 文件结合结构体。对教师数据的增删改查。
 
 ## 作业练习
 
