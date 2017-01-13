@@ -223,6 +223,11 @@ RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness 
 
 As of today, RANDOM.ORG has generated 1.41 trillion random bits for the Internet community.
 
+
+## 案例
+
+
+
 ### 题目
 
 1. 说一下这个代码有什么问题，为什么，怎么改正?
@@ -248,6 +253,8 @@ int main(void)
 ```
 
 1. 从屏幕上输入一串字符串\(长度为n\)，统计其中出现的大写字母、小写字母、数字字符、空白字符\(' ','\n'、'\t'等\)等的数量。
+
+
 
 
 
