@@ -385,8 +385,8 @@ C++中需要借用第二种方式理解概念。
 
 ```
 #include <stdio.h>
-int a;
-int b = 10;
+int           a;
+int           b  = 10;
 static int    c;
 static int    d  = 20;
 const  double PI = 3.141592657 ;
