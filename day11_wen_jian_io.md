@@ -301,6 +301,18 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 ### fgets
 
 
+## 案例
+1. 实现一个cp命令 复制指定文件
+
+- 对文件进行简单的加密
+
+- fgets、fputs实现加密
+
+- 超大文件排序
+
+- 解析文件内容并且追加
+
+
 
 
 ## 作业练习
