@@ -388,8 +388,8 @@ C++中需要借用第二种方式理解概念。
 int a;
 int b = 10;
 static int c;
-static int d = 20;
-const double PI = 3.141592657 ;
+static int    d  = 20;
+const  double PI = 3.141592657 ;
 
 static void func(void)
 {
