@@ -227,6 +227,317 @@ As of today, RANDOM.ORG has generated 1.41 trillion random bits for the Internet
 ## 案例
 
 
+### 查找数组最大值
+假设给定数组，数组成员随机，求出数组中的最大值
+
+参考答案：
+
+```
+// 查找数组最大值
+int main()
+{
+
+    int arr[] = {19, -100, 3, 95, 980, 617, 16};
+
+    int i;
+    int max = arr[0];
+    for(i = 1; i < sizeof(arr) / sizeof(arr[0]); i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+
+    printf("最大值为：%d\n", max);
+    return 0;
+}
+
+```
+
+
+
+### 查找数组第二大元素
+
+```
+
+// 查找数组第二大元素
+int main()
+{
+
+    int arr[] = {-19, 1000, 3, 95, 980, 617, 16};
+
+    int i;
+    int max;
+    int smax;
+
+    // 默认数组的第一个和第二个成员分别为最大值和第二大值
+    if (arr[0] > arr[1])
+    {   
+        max = arr[0];
+        smax = arr[1];
+    }
+    else
+    {
+        max = arr[1];
+        smax = arr[0];
+    }
+
+    // 从第三个元素开始遍历
+    for(i = 2; i < sizeof(arr) / sizeof(arr[0]); i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+            smax = max;
+        }
+        else if (arr[i] < max && arr[i] > smax) // 介于最大值和和第二大值之间的数
+        {
+            smax = arr[i];
+        }
+    }
+
+    printf("最大值为：%d\n", max);
+    printf("第二大值为：%d\n", smax);
+    return 0;
+}
+
+```
+
+
+### 数组逆置
+
+ 比如有数组arr = [1,2,3,4,5];
+ 逆置之后，变成了：[5,4,3,2,1];
+
+
+参考答案：
+
+```
+
+// 数组逆置
+int main()
+{
+
+    int arr[] = {45, 12, 987, 40, 86, 25, 59};
+
+    // 思路： 只要遍历 len/2次，
+    /*
+    arr[0] --- arr[6]
+    arr[1] --- arr[5]
+
+    ...
+
+    结论: i + j = len - 1
+    j = len - 1 - i
+    */
+
+    int len = sizeof(arr) / sizeof(arr[0]);
+    int i; 
+    for(i = 0; i<len/2; i++)
+    {
+        int temp = arr[i];
+        arr[i] = arr[len - 1 - i];
+        arr[len - 1 - i] = temp;
+    }
+
+    for (int i = 0; i < len; ++i)
+    {
+        printf("%d\t", arr[i]);
+    }
+    printf("\n");
+    return 0 ;
+}
+
+```
+
+
+### 三维数组排序
+
+将以下数组排序，
+int a[2][3][5] = { { {32,56,21,74,32}, {56,31,897,93,22}, {47,63,96,333,99} }, 
+    { {666,888,35,97,2}, {654,87,13,67,3}, {67,56,40,34,10} } };
+
+
+思路：
+把这个三维数组放到一个一维数组里面
+把一维数组排序
+把一维数组再放回到这个三维数组里
+
+
+参考答案：
+
+```
+
+int main()
+{
+    int a[2][3][5] = { { {32,56,21,74,32}, {56,31,897,93,22}, {47,63,96,333,99} }, 
+    { {666,888,35,97,2}, {654,87,13,67,3}, {67,56,40,34,10} } };
+
+    int b[30] = { 0 };
+    int i, j, k;
+    int index = 0;
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            for (k = 0; k < 5; k++)
+            {
+                b[index] = a[i][j][k];
+                index++;
+            }
+        }
+    }
+
+    for (i = 0; i < 30; i++)
+    {
+        for (j = 1; j < 30 - i; j++)
+        {
+            if (b[j - 1] > b[j])
+            {
+                int tmp = b[j];
+                b[j] = b[j - 1];
+                b[j - 1] = tmp;
+            }
+        }
+    }
+
+    index = 0;
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            for (k = 0; k < 5; k++)
+            {
+                a[i][j][k] = b[index];
+                index++;
+            }
+        }
+    }
+
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            for (k = 0; k < 5; k++)
+            {
+                printf("a[%d][%d][%d] = %d\n", i, j, k, a[i][j][k]);
+            }
+        }
+    }
+    return 0;
+}
+
+
+```
+
+
+### 去除字符串中间的空格
+比如：
+char str[100] = "hello world    ";
+要求：要去掉字符串最右面的空格，而不能去掉字符串中间的空格
+
+思路：
+从后往前数，遇到不是空格的字符就把这个字符的下一个字符设置为0
+
+
+参考答案：
+
+```
+
+int main()
+{
+    char a[100] = "hello      abc     wor ld";
+    int index = 0;
+    while (a[index])
+    {
+        index++;
+    }
+
+    int i;
+    for (i = index - 1; i >= 0; i--)
+    {
+        if (a[i] != ' ')
+        {
+            a[i + 1] = 0;
+            break;
+        }
+    }
+    printf("(%s)\n", a);
+    return 0;
+}
+
+
+```
+
+
+
+### 汉字字符串逆置 (课后作业)
+将一下汉字字符串内容逆置，
+char str[100] = "我爱你中国"
+
+
+思路：
+在UTF8模式下，一个汉字占用3个BYTE
+在GBK下，一个汉字占用2个BYTE
+一个汉字的第一个字节总是小于0的一个整数
+
+
+我爱你
+-111
+-120
+-26
+
+第一个字节和倒数第3个字节交换
+第二个字节和倒数第二个字节交换
+第三个字节和倒数第一个字节交换
+
+
+参考答案：
+
+```
+
+int main()
+{
+
+    char str[100] = "我爱你中国";
+
+    int max = 0;
+    int min = 0;
+    while(str[max+1])
+    {
+        max++;
+    }
+
+    while(min < max)
+    {
+        char temp = str[min];
+        str[min] = str[max-2];
+        str[max-2] = temp;
+
+        temp= str[min+1];
+        str[min+1] = str[max-1];
+        str[max-1] = temp;
+
+        temp = str[min+2];
+        str[min+2] = str[max];
+        str[max] = temp;
+
+        max -= 3;
+        min += 3;
+
+    }
+
+    printf("(%s)\n", str);
+    return 0;
+}
+
+
+```
+
+
+
+
 
 ### 题目
 
