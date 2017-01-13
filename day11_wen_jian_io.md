@@ -337,5 +337,23 @@ int main()
 }
 ```
 
+处理之后是
+
+```
+int main()
+{
+    //这是一个测试程序
+    int n;             //变量n存储输入的值
+    system("CHCP 936");
+    while(1)
+    {
+        scanf("%d",&n);
+        printf("//total times:%d\n",func(n));
+    }
+    return 0;
+}
+
+```
+
 
 
