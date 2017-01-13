@@ -2,7 +2,7 @@
 
 * [写在最前](README.md)
 * [第01章-linux基本命令](day01-linux_jiben_mingling.md)
-* [第02章-vim](day02-vim.md)
+* [第02章-vim](day02_vim.md)
 * [第03章-操作系统基础](day03cao_zuo_xi_tong_ji_chu.md)
 * [第04章-数据类型和运算符](day04-data_type_oprator.md)
 * [第05章-语句](day05yuju.md)
