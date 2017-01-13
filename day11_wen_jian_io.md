@@ -302,7 +302,7 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 
 
 ## 案例
-1. 实现一个cp命令 复制指定文件
+1. 实现一个cp命令 复制指定文本文件
 
 - 对文件进行简单的加密
 
@@ -312,7 +312,9 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 
 - 解析文件内容并且追加。计算文件中的算术表达式并且追加结果。
 
+- 实现对二进制文件的拷贝。
 
+- 实现对二进制文件的高效拷贝。
 
 ## 作业练习
 
