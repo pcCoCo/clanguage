@@ -426,7 +426,7 @@ int main()
     return 0;
 }
 ```
-
+- 简述内存泄露现象的原因和危害。
 
 - 库函数calloc有如下声明:
 VOid *caL1loc(size_t n血emb, Size_t Size) ;
