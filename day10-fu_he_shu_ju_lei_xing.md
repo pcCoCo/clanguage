@@ -64,3 +64,25 @@ struct inode
         } u;
 };
 ```
+
+
+## 作业
+
+实现一个代码能从屏幕上接收任意多人数的信息添加录入。在黑窗口中能够支持print命令 将所有的人的信息打印
+再黑窗口中能够支持exit命令退出程序
+
+     提示：命令与数据之间都是用空格分开的。
+input:
+     add tom  23  beijing
+     add  jay    33  taiwan
+     add andy  55  HK
+input:
+     print
+output:
+    tom  23  beijing
+     jay    33  taiwan
+     andy 55  HK
+input:
+     exit
+     应用程序退出 拜拜
+     
