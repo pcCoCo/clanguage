@@ -310,8 +310,7 @@ This indicator is cleared by a call to clearerr, rewind, fseek, fsetpos or freop
 
 - 超大文件排序
 
-- 解析文件内容并且追加
-
+- 解析文件内容并且追加。计算文件中的算术表达式并且追加结果。
 
 
 
