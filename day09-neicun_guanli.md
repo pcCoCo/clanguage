@@ -428,6 +428,7 @@ int main()
 ```
 - 简述内存泄露现象的原因和危害。
 
+
 - 库函数calloc有如下声明:
 VOid *caL1loc(size_t n血emb, Size_t Size) ;
 根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字
