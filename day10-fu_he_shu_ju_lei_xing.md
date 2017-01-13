@@ -79,7 +79,7 @@ input:
 input:
      print
 output:
-    tom  23  beijing
+     tom  23  beijing
      jay    33  taiwan
      andy 55  HK
 input:
