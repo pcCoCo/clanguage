@@ -83,5 +83,30 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 ![如图](/assets/sxzy.jpg)
 
 
+## HTML简单介绍
+
+HTML5标准语法
+
+
+```
+<html>
+<head></head>
+<title></title>
+<body>
+</body>
+</html>
+```
+<p> 段落标签
+<img>图片标签
+
+
+### 实践
+* http服务器部署
+* cgi脚本编辑
+将女朋友的照片加载到html网页上并且写上表白的文字
+
+* 部署到云服务器
+* 链接转化成二维码
+[网址转换为二维码地址](http://www.liantu.com/)
 
 
