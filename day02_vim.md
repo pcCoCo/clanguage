@@ -111,6 +111,6 @@ HTML5标准语法
 
 * 部署到云服务器
 * 链接转化成二维码
- 网址转换为二维码地址 --- http://www.liantu.com/
+ 网址转换为二维码地址 http://www.liantu.com/
 
 
