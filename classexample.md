@@ -608,7 +608,19 @@ void maxNum(int num1,int num2,int num3)
 
 ### day09
 
+1、#include 将包含的文件复制到当前文件中
+	#include "Desktop/hello.txt"
+	包含的文件需要符合C语言规范
+
+2、多文件开发
+
+	团队协作、方便管理
+
+	模块、功能----->函数
+
 ### day10
+
+
 
 ### day11
 
