@@ -716,7 +716,9 @@ int main()
     void maxNum(int num1,int num2,int num3)
 
 
+- 写1个函数,传入1个年份和月份,返回这1年的这1月有多少天
 
+- 实现一个atoi函数。
 
 
 
