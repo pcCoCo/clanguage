@@ -1,6 +1,6 @@
 {
   "language" : "zh-hans",
   "plugins": [
-    "include-codeblock"
+    "include-codeblock","advanced-emoji"
   ]
 }
