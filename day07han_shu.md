@@ -634,7 +634,6 @@ int main()
 
 ```
 
-
 char hex_char(unsigned int n )
 {
     switch (n)
