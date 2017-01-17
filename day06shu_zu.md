@@ -115,7 +115,7 @@ int arr[] = {1,2,3,4,5};
 
 ```
 int arr[] = {10, 21, 3, 442, 5, 46, 57};    
-int max = arr[0];
+int max =  arr[0];
 int len = sizeof(arr)/sizeof(arr[0]);
 int i;
 for(i = 0; i < len; i++)
