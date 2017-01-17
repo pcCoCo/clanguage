@@ -308,8 +308,10 @@ int main()
     {
         if (arr[i] > max)
         {
-            max = arr[i];
             smax = max;
+
+            max = arr[i];
+            
         }
         else if (arr[i] < max && arr[i] > smax) // 介于最大值和和第二大值之间的数
         {
