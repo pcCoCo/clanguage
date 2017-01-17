@@ -50,6 +50,7 @@ int main()
 * C99中才开始支持数组长度是变量的语法；但是C89的编译器并不能支持
 
 ```
+
 #include <stdio.h>
 int main()
 {
