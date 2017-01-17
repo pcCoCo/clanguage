@@ -709,12 +709,11 @@ int main()
 
 - 实现函数代码。int isdigit(int ch);判断ASCII码为ch的符是否是数字字符；如果是返回非0；不是返回0。
 
-1.写一个函数，判断1个年份是不是闰年。
 
-2。求三个数中最大值的其他实现
+- 求三个数中最大值。
 
-
-void maxNum(int num1,int num2,int num3)
+函数原型是
+    void maxNum(int num1,int num2,int num3)
 
 
 
