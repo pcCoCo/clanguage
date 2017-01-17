@@ -113,6 +113,20 @@ int func(int a);
 int func(int);
 ```
 
+例子：
+
+```
+
+void printHello()
+{
+    printf("********************\n");
+    printf("*                  *\n");
+    printf("*    大战一触即发    *\n");
+    printf("*                  *\n");
+    printf("********************\n");
+}
+
+```
 
 
 ## 函数的调用
