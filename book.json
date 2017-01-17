@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "include-codeblock",
-    "-highlight"
+    "include-codeblock","-highlight"
   ]
 }
