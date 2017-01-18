@@ -356,21 +356,21 @@ C语言的标准文档要求了一个平台移植C语言的时候至少要实现
 
 | C89标准头文件 | 简介 |
 | :--- | :--- | 
-| <assert.h> | 断言 | 
-| <ctype.h> |	字符类型判断 |
-| <errno.h> |	标准报错机制 |
-| <float.h> |	浮点运算 |
-| <limits.h> |	各种体系结构限制 |
-| <locale.h> |	本地化接口 |
-| <math.h> |	数学函数 |
-| <setjmp.h> |	跨函数跳转 |
-| <signal.h> |	信号（类似UNIX的信号定义，但是差很远） |
-| <stdarg.h> |	可变参处理 |
-| <stddef.h> |	一些标准宏定义 |
-| <stdio.h> |	标准I/O库 |
-| <stdlib.h> |	标准工具库函数 |
-| <string.h> |	ASCII字符串及任意内存处理函数 |
-| <time.h>   |	时间相关 |
+| assert.h | 断言 | 
+| ctype.h |	字符类型判断 |
+| errno.h |	标准报错机制 |
+| float.h |	浮点运算 |
+| limits.h |	各种体系结构限制 |
+| locale.h |	本地化接口 |
+| math.h |	数学函数 |
+| setjmp.h |	跨函数跳转 |
+| signal.h |	信号（类似UNIX的信号定义，但是差很远） |
+| stdarg.h |	可变参处理 |
+| stddef.h |	一些标准宏定义 |
+| stdio.h |	标准I/O库 |
+| stdlib.h |	标准工具库函数 |
+| string.h |	ASCII字符串及任意内存处理函数 |
+| time.h   |	时间相关 |
 
 
 
