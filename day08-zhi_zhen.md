@@ -435,6 +435,16 @@ printf("%s\n", p);
 
 字符指针保存的字符串 存储在常量区，不能修改。
 
+```
+char s[] = "hello world";
+char *p = "hello world";
+
+printf("%s\n", s);
+printf("%s\n", p);
+
+```
+
+
 
 
 
