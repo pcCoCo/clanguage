@@ -84,10 +84,13 @@ int main()
 
     p[3] = 20;
     int i;
+    
+    // 法1
     for (i = 0; i < 10; i++) {
         printf("p[%d] = %d\n",i,p[i]);
     }
     
+    // 法2
     for (i = 0; i < 10; i++, p++) {
         printf("p[%d] = %d\n",i, *p);
     }
