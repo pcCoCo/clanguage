@@ -426,9 +426,11 @@ int main()
 char s[] = "hello world";
 char *p = "hello world";
 
+printf("%s\n", s);
+printf("%s\n", p);
 
 ```
-printf("%s\n", 字符串);
+
 
 * 字符数组保存字符串
 
