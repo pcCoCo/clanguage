@@ -87,6 +87,12 @@ int main()
     for (i = 0; i < 10; i++) {
         printf("p[%d] = %d\n",i,p[i]);
     }
+    
+    for (i = 0; i < 10; i++, p++) {
+        printf("p[%d] = %d\n",i, *p);
+    }
+
+
 
     return 0;
 }
