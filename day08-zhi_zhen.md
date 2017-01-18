@@ -436,14 +436,14 @@ printf("%s\n", p);
 字符指针保存的字符串 存储在常量区，不能修改。
 
 ```
-char s[] = "hello world";
 char *p = "hello world";
+printf("%s\n", p);
 
-printf("%s\n", s);
+p = "how are you"; // 不是直接修改字符串内容，而是保存新的字符串到常量区，返回新的地址。
+
 printf("%s\n", p);
 
 ```
-
 
 
 
@@ -477,7 +477,8 @@ char *，它在C/C++中有专门的语义，既不同于signed char *，也不�
 在C++中，你可以试一试，用char *p="abcd";
 是可以通过编译的
 但不论用 `signed char *p="abcd";` 还是 `unsigned char *p="abcd";`
-都是不能通过编译的。
+都会有warning。
+
 关于这些在C/C++的语言标准或一些经典书籍如《The C++ Programing Language》中都有很清楚的说明。
 
 判断编译器的默认char符号
