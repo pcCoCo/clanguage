@@ -432,9 +432,11 @@ int main()
   编写calloc的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应该没有任何由算术溢出引起的漏洞,且无论数据类size\_t用多少位表示,代码都应该正常工作。  
   
   作为参考,函数malloc和memset声明如下:  
-  
+
+```
   void malloc\(size\_t Size\) ;  
   void memset\(void \_s, int c, size\_t n\);
+```
 
 * 根据示意图
 1）申请堆区内存空间，
