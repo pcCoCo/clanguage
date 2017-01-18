@@ -518,3 +518,9 @@ int str_len_cmp(const char *s1,const char *s2)
 
 说说这个函数实现有没有问题？为什么?如果有，怎么解决
 
+- 简述一下指针的本质 ，
+	并且说明下面每句代码的意义 ， 并加上初始化的语句他们有初值。
+	char  *ptr;
+	char  arr[32];
+	char *ptr[32];
+	char (*ptr)[32];
