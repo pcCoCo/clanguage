@@ -244,8 +244,9 @@ int arr[6][5] = {1,2,3,4,5};
 
 int (*p)[5] = arr;
 
-for(int i=0;i<6;i++){
-    for(int j=0; j<5;j++)
+for(int i = 0; i < 6; i++ )
+{
+    for(int j = 0; j < 5; j++ )
     {
         printf("p[%d][%d] = %d\n",i,j, p[i][j]); // 等价于 arr[i][j]
 
