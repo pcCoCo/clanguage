@@ -65,6 +65,30 @@ struct inode
 };
 ```
 
+### 结构体的数组成员
+
+### 结构体的指针成员
+
+## typedef关键字
+
+关键字作用
+     只是将已有的数据类型以一个新的类型名称存在。
+
+
+
+```
+typedef int DataType;
+struct node_t
+{
+     int      no;
+     DataType data;
+};
+```
+
+
+## 联合体union
+
+## 枚举enum
 
 
 ## 作业
