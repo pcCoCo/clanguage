@@ -345,8 +345,23 @@ Virtual Stdio的调用堆栈分析
 ### 函数参数压栈方式
 简单说明一下
 
+### 没有函数参数的编写方式
 
+```
+#include <stdio.h>
 
+int test()
+{
+	printf("called test function\n");
+	return 0;
+}
+
+int main(void)
+{
+	test(20);
+	return 0;
+}
+```
 
 ## 头文件
 
