@@ -88,6 +88,12 @@ struct node_t
 
 ## 联合体union
 
+enum
+{
+     APPLE,ORANGE,PEER,UNKOWN
+};
+
+
 ## 枚举enum
 
 
