@@ -161,7 +161,7 @@ test.o: ELF 64-bit LSB  relocatable, x86-64, version 1 (SYSV), not stripped
 可以使用readelf分析两个文件的组成部分  
 pc@iZ25g2i2xsmZ:~/code$ readelf -h test  
 ELF Header:  
-  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00   
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00  
   Class:                             ELF64  
   Data:                              2's complement, little endian  
   Version:                           1 \(current\)  
@@ -423,16 +423,16 @@ int main()
 
 * 简述内存泄露现象的原因和危害。
 
-* 库函数calloc有如下声明:
-  VOid \*caL1loc\(size\_t n血emb, Size\_t Size\) ;
-  根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字
-  节。内存设置为00 如果rmemb或size为0,则calloc返回NULLo"
-  编写call°C的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应
-  该没有任何由算术溢出引起的漏洞,且无论数据类型size\_t用多少位表示,代码都应该正常
-  工作。
-  作为参考,函数malloc和memset声明如下:
-  void rmalloc\(size\_t Size\) ;
-  VOid _memset\(void _s, int c, Size\_t n\);
+* 库函数calloc有如下声明:  
+  VOid \*caL1loc\(size\_t n血emb, Size\_t Size\) ;  
+  根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字  
+  节。内存设置为00 如果rmemb或size为0,则calloc返回NULLo"  
+  编写call°C的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应  
+  该没有任何由算术溢出引起的漏洞,且无论数据类型size\_t用多少位表示,代码都应该正常  
+  工作。  
+  作为参考,函数malloc和memset声明如下:  
+  void rmalloc\(size\_t Size\) ;  
+  VOid \_memset\(void \_s, int c, Size\_t n\);
 
 
 
