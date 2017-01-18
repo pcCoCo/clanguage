@@ -2,11 +2,9 @@
 
 > 学习C语言有两个重要的概念:
 
-
 ```
 一个是理解地址的概念，一个就是理解与之相关的内存的概念。C语言不负责内存边界检查。
 ```
-
 
 通常我们说道计算机的内存大家可能知道的是计算机的硬件之一。
 
@@ -17,7 +15,6 @@
 ```
 
 在第一章我们说到计算机是一个管家，管理者整个计算机的资源，比如CPU的调度资源，内存资源等等。
-
 
 RSS ， resident set size ，表示进程实际使用的物理内存空间
 
@@ -37,11 +34,11 @@ VSZ ， virtual memory size ，表示进程总共使用的虚拟地址空间大�
 
 1GB = 2[^20] MB
 
-由于内存区域是同坐指针寻址，因此CPU的字长决定了所能管理的地址空间的最大长度。如322系统\(IA-32 etc\)可以管理的内存时2[^32]B = 4GB,对现在更新的64位处理器（IA-64、AMD64）则理论上可以管理2[^64]Byte。
+由于内存区域是同坐指针寻址，因此CPU的字长决定了所能管理的地址空间的最大长度。如32系统\(IA-32 etc\)可以管理的内存时2[^32]B = 4GB,对现在更新的64位处理器（IA-64、AMD64）则理论上可以管理2[^64]Byte。
 
 地址空间的最大长度与实际可用的物理内存数量无关，因此被称作虚拟地址空间。从每个进程的角度讲，地址空间中只有自己一个进程，无法感知也无需感知 别的进程的存在。
 
-Linux将细腻地址空间划分为两部分，分为内核空间和用户空间。  
+Linux将虚拟地址空间划分为两部分，分为内核空间和用户空间。  
 系统中每个用户进程都有自己的虚拟地址范围，从0-TASK\_SIZE。用户空间之上的内核空间\(从TASK\_SIZE-2[^32]\(2[^64]\)\)保留给内核专用，用户进程不能访问。TASK\_SIZE是一个特定于计算机体系结构的常数，把地址空间按给定的比例划分为两部分。
 
 比如在IA-32系统中 虚拟地址空间的总长度是4GB。0-3G是用户空间，3-4G是内核空间。每个用户进程都认为自身有3GB内存，每个用户进程空间时完全隔离的，而虚拟地址空间顶部的内核空间总是相同的。
@@ -88,11 +85,11 @@ CPU内存有一个专门的期间MMU\(Memmory Management Unit,内存管理单元
 逆向映射 reverse mapping技术有助于从虚拟内存页跟踪到对应的物理内存页，而缺页处理 page fault handling则允许从块设备按需读取数据填充虚拟地址空间。
 
 地址空间只有极少的部分与物理内存也直接关联，不经常使用的部分，仅当必要时才与页帧进行关联。  
-内核信任自己，但无法新人用户进程。各个用户地址空间的操作都伴随各种检查，以确保程序的权限不会超出应有的限制，进而危害整个OS的稳定性和安全性。
+内核信任自己，但无法信任用户进程。各个用户地址空间的操作都伴随各种检查，以确保程序的权限不会超出应有的限制，进而危害整个OS的稳定性和安全性。
 
 #### 进程地址空间的布局
 
-虚拟地址空间中够包含了若干区域，其分布方式是特定于体系结构的，但都有一写共同的分类：  
+虚拟地址空间中够包含了若干区域，其分布方式是特定于体系结构的，但都有一写共同的分类：
 
 ```
 存放二进制代码的虚拟内存区域，该代码称为text，该区域成为text段;  
@@ -102,7 +99,7 @@ CPU内存有一个专门的期间MMU\(Memmory Management Unit,内存管理单元
 环境变量和命令行参数的段；  
 mmap内存映射的区域；  
 动态库代码映射预取；  
-.....  
+.....
 ```
 
 #### 建立布局
@@ -118,7 +115,6 @@ load\_elf\_binary装载一个elf二进制文件时，将创建进程的地址空
 在实际需要某个进程的虚拟地址空间的数据之前，虚拟和物理之间的关联并没有建立。如果进程访问的虚拟地址空间部分尚未与页帧关联，处理器就会触发缺页终端，需要内核处理。
 
 缺页中断时由于访问用户地址空间中的有效地址而引起，还是应用程序试图访问内核的的受保护区域呢？
-
 
 ## 堆空间的申请和释放
 
@@ -138,16 +134,15 @@ malloc 使用 mmap 分配的内存 \( 大于 128k\) ， free 会调用 munmap �
 
 ## elf文件格式  深入Linux内核架构1014P 深入理解
 
-结合邢老师视频 整理
+结合邢老师视频 整理  
 Executable and linkable Format,是一种对可执行文件、目标文件和库使用的文件格式。ELF是一种开放格式，Linux操作系统内核本身也是ELF格式。
 
 ELF文件由各个部分组成。需要区分链接对象和可执行文件。
 
-![](/assets/elf_format.png)
-除了用于标识ELF文件的几个字节之外，ELF还包含了有关文件类型和大小信息等。
-程序头表 向系统提供了可执行文件在进程虚拟地址空间中的组织结构（比如段熟练、位置等）
+![](/assets/elf_format.png)  
+除了用于标识ELF文件的几个字节之外，ELF还包含了有关文件类型和大小信息等。  
+程序头表 向系统提供了可执行文件在进程虚拟地址空间中的组织结构（比如段熟练、位置等）  
 各个段   保存了与文件相关的各种形式的数据。符号表、实际的二进制代码、常量值（字符串、常数）
-
 
 ```
 gcc test.c -o test
@@ -155,7 +150,6 @@ gcc test.c -c -o test.o
 ```
 
 可以使用file命令显示编译器生成的两个ELF文件信息，一个可执行文件，一个是可重定位的目标文件。
-
 
 ```
 pc@iZ25g2i2xsmZ:~/code$ file test
@@ -165,37 +159,35 @@ pc@iZ25g2i2xsmZ:~/code$ file test.o
 test.o: ELF 64-bit LSB  relocatable, x86-64, version 1 (SYSV), not stripped
 ```
 
-可以使用readelf分析两个文件的组成部分
-pc@iZ25g2i2xsmZ:~/code$ readelf -h test   
-ELF Header:
-  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
-  Class:                             ELF64
-  Data:                              2's complement, little endian
-  Version:                           1 (current)
-  OS/ABI:                            UNIX - System V
-  ABI Version:                       0
-  Type:                              EXEC (Executable file)
-  Machine:                           Advanced Micro Devices X86-64
-  Version:                           0x1
-  Entry point address:               0x400440
-  Start of program headers:          64 (bytes into file)
-  Start of section headers:          4512 (bytes into file)
-  Flags:                             0x0
-  Size of this header:               64 (bytes)
-  Size of program headers:           56 (bytes)
-  Number of program headers:         9
-  Size of section headers:           64 (bytes)
-  Number of section headers:         30
+可以使用readelf分析两个文件的组成部分  
+pc@iZ25g2i2xsmZ:~/code$ readelf -h test  
+ELF Header:  
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00  
+  Class:                             ELF64  
+  Data:                              2's complement, little endian  
+  Version:                           1 \(current\)  
+  OS/ABI:                            UNIX - System V  
+  ABI Version:                       0  
+  Type:                              EXEC \(Executable file\)  
+  Machine:                           Advanced Micro Devices X86-64  
+  Version:                           0x1  
+  Entry point address:               0x400440  
+  Start of program headers:          64 \(bytes into file\)  
+  Start of section headers:          4512 \(bytes into file\)  
+  Flags:                             0x0  
+  Size of this header:               64 \(bytes\)  
+  Size of program headers:           56 \(bytes\)  
+  Number of program headers:         9  
+  Size of section headers:           64 \(bytes\)  
+  Number of section headers:         30  
   Section header string table index: 27
 
-查看程序头表 在目标文件中并不存在
+查看程序头表 在目标文件中并不存在  
 pc@iZ25g2i2xsmZ:~/code$ readelf -l test
 
-Elf file type is EXEC (Executable file)
-Entry point 0x400440
+Elf file type is EXEC \(Executable file\)  
+Entry point 0x400440  
 There are 9 program headers, starting at offset 64
-
-
 
 pc@iZ25g2i2xsmZ:~/code$ readelf -h test.o
 
@@ -224,8 +216,9 @@ ELF Header:
 
 ELF描述各个段的内容时制定了将哪些节的数据映射到段中，节点表用于管理文件的各个节。
 
-readelf可以显示文件的各个节
+readelf可以显示文件的各个节  
 pc@iZ25g2i2xsmZ:~/code$ readelf -S test
+
 ```
 There are 30 section headers, starting at offset 0x11a0:
 
@@ -267,27 +260,27 @@ Key to Flags:
   O (extra OS processing required) o (OS specific), p (processor specific)
 ```
 
-能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节
-节信息无须复制到虚拟地址空间。
+能够看出来，我们熟悉的有.data 、.bss、 .text、 .rodata等多个section 节  
+节信息无须复制到虚拟地址空间。  
 每节都指定了一个类型，定义了节数据的语义。最重要的就是PROGBITS（程序必须解释的信息 比如二进制代码）、SYMTAB（符号表）和REL（重定位信息）。STRTAB用于存储与ELF格式相关的字符串（如节的符号名称 .text）
 
-每节都指定了大小和二进制文件内部的偏移量。address字段指定节加载到虚拟地址空间的位置（如果是一个可链接对象 目标地址是未定义的而为0）。
+每节都指定了大小和二进制文件内部的偏移量。address字段指定节加载到虚拟地址空间的位置（如果是一个可链接对象 目标地址是未定义的而为0）。  
 A标识控制着装载文件时是否将节的数据复制到虚拟地址空间。
 
 规范:系统自身使用的节 标准节名称以.开始，应用程序自定义的就不要以点开始。
 
-常用节的作用：
-.data 保存已初始化的数据(全局、静态)
-.rodata保存只读数据，只能读取不能修改。
-.text 保存可执行程序的二进制代码
-.bss  保存未初始化的数据(全局、静态)，程序开始运行前填充0字节
+常用节的作用：  
+.data 保存已初始化的数据\(全局、静态\)  
+.rodata保存只读数据，只能读取不能修改。  
+.text 保存可执行程序的二进制代码  
+.bss  保存未初始化的数据\(全局、静态\)，程序开始运行前填充0字节  
 .hash 是一个散列表，提供在不对全表元素进行线性搜索的情况对符号表项的快速访问
 
 ### 符号表
 
-符号表是每个ELF文件的重要部分。保存了程序实现或使用的所有（全局）变量和函数。如果程序引用了一个自身代码未定义的符号(比如C标准库的strtok函数)。此类应用必须在静态链接期间用其他目标模块或库解决（或者 加载时间通过动态链接）。nm工具可以生成程序定义和使用的所有符号列表。
+符号表是每个ELF文件的重要部分。保存了程序实现或使用的所有（全局）变量和函数。如果程序引用了一个自身代码未定义的符号\(比如C标准库的strtok函数\)。此类应用必须在静态链接期间用其他目标模块或库解决（或者 加载时间通过动态链接）。nm工具可以生成程序定义和使用的所有符号列表。
 
-pc@iZ25g2i2xsmZ:~/code$ nm test 
+pc@iZ25g2i2xsmZ:~/code$ nm test
 
 ```
 0000000000601040 B __bss_start
@@ -326,28 +319,23 @@ pc@iZ25g2i2xsmZ:~/code$ nm test
 0000000000601040 D __TMC_END__
 ```
 
-符号的任务就是将一个字符串和一个值关联起来。printf符号对应着printf函数在虚拟地址空间的地址，该函数的机器代码就存在该地址。
-符号的绑定(binding)确定了符号的可见性：
+符号的任务就是将一个字符串和一个值关联起来。printf符号对应着printf函数在虚拟地址空间的地址，该函数的机器代码就存在该地址。  
+符号的绑定\(binding\)确定了符号的可见性：
 
 > 局部符号，只在目标文件内部可见。与程序的其他部分合并时是不可见的。局部符号并不会互相干扰。
-
+>
 > 全局符号，在定义的目标文件内部可见，也可以由构成程序的其他目标文件引用。每个全局符号在一个程序内部只能定义一次，否则报连接错误。指向全局符号的未定义引用，将在重定向期间确定相关符号的位置。如果全局符号的未定义引用无法解决，将会拒绝静态绑定或执行。
-
-> 弱符号，也在整个程序内可见，但可以有多个定义。如果程序中的一个全局符号和一个局部符号相关，优先处理全局符号。
-即使一个若符号未定义，程序也可以静态或动态链接，为符号指定0值。
-
-
+>
+> 弱符号，也在整个程序内可见，但可以有多个定义。如果程序中的一个全局符号和一个局部符号相关，优先处理全局符号。  
+> 即使一个若符号未定义，程序也可以静态或动态链接，为符号指定0值。
 
 ## 段错误
+
 非法访问内存
-
-
 
 ### 存储类型限定
 
-volatile修饰字段告诉编译器不要对该类型的数据做优化处理，对它的访问都是对内存的访问，而不是对寄存器的访问。 
-
-
+volatile修饰字段告诉编译器不要对该类型的数据做优化处理，对它的访问都是对内存的访问，而不是对寄存器的访问。
 
 ### 内存结构图
 
@@ -355,33 +343,39 @@ volatile修饰字段告诉编译器不要对该类型的数据做优化处理，
 
 ### 左值与右值
 
-http://en.cppreference.com/w/cpp/language/value_category
+[http://en.cppreference.com/w/cpp/language/value\_category](http://en.cppreference.com/w/cpp/language/value_category)
 
-1、古老方法看形式---是等号左还是右
+1、古老方法看形式---是等号左还是右  
     右值只能出现在等号左边，左值既能左边又能右边。
-    
+
 2、是否有存储空间+能够改变
-    
-左值因为有存储空间 加上可以改变值 所以能够通过名字名字直接改变值
+
+左值因为有存储空间 加上可以改变值 所以能够通过名字名字直接改变值  
 右值不一定有存储空间，也不一定能改变值，可能是一个临时表达式。
-    
-    a + b;
-    100 ;
-    num ;
-    *ptr;
-    
-    
-C++中需要借用第二种方式理解概念。       
-                       
+
+```
+a + b;
+100 ;
+num ;
+*ptr;
+```
+
+C++中需要借用第二种方式理解概念。
+
 左值
 
-    In computer science, a value that points to a storage location, potentially allowing new values to be assigned。
-    
+```
+In computer science, a value that points to a storage location, potentially allowing new values to be assigned。
+```
+
 右值
-    
-    In computer science, a value considered independently of its storage location。
-    
+
+```
+In computer science, a value considered independently of its storage location。
+```
+
 ## 作业
+
 1. 给定一段代码分别写出每个变量和函数的作用域、寿命、所处段
 
 ```
@@ -413,31 +407,33 @@ int main()
     static int h = 40;
     char *p = "hello";
     func();
-    
+
     for(f = 0; f < 10;f++)
     {
         int k = 50;
         printf("%d\n",k+1);
         k++;
     }
-    
+
     too();
     too();
     too();
     return 0;
 }
 ```
-- 简述内存泄露现象的原因和危害。
+
+* 简述内存泄露现象的原因和危害。
+
+* 库函数calloc有如下声明:  
+  VOid \*caL1loc\(size\_t n血emb, Size\_t Size\) ;  
+  根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字  
+  节。内存设置为00 如果rmemb或size为0,则calloc返回NULLo"  
+  编写call°C的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应  
+  该没有任何由算术溢出引起的漏洞,且无论数据类型size\_t用多少位表示,代码都应该正常  
+  工作。  
+  作为参考,函数malloc和memset声明如下:  
+  void rmalloc\(size\_t Size\) ;  
+  VOid \_memset\(void \_s, int c, Size\_t n\);
 
 
-- 库函数calloc有如下声明:
-VOid *caL1loc(size_t n血emb, Size_t Size) ;
-根据库文档: “函数call°C为一个数组分配内存,该数组有rmemb个元素,每个元素为size字
-节。内存设置为00 如果rmemb或size为0,则calloc返回NULLo"
-编写call°C的实现,通过调用malloc执行分配,调用memset将内存设置为00你的代码应
-该没有任何由算术溢出引起的漏洞,且无论数据类型size_t用多少位表示,代码都应该正常
-工作。
-作为参考,函数malloc和memset声明如下:
-void rmalloc(size_t Size) ;
-VOid *memset(void *s, int c, Size_t n);
 
