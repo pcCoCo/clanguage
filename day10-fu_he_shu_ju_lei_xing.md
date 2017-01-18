@@ -101,6 +101,7 @@ enum
      APPLE,ORANGE,PEER,UNKOWN
 };
 
+> 相当于定义了一组常量，初始值从0开始
 
 
 ## 作业
