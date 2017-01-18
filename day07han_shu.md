@@ -193,6 +193,47 @@ int main(int argc,char **argv);
 
 
 
+3. 有参数无返回值的函数
+
+void isOushu(int num)
+{
+    if (num % 2 == 0)
+    {
+        printf("%d是偶数！\n");
+    }
+    else
+    {
+        printf("%d是奇数！\n");
+    }
+}
+
+int main()
+{
+    isOushu(10);
+
+    int num = 10;
+
+    isOushu(num);
+
+    return 0;    
+}
+
+4. 参数的传递
+
+相当于在函数里面定义一个变量num, num的值就是调用这个函数的地方传入的实际的值。
+值传递。
+
+
+
+
+
+5. 有返回值的函数
+改造（3）中的代码： 返回是否是偶数的结果(1--偶数， 0--奇数)
+
+
+注意： 函数只能有一个返回值。
+
+
 
 
 ## 函数调用的实现原理 深入Linux内核架构966P
