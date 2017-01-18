@@ -305,7 +305,7 @@ int main()
 
 
 ```
-Void test(int *p);//定义一个函数，形参是int *类型
+void test(int *p);//定义一个函数，形参是int *类型
 ```
 
 **注意：**
