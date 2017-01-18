@@ -370,7 +370,6 @@ head表示头部，表示查看文件的前n行，n默认为10。
 pc@iZ25g2i2xsmZ:~/test\_struct$ head ii
 
 ```
-aaaaaaaa
 bbbbbbbb
 cccccccc
 dddddddd
@@ -386,7 +385,6 @@ jjjjjjjj
 
 ```
 pc@iZ25g2i2xsmZ:~/test_struct$ head -5 ii
-aaaaaaaa
 bbbbbbbb
 cccccccc
 dddddddd
