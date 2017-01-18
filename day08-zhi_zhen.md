@@ -509,7 +509,7 @@ int main(void)
 
 ## 作业
 
-1.编写一个函数比较两个字符串的长度谁长。
+1. 编写一个函数比较两个字符串的长度谁长。
 
 int str_len_cmp(const char *s1,const char *s2)
 {
