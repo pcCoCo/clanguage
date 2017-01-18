@@ -435,5 +435,6 @@ int main()
   void rmalloc\(size\_t Size\) ;  
   VOid \_memset\(void \_s, int c, Size\_t n\);
 
-
-
+* 根据示意图申请堆区内存空间，
+要求:使用随机数初始化。打印数组内容，释放内存。
+[](![](/assets/7*7棋盘示意图.png))
