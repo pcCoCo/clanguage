@@ -123,7 +123,7 @@ switch(量)
 如果判断条件是**整数类型**的**常数值**类型的时候 switch和if都可以使用  
 但是switch语句显得更加简洁
 
-```
+```c
 int num = 0;
 scanf("%d",num);
 int num = num % 3;
@@ -140,7 +140,7 @@ if ( num == 0 )
 }
 ```
 
-```
+```c
 int num = 0;
 scanf("%d",num);
 int num = num % 2;
