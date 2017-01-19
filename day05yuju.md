@@ -124,19 +124,24 @@ switch(量)
 但是switch语句显得更加简洁
 
 ```c
-int num = 0;
-scanf("%d",num);
-int num = num % 3;
-
-if ( num == 0 )
+#include <stdio.h>
+int main(void)
 {
-    printf("余数是0\n");
-}else if( num == 1)
-{
-    printf("余数是1\n");
-}else
-{
-    printf("余数是2\n");
+    int num = 0;
+    scanf("%d",num);
+    int num = num % 3;
+    
+    if ( num == 0 )
+    {
+        printf("余数是0\n");
+    }else if( num == 1)
+    {
+        printf("余数是1\n");
+    }else
+    {
+        printf("余数是2\n");
+    }
+    return 0;
 }
 ```
 
