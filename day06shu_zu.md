@@ -106,14 +106,15 @@ int arr[] = {1,2,3,4,5};
 
 * 数组长度计算
 
-  int arr\[\] = {1,2,3,4,5,6,7,8};
+```c
+int arr[] = {1,2,3,4,5,6,7,8};
 
-  sizeof\(arr\); // 就可以得到这个数组占用的总的字节数.
+sizeof(arr); // 就可以得到这个数组占用的总的字节数.
 
-  sizeof\(arr\[0\]\); // 每个元素占的字节数
+sizeof(arr[0]); // 每个元素占的字节数
 
-  int len = sizeof\(arr\) / sizeof\(arr\[0\]\);
-  
+int len = sizeof(arr) / sizeof(arr[0]);
+``` 
   
 
 * 数组的几种简单算法
