@@ -302,11 +302,13 @@ enum Direction d = Up;
 
 ```
 typedef int DataType;
+
 struct node_t
 {
      int      no;
      DataType data;
 };
+
 ```
 
 也可以使用宏定义给数据类型取别名
