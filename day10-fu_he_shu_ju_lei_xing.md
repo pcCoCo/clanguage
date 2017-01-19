@@ -91,13 +91,6 @@ printf("%s --- %d --- %d\n", xiaoming.name, xiaoming.age, xiaoming.score);
 
 
 
-
-
-
-
-
-
-
 ## 结构体的内存对齐规则
 x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支持 4 字节对
 齐。
