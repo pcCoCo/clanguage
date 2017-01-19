@@ -335,7 +335,7 @@ int main()
     while(1)
     {
         scanf("%d",&n);
-        printf("//total times:%d\n",func(n));
+        printf("//total times:%d\n",func(n)); // ;
     }
     return 0;
 }
