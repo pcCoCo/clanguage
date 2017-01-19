@@ -564,30 +564,25 @@ int main()
 
 参考答案
 
-\`\`\`c  
+```c  
 int main\(\)  
 {  
     int i;
-
-```
-for (i=100; i < 1000; i++)
-{
-    int bai = i / 100;
-    int shi = i % 100 / 10;
-    int ge = i % 10;
-    int res = bai*bai*bai + shi*shi*shi + ge*ge*ge;
-    if (res == i)
+    for (i=100; i < 1000; i++)
     {
-        printf("%d是水仙花数！\n", i);
+        int bai = i / 100;
+        int shi = i % 100 / 10;
+        int ge = i % 10;
+        int res = bai*bai*bai + shi*shi*shi + ge*ge*ge;
+        if (res == i)
+        {
+            printf("%d是水仙花数！\n", i);
+        }
+    
     }
-
+    return 0;
 }
-return 0;
 ```
-
-}
-
-\`\`\`
 
 ### 等腰三角形
 
