@@ -267,13 +267,23 @@ union Body
 
 ## 枚举enum
 
-enum
-{
-     APPLE,ORANGE,PEER,UNKOWN
-};
+
 
 > 相当于定义了一组常量，初始值从0开始。
 > 枚举的作用是，新创建一种数据类型，这种类型的变量取值被限定。
+
+1. 枚举的定义
+enum Direction
+{
+     Up,
+     Down,
+     Left,
+     Right
+
+};
+
+2.
+
 
 
 
