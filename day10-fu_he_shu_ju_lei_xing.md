@@ -240,27 +240,8 @@ struct inode
 };
 ```
 
-### 结构体的数组成员
-
-### 结构体的指针成员
-
-## typedef关键字
-
-关键字作用
-     只是将已有的数据类型以一个新的类型名称存在。
 
 
-
-```
-typedef int DataType;
-struct node_t
-{
-     int      no;
-     DataType data;
-};
-```
-
-> 跨平台屏蔽各平台的差异
 
 ## 联合体union
 
@@ -280,6 +261,26 @@ enum
 };
 
 > 相当于定义了一组常量，初始值从0开始
+
+
+## typedef关键字
+
+关键字作用
+     只是将已有的数据类型以一个新的类型名称存在。
+
+
+
+```
+typedef int DataType;
+struct node_t
+{
+     int      no;
+     DataType data;
+};
+```
+
+> 跨平台屏蔽各平台的差异
+
 
 
 ## 作业
