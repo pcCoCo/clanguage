@@ -173,7 +173,7 @@ switch( num ）
 
 执行原理：当执行到goto语句，CPU就会跳转到标签的地方执行代码。
 
-```
+```c
 int main()
 {
     int i = 0;
