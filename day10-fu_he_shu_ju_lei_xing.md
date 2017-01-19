@@ -69,11 +69,19 @@ struct Student minmin = {.score = 80, .name = "minmin", .age = 20};
 
 3. 结构体变量的使用
 
+如何访问结构变量的数据？
+结构体变量名.成员名
+比如：`xiaoming.name;`
+
+
 
 ```
 
 // 方式1
 struct Student xiaoming = {"xiaoming", 18, 99}; // 结构体变量，这个变量的类型是struct Student， 变量名是 xiaoming.
+
+// 输出
+printf("%s --- %d --- %d\n", xiaoming.name, xiaoming.age, xiaoming.score);
 
 
 ```
