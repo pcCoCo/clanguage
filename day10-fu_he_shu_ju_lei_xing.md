@@ -155,7 +155,7 @@ x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支�
  
  
 
-```
+```c
 int main()
 {
     struct student stu1,stu2;
