@@ -71,6 +71,7 @@ struct Student minmin = {.score = 80, .name = "minmin", .age = 20};
 
 如何访问结构变量的数据？
 结构体变量名.成员名
+
 比如：`xiaoming.name;`
 
 
