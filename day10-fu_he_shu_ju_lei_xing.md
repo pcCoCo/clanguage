@@ -138,6 +138,45 @@ x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支�
 4.此上为结构体内部对齐，外部对齐原则是依据 x 的值，进行补空操作。
 
 
+
+## 结构体的指针成员
+
+
+
+### 结构体的浅拷贝和深拷贝操作
+
+1.浅拷贝
+如果结构体成员有指针成员，那么结构体变量赋值之后，两个变量中的指针成员都指向同一个地址。
+    一旦有一个指针被释放，另外一个指针将 是野指针，不能正常访问数据。
+    
+2.深拷贝
+拷贝之前先在堆空间开辟新的空间，然后将指针成员指向的数据拷贝到这块空间，这样新的结构体变量访问数据不受其他
+ 结构体变量的影响。
+ 
+ 
+
+```
+int main()
+{
+    struct student stu1,stu2;
+    stu1 = (struct student){ "张三", 30 };
+    stu2 = stu1; // 结构体变量赋值
+    printf("%s, %d\n", stu2.name, stu2.age);
+
+
+    struct student xiaoming = { 0 }; // xiaoming的name是空指针
+    struct student xiaohua = { 0 };
+    xiaoming.name = calloc(20, sizeof(char));
+    strcpy(xiaoming.name, "小明");
+    xiaoming.age = 20;
+
+    return 0;
+}
+    
+```
+
+
+
 ## Inode结构体分析
 
 每个inode都有一个号码，操作系统用inode号码来识别不同的文件。
