@@ -170,6 +170,12 @@ int main()
     strcpy(xiaoming.name, "小明");
     xiaoming.age = 20;
 
+    xiaohua.name = calloc(20, sizeof(char));
+    memcpy(xiaohua.name, xiaoming.name, 20);
+    xiaohua.age = 10;
+    free(xiaoming.name); // 这时候即使释放拷贝之前的指针， 也不影响程序运行。
+    printf("%s, %d\n", xiaohua.name, xiaohua.age);
+    
     return 0;
 }
     
