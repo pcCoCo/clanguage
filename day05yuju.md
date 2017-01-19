@@ -523,7 +523,7 @@ int main(void)
 参考答案：
 
 ```
-int main()
+int main(void)
 {
     int count = 0; // 计数器
     printf("请输入一个整数：");
@@ -575,7 +575,7 @@ int main()
 参考答案
 
 ```c  
-int main\(\)  
+int main(void)
 {  
     int i;
     for (i=100; i < 1000; i++)
@@ -624,7 +624,7 @@ printf\("    **\***\n"\);
 
 ```
 // 输出等腰三角形
-int main()
+int main(void)
 {
 
     printf("请输入等腰三角形的行数(大于等于3)： \n");
@@ -650,7 +650,6 @@ int main()
         }
         printf("\n");
     }
-
     return 0;
 }
 ```
