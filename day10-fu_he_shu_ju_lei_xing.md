@@ -309,6 +309,19 @@ struct node_t
 };
 ```
 
+也可以使用宏定义给数据类型取别名
+
+```
+#define int DataType
+struct node_t
+{
+     int      no;
+     DataType data;
+};
+```
+
+
+
 > 跨平台屏蔽各平台的差异
 
 
