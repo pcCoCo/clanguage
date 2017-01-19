@@ -315,12 +315,11 @@ struct node_t
 
 ```
 #define int DataType
-struct node_t
-{
-     int      no;
-     DataType data;
-};
+
+DataType num = 
 ```
+
+
 
 
 
