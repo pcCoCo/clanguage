@@ -3,8 +3,9 @@
 ## 结构体的定义
 
 ## 结构体的内存对齐规则
-x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支持 4 字节对
-齐。
+
+x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支持 4 字节对齐。
+
 方法：
 
 1.取 pack(n)的值（n= 0 2 4 8--),取结构体中类型最大值 m。两者取小即为对齐大小 k= (m<n:m,n)。
