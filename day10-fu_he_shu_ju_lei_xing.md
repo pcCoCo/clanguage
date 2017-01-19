@@ -15,9 +15,6 @@ x86(linux 默认#pragma pack(4),window 默认#pragma pack(8))。linux 最大支�
 
 4.此上为结构体内部对齐，外部对齐原则是依据 x 的值，进行补空操作。
 
-## 结构体的位域宽度  (待完善)
-
-
 
 ## Inode结构体分析
 
