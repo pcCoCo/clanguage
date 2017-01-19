@@ -33,7 +33,7 @@ struct 结构体名称
 
 
 
-```
+```c
 struct Student 
 {
      // 姓名
