@@ -29,7 +29,7 @@ struct 结构体名称
 ```
 
 解决问题：
-定义一个结构头来保存学生的信息。
+定义一个结构体类型来保存学生的信息。
 
 struct Student 
 {
@@ -42,6 +42,9 @@ struct Student
      // 成绩
      int score;
 };
+
+
+2.使用
 
 
 
