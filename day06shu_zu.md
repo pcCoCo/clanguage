@@ -29,7 +29,7 @@ tfboys每个成员就是一个元素。
 合法的元素下标是小于该空间大小的非负数。
 
 ```
-int main()
+int main(void)
 {
     /*
     这句代码定义了5个int类型的变量。
@@ -53,7 +53,7 @@ int main()
 ```
 
 #include <stdio.h>
-int main()
+int main(void)
 {
     int n;
     scanf("%d",&n);
@@ -106,21 +106,22 @@ int arr[] = {1,2,3,4,5};
 
 * 数组长度计算
 
-  int arr\[\] = {1,2,3,4,5,6,7,8};
+```c
+int arr[] = {1,2,3,4,5,6,7,8};
 
-  sizeof\(arr\); // 就可以得到这个数组占用的总的字节数.
+sizeof(arr); // 就可以得到这个数组占用的总的字节数.
 
-  sizeof\(arr\[0\]\); // 每个元素占的字节数
+sizeof(arr[0]); // 每个元素占的字节数
 
-  int len = sizeof\(arr\) / sizeof\(arr\[0\]\);
-  
+int len = sizeof(arr) / sizeof(arr[0]);
+``` 
   
 
 * 数组的几种简单算法
 
   * 找出数组中的最大值/最小值
 
-```
+```c
 int arr[] = {10, 21, 3, 442, 5, 46, 57};    
 int max =  arr[0];
 int len = sizeof(arr)/sizeof(arr[0]);
@@ -153,15 +154,17 @@ printf("max=%d\n", max);
 
 ### 二维数组的存储结构
 
-	int arr[4][3] = {1,2,3,4,5,6,7,8,9,10,11,12};
-		arr[2][4]
 
-	A、下标溢出 程序崩溃
-	B、0
-	C、10
+思考题:
+`int arr[4][3] = {1,2,3,4,5,6,7,8,9,10,11,12};`那么arr[2][4]访问的结果是
+```
+A、下标溢出 程序崩溃
+B、0
+C、10
+```
 
-	printf("%p %p %p %p",arr,arr[0],arr[1],arr[2],&arr[2][0]);
-	画图演示
+尝试解释效果 `printf("%p %p %p %p",arr,arr[0],arr[1],arr[2],&arr[2][0]);`
+画图演示
 	
 
 ### 多维数组的奥秘
