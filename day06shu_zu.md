@@ -29,7 +29,7 @@ tfboys每个成员就是一个元素。
 合法的元素下标是小于该空间大小的非负数。
 
 ```
-int main()
+int main(void)
 {
     /*
     这句代码定义了5个int类型的变量。
@@ -53,7 +53,7 @@ int main()
 ```
 
 #include <stdio.h>
-int main()
+int main(void)
 {
     int n;
     scanf("%d",&n);
