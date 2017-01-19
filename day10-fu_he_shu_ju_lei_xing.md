@@ -316,8 +316,16 @@ struct node_t
 ```
 #define int DataType
 
-DataType num = 
+
 ```
+
+注意：用宏定义取别名有时候可能会出错。
+
+#define int* INTPTR
+
+INTPTR p,q;// 替换之后，其实就定义了一个int* p, int q; 没有达到预期的效果。
+
+
 
 
 
