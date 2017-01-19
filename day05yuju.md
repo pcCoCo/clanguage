@@ -146,20 +146,25 @@ int main(void)
 ```
 
 ```c
-int num = 0;
-scanf("%d",num);
-int num = num % 2;
-switch( num ）
+#include <stdio.h>
+int main(void)
 {
-    case 0:
-        printf("余数是0\n");
-        break;
-    case 1:
-        printf("余数是1\n");
-        break;
-    default:
-        printf("余数是2\n");
-        break;
+    int num = 0;
+    scanf("%d",num);
+    int num = num % 2;
+    switch( num ）
+    {
+        case 0:
+            printf("余数是0\n");
+            break;
+        case 1:
+            printf("余数是1\n");
+            break;
+        default:
+            printf("余数是2\n");
+            break;
+    }
+    return 0;
 }
 ```
 
