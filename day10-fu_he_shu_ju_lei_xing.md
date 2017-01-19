@@ -31,6 +31,9 @@ struct 结构体名称
 解决问题：
 定义一个结构体类型来保存学生的信息。
 
+
+
+```
 struct Student 
 {
      // 姓名
@@ -42,9 +45,29 @@ struct Student
      // 成绩
      int score;
 };
+```
 
 
-2.使用
+
+
+2.初始化
+
+
+```
+int num = 10;
+
+// 方式1
+struct Student xiaoming = {"xiaoming", 18, 99}; // 结构体变量，这个变量的类型是struct Student， 变量名是 xiaoming.
+
+
+// 方式2： 如果不想按照顺序初始化，就可以使用点语法
+struct Student minmin = {.score = 80, .name = "minmin", .age = 20};
+
+
+```
+
+
+
 
 
 
