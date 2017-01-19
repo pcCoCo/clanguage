@@ -67,7 +67,17 @@ struct Student minmin = {.score = 80, .name = "minmin", .age = 20};
 ```
 
 
-3.
+3. 结构体变量的使用
+
+
+```
+
+// 方式1
+struct Student xiaoming = {"xiaoming", 18, 99}; // 结构体变量，这个变量的类型是struct Student， 变量名是 xiaoming.
+
+
+```
+
 
 
 
