@@ -105,8 +105,8 @@ int main()
 	FILE *fp = fopen("my.tar","rb");
 	if( fp == NULL )
 	{
-	fprintf(stderr,"file not found");
-	return 0;
+	    fprintf(stderr,"file not found");
+	    return 0;
 	}
 	fread(buf,1,sizeof(struct tar_header),fp);
 	struct tar_header * head = (struct tar_header *)buf;
