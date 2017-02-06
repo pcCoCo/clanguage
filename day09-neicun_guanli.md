@@ -1,6 +1,8 @@
 # day09-内存管理 内容需要网页预览才可通过 可以考虑将数据多的地方截图
 
- “When debugging, novices insert corrective code; experts remove defective code.”调试时，新人插入纠正代码，专家移除问题代码。(Richard Pattis)
+"When debugging, novices insert corrective code; experts remove defective code."调试时，新人插入纠正代码，专家移除问题代码。(Richard Pattis)
+
+"Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it."调试是第一次编写代码的两倍困难。因此，如果你尽可能巧妙地编写代码，那么按照定义(2倍困难)，你就不够聪明去调试它了(Brian W. Kernighan,Canadian computer scientist, co-author of “C programming language” )
 
 
 > 学习C语言有两个重要的概念:
