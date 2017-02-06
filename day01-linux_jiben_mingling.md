@@ -1,5 +1,7 @@
 # 操作系统
 
+"Computers are good at following instructions, but not at reading your mind."電腦善於遵循指令，但不善於理解你的思維。<Donald Ervin Knuth, Things a Computer Scientist Rarely Talks About>
+
 "告诉我，我会忘掉。教导我，我会记住。让我参与，我会掌握。" – 本杰明·富兰克林（Benjamin Franklin）
 
 操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。
