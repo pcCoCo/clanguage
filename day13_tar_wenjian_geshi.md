@@ -1,4 +1,4 @@
-## C++简单案例tar文件格式解析
+## tar文件格式解析
 
 https://www.gnu.org/software/tar/manual/html_node/Standard.html
 http://en.academic.ru/dic.nsf/enwiki/11782062
