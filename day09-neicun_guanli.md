@@ -1,6 +1,6 @@
 # day09-内存管理 内容需要网页预览才可通过 可以考虑将数据多的地方截图
 
-"调试时，新人插入纠正代码，专家移除问题代码。"  (Richard Pattis)
+ “When debugging, novices insert corrective code; experts remove defective code.”调试时，新人插入纠正代码，专家移除问题代码。(Richard Pattis)
 
 
 > 学习C语言有两个重要的概念:
