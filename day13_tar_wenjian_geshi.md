@@ -170,7 +170,6 @@ int myatoi(const char * str,int fbase,int tobase)
     {
         ret += (str[i]-'0') * (int)pow(fbase,11-i-1);
     }
-
     if(tobase == 10)
         return ret ;
     else //10 ---> n
