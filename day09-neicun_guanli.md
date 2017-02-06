@@ -5,7 +5,7 @@
 
 "When debugging, novices insert corrective code; experts remove defective code."调试时，新人插入纠正代码，专家移除问题代码。(Richard Pattis)
 
-
+ “Programming is like sex. One mistake and you have to support it for the rest of your life.”(Michael Sinz)
 
 > 学习C语言有两个重要的概念:
 
