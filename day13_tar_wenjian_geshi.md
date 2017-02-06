@@ -234,7 +234,6 @@ int main(int argc,char **argv)
 
 pc@iZ25g2i2xsmZ:~/code$ gcc main2.c -lm
 pc@iZ25g2i2xsmZ:~/code$ ls
-
 ```
 a.out  main2.c  mmy.tar  my.tar  t2.tar  t.tar
 ```
