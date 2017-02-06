@@ -234,12 +234,20 @@ int main(int argc,char **argv)
 
 pc@iZ25g2i2xsmZ:~/code$ gcc main2.c -lm
 pc@iZ25g2i2xsmZ:~/code$ ls
+
+```
 a.out  main2.c  mmy.tar  my.tar  t2.tar  t.tar
+```
+
 pc@iZ25g2i2xsmZ:~/code$ ./a.out t2.tar 
+```
 name t8,size 000000020000 is 8192
 ret = 1 need_write_len = 8192ret = 1 need_write_len = 7680ret = 1 need_write_len = 7168ret = 1 need_write_len = 6656ret = 1 need_write_len = 6144ret = 1 need_write_len = 5632ret = 1 need_write_len = 5120ret = 1 need_write_len = 4608ret = 1 need_write_len = 4096ret = 1 need_write_len = 3584ret = 1 need_write_len = 3072ret = 1 need_write_len = 2560ret = 1 need_write_len = 2048ret = 1 need_write_len = 1536ret = 1 need_write_len = 1024ret = 1 need_write_len = 512name i,size 000000000012 is 10
 ret = 1 need_write_len = 10tar file END
+```
+
 pc@iZ25g2i2xsmZ:~/code$ ll
+```
 total 100
 drwxrwxr-x 2 pc pc  4096 Dec 17 23:07 ./
 drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
@@ -251,6 +259,9 @@ drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
 -rw-rw-r-- 1 pc pc 20480 Dec 17 20:35 t2.tar
 -rw-rw-r-- 1 pc pc  8192 Dec 17 23:07 t8
 -rw-rw-r-- 1 pc pc 10240 Dec 17 20:35 t.tar
+
+```
+
 
 
 ### 打包tar
