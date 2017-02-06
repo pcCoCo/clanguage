@@ -2,6 +2,7 @@
 
 "Computers are good at following instructions, but not at reading your mind."電腦善於遵循指令，但不善於理解你的思維。<Donald Ervin Knuth, Things a Computer Scientist Rarely Talks About,中文名称叫高纳得>
 
+"UNIX是简单的。只不过它需要天才去理解其简朴。"(丹尼斯·利奇（Dennis Ritchie），Unix之父、C语言的之父)
 
 
 操作系统（Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。
