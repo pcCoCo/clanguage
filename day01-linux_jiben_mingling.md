@@ -1,6 +1,6 @@
 # 操作系统
 
-"Computers are good at following instructions, but not at reading your mind."電腦善於遵循指令，但不善於理解你的思維。<Donald Ervin Knuth, Things a Computer Scientist Rarely Talks About>
+"Computers are good at following instructions, but not at reading your mind."電腦善於遵循指令，但不善於理解你的思維。<Donald Ervin Knuth, Things a Computer Scientist Rarely Talks About,中文名称叫高纳得>
 
 "告诉我，我会忘掉。教导我，我会记住。让我参与，我会掌握。" – 本杰明·富兰克林（Benjamin Franklin）
 
