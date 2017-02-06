@@ -272,7 +272,7 @@ drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
 如果我们一开始就介入很多属性就无法让我们入手，我们还是只需要最常用的文件名和文件大小。
 
 
-## gzip文件格式解析
+## gzip文件格式
 
 
 ### gzip不是一种算法
@@ -288,6 +288,7 @@ drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
 
 58980b8e 换算成十进制 1486359438 是UNIX/LINUX时间戳 
 在线转换  http://tool.chinaz.com/Tools/unixtime.aspx  : 2017/2/6 13:37:18
+
 
 
 
