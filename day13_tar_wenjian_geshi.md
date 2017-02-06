@@ -147,7 +147,6 @@ int myatoi(const char * str,int fbase,int tobase)
     int ret = 0;
     int value = atoi(str);
     //先将该数转化为十进制 每个位(数值*该位权值)之和
-    //
     int i ;
     //前11位为有效字符 最后为'\0'
     for (i = 0; i < 11; ++i)
