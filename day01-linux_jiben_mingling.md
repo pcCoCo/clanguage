@@ -1,5 +1,7 @@
 # 操作系统
 
+"未来的计算机，重量也许...可能不会超过1.5吨。"——《大众机械》，1949年
+
 "Computers are good at following instructions, but not at reading your mind."電腦善於遵循指令，但不善於理解你的思維。<Donald Ervin Knuth, Things a Computer Scientist Rarely Talks About,中文名称叫高纳得>
 
 "UNIX是简单的。只不过它需要天才去理解其简朴。"(丹尼斯·利奇（Dennis Ritchie），Unix之父、C语言的之父)
