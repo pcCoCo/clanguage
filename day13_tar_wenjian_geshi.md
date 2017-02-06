@@ -286,7 +286,10 @@ drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
 
 1f8b 0800 8e0b 9858
 
-58980b8e 换算成十进制 1486359438 是UNIX/LINUX时间戳
+58980b8e 换算成十进制 1486359438 是UNIX/LINUX时间戳 
+在线转换  http://tool.chinaz.com/Tools/unixtime.aspx  : 2017/2/6 13:37:18
+
+
 
 
 
