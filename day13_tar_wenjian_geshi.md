@@ -9,12 +9,18 @@ Rome was not built in a day。
 
 ## tar文件格式解析
 
+参考资料
+
 https://www.gnu.org/software/tar/manual/html_node/Standard.html
 http://en.academic.ru/dic.nsf/enwiki/11782062
 http://www.mkssoftware.com/docs/man4/tar.4.asp
 http://www.fileformat.info/format/tar/corion.htm
 
-tar文件格式 http://www.moon-soft.com/program/FORMAT/comm/tar.htm
+
+tar文件格式
+
+http://www.moon-soft.com/program/FORMAT/comm/tar.htm
+
 
 ```
 struct tar_header
