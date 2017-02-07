@@ -403,4 +403,14 @@ drwxrwxr-x 2 pc pc  4096 Feb  7 17:41 ./
 drwxrwxr-x 3 pc pc  4096 Feb  7 17:02 ../
 -rw-rw-r-- 1 pc pc    39 Feb  7 17:41 t.gz
 
-头10字节+0字节拓展+21字节压缩数据+4字节CRC32+4字节文件大小
+头10字节+0字节拓展+21字节压缩数据+4字节CRC32+4字节文件大小 
+
+
+Linux压缩保留源文件的方法： 
+    
+    gzip –c filename > filename.gz 
+    
+Linux解压缩保留源文件的方法： 
+
+    gunzip –c filename.gz > filename 
+
