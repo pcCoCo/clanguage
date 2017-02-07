@@ -340,10 +340,12 @@ ISIZE（InputSIZE）：将原始数据大小对2^32取模的结果（因为只�
 test\minigzip.c实现压缩、解压gzip文件（用nmake运行win32\下的Makefile.msc可编译它）。
 不同于zip格式，gzip格式(.gz)只用于压缩单个文件。有多个文件时，通常先将它们合并成一个tar文件，再用gzip进行压缩。contrib\untgz\untgz.c实现一次性解压.tar.gz(.tgz)文件。
 
-源码 tar.gz
+源码zlib1211.tar.gz
 
+解压 tar -zxvf zlib1211.tar.gz
+
+pc@iZ25g2i2xsmZ:~/code/$           cd zlib-1.2.11/
 pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11$configure && make
-
 pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11/project$vim Makefile
 ```
 all:
@@ -352,6 +354,7 @@ all:
 
 pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11/project$ ls
 gzjoin.c  libz.a  Makefile  pcgzip  zconf.h  zlib.h
+
 
 
 
