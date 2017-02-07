@@ -385,4 +385,4 @@ uncompress 函数将 source 缓冲区的内容解压缩到 dest 缓冲区。sour
 uncompress 若成功，则返回 Z_OK ；若没有足够内存，则返回 Z_MEM_ERROR；若输出缓冲区不够大，则返回 Z_BUF_ERROR。若输入数据有误，则返回 Z_DATA_ERROR。
 
 
- 
+由于无法预测压缩包解压之后的大小，所以
