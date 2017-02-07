@@ -292,18 +292,23 @@ drwxr-xr-x 4 pc pc  4096 Dec 17 23:00 ../
 
 ### gzip文件格式分析
 
+
 +------+------+------+-------+---+---+---+---+------+-----+
 |  ID1 |  ID2 |  CM  |  FLG  |     MTIME     |  XFL |  OS |
 +------+------+------+-------+---+---+---+---+------+-----+
+if FLG.FEXTRA set
 +---+---+=================================+
-| XLEN  |...XLEN bytes of "extra field"...| 
+| XLEN  |   XLEN bytes of "extra field"...| 
 +---+---+=================================+
+if FLG.FNAME set
 +=========================================+
-|...original file name, zero-terminated...|
+| original file name, zero-terminated...  |
 +=========================================+
+if FLG.FCOMMENT set
 +===================================+
-|...file comment, zero-terminated...| 
+| file comment, zero-terminated...  | 
 +===================================+
+if FLG.FHCRC set
 +---+---+
 | CRC16 |
 +---+---+
