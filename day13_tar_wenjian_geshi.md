@@ -388,4 +388,8 @@ uncompress 若成功，则返回 Z_OK ；若没有足够内存，则返回 Z_MEM
 由于无法预测压缩包解压之后的大小，所以只能预先分配一段空间。
 言外之意就是如果文件太大，就会导致解压失败(一般来说如果内存需求比较大，内存分配失败就会间接导致文件解压失败)。
 
-
+pc@iZ25g2i2xsmZ:~/code/project$ gcc -o pcgzip 01test_compress.c -I. -L. -lz 
+pc@iZ25g2i2xsmZ:~/code/project$ ./pcgzip 
+compress OKlen:21,data:xNIMK
+unpressing data
+uncompress OKlen:13 data:abcdefghijkl
