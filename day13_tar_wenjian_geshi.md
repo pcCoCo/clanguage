@@ -332,9 +332,10 @@ http://blog.itpub.net/10794571/viewspace-974302/
 CRC32（Cyclic Redundancy Check）：用标准循环冗余校验算法对原始数据进行计算的结果。
 ISIZE（InputSIZE）：将原始数据大小对2^32取模的结果（因为只能用四个字节存结果，所以只能对2^32取模）。
 
+### zlib库简介
 
 
-> zlib库解析gzip文件
+### zlib库解析gzip文件
 
 在contrib和test目录中有相应实现例子。contrib\minizip\中的minizip.c/miniunz.c实现压缩、解压ZIP文件。
 test\minigzip.c实现压缩、解压gzip文件（用nmake运行win32\下的Makefile.msc可编译它）。
@@ -357,7 +358,31 @@ gzjoin.c  libz.a  Makefile  pcgzip  zconf.h  zlib.h
 
 
 
+### zlib中最简洁的两个函数
 
+函数原型
+`int compress(Bytef *dest, uLongf *destLen, const Bytef *source, uLong sourceLen);`
+
+函数功能
+
+compress函数将 source 缓冲区中的内容压缩到 dest 缓冲区。 sourceLen 表示source 缓冲区的字节大小。`注意函数的第二个参数 destLen 是传址调用。`当调用函数时，destLen表示 dest 缓冲区的大小，destLen > (sourceLen + 12)*100.1%。当函数退出后，destLen 表示压缩后缓冲区的实际大小。此时 destLen / sourceLen 正好是压缩率。
+
+函数返回值
+
+compress 若成功，则返回 Z_OK；若没有足够内存，则返回 Z_MEM_ERROR；若输出缓冲区不够大，则返回 Z_BUF_ERROR。
+
+
+函数原型 
+
+`int uncompress(Bytef *dest, uLongf *destLen, const Bytef *source, uLong sourceLen);`
+
+函数功能
+
+uncompress 函数将 source 缓冲区的内容解压缩到 dest 缓冲区。sourceLen 是 source 缓冲区的大小(以字节计)。注意函数的第二个参数 destLen 是传址调用。当调用函数时，destLen 表示 dest 缓冲区的大小， dest 缓冲区要足以容下解压后的数据。在进行解压缩时，需要提前知道被压缩的数据解压出来会有多大。这就要求在进行压缩之前，保存原始数据的大小(也就是解压后的数据的大小)。这不是 zlib 函数库的功能，需要我们做额外的工作。当函数退出后， destLen 是解压出来的数据的实际大小。
+
+
+函数返回值
+uncompress 若成功，则返回 Z_OK ；若没有足够内存，则返回 Z_MEM_ERROR；若输出缓冲区不够大，则返回 Z_BUF_ERROR。若输入数据有误，则返回 Z_DATA_ERROR。
     
 
  
