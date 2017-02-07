@@ -320,3 +320,41 @@ if FLG.FHCRC set
 +---+---+---+---+---+---+---+---+
 
 
+> gzip文件格式标准文档
+
+```
+https://tools.ietf.org/html/rfc1952
+http://www.faqs.org/rfcs/rfc1952.html
+http://blog.itpub.net/10794571/viewspace-974302/
+```
+
+
+CRC32（Cyclic Redundancy Check）：用标准循环冗余校验算法对原始数据进行计算的结果。
+ISIZE（InputSIZE）：将原始数据大小对2^32取模的结果（因为只能用四个字节存结果，所以只能对2^32取模）。
+
+
+
+> zlib库解析gzip文件
+
+在contrib和test目录中有相应实现例子。contrib\minizip\中的minizip.c/miniunz.c实现压缩、解压ZIP文件。
+test\minigzip.c实现压缩、解压gzip文件（用nmake运行win32\下的Makefile.msc可编译它）。
+不同于zip格式，gzip格式(.gz)只用于压缩单个文件。有多个文件时，通常先将它们合并成一个tar文件，再用gzip进行压缩。contrib\untgz\untgz.c实现一次性解压.tar.gz(.tgz)文件。
+
+源码 tar.gz
+
+pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11$configure && make
+
+pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11/project$vim Makefile
+```
+all:
+    gcc -o pcgzip gzjoin.c -I. -L. -lz 
+```
+
+pc@iZ25g2i2xsmZ:~/code/zlib-1.2.11/project$ ls
+gzjoin.c  libz.a  Makefile  pcgzip  zconf.h  zlib.h
+
+
+
+    
+
+ 
