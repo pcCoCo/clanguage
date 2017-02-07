@@ -390,6 +390,17 @@ uncompress 若成功，则返回 Z_OK ；若没有足够内存，则返回 Z_MEM
 
 pc@iZ25g2i2xsmZ:~/code/project$ gcc -o pcgzip 01test_compress.c -I. -L. -lz 
 pc@iZ25g2i2xsmZ:~/code/project$ ./pcgzip 
-compress OKlen:21,data:xNIMK
+compress OK
+len:21,data:xNIMK
 unpressing data
-uncompress OKlen:13 data:abcdefghijkl
+uncompress OK
+len:13 data:abcdefghijkl
+
+
+pc@iZ25g2i2xsmZ:~/code/project/tgzip$ ll 
+total 28
+drwxrwxr-x 2 pc pc  4096 Feb  7 17:41 ./
+drwxrwxr-x 3 pc pc  4096 Feb  7 17:02 ../
+-rw-rw-r-- 1 pc pc    39 Feb  7 17:41 t.gz
+
+头10字节+0字节拓展+21字节压缩数据+4字节CRC32+4字节文件大小
