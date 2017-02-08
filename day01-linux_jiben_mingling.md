@@ -645,7 +645,7 @@ pc@iZ25g2i2xsmZ:~/code/project$ ls
 
 由于zip不能将多个源文件压缩并且合并为一个文件，但是tar却能将多个文件归档为一个文件。所以在这种情况下先用tar进行归档 然后使用压缩工具gzip进行压缩。
 
-
+虽然有诸如 cat file1 file2 | gzip > foo.gz等命令可以达到这个目的但是且无法再解压的时候分离出两个文件。
 ### 进程管理ps top kill
 
 ### 切换sudo su exit
