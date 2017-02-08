@@ -610,6 +610,29 @@ Returns true if a file is of type c:
 
 grep是一套工具，在Linux系统中有多种实现。
 
+### gzip/gunzip命令
+
+>gzip命令只能将一个文件压缩成一个.gz压缩包,并且不保留原文件。
+
+pc@iZ25g2i2xsmZ:~/code/project$ ls
+01test_compress.c  a.gz            gzjoin.c  mygzip.h     tuixiangzi
+02_compress_gz.c   a.out           libz.a    pcgzip       zconf.h
+03_gz.c            compress2.data  Makefile  shuangseqiu  zlib.h
+04_gzgetc.c        compress.data   migong    tgzip
+pc@iZ25g2i2xsmZ:~/code/project$ gzip *.c
+pc@iZ25g2i2xsmZ:~/code/project$ ls
+01test_compress.c.gz  a.gz            gzjoin.c.gz  mygzip.h     tuixiangzi
+02_compress_gz.c.gz   a.out           libz.a       pcgzip       zconf.h
+03_gz.c.gz            compress2.data  Makefile     shuangseqiu  zlib.h
+04_gzgetc.c.gz        compress.data   migong       tgzip
+pc@iZ25g2i2xsmZ:~/code/project$ gunzip *.gz
+pc@iZ25g2i2xsmZ:~/code/project$ ls
+01test_compress.c  a               gzjoin.c  mygzip.h     tuixiangzi
+02_compress_gz.c   a.out           libz.a    pcgzip       zconf.h
+03_gz.c            compress2.data  Makefile  shuangseqiu  zlib.h
+04_gzgetc.c        compress.data   migong    tgzip
+
+
 ### 进程管理ps top kill
 
 ### 切换sudo su exit
