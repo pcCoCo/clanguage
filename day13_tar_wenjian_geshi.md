@@ -326,6 +326,7 @@ if FLG.FHCRC set
 https://tools.ietf.org/html/rfc1952
 http://www.faqs.org/rfcs/rfc1952.html
 http://blog.itpub.net/10794571/viewspace-974302/
+http://blog.csdn.net/jison_r_wang/article/details/52068607
 ```
 
 
@@ -413,4 +414,8 @@ Linux压缩保留源文件的方法：
 Linux解压缩保留源文件的方法： 
 
     gunzip –c filename.gz > filename 
+
+
+
+
 
