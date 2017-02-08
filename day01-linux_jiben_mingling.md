@@ -632,6 +632,17 @@ pc@iZ25g2i2xsmZ:~/code/project$ ls
 03_gz.c            compress2.data  Makefile  shuangseqiu  zlib.h
 04_gzgetc.c        compress.data   migong    tgzip
 
+如果想保留源文件且进行(解)压缩这么操作
+
+```
+pc@iZ25g2i2xsmZ:~/code/project$ gzip -c mygzip.h > mygzip.h.gz
+pc@iZ25g2i2xsmZ:~/code/project$ ls
+01test_compress.c  a               libz.a    mygzip.h.gz  tuixiangzi
+02_compress_gz.c   compress2.data  Makefile  pcgzip       zconf.h
+03_gz.c            compress.data   migong    shuangseqiu  zlib.h
+04_gzgetc.c        gzjoin.c        mygzip.h  tgzip
+```
+
 
 ### 进程管理ps top kill
 
