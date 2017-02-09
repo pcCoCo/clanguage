@@ -123,7 +123,7 @@ pc@iZ25g2i2xsmZ:~$ ll tt*
 -rw-rw-r-- 1 pc pc     0 Feb  9 18:20 tt
 -rw-rw-r-- 1 pc pc 10240 Feb  9 18:24 tt.tar
 ```
-空文件打包进tar文件的时候只占头512字节，无数据空间。
+> 空文件打包进tar文件的时候只占头512字节，无数据空间。
 
 
 ### 解包tar
