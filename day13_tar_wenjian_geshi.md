@@ -452,5 +452,19 @@ Linux解压缩保留源文件的方法：
 
 
 
+## 重新认识地址和指针
+
+### 指针的本质
+
+int number = 0;
+int *p = &number;
+
+int *pp = &p;
+
+如果有指针 int \*\*\*\*\*\*\*\* p ; 呢？
+
+
+### 从Linux内核代码中学习获得结构体成员偏移量的方法
+http://blog.csdn.net/livelylittlefish/article/details/20565261
 
 
