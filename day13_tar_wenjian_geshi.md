@@ -461,8 +461,13 @@ int *p = &number;
 
 int *pp = &p;
 
-如果有指针 int \*\*\*\*\*\*\*\* p ; 呢？
+如果有指针定义 ` int \*\*\*\*\*\*\*\* p ; `呢？
 
+```
+char buf[512] = {0};
+struct tar_header * head = (struct tar_header *)buf;
+strcpy( head->name,"我是我，不一样的烟火");
+```
 
 ### 从Linux内核代码中学习获得结构体成员偏移量的方法
 http://blog.csdn.net/livelylittlefish/article/details/20565261
