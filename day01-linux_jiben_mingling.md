@@ -610,6 +610,16 @@ Returns true if a file is of type c:
 
 grep是一套工具，在Linux系统中有多种实现。
 
+### tar
+ 
+-f选项后面跟上归档文件名称，所以一般都放置在参数列表的最后一个。
+
+tar -zcvf /tmp/etc.tar.gz /etc 
+打包后以 gzip 压缩
+
+tar -jcvf /tmp/etc.tar.bz2 /etc 
+打包后，以 bzip2 压缩
+
 ### gzip/gunzip命令
 
 >gzip命令只能将一个文件压缩成一个.gz压缩包,并且不保留原文件。
