@@ -83,6 +83,24 @@ Aleksandr Levchuk 这位老兄可以称得上是 [Vim](http://www.vim.org/) 文�
 ![如图](/assets/sxzy.jpg)
 
 
+### 在VIM中如何快速将其中的代码进行对齐
+    
+方法一:
+
+命令模式下：=:1,$
+
+方法二：
+gg（把关标定位到最上面），V（进入VISUAL模式），shift+g（选中整篇文本），然后＝。
+
+方法三：
+gg=G
+
+方法四：
+step1：ctrl + v (选中块)
+step2：ctrl + f (向前) 或 ctrl +v (向后)
+step3：按"=", 把选中的代码对齐
+
+
 ## HTML简单介绍
 
 HTML5标准语法
