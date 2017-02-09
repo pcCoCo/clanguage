@@ -98,6 +98,33 @@ checksum的计算方法为除去checksum字段其他所有的512-8共504个字�
 
 在该版本的tar工具中 **文件大小是10240Byte的整数倍**。，文件大小只能是10240*n,n=0,1,2,3,4,...n
 
+pc@iZ25g2i2xsmZ:~$ ll tt*
+```
+-rw-rw-r-- 1 pc pc     0 Feb  9 18:20 tt
+```
+pc@iZ25g2i2xsmZ:~$ tar cvf tt.tar tt tt tt tt tt tt tt tt tt tt tt tt tt
+```
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+tt
+```
+pc@iZ25g2i2xsmZ:~$ ll tt*
+```
+-rw-rw-r-- 1 pc pc     0 Feb  9 18:20 tt
+-rw-rw-r-- 1 pc pc 10240 Feb  9 18:24 tt.tar
+```
+空文件打包进tar文件的时候只占头512字节，无数据空间。
+
 
 ### 解包tar
 
