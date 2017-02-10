@@ -588,3 +588,27 @@ int main(void)
 3. 给定一个班级10个人的成绩数组，求除去最高分和最低分之后的平均分。
 
 4. 双色球。从1-33中产生6个不相同的随机数，1-16之间产生1个随机数。
+
+5. 将8进制字符串转化为十进制数。
+
+int myatoi(const char * str,int fbase,int tobase)
+{
+    int ret = 0;
+    int value = atoi(str);
+    //先将该数转化为十进制 每个位(数值*该位权值)之和
+    //  
+    int i ; 
+    //前11位为有效字符 最后为'\0'
+    for (i = 0; i < 11; ++i)
+    {   
+        ret += (str[i]-'0') * (int)pow(fbase,11-i-1);    
+    }   
+
+    if(tobase == 10) 
+        return ret ;
+    else //10 ---> n
+    {   
+        fprintf(stderr,"function have't complete code");
+        return 0;
+    }   
+}
