@@ -678,3 +678,9 @@ root用户可以切换到任何用户。
 包括但不限于  
 [http://www.computerhope.com/unix.htm](http://www.computerhope.com/unix.htm)
 
+### Linux命令行常用快捷键
+
+Ctrl+a：光标回到命令行首。 （a：ahead） 
+Ctrl+e：光标回到命令行尾。 （e：end）
+Ctrl+l：清屏，光标到第一行。
+
