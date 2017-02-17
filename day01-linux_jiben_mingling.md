@@ -430,6 +430,7 @@ cp、mv、mkdir、rmdir、rm
 
 **cp**
 
+copy,表示复制的意思。
 将当前目录下的main.c文件复制到上一级目录中  
 pc@iZ25g2i2xsmZ:~/code$ cp main.c ../
 
@@ -448,6 +449,7 @@ pc@iZ25g2i2xsmZ:~$ cp code/\*.c test/ -r
 
 **mv**
 
+move,表示移动、剪切的意思。
 移动指定文件 t.tar 到指定目录 test下  
 pc@iZ25g2i2xsmZ:~$ mv t.tar test/
 
@@ -556,7 +558,7 @@ chmod u=rwx,g=rx,o=r test\_file
 八进制数7就是4\_1+2\_1+1\_1构成的，也即 rwx。  
 八进制数6就是4\_1+2\_1+1\_0构成的，也即 rw-。
 
-那八进制数3呢?
+那八进制数3 表示的权限是什么?
 
 **chown**
 
